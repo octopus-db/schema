@@ -94,9 +94,12 @@ crn_aus_basins
 crn_inprep_basins
 crn_int_basins
 crn_xxl_basins
+cabah_charmethodID
 crn_aus_outlets
 crn_inprep_outlets
 crn_int_outlets
 crn_xxl_outlets
 downloadlogs
+global_agetypeID
+global_datasourceID
 publications

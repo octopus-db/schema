@@ -443,7 +443,7 @@
 <text text-anchor="start" x="402.5" y="-2214.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 1</text>
 <polygon fill="#ffffff" stroke="transparent" points="437.5,-2208.7 437.5,-2227.7 489.5,-2227.7 489.5,-2208.7 437.5,-2208.7"/>
 <polygon fill="none" stroke="#000000" points="437.5,-2208.7 437.5,-2227.7 489.5,-2227.7 489.5,-2208.7 437.5,-2208.7"/>
-<text text-anchor="start" x="447.9956" y="-2214.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">58 rows</text>
+<text text-anchor="start" x="447.9956" y="-2214.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">60 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="489.5,-2208.7 489.5,-2227.7 519.5,-2227.7 519.5,-2208.7 489.5,-2208.7"/>
 <polygon fill="none" stroke="#000000" points="489.5,-2208.7 489.5,-2227.7 519.5,-2227.7 519.5,-2208.7 489.5,-2208.7"/>
 <text text-anchor="start" x="500.9053" y="-2214.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">2 &gt;</text>
@@ -503,7 +503,7 @@
 <text text-anchor="start" x="403.5" y="-712.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 5</text>
 <polygon fill="#ffffff" stroke="transparent" points="427.5,-706.7 427.5,-725.7 489.5,-725.7 489.5,-706.7 427.5,-706.7"/>
 <polygon fill="none" stroke="#000000" points="427.5,-706.7 427.5,-725.7 489.5,-725.7 489.5,-706.7 427.5,-706.7"/>
-<text text-anchor="start" x="432.7089" y="-712.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">3,765 rows</text>
+<text text-anchor="start" x="432.7089" y="-712.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">3,822 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="489.5,-706.7 489.5,-725.7 519.5,-725.7 519.5,-706.7 489.5,-706.7"/>
 <polygon fill="none" stroke="#000000" points="489.5,-706.7 489.5,-725.7 519.5,-725.7 519.5,-706.7 489.5,-706.7"/>
 <text text-anchor="start" x="494.7904" y="-712.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">32 &gt;</text>

@@ -1,9 +1,12 @@
 publications
+global_datasourceID
+global_agetypeID
 downloadlogs
 crn_xxl_outlets
 crn_int_outlets
 crn_inprep_outlets
 crn_aus_outlets
+cabah_charmethodID
 crn_xxl_basins
 crn_int_basins
 crn_inprep_basins

@@ -6,6 +6,7 @@
       <sequence increment="1" name="arch_tl_polygons_EPSG3857_id_seq" startValue="1"/>
       <sequence increment="1" name="c14_calcurve_CALCURVEID_seq" startValue="1"/>
       <sequence increment="1" name="c14_calprogram_CALPROGID_seq" startValue="1"/>
+      <sequence increment="1" name="cabah_charmethodID_CHARMTDID_seq" startValue="1"/>
       <sequence increment="1" name="cabah_col_mtdid_seq" startValue="10"/>
       <sequence increment="1" name="cabah_lab_origid_seq" startValue="349"/>
       <sequence increment="1" name="cabah_methodid_seq" startValue="12"/>
@@ -27,7 +28,9 @@
       <sequence increment="1" name="expage_v3_points_id_seq" startValue="1"/>
       <sequence increment="1" name="fos_polygons_EPSG3857_id_seq" startValue="1"/>
       <sequence increment="1" name="fossahul_webmercator_nrand_25000_id_seq" startValue="1"/>
+      <sequence increment="1" name="global_agetypeID_AGETYPEID_seq" startValue="1"/>
       <sequence increment="1" name="global_biomeID_seq" startValue="1"/>
+      <sequence increment="1" name="global_datasourceID_DATASRCID_seq" startValue="1"/>
       <sequence increment="1" name="global_journal_seq" startValue="248"/>
       <sequence increment="1" name="global_sitecode_seq" startValue="20"/>
       <sequence increment="1" name="global_varunitID_seq" startValue="1"/>
@@ -595,7 +598,7 @@
             <column ascending="true" name="CALCURVE"/>
          </index>
       </table>
-      <table name="c14_calprogram" numRows="195" remarks="The c14_calprogram table stores *computer programmes* -- incl. their versions -- that may be used for radiocarbon calibration." schema="public" type="TABLE">
+      <table name="c14_calprogram" numRows="196" remarks="The c14_calprogram table stores *computer programmes* -- incl. their versions -- that may be used for radiocarbon calibration." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;c14_calprogram_CALPROGID_seq&quot;'::regclass)" digits="0" id="0" name="CALPROGID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="PARENTID" foreignKey="c14_calprogram_fk" implied="false" onDeleteCascade="false" schema="public" table="c14_calprogram"/>
          </column>
@@ -663,7 +666,7 @@
             <column ascending="true" name="MATERIAL1"/>
          </index>
       </table>
-      <table name="c14_materia2ID" numRows="58" remarks="Is SahulArch/ Radiocarbon collection, i.e., **SahulArch/ 14C** lookup table for *sub-type of sample material* used for 14C dating (= MATERIAL2)" schema="public" type="TABLE">
+      <table name="c14_materia2ID" numRows="60" remarks="Is SahulArch/ Radiocarbon collection, i.e., **SahulArch/ 14C** lookup table for *sub-type of sample material* used for 14C dating (= MATERIAL2)" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="MATERIA2ID" nullable="false" remarks="" size="5" type="int2" typeCode="5">
             <child column="MATERIA2ID" foreignKey="&lt;--MATERIA2ID_from_C14_materia2ID_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
             <child column="PARENTID" foreignKey="c14_materia2id_fk" implied="false" onDeleteCascade="false" schema="public" table="c14_materia2ID"/>
@@ -726,6 +729,21 @@
          </index>
          <index name="c_mtdid_C_MTDAB_ukey" unique="true">
             <column ascending="true" name="C_MTDAB"/>
+         </index>
+      </table>
+      <table name="cabah_charmethodID" numRows="12" remarks="Is lookup table for charcoal-related compilations, i.e., **SahulCHAR**. This table stores the method of *charcoal quantification*." schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('&quot;cabah_charmethodID_CHARMTDID_seq&quot;'::regclass)" digits="0" id="0" name="CHARMTDID" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="CHARMETHOD" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CHARMTDDSC" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CHARMTDREF" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="4" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="5" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="CHARMTDID" sequenceNumberInPK="1"/>
+         <index name="cabah_charmethodID_pkey" unique="true">
+            <column ascending="true" name="CHARMTDID"/>
+         </index>
+         <index name="cabah_charmethodID_CHARMETHOD_key" unique="true">
+            <column ascending="true" name="CHARMETHOD"/>
          </index>
       </table>
       <table name="cabah_chemprepID" numRows="37" remarks="Is lookup table for Sahul-related compilations, i.e., **SahulArch, FosSahul, SahulSed**. This table stores the type of *chemical pretreatment* given to an observation. Methods capture the majority of methods applied in Australia (= CHEMPREP)." schema="public" type="TABLE">
@@ -899,7 +917,7 @@
             <column ascending="true" name="AMSID"/>
          </index>
       </table>
-      <table name="crn_aus_basins" numRows="273" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/mpr9-yn15. Table creation date: 2023-06-17 08:33:07 UTC" schema="public" type="TABLE">
+      <table name="crn_aus_basins" numRows="273" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/mpr9-yn15. Table creation date: 2023-09-08 06:21:43 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1008,7 +1026,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_aus_outlets" numRows="273" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/mpr9-yn15. Tble creation date: 2023-06-17 08:33:09 UTC" schema="public" type="TABLE">
+      <table name="crn_aus_outlets" numRows="273" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/mpr9-yn15. Tble creation date: 2023-09-08 06:21:46 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1083,7 +1101,7 @@
             <column ascending="true" name="BESTNDID"/>
          </index>
       </table>
-      <table name="crn_inprep_basins" numRows="0" remarks="Is flat **GeoServer input** table. Table creation date: 2023-06-17 08:33:12 UTC" schema="public" type="TABLE">
+      <table name="crn_inprep_basins" numRows="0" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-08 06:21:49 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1192,7 +1210,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_inprep_outlets" numRows="0" remarks="Is flat **GeoServer input** table. Table creation date: 2023-06-17 08:33:15 UTC" schema="public" type="TABLE">
+      <table name="crn_inprep_outlets" numRows="0" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-08 06:21:52 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1203,7 +1221,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_int_basins" numRows="4152" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/g76f-0h45. Table creation date: 2023-06-17 08:33:20 UTC" schema="public" type="TABLE">
+      <table name="crn_int_basins" numRows="4152" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/g76f-0h45. Table creation date: 2023-09-08 06:21:57 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1312,7 +1330,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_int_outlets" numRows="4152" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/g76f-0h45. Table creation date: 2023-06-17 08:33:23 UTC" schema="public" type="TABLE">
+      <table name="crn_int_outlets" numRows="4152" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/g76f-0h45. Table creation date: 2023-09-08 06:22:00 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1446,7 +1464,7 @@
             <column ascending="true" name="OBSID1"/>
          </index>
       </table>
-      <table name="crn_xxl_basins" numRows="206" remarks="Is flat **GeoServer input** table. Table creation date: 2023-06-17 08:33:28 UTC" schema="public" type="TABLE">
+      <table name="crn_xxl_basins" numRows="206" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-08 06:22:05 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1555,7 +1573,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_xxl_outlets" numRows="206" remarks="Is flat **GeoServer input** table. Table creation date: 2023-06-17 08:33:31 UTC" schema="public" type="TABLE">
+      <table name="crn_xxl_outlets" numRows="206" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-08 06:22:08 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1575,7 +1593,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="desc" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="zips" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
       </table>
-      <table name="expage" numRows="16009" remarks="Is flat **GeoServer input** table. Table creation date: 2023-06-17 08:33:34 UTC" schema="public" type="TABLE">
+      <table name="expage" numRows="16009" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-08 06:22:11 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -2062,7 +2080,7 @@
             <column ascending="true" name="SPECIES"/>
          </index>
       </table>
-      <table name="fossahul_webmercator_nrand_25000" numRows="11858" remarks="Is flat **GeoServer input** table. Table creation date: 2023-06-17 08:33:38 UTC" schema="public" type="TABLE">
+      <table name="fossahul_webmercator_nrand_25000" numRows="11858" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-08 06:22:15 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="254" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="254" type="varchar" typeCode="12"/>
@@ -2202,7 +2220,22 @@
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="type" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
       </table>
-      <table name="global_Author" numRows="1680" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_Author` stores information about *first authors* and is part of OCTOPUS reference system (= OAID)." schema="public" type="TABLE">
+      <table name="global_agetypeID" numRows="10" remarks="Is lookup table for radiocarbon-related compilations, i.e., **SahulCHAR, or IPPD**. This table stores the type of *time unit* used for sample age specification." schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('&quot;global_agetypeID_AGETYPEID_seq&quot;'::regclass)" digits="0" id="0" name="AGETYPEID" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="AGETYPE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AGETDESCR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AGETCOMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="4" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="5" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="AGETYPEID" sequenceNumberInPK="1"/>
+         <index name="global_agetypeID_pkey" unique="true">
+            <column ascending="true" name="AGETYPEID"/>
+         </index>
+         <index name="global_agetypeID_AGETYPE_key" unique="true">
+            <column ascending="true" name="AGETYPE"/>
+         </index>
+      </table>
+      <table name="global_Author" numRows="1700" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_Author` stores information about *first authors* and is part of OCTOPUS reference system (= OAID)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="OAID" nullable="false" remarks="" size="11" type="varchar" typeCode="12">
             <child column="OAID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="crn_aus_basins"/>
             <child column="OAID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="crn_inprep_basins"/>
@@ -2243,6 +2276,21 @@
          </index>
          <index name="global_biomeID_BIOMETYPE_ukey" unique="true">
             <column ascending="true" name="BIOMETYPE"/>
+         </index>
+      </table>
+      <table name="global_datasourceID" numRows="7" remarks="Is global lookup table that stores the way that *data / information* have been gathered for database integration." schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('&quot;global_datasourceID_DATASRCID_seq&quot;'::regclass)" digits="0" id="0" name="DATASRCID" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="DATASOURCE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DATASRCDSC" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="DATASRCREF" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="4" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="5" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="DATASRCID" sequenceNumberInPK="1"/>
+         <index name="global_datasourceID_pkey" unique="true">
+            <column ascending="true" name="DATASRCID"/>
+         </index>
+         <index name="global_datasourceID_DATASOURCE_key" unique="true">
+            <column ascending="true" name="DATASOURCE"/>
          </index>
       </table>
       <table name="global_dbDOI" numRows="26" remarks="Is global lookup table that stores information about *OCTOPUS (sub-)compilation versions* in the form of digital object identifiers (= DBDOI)" schema="public" type="TABLE">
@@ -2382,7 +2430,7 @@
             <column ascending="true" name="PUBTYPEID"/>
          </index>
       </table>
-      <table name="global_RefAbstract" numRows="3780" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_RefAbstract` stores *publication abstracts* and is part of OCTOPUS reference system (= REFDBID; one to one)." schema="public" type="TABLE">
+      <table name="global_RefAbstract" numRows="3837" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_RefAbstract` stores *publication abstracts* and is part of OCTOPUS reference system (= REFDBID; one to one)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="REFDBID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefAbstract_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefCore"/>
          </column>
@@ -2394,7 +2442,7 @@
             <column ascending="true" name="REFDBID"/>
          </index>
       </table>
-      <table name="global_RefCore" numRows="3765" remarks="Is OCTOPUS DB reference core table, i.e., global lookup table for references. `global_RefCore` stores all relevant reference information, which are linked via &quot;REFDBID&quot; field to compilation DataCore tables (= REFDBID)." schema="public" type="TABLE">
+      <table name="global_RefCore" numRows="3822" remarks="Is OCTOPUS DB reference core table, i.e., global lookup table for references. `global_RefCore` stores all relevant reference information, which are linked via &quot;REFDBID&quot; field to compilation DataCore tables (= REFDBID)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="REFDBID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="REFDBID1" foreignKey="&lt;--REFDBID(1)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
             <child column="REFDBID2" foreignKey="&lt;--REFDBID(2)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
@@ -2463,7 +2511,7 @@
             <column ascending="true" name="REFDBID"/>
          </index>
       </table>
-      <table name="global_RefKeyword" numRows="3780" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_RefKeyword` is thoroughly boolean, stores *compilation membership keywords* for observations and is part of OCTOPUS reference system (= REFDBID; one to one)." schema="public" type="TABLE">
+      <table name="global_RefKeyword" numRows="3837" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_RefKeyword` is thoroughly boolean, stores *compilation membership keywords* for observations and is part of OCTOPUS reference system (= REFDBID; one to one)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="REFDBID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefCore"/>
          </column>
@@ -2607,7 +2655,7 @@
             <column ascending="true" name="SITEID"/>
          </index>
       </table>
-      <table name="global_varunitID" numRows="177" remarks="The global_varunitID table stores *variable units* for those compilations whose values involve different units of measurement." schema="public" type="TABLE">
+      <table name="global_varunitID" numRows="179" remarks="The global_varunitID table stores *variable units* for those compilations whose values involve different units of measurement." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;global_varunitID_seq&quot;'::regclass)" digits="0" id="0" name="V_UNITID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="PARENTID" foreignKey="global_varunitid_fk" implied="false" onDeleteCascade="false" schema="public" table="global_varunitID"/>
          </column>
@@ -2781,7 +2829,7 @@
             <column ascending="true" name="OSL_TYPEAB"/>
          </index>
       </table>
-      <table name="publications" numRows="4631" remarks="Is flat **GeoServer input** table (bbox). Table creation date: 2023-06-17 08:33:40 UTC" schema="public" type="TABLE">
+      <table name="publications" numRows="4631" remarks="Is flat **GeoServer input** table (bbox). Table creation date: 2023-09-08 06:22:17 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="bbox" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CRN_SUBCMP" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
@@ -2793,7 +2841,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahularch_c14" numRows="9501" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2mb4-rr36. Table creation date: 2023-06-17 08:33:44 UTC" schema="public" type="TABLE">
+      <table name="sahularch_c14" numRows="9501" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2mb4-rr36. Table creation date: 2023-09-08 06:22:21 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -2927,7 +2975,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahularch_osl" numRows="973" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/ypr0-j711. Table creation date: 2023-06-17 08:33:47 UTC" schema="public" type="TABLE">
+      <table name="sahularch_osl" numRows="973" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/ypr0-j711. Table creation date: 2023-09-08 06:22:24 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3084,7 +3132,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahularch_tl" numRows="240" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/xq40-t003. Table creation date: 2023-06-17 08:33:50 UTC" schema="public" type="TABLE">
+      <table name="sahularch_tl" numRows="240" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/xq40-t003. Table creation date: 2023-09-08 06:22:27 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3239,7 +3287,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_aeolian_osl" numRows="772" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/5jcw-tn50. Table creation date: 2023-06-17 08:33:53 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_aeolian_osl" numRows="772" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/5jcw-tn50. Table creation date: 2023-09-08 06:22:30 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3405,7 +3453,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_aeolian_tl" numRows="361" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/a2k9-kj43. Table creation date: 2023-06-17 08:33:55 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_aeolian_tl" numRows="361" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/a2k9-kj43. Table creation date: 2023-09-08 06:22:33 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3569,7 +3617,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_fluvial_osl" numRows="1212" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/p5ye-rn35. Table creation date: 2023-06-17 08:33:58 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_fluvial_osl" numRows="1212" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/p5ye-rn35. Table creation date: 2023-09-08 06:22:35 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3735,7 +3783,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_fluvial_tl" numRows="564" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2a76-vw55. Table creation date: 2023-06-17 08:34:01 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_fluvial_tl" numRows="564" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2a76-vw55. Table creation date: 2023-09-08 06:22:38 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3899,7 +3947,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_lacustrine_osl" numRows="474" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/6hmv-zz61. Table creation date: 2023-06-17 08:34:04 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_lacustrine_osl" numRows="474" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/6hmv-zz61. Table creation date: 2023-09-08 06:22:41 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4065,7 +4113,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_lacustrine_tl" numRows="41" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/32de-mj32. Table creation date: 2023-06-17 08:34:07 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_lacustrine_tl" numRows="41" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/32de-mj32. Table creation date: 2023-09-08 06:22:44 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>

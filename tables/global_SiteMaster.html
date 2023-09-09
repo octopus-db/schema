@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>global_SiteMaster - be10_denude_new Database</title>
+        <title>global_SiteMaster - be10_denude_new.public</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
                 <nav class="navbar navbar-static-top">
                     <div class="container">
                         <div class="navbar-header">
-                            <a href="../index.html" class="navbar-brand"><b>be10_denude_new</b> Database</a>
+                            <a href="../index.html" class="navbar-brand"><b>be10_denude_new</b></a><span class="navbar-brand" style="padding-left: 0">.public</span>
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
                         </div>
 
@@ -100,7 +100,13 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
                                 <thead align='left'>
                                 <tr>
                                     <th>Column</th>
@@ -126,83 +132,103 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_Sample.SITEID references global_SiteMaster.SITEID via &lt;--SITEID_from_global_SiteMaster_fkey"><a href='arch_Sample.html'>arch_Sample</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="crn_aus_basins.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='crn_aus_basins.html'>crn_aus_basins</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="crn_inprep_basins.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='crn_inprep_basins.html'>crn_inprep_basins</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="crn_int_basins.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='crn_int_basins.html'>crn_int_basins</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="crn_Sample.SITEID references global_SiteMaster.SITEID via &lt;--SITEID_from_global_SiteMaster_fkey"><a href='crn_Sample.html'>crn_Sample</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="crn_xxl_basins.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='crn_xxl_basins.html'>crn_xxl_basins</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="expage.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='expage.html'>expage</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="expage_Sample.SITEID references global_SiteMaster.SITEID via &lt;--SITEID_from_global_SiteMaster_fkey"><a href='expage_Sample.html'>expage_Sample</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="fos_Sample.SITEID references global_SiteMaster.SITEID via &lt;--SITEID_from_global_SiteMaster_fkey"><a href='fos_Sample.html'>fos_Sample</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="fossahul_webmercator_nrand_25000.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='fossahul_webmercator_nrand_25000.html'>fossahul_webmercator_nrand_25000</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahularch_c14.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahularch_c14.html'>sahularch_c14</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahularch_osl.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahularch_osl.html'>sahularch_osl</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahularch_tl.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahularch_tl.html'>sahularch_tl</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahulsed_aeolian_osl.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahulsed_aeolian_osl.html'>sahulsed_aeolian_osl</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahulsed_aeolian_tl.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahulsed_aeolian_tl.html'>sahulsed_aeolian_tl</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahulsed_fluvial_osl.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahulsed_fluvial_osl.html'>sahulsed_fluvial_osl</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahulsed_fluvial_tl.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahulsed_fluvial_tl.html'>sahulsed_fluvial_tl</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahulsed_lacustrine_osl.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahulsed_lacustrine_osl.html'>sahulsed_lacustrine_osl</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahulsed_lacustrine_tl.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahulsed_lacustrine_tl.html'>sahulsed_lacustrine_tl</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">Implied Constraint<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sed_Sample.SITEID references global_SiteMaster.SITEID via &lt;--SITEID_from_global_SiteMaster_fkey"><a href='sed_Sample.html'>sed_Sample</a><span class='relatedKey'>.SITEID</span></td>
-                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -227,7 +253,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="global_SiteMaster.METASITEID references global_MetaSite.METASITEID via &lt;--METASITEID_from_global_MetaSite_fkey"><a href='global_MetaSite.html'>global_MetaSite</a><span class='relatedKey'>.METASITEID</span></td>
-                                                <td class="constraint detail">&lt;--METASITEID_from_global_MetaSite_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--METASITEID_from_global_MetaSite_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -384,7 +411,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="global_SiteMaster.RIVID references global_rivID.RIVID via &lt;--RIVID_from_global_rivID_fkey"><a href='global_rivID.html'>global_rivID</a><span class='relatedKey'>.RIVID</span></td>
-                                                <td class="constraint detail">&lt;--RIVID_from_global_rivID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--RIVID_from_global_rivID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -405,7 +433,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="global_SiteMaster.IBRAID references global_ibraID.IBRAID via &lt;--IBRAID_from_global_ibraID_fkey"><a href='global_ibraID.html'>global_ibraID</a><span class='relatedKey'>.IBRAID</span></td>
-                                                <td class="constraint detail">&lt;--IBRAID_from_global_ibraID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--IBRAID_from_global_ibraID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -579,7 +608,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="global_SiteMaster.SITECODEID references global_SiteCode.SITECODEID via &lt;--SITECODEID_from_global_SiteCode_fkey"><a href='global_SiteCode.html'>global_SiteCode</a><span class='relatedKey'>.SITECODEID</span></td>
-                                                <td class="constraint detail">&lt;--SITECODEID_from_global_SiteCode_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--SITECODEID_from_global_SiteCode_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -667,7 +697,13 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
                                 <thead>
                                 <tr>
                                     <th>Constraint Name</th>
@@ -740,7 +776,7 @@
                         <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
                         <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
                     </div>
-                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
                 </div>
                 <!-- /.container -->
             </footer>

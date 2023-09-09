@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<database name="be10_denude_new" schema="public" type="PostgreSQL - 11.19">
+<?xml version="1.0" encoding="UTF-8"?><database name="be10_denude_new" schema="public" type="PostgreSQL - 11.19">
    <sequences>
       <sequence increment="1" name="arch_c14_polygons_EPSG3857_id_seq" startValue="1"/>
       <sequence increment="1" name="arch_osl_polygons_EPSG3857_id_seq" startValue="1"/>
@@ -581,7 +580,7 @@
             <column ascending="true" name="C13_VALID"/>
          </index>
       </table>
-      <table name="c14_calcurve" numRows="20" remarks="The c14_calcurve table stores *calibration curves* used for radiocarbon age calibration." schema="public" type="TABLE">
+      <table name="c14_calcurve" numRows="0" remarks="The c14_calcurve table stores *calibration curves* used for radiocarbon age calibration." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;c14_calcurve_CALCURVEID_seq&quot;'::regclass)" digits="0" id="0" name="CALCURVEID" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="CALCURVE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CALCURVREF" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
@@ -598,7 +597,7 @@
             <column ascending="true" name="CALCURVE"/>
          </index>
       </table>
-      <table name="c14_calprogram" numRows="196" remarks="The c14_calprogram table stores *computer programmes* -- incl. their versions -- that may be used for radiocarbon calibration." schema="public" type="TABLE">
+      <table name="c14_calprogram" numRows="195" remarks="The c14_calprogram table stores *computer programmes* -- incl. their versions -- that may be used for radiocarbon calibration." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;c14_calprogram_CALPROGID_seq&quot;'::regclass)" digits="0" id="0" name="CALPROGID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="PARENTID" foreignKey="c14_calprogram_fk" implied="false" onDeleteCascade="false" schema="public" table="c14_calprogram"/>
          </column>
@@ -2476,8 +2475,8 @@
             <child column="REFDBID2" foreignKey="&lt;--REFDBID(2)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
             <child column="REFDBID3" foreignKey="&lt;--REFDBID(3)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
             <child column="REFDBID4" foreignKey="&lt;--REFDBID(4)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
-            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefKeyword"/>
             <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefAbstract_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefAbstract"/>
+            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefKeyword"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OAID" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
             <parent column="OAID" foreignKey="&lt;--OAID_from_global_Author_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_Author"/>

@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>arch_c14_DataCore - be10_denude_new Database</title>
+        <title>arch_c14_DataCore - be10_denude_new.public</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
                 <nav class="navbar navbar-static-top">
                     <div class="container">
                         <div class="navbar-header">
-                            <a href="../index.html" class="navbar-brand"><b>be10_denude_new</b> Database</a>
+                            <a href="../index.html" class="navbar-brand"><b>be10_denude_new</b></a><span class="navbar-brand" style="padding-left: 0">.public</span>
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
                         </div>
 
@@ -100,7 +100,13 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
                                 <thead align='left'>
                                 <tr>
                                     <th>Column</th>
@@ -126,7 +132,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_polygons_EPSG3857.OBSID1 references arch_c14_DataCore.OBSID1 via &lt;--OBSID1_from_arch_c14_DataCore_fkey"><a href='arch_c14_polygons_EPSG3857.html'>arch_c14_polygons_EPSG3857</a><span class='relatedKey'>.OBSID1</span></td>
-                                                <td class="constraint detail">&lt;--OBSID1_from_arch_c14_DataCore_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--OBSID1_from_arch_c14_DataCore_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -151,7 +158,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.SMPID references arch_Sample.SMPID via &lt;--SMPID_from_arch_Sample_fkey"><a href='arch_Sample.html'>arch_Sample</a><span class='relatedKey'>.SMPID</span></td>
-                                                <td class="constraint detail">&lt;--SMPID_from_arch_Sample_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--SMPID_from_arch_Sample_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -223,7 +231,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.LAB_ORIGID references cabah_LabCodes.LAB_ORIGID via &lt;--LAB_ORIGID_from_cabah_LabCodes_fkey"><a href='cabah_LabCodes.html'>cabah_LabCodes</a><span class='relatedKey'>.LAB_ORIGID</span></td>
-                                                <td class="constraint detail">&lt;--LAB_ORIGID_from_cabah_LabCodes_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--LAB_ORIGID_from_cabah_LabCodes_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -244,7 +253,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.METHODID references cabah_methodID.METHODID via &lt;--METHODID_from_cabah_methodID_fkey"><a href='cabah_methodID.html'>cabah_methodID</a><span class='relatedKey'>.METHODID</span></td>
-                                                <td class="constraint detail">&lt;--METHODID_from_cabah_methodID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--METHODID_from_cabah_methodID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -265,7 +275,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='global_dbDOI.html'>global_dbDOI</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -286,7 +297,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.REFDBID1 references global_RefCore.REFDBID via &lt;--REFDBID(1)_from_global_RefCore_fkey"><a href='global_RefCore.html'>global_RefCore</a><span class='relatedKey'>.REFDBID</span></td>
-                                                <td class="constraint detail">&lt;--REFDBID(1)_from_global_RefCore_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--REFDBID(1)_from_global_RefCore_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -307,7 +319,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.REFDBID2 references global_RefCore.REFDBID via &lt;--REFDBID(2)_from_global_RefCore_fkey"><a href='global_RefCore.html'>global_RefCore</a><span class='relatedKey'>.REFDBID</span></td>
-                                                <td class="constraint detail">&lt;--REFDBID(2)_from_global_RefCore_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--REFDBID(2)_from_global_RefCore_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -328,7 +341,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.REFDBID3 references global_RefCore.REFDBID via &lt;--REFDBID(3)_from_global_RefCore_fkey"><a href='global_RefCore.html'>global_RefCore</a><span class='relatedKey'>.REFDBID</span></td>
-                                                <td class="constraint detail">&lt;--REFDBID(3)_from_global_RefCore_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--REFDBID(3)_from_global_RefCore_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -349,7 +363,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.REFDBID4 references global_RefCore.REFDBID via &lt;--REFDBID(4)_from_global_RefCore_fkey"><a href='global_RefCore.html'>global_RefCore</a><span class='relatedKey'>.REFDBID</span></td>
-                                                <td class="constraint detail">&lt;--REFDBID(4)_from_global_RefCore_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--REFDBID(4)_from_global_RefCore_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -370,7 +385,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.COL_MTDID references cabah_col_mtdID.COL_MTDID via &lt;--COL_MTDID_from_cabah_col_mtdID_fkey"><a href='cabah_col_mtdID.html'>cabah_col_mtdID</a><span class='relatedKey'>.COL_MTDID</span></td>
-                                                <td class="constraint detail">&lt;--COL_MTDID_from_cabah_col_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--COL_MTDID_from_cabah_col_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -391,7 +407,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.MATERIA1ID references c14_materia1ID.MATERIA1ID via &lt;--MATERIA1ID_from_C14_materia1ID_fkey"><a href='c14_materia1ID.html'>c14_materia1ID</a><span class='relatedKey'>.MATERIA1ID</span></td>
-                                                <td class="constraint detail">&lt;--MATERIA1ID_from_C14_materia1ID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--MATERIA1ID_from_C14_materia1ID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -412,7 +429,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.MATERIA2ID references c14_materia2ID.MATERIA2ID via &lt;--MATERIA2ID_from_C14_materia2ID_fkey"><a href='c14_materia2ID.html'>c14_materia2ID</a><span class='relatedKey'>.MATERIA2ID</span></td>
-                                                <td class="constraint detail">&lt;--MATERIA2ID_from_C14_materia2ID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--MATERIA2ID_from_C14_materia2ID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -484,7 +502,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.HUM_MODID references c14_hum_modID.HUM_MODID via &lt;--HUM_MODID_from_c14_hum_modID_fkey"><a href='c14_hum_modID.html'>c14_hum_modID</a><span class='relatedKey'>.HUM_MODID</span></td>
-                                                <td class="constraint detail">&lt;--HUM_MODID_from_c14_hum_modID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--HUM_MODID_from_c14_hum_modID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -573,7 +592,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.CONTAMID references c14_contamID.CONTAMID via &lt;--CONTAMID_from_c14_contamID_fkey"><a href='c14_contamID.html'>c14_contamID</a><span class='relatedKey'>.CONTAMID</span></td>
-                                                <td class="constraint detail">&lt;--CONTAMID_from_c14_contamID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--CONTAMID_from_c14_contamID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -594,7 +614,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.CHEMPREPID references cabah_chemprepID.CHEMPREPID via &lt;--CHEMPREPID_from_cabah_chemprepID_fkey"><a href='cabah_chemprepID.html'>cabah_chemprepID</a><span class='relatedKey'>.CHEMPREPID</span></td>
-                                                <td class="constraint detail">&lt;--CHEMPREPID_from_cabah_chemprepID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--CHEMPREPID_from_cabah_chemprepID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -632,7 +653,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.SOLVENT2ID references c14_solvent2ID.SOLVENT2ID via &lt;--SOLVENT2ID_from_solvent2ID_fkey"><a href='c14_solvent2ID.html'>c14_solvent2ID</a><span class='relatedKey'>.SOLVENT2ID</span></td>
-                                                <td class="constraint detail">&lt;--SOLVENT2ID_from_solvent2ID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--SOLVENT2ID_from_solvent2ID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -721,7 +743,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.C_MTDID references c_mtdID.C_MTDID via &lt;--C_MTDID_from_c_mtdID_fkey"><a href='c_mtdID.html'>c_mtdID</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -776,7 +799,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.PCT_C_MTID references c_mtdID.C_MTDID via pctc&lt;--C_MTDID_from_c_mtdID_fkey"><a href='c_mtdID.html'>c_mtdID</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">pctc&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">pctc&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -831,7 +855,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.PCT_N_MTID references c_mtdID.C_MTDID via pctn&lt;--C_MTDID_from_c_mtdID_fkey"><a href='c_mtdID.html'>c_mtdID</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">pctn&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">pctn&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -886,7 +911,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.CN_MTDID references c_mtdID.C_MTDID via cn&lt;--C_MTDID_from_c_mtdID_fkey"><a href='c_mtdID.html'>c_mtdID</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">cn&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">cn&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -941,7 +967,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.C13_MTDID references c_mtdID.C_MTDID via c13&lt;--C_MTDID_from_c_mtdID_fkey"><a href='c_mtdID.html'>c_mtdID</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">c13&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">c13&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -996,7 +1023,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.O18_MTDID references c_mtdID.C_MTDID via o18&lt;--C_MTDID_from_c_mtdID_fkey"><a href='c_mtdID.html'>c_mtdID</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">o18&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">o18&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -1051,7 +1079,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.N15_MTDID references c_mtdID.C_MTDID via n15&lt;--C_MTDID_from_c_mtdID_fkey"><a href='c_mtdID.html'>c_mtdID</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">n15&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">n15&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -1106,7 +1135,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.S34_MTDID references c_mtdID.C_MTDID via s34&lt;--C_MTDID_from_c_mtdID_fkey"><a href='c_mtdID.html'>c_mtdID</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">s34&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">s34&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -1297,7 +1327,8 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.C13_VALID references c13_valID.C13_VALID via &lt;--C13_VALID_from_c13_valID_fkey"><a href='c13_valID.html'>c13_valID</a><span class='relatedKey'>.C13_VALID</span></td>
-                                                <td class="constraint detail">&lt;--C13_VALID_from_c13_valID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--C13_VALID_from_c13_valID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -1368,7 +1399,13 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
                                 <thead>
                                 <tr>
                                     <th>Constraint Name</th>
@@ -1441,7 +1478,7 @@
                         <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
                         <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
                     </div>
-                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
                 </div>
                 <!-- /.container -->
             </footer>

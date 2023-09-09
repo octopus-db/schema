@@ -17,7 +17,7 @@
 <polygon fill="#ffffff" stroke="transparent" points="8,-38.2 8,-1756.2 233,-1756.2 233,-38.2 8,-38.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="10.5,-1731.2 10.5,-1754.2 231.5,-1754.2 231.5,-1731.2 10.5,-1731.2"/>
 <polygon fill="none" stroke="#000000" points="10.5,-1731.2 10.5,-1754.2 231.5,-1754.2 231.5,-1731.2 10.5,-1731.2"/>
-<text text-anchor="start" x="15.5" y="-1740.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">expage</text>
+<text text-anchor="start" x="15.5" y="-1739.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">expage</text>
 <text text-anchor="start" x="196.5437" y="-1739.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
 <polygon fill="none" stroke="#000000" points="10.5,-1709.2 10.5,-1731.2 112.5,-1731.2 112.5,-1709.2 10.5,-1709.2"/>
 <text text-anchor="start" x="30.5" y="-1716.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">geom</text>
@@ -332,7 +332,7 @@
 <text text-anchor="start" x="13.5" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 0</text>
 <polygon fill="#ffffff" stroke="transparent" points="39.5,-40.2 39.5,-59.2 112.5,-59.2 112.5,-40.2 39.5,-40.2"/>
 <polygon fill="none" stroke="#000000" points="39.5,-40.2 39.5,-59.2 112.5,-59.2 112.5,-40.2 39.5,-40.2"/>
-<text text-anchor="start" x="49.594" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">16,009 rows</text>
+<text text-anchor="start" x="49.594" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">16.009 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="112.5,-40.2 112.5,-59.2 231.5,-59.2 231.5,-40.2 112.5,-40.2"/>
 <polygon fill="none" stroke="#000000" points="112.5,-40.2 112.5,-59.2 231.5,-59.2 231.5,-40.2 112.5,-40.2"/>
 <text text-anchor="start" x="212.9053" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">0 &gt;</text>

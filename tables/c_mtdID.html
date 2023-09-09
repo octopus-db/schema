@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>c_mtdID - be10_denude_new Database</title>
+        <title>c_mtdID - be10_denude_new.public</title>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
         <link rel="icon" type="image/png" sizes="16x16" href="../favicon.png">
@@ -46,7 +46,7 @@
                 <nav class="navbar navbar-static-top">
                     <div class="container">
                         <div class="navbar-header">
-                            <a href="../index.html" class="navbar-brand"><b>be10_denude_new</b> Database</a>
+                            <a href="../index.html" class="navbar-brand"><b>be10_denude_new</b></a><span class="navbar-brand" style="padding-left: 0">.public</span>
                             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse"><i class="fa fa-bars"></i></button>
                         </div>
 
@@ -100,7 +100,13 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <table id="standard_table" class="table table-bordered table-striped dataTable" role="grid">
+                            <table
+                                    id="standard_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
                                 <thead align='left'>
                                 <tr>
                                     <th>Column</th>
@@ -126,35 +132,43 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
                                                 <td title="arch_c14_DataCore.C13_MTDID references c_mtdID.C_MTDID via c13&lt;--C_MTDID_from_c_mtdID_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.C13_MTDID</span></td>
-                                                <td class="constraint detail">c13&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">c13&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="arch_c14_DataCore.C_MTDID references c_mtdID.C_MTDID via &lt;--C_MTDID_from_c_mtdID_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.C_MTDID</span></td>
-                                                <td class="constraint detail">&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="arch_c14_DataCore.CN_MTDID references c_mtdID.C_MTDID via cn&lt;--C_MTDID_from_c_mtdID_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.CN_MTDID</span></td>
-                                                <td class="constraint detail">cn&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">cn&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="arch_c14_DataCore.N15_MTDID references c_mtdID.C_MTDID via n15&lt;--C_MTDID_from_c_mtdID_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.N15_MTDID</span></td>
-                                                <td class="constraint detail">n15&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">n15&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="arch_c14_DataCore.O18_MTDID references c_mtdID.C_MTDID via o18&lt;--C_MTDID_from_c_mtdID_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.O18_MTDID</span></td>
-                                                <td class="constraint detail">o18&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">o18&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="arch_c14_DataCore.PCT_C_MTID references c_mtdID.C_MTDID via pctc&lt;--C_MTDID_from_c_mtdID_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.PCT_C_MTID</span></td>
-                                                <td class="constraint detail">pctc&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">pctc&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="arch_c14_DataCore.PCT_N_MTID references c_mtdID.C_MTDID via pctn&lt;--C_MTDID_from_c_mtdID_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.PCT_N_MTID</span></td>
-                                                <td class="constraint detail">pctn&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">pctn&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="arch_c14_DataCore.S34_MTDID references c_mtdID.C_MTDID via s34&lt;--C_MTDID_from_c_mtdID_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.S34_MTDID</span></td>
-                                                <td class="constraint detail">s34&lt;--C_MTDID_from_c_mtdID_fkey<span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                                <td class="constraint detail">s34&lt;--C_MTDID_from_c_mtdID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
@@ -246,7 +260,13 @@
                             </div>
                         </div>
                         <div class="box-body">
-                            <table id="indexes_table" class="table table-bordered table-striped dataTable" role="grid">
+                            <table
+                                    id="indexes_table"
+                                    class="table table-bordered table-striped dataTable"
+                                    role="grid"
+                                    data-paging="true"
+                                    data-page-length="10"
+                                    data-length-change="false">
                                 <thead>
                                 <tr>
                                     <th>Constraint Name</th>
@@ -321,7 +341,7 @@
                         <a href="https://github.com/schemaspy/schemaspy" title="GitHub for SchemaSpy"><i class="fa fa-github-square fa-2x"></i></a>
                         <a href="http://stackoverflow.com/questions/tagged/schemaspy" title="StackOverflow for SchemaSpy"><i class="fa fa-stack-overflow fa-2x"></i></a>
                     </div>
-                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.1.0</a></strong>
+                    <strong>Generated by <a href="http://schemaspy.org/" class="logo-text"><i class="fa fa-database"></i> SchemaSpy 6.2.4</a></strong>
                 </div>
                 <!-- /.container -->
             </footer>

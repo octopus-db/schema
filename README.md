@@ -2,7 +2,7 @@
 OCTOPUS database schema
 
 This is a visual HTML representation of the OCTOPUS relational database[1].
-This repository's content was created using SchemaSpy (https://schemaspy.readthedocs.io/en/v6.2.0/).
+This repository's content was created using SchemaSpy 6.2.4 (https://schemaspy.org/, https://schemaspy.readthedocs.io/en/v6.2.0/).
 
 If you'd like to learn more about the OCTOPUS project, please visit ...
 

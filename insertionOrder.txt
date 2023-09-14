@@ -54,6 +54,7 @@ global_varunitID
 c14_materia2ID
 sed_laketypeID
 cabah_col_mtdID
+cabah_depositID
 global_SiteMaster
 arch_Sample
 crn_Sample
@@ -95,8 +96,11 @@ crn_inprep_basins
 crn_int_basins
 crn_xxl_basins
 cabah_agetypeID
+cabah_basinsizeID
+cabah_catchmentsizeID
 cabah_charmethodID
 cabah_datasourceID
+cabah_flowtypeID
 crn_aus_outlets
 crn_inprep_outlets
 crn_int_outlets

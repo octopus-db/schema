@@ -208,6 +208,22 @@ digraph "largeRelationshipsDiagram" {
     target="_top"
     tooltip="fos_Sample"
   ];
+  "cabah_depositID" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16"><B>cabah_depositID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="DEPOSITID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16">DEPOSITID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="DEPOSIT" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16">DEPOSIT</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="PARENTID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16">PARENTID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="DEPOSITDSC" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16">DEPOSITDSC</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="CREATED_AT" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16">CREATED_AT</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="UPDATED_AT" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16">UPDATED_AT</TD></TR></TABLE></TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">116 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
+    </TABLE>>
+    URL="../../tables/cabah_depositID.html"
+    target="_top"
+    tooltip="cabah_depositID"
+  ];
   "sed_geommodID" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -1942,6 +1958,7 @@ digraph "largeRelationshipsDiagram" {
   "c14_calprogram":"PARENTID":w -> "c14_calprogram":"CALPROGID":e [arrowhead=none dir=back arrowtail=crowodot];
   "c14_materia2ID":"PARENTID":w -> "c14_materia2ID":"MATERIA2ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "cabah_col_mtdID":"PARENTID":w -> "cabah_col_mtdID":"COL_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cabah_depositID":"PARENTID":w -> "cabah_depositID":"DEPOSITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "cabah_methodID":"PARENTID":w -> "cabah_methodID":"METHODID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_al_DataCore":"ALAMSID":w -> "crn_amsID":"AMSID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_al_DataCore":"ALSTNDID":w -> "crn_alstndID":"ALSTNDID":e [arrowhead=none dir=back arrowtail=crowodot];

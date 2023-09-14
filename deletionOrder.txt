@@ -4,8 +4,11 @@ crn_xxl_outlets
 crn_int_outlets
 crn_inprep_outlets
 crn_aus_outlets
+cabah_flowtypeID
 cabah_datasourceID
 cabah_charmethodID
+cabah_catchmentsizeID
+cabah_basinsizeID
 cabah_agetypeID
 crn_xxl_basins
 crn_int_basins
@@ -47,6 +50,7 @@ sed_Sample
 crn_Sample
 arch_Sample
 global_SiteMaster
+cabah_depositID
 cabah_col_mtdID
 sed_laketypeID
 c14_materia2ID

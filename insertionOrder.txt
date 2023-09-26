@@ -101,6 +101,7 @@ cabah_catchmentsizeID
 cabah_charmethodID
 cabah_datasourceID
 cabah_flowtypeID
+cabah_unittypeID
 crn_aus_outlets
 crn_inprep_outlets
 crn_int_outlets

@@ -187,44 +187,47 @@
 <g id="node5" class="node">
 <title>global_SiteMaster</title>
 <g id="a_node5"><a xlink:href="../../tables/global_SiteMaster.html" xlink:title="global_SiteMaster" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="216.7697,-5863.2 216.7697,-6034.2 357.7697,-6034.2 357.7697,-5863.2 216.7697,-5863.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="217.2697,-6010.7 217.2697,-6033.7 358.2697,-6033.7 358.2697,-6010.7 217.2697,-6010.7"/>
-<polygon fill="none" stroke="#000000" points="217.2697,-6010.7 217.2697,-6033.7 358.2697,-6033.7 358.2697,-6010.7 217.2697,-6010.7"/>
-<text text-anchor="start" x="222.2697" y="-6019.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_SiteMaster</text>
-<text text-anchor="start" x="323.7915" y="-6018.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="217.2697,-5988.7 217.2697,-6010.7 358.2697,-6010.7 358.2697,-5988.7 217.2697,-5988.7"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-6005.7"/>
-<text text-anchor="start" x="246.2697" y="-5995.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITEID</text>
-<polygon fill="none" stroke="#000000" points="217.2697,-5966.7 217.2697,-5988.7 358.2697,-5988.7 358.2697,-5966.7 217.2697,-5966.7"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5983.7"/>
-<text text-anchor="start" x="246.2697" y="-5973.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METASITEID</text>
-<polygon fill="none" stroke="#000000" points="217.2697,-5944.7 217.2697,-5966.7 358.2697,-5966.7 358.2697,-5944.7 217.2697,-5944.7"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5961.7"/>
-<text text-anchor="start" x="246.2697" y="-5951.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">RIVID</text>
-<polygon fill="none" stroke="#000000" points="217.2697,-5922.7 217.2697,-5944.7 358.2697,-5944.7 358.2697,-5922.7 217.2697,-5922.7"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5939.7"/>
-<text text-anchor="start" x="246.2697" y="-5929.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRAID</text>
-<polygon fill="none" stroke="#000000" points="217.2697,-5900.7 217.2697,-5922.7 358.2697,-5922.7 358.2697,-5900.7 217.2697,-5900.7"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5917.7"/>
-<text text-anchor="start" x="246.2697" y="-5907.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITECODEID</text>
-<polygon fill="none" stroke="#000000" points="217.2697,-5881.7 217.2697,-5900.7 358.2697,-5900.7 358.2697,-5881.7 217.2697,-5881.7"/>
-<text text-anchor="start" x="220.2697" y="-5887.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="217.2697,-5862.7 217.2697,-5881.7 255.2697,-5881.7 255.2697,-5862.7 217.2697,-5862.7"/>
-<polygon fill="none" stroke="#000000" points="217.2697,-5862.7 217.2697,-5881.7 255.2697,-5881.7 255.2697,-5862.7 217.2697,-5862.7"/>
-<text text-anchor="start" x="220.2697" y="-5868.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 4</text>
-<polygon fill="#ffffff" stroke="transparent" points="255.2697,-5862.7 255.2697,-5881.7 328.2697,-5881.7 328.2697,-5862.7 255.2697,-5862.7"/>
-<polygon fill="none" stroke="#000000" points="255.2697,-5862.7 255.2697,-5881.7 328.2697,-5881.7 328.2697,-5862.7 255.2697,-5862.7"/>
-<text text-anchor="start" x="265.3637" y="-5868.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">23.245 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="328.2697,-5862.7 328.2697,-5881.7 358.2697,-5881.7 358.2697,-5862.7 328.2697,-5862.7"/>
-<polygon fill="none" stroke="#000000" points="328.2697,-5862.7 328.2697,-5881.7 358.2697,-5881.7 358.2697,-5862.7 328.2697,-5862.7"/>
-<text text-anchor="start" x="339.675" y="-5868.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">5 &gt;</text>
+<polygon fill="#ffffff" stroke="transparent" points="216.7697,-5850.2 216.7697,-6043.2 357.7697,-6043.2 357.7697,-5850.2 216.7697,-5850.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="217.2697,-6019.7 217.2697,-6042.7 358.2697,-6042.7 358.2697,-6019.7 217.2697,-6019.7"/>
+<polygon fill="none" stroke="#000000" points="217.2697,-6019.7 217.2697,-6042.7 358.2697,-6042.7 358.2697,-6019.7 217.2697,-6019.7"/>
+<text text-anchor="start" x="222.2697" y="-6028.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_SiteMaster</text>
+<text text-anchor="start" x="323.7915" y="-6027.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="217.2697,-5997.7 217.2697,-6019.7 358.2697,-6019.7 358.2697,-5997.7 217.2697,-5997.7"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-6014.7"/>
+<text text-anchor="start" x="246.2697" y="-6004.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITEID</text>
+<polygon fill="none" stroke="#000000" points="217.2697,-5975.7 217.2697,-5997.7 358.2697,-5997.7 358.2697,-5975.7 217.2697,-5975.7"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5992.7"/>
+<text text-anchor="start" x="246.2697" y="-5982.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METASITEID</text>
+<polygon fill="none" stroke="#000000" points="217.2697,-5953.7 217.2697,-5975.7 358.2697,-5975.7 358.2697,-5953.7 217.2697,-5953.7"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5970.7"/>
+<text text-anchor="start" x="246.2697" y="-5960.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">RIVID</text>
+<polygon fill="none" stroke="#000000" points="217.2697,-5931.7 217.2697,-5953.7 358.2697,-5953.7 358.2697,-5931.7 217.2697,-5931.7"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5948.7"/>
+<text text-anchor="start" x="246.2697" y="-5938.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRAID</text>
+<polygon fill="none" stroke="#000000" points="217.2697,-5909.7 217.2697,-5931.7 358.2697,-5931.7 358.2697,-5909.7 217.2697,-5909.7"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5926.7"/>
+<text text-anchor="start" x="246.2697" y="-5916.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITECODEID</text>
+<polygon fill="none" stroke="#000000" points="217.2697,-5887.7 217.2697,-5909.7 358.2697,-5909.7 358.2697,-5887.7 217.2697,-5887.7"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="222.27" y="-5904.7"/>
+<text text-anchor="start" x="246.2697" y="-5894.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BIOMEID</text>
+<polygon fill="none" stroke="#000000" points="217.2697,-5868.7 217.2697,-5887.7 358.2697,-5887.7 358.2697,-5868.7 217.2697,-5868.7"/>
+<text text-anchor="start" x="220.2697" y="-5874.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="217.2697,-5849.7 217.2697,-5868.7 255.2697,-5868.7 255.2697,-5849.7 217.2697,-5849.7"/>
+<polygon fill="none" stroke="#000000" points="217.2697,-5849.7 217.2697,-5868.7 255.2697,-5868.7 255.2697,-5849.7 217.2697,-5849.7"/>
+<text text-anchor="start" x="220.2697" y="-5855.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 5</text>
+<polygon fill="#ffffff" stroke="transparent" points="255.2697,-5849.7 255.2697,-5868.7 328.2697,-5868.7 328.2697,-5849.7 255.2697,-5849.7"/>
+<polygon fill="none" stroke="#000000" points="255.2697,-5849.7 255.2697,-5868.7 328.2697,-5868.7 328.2697,-5849.7 255.2697,-5849.7"/>
+<text text-anchor="start" x="265.3637" y="-5855.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">23.245 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="328.2697,-5849.7 328.2697,-5868.7 358.2697,-5868.7 358.2697,-5849.7 328.2697,-5849.7"/>
+<polygon fill="none" stroke="#000000" points="328.2697,-5849.7 328.2697,-5868.7 358.2697,-5868.7 358.2697,-5849.7 328.2697,-5849.7"/>
+<text text-anchor="start" x="339.675" y="-5855.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">5 &gt;</text>
 </a>
 </g>
 </g>
 <!-- sahularch_tl&#45;&gt;global_SiteMaster -->
-<g id="edge176" class="edge">
+<g id="edge177" class="edge">
 <title>sahularch_tl:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M463.6941,-3908.9546C415.7033,-3917.9457 420.0293,-3973.8207 403.7697,-4029.7 375.469,-4126.9606 375.9805,-5751.5397 370.7697,-5852.7 367.3966,-5918.1823 423.8388,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M463.6942,-3908.9546C415.7039,-3917.9459 420.0329,-3973.8217 403.7697,-4029.7 375.6645,-4126.2654 375.3974,-5739.2343 370.7697,-5839.7 367.3041,-5914.9365 433.586,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="470.2991,-3908.3861 478.5784,-3911.2867 474.2844,-3908.0431 478.2697,-3907.7 478.2697,-3907.7 478.2697,-3907.7 474.2844,-3908.0431 477.9609,-3904.1133 470.2991,-3908.3861 470.2991,-3908.3861"/>
 <ellipse fill="none" stroke="#000000" cx="467.1109" cy="-3908.6606" rx="3.2" ry="3.2"/>
 </g>
@@ -255,7 +258,7 @@
 </g>
 </g>
 <!-- sahularch_tl&#45;&gt;global_dbDOI -->
-<g id="edge174" class="edge">
+<g id="edge175" class="edge">
 <title>sahularch_tl:w&#45;&gt;global_dbDOI:e</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M463.6949,-3930.4792C434.475,-3933.8992 420.6483,-3948.7627 403.7697,-3978.7 362.1858,-4052.4565 430.9411,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="470.2811,-3930.1271 478.4619,-3933.2949 474.2754,-3929.9136 478.2697,-3929.7 478.2697,-3929.7 478.2697,-3929.7 474.2754,-3929.9136 478.0775,-3926.1051 470.2811,-3930.1271 470.2811,-3930.1271"/>
@@ -265,34 +268,34 @@
 <g id="node85" class="node">
 <title>global_MetaSite</title>
 <g id="a_node85"><a xlink:href="../../tables/global_MetaSite.html" xlink:title="global_MetaSite" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="31.2697,-6011.2 31.2697,-6094.2 161.2697,-6094.2 161.2697,-6011.2 31.2697,-6011.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="31.2697,-6070.7 31.2697,-6093.7 161.2697,-6093.7 161.2697,-6070.7 31.2697,-6070.7"/>
-<polygon fill="none" stroke="#000000" points="31.2697,-6070.7 31.2697,-6093.7 161.2697,-6093.7 161.2697,-6070.7 31.2697,-6070.7"/>
-<text text-anchor="start" x="36.2697" y="-6079.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_MetaSite</text>
-<text text-anchor="start" x="126.7915" y="-6078.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="31.2697,-6048.7 31.2697,-6070.7 161.2697,-6070.7 161.2697,-6048.7 31.2697,-6048.7"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="36.2697" y="-6065.7"/>
-<text text-anchor="start" x="60.2697" y="-6055.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METASITEID</text>
-<polygon fill="none" stroke="#000000" points="31.2697,-6029.7 31.2697,-6048.7 161.2697,-6048.7 161.2697,-6029.7 31.2697,-6029.7"/>
-<text text-anchor="start" x="34.2697" y="-6035.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="31.2697,-6010.7 31.2697,-6029.7 62.2697,-6029.7 62.2697,-6010.7 31.2697,-6010.7"/>
-<polygon fill="none" stroke="#000000" points="31.2697,-6010.7 31.2697,-6029.7 62.2697,-6029.7 62.2697,-6010.7 31.2697,-6010.7"/>
-<text text-anchor="start" x="34.2697" y="-6016.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="62.2697,-6010.7 62.2697,-6029.7 130.2697,-6029.7 130.2697,-6010.7 62.2697,-6010.7"/>
-<polygon fill="none" stroke="#000000" points="62.2697,-6010.7 62.2697,-6029.7 130.2697,-6029.7 130.2697,-6010.7 62.2697,-6010.7"/>
-<text text-anchor="start" x="73.4786" y="-6016.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">7.686 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="130.2697,-6010.7 130.2697,-6029.7 161.2697,-6029.7 161.2697,-6010.7 130.2697,-6010.7"/>
-<polygon fill="none" stroke="#000000" points="130.2697,-6010.7 130.2697,-6029.7 161.2697,-6029.7 161.2697,-6010.7 130.2697,-6010.7"/>
-<text text-anchor="start" x="142.675" y="-6016.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
+<polygon fill="#ffffff" stroke="transparent" points="31.2697,-6072.2 31.2697,-6155.2 161.2697,-6155.2 161.2697,-6072.2 31.2697,-6072.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="31.2697,-6131.7 31.2697,-6154.7 161.2697,-6154.7 161.2697,-6131.7 31.2697,-6131.7"/>
+<polygon fill="none" stroke="#000000" points="31.2697,-6131.7 31.2697,-6154.7 161.2697,-6154.7 161.2697,-6131.7 31.2697,-6131.7"/>
+<text text-anchor="start" x="36.2697" y="-6140.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_MetaSite</text>
+<text text-anchor="start" x="126.7915" y="-6139.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="31.2697,-6109.7 31.2697,-6131.7 161.2697,-6131.7 161.2697,-6109.7 31.2697,-6109.7"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="36.2697" y="-6126.7"/>
+<text text-anchor="start" x="60.2697" y="-6116.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METASITEID</text>
+<polygon fill="none" stroke="#000000" points="31.2697,-6090.7 31.2697,-6109.7 161.2697,-6109.7 161.2697,-6090.7 31.2697,-6090.7"/>
+<text text-anchor="start" x="34.2697" y="-6096.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="31.2697,-6071.7 31.2697,-6090.7 62.2697,-6090.7 62.2697,-6071.7 31.2697,-6071.7"/>
+<polygon fill="none" stroke="#000000" points="31.2697,-6071.7 31.2697,-6090.7 62.2697,-6090.7 62.2697,-6071.7 31.2697,-6071.7"/>
+<text text-anchor="start" x="34.2697" y="-6077.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="62.2697,-6071.7 62.2697,-6090.7 130.2697,-6090.7 130.2697,-6071.7 62.2697,-6071.7"/>
+<polygon fill="none" stroke="#000000" points="62.2697,-6071.7 62.2697,-6090.7 130.2697,-6090.7 130.2697,-6071.7 62.2697,-6071.7"/>
+<text text-anchor="start" x="73.4786" y="-6077.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">7.686 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="130.2697,-6071.7 130.2697,-6090.7 161.2697,-6090.7 161.2697,-6071.7 130.2697,-6071.7"/>
+<polygon fill="none" stroke="#000000" points="130.2697,-6071.7 130.2697,-6090.7 161.2697,-6090.7 161.2697,-6071.7 130.2697,-6071.7"/>
+<text text-anchor="start" x="142.675" y="-6077.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
 </a>
 </g>
 </g>
 <!-- sahularch_tl&#45;&gt;global_MetaSite -->
-<g id="edge175" class="edge">
+<g id="edge176" class="edge">
 <title>sahularch_tl:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M463.6825,-3886.4666C360.0311,-3897.847 301.4851,-4041.5494 203.7697,-4688.7 198.0811,-4726.3746 199.3713,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="470.2807,-3886.1199 478.4586,-3889.295 474.2752,-3885.91 478.2697,-3885.7 478.2697,-3885.7 478.2697,-3885.7 474.2752,-3885.91 478.0807,-3882.105 470.2807,-3886.1199 470.2807,-3886.1199"/>
-<ellipse fill="none" stroke="#000000" cx="467.0851" cy="-3886.2879" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M463.5782,-3886.7527C390.8899,-3897.1451 295.5067,-3987.4413 203.7697,-4287.7 188.8882,-4336.4077 212.2,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="470.2901,-3886.2718 478.527,-3889.2908 474.2799,-3885.9859 478.2697,-3885.7 478.2697,-3885.7 478.2697,-3885.7 474.2799,-3885.9859 478.0124,-3882.1092 470.2901,-3886.2718 470.2901,-3886.2718"/>
+<ellipse fill="none" stroke="#000000" cx="467.0983" cy="-3886.5005" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_geotypeID -->
 <g id="node3" class="node">
@@ -353,119 +356,158 @@
 <g id="node36" class="node">
 <title>global_rivID</title>
 <g id="a_node36"><a xlink:href="../../tables/global_rivID.html" xlink:title="global_rivID" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="42.7697,-5885.2 42.7697,-5990.2 149.7697,-5990.2 149.7697,-5885.2 42.7697,-5885.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="43.2697,-5966.7 43.2697,-5989.7 150.2697,-5989.7 150.2697,-5966.7 43.2697,-5966.7"/>
-<polygon fill="none" stroke="#000000" points="43.2697,-5966.7 43.2697,-5989.7 150.2697,-5989.7 150.2697,-5966.7 43.2697,-5966.7"/>
-<text text-anchor="start" x="48.2697" y="-5975.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_rivID</text>
-<text text-anchor="start" x="115.7915" y="-5974.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="43.2697,-5944.7 43.2697,-5966.7 150.2697,-5966.7 150.2697,-5944.7 43.2697,-5944.7"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="48.2697" y="-5961.7"/>
-<text text-anchor="start" x="66.2697" y="-5951.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">RIVID</text>
-<polygon fill="#ffffff" stroke="transparent" points="43.2697,-5922.7 43.2697,-5944.7 150.2697,-5944.7 150.2697,-5922.7 43.2697,-5922.7"/>
-<polygon fill="none" stroke="#000000" points="43.2697,-5922.7 43.2697,-5944.7 150.2697,-5944.7 150.2697,-5922.7 43.2697,-5922.7"/>
-<text text-anchor="start" x="66.2697" y="-5929.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">AHGFL2</text>
-<polygon fill="none" stroke="#000000" points="43.2697,-5903.7 43.2697,-5922.7 150.2697,-5922.7 150.2697,-5903.7 43.2697,-5903.7"/>
-<text text-anchor="start" x="46.2697" y="-5909.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="43.2697,-5884.7 43.2697,-5903.7 67.2697,-5903.7 67.2697,-5884.7 43.2697,-5884.7"/>
-<polygon fill="none" stroke="#000000" points="43.2697,-5884.7 43.2697,-5903.7 67.2697,-5903.7 67.2697,-5884.7 43.2697,-5884.7"/>
-<text text-anchor="start" x="46.2697" y="-5890.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="67.2697,-5884.7 67.2697,-5903.7 123.2697,-5903.7 123.2697,-5884.7 67.2697,-5884.7"/>
-<polygon fill="none" stroke="#000000" points="67.2697,-5884.7 67.2697,-5903.7 123.2697,-5903.7 123.2697,-5884.7 67.2697,-5884.7"/>
-<text text-anchor="start" x="75.6504" y="-5890.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">219 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="123.2697,-5884.7 123.2697,-5903.7 150.2697,-5903.7 150.2697,-5884.7 123.2697,-5884.7"/>
-<polygon fill="none" stroke="#000000" points="123.2697,-5884.7 123.2697,-5903.7 150.2697,-5903.7 150.2697,-5884.7 123.2697,-5884.7"/>
-<text text-anchor="start" x="131.675" y="-5890.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
+<polygon fill="#ffffff" stroke="transparent" points="42.7697,-5946.2 42.7697,-6051.2 149.7697,-6051.2 149.7697,-5946.2 42.7697,-5946.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="43.2697,-6027.7 43.2697,-6050.7 150.2697,-6050.7 150.2697,-6027.7 43.2697,-6027.7"/>
+<polygon fill="none" stroke="#000000" points="43.2697,-6027.7 43.2697,-6050.7 150.2697,-6050.7 150.2697,-6027.7 43.2697,-6027.7"/>
+<text text-anchor="start" x="48.2697" y="-6036.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_rivID</text>
+<text text-anchor="start" x="115.7915" y="-6035.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="43.2697,-6005.7 43.2697,-6027.7 150.2697,-6027.7 150.2697,-6005.7 43.2697,-6005.7"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="48.2697" y="-6022.7"/>
+<text text-anchor="start" x="66.2697" y="-6012.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">RIVID</text>
+<polygon fill="#ffffff" stroke="transparent" points="43.2697,-5983.7 43.2697,-6005.7 150.2697,-6005.7 150.2697,-5983.7 43.2697,-5983.7"/>
+<polygon fill="none" stroke="#000000" points="43.2697,-5983.7 43.2697,-6005.7 150.2697,-6005.7 150.2697,-5983.7 43.2697,-5983.7"/>
+<text text-anchor="start" x="66.2697" y="-5990.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">AHGFL2</text>
+<polygon fill="none" stroke="#000000" points="43.2697,-5964.7 43.2697,-5983.7 150.2697,-5983.7 150.2697,-5964.7 43.2697,-5964.7"/>
+<text text-anchor="start" x="46.2697" y="-5970.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="43.2697,-5945.7 43.2697,-5964.7 67.2697,-5964.7 67.2697,-5945.7 43.2697,-5945.7"/>
+<polygon fill="none" stroke="#000000" points="43.2697,-5945.7 43.2697,-5964.7 67.2697,-5964.7 67.2697,-5945.7 43.2697,-5945.7"/>
+<text text-anchor="start" x="46.2697" y="-5951.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="67.2697,-5945.7 67.2697,-5964.7 123.2697,-5964.7 123.2697,-5945.7 67.2697,-5945.7"/>
+<polygon fill="none" stroke="#000000" points="67.2697,-5945.7 67.2697,-5964.7 123.2697,-5964.7 123.2697,-5945.7 67.2697,-5945.7"/>
+<text text-anchor="start" x="75.6504" y="-5951.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">219 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="123.2697,-5945.7 123.2697,-5964.7 150.2697,-5964.7 150.2697,-5945.7 123.2697,-5945.7"/>
+<polygon fill="none" stroke="#000000" points="123.2697,-5945.7 123.2697,-5964.7 150.2697,-5964.7 150.2697,-5945.7 123.2697,-5945.7"/>
+<text text-anchor="start" x="131.675" y="-5951.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
 </a>
 </g>
 </g>
 <!-- global_SiteMaster&#45;&gt;global_rivID -->
-<g id="edge165" class="edge">
+<g id="edge166" class="edge">
 <title>global_SiteMaster:w&#45;&gt;global_rivID:e</title>
-<path fill="none" stroke="#000000" d="M202.8506,-5955.7C184.0056,-5955.7 174.5804,-5955.7 150.2697,-5955.7"/>
-<polygon fill="#000000" stroke="#000000" points="209.2697,-5955.7001 217.2697,-5959.3 213.2697,-5955.7 217.2697,-5955.7 217.2697,-5955.7 217.2697,-5955.7 213.2697,-5955.7 217.2696,-5952.1 209.2697,-5955.7001 209.2697,-5955.7001"/>
-<ellipse fill="none" stroke="#000000" cx="206.0697" cy="-5955.7001" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M202.925,-5967.9528C181.0619,-5979.3369 182.2212,-6016.7 150.2697,-6016.7"/>
+<polygon fill="#000000" stroke="#000000" points="209.4677,-5966.4692 218.0658,-5968.2109 213.3687,-5965.5846 217.2697,-5964.7 217.2697,-5964.7 217.2697,-5964.7 213.3687,-5965.5846 216.4735,-5961.1891 209.4677,-5966.4692 209.4677,-5966.4692"/>
+<ellipse fill="none" stroke="#000000" cx="206.347" cy="-5967.1769" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_ibraID -->
 <g id="node63" class="node">
 <title>global_ibraID</title>
 <g id="a_node63"><a xlink:href="../../tables/global_ibraID.html" xlink:title="global_ibraID" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="38.7697,-5737.2 38.7697,-5864.2 153.7697,-5864.2 153.7697,-5737.2 38.7697,-5737.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="39.2697,-5840.7 39.2697,-5863.7 154.2697,-5863.7 154.2697,-5840.7 39.2697,-5840.7"/>
-<polygon fill="none" stroke="#000000" points="39.2697,-5840.7 39.2697,-5863.7 154.2697,-5863.7 154.2697,-5840.7 39.2697,-5840.7"/>
-<text text-anchor="start" x="44.2697" y="-5849.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_ibraID</text>
-<text text-anchor="start" x="119.7915" y="-5848.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="39.2697,-5818.7 39.2697,-5840.7 154.2697,-5840.7 154.2697,-5818.7 39.2697,-5818.7"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="44.2697" y="-5835.7"/>
-<text text-anchor="start" x="66.2697" y="-5825.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRAID</text>
-<polygon fill="#ffffff" stroke="transparent" points="39.2697,-5796.7 39.2697,-5818.7 154.2697,-5818.7 154.2697,-5796.7 39.2697,-5796.7"/>
-<polygon fill="none" stroke="#000000" points="39.2697,-5796.7 39.2697,-5818.7 154.2697,-5818.7 154.2697,-5796.7 39.2697,-5796.7"/>
-<text text-anchor="start" x="66.2697" y="-5803.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRACODE</text>
-<polygon fill="#ffffff" stroke="transparent" points="39.2697,-5774.7 39.2697,-5796.7 154.2697,-5796.7 154.2697,-5774.7 39.2697,-5774.7"/>
-<polygon fill="none" stroke="#000000" points="39.2697,-5774.7 39.2697,-5796.7 154.2697,-5796.7 154.2697,-5774.7 39.2697,-5774.7"/>
-<text text-anchor="start" x="66.2697" y="-5781.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRAREGION</text>
-<polygon fill="none" stroke="#000000" points="39.2697,-5755.7 39.2697,-5774.7 154.2697,-5774.7 154.2697,-5755.7 39.2697,-5755.7"/>
-<text text-anchor="start" x="42.2697" y="-5761.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="39.2697,-5736.7 39.2697,-5755.7 70.2697,-5755.7 70.2697,-5736.7 39.2697,-5736.7"/>
-<polygon fill="none" stroke="#000000" points="39.2697,-5736.7 39.2697,-5755.7 70.2697,-5755.7 70.2697,-5736.7 39.2697,-5736.7"/>
-<text text-anchor="start" x="42.2697" y="-5742.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="70.2697,-5736.7 70.2697,-5755.7 123.2697,-5755.7 123.2697,-5736.7 70.2697,-5736.7"/>
-<polygon fill="none" stroke="#000000" points="70.2697,-5736.7 70.2697,-5755.7 123.2697,-5755.7 123.2697,-5736.7 70.2697,-5736.7"/>
-<text text-anchor="start" x="81.7653" y="-5742.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">90 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="123.2697,-5736.7 123.2697,-5755.7 154.2697,-5755.7 154.2697,-5736.7 123.2697,-5736.7"/>
-<polygon fill="none" stroke="#000000" points="123.2697,-5736.7 123.2697,-5755.7 154.2697,-5755.7 154.2697,-5736.7 123.2697,-5736.7"/>
-<text text-anchor="start" x="135.675" y="-5742.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
+<polygon fill="#ffffff" stroke="transparent" points="38.7697,-5798.2 38.7697,-5925.2 153.7697,-5925.2 153.7697,-5798.2 38.7697,-5798.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="39.2697,-5901.7 39.2697,-5924.7 154.2697,-5924.7 154.2697,-5901.7 39.2697,-5901.7"/>
+<polygon fill="none" stroke="#000000" points="39.2697,-5901.7 39.2697,-5924.7 154.2697,-5924.7 154.2697,-5901.7 39.2697,-5901.7"/>
+<text text-anchor="start" x="44.2697" y="-5910.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_ibraID</text>
+<text text-anchor="start" x="119.7915" y="-5909.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="39.2697,-5879.7 39.2697,-5901.7 154.2697,-5901.7 154.2697,-5879.7 39.2697,-5879.7"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="44.2697" y="-5896.7"/>
+<text text-anchor="start" x="66.2697" y="-5886.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRAID</text>
+<polygon fill="#ffffff" stroke="transparent" points="39.2697,-5857.7 39.2697,-5879.7 154.2697,-5879.7 154.2697,-5857.7 39.2697,-5857.7"/>
+<polygon fill="none" stroke="#000000" points="39.2697,-5857.7 39.2697,-5879.7 154.2697,-5879.7 154.2697,-5857.7 39.2697,-5857.7"/>
+<text text-anchor="start" x="66.2697" y="-5864.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRACODE</text>
+<polygon fill="#ffffff" stroke="transparent" points="39.2697,-5835.7 39.2697,-5857.7 154.2697,-5857.7 154.2697,-5835.7 39.2697,-5835.7"/>
+<polygon fill="none" stroke="#000000" points="39.2697,-5835.7 39.2697,-5857.7 154.2697,-5857.7 154.2697,-5835.7 39.2697,-5835.7"/>
+<text text-anchor="start" x="66.2697" y="-5842.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRAREGION</text>
+<polygon fill="none" stroke="#000000" points="39.2697,-5816.7 39.2697,-5835.7 154.2697,-5835.7 154.2697,-5816.7 39.2697,-5816.7"/>
+<text text-anchor="start" x="42.2697" y="-5822.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="39.2697,-5797.7 39.2697,-5816.7 70.2697,-5816.7 70.2697,-5797.7 39.2697,-5797.7"/>
+<polygon fill="none" stroke="#000000" points="39.2697,-5797.7 39.2697,-5816.7 70.2697,-5816.7 70.2697,-5797.7 39.2697,-5797.7"/>
+<text text-anchor="start" x="42.2697" y="-5803.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="70.2697,-5797.7 70.2697,-5816.7 123.2697,-5816.7 123.2697,-5797.7 70.2697,-5797.7"/>
+<polygon fill="none" stroke="#000000" points="70.2697,-5797.7 70.2697,-5816.7 123.2697,-5816.7 123.2697,-5797.7 70.2697,-5797.7"/>
+<text text-anchor="start" x="81.7653" y="-5803.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">90 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="123.2697,-5797.7 123.2697,-5816.7 154.2697,-5816.7 154.2697,-5797.7 123.2697,-5797.7"/>
+<polygon fill="none" stroke="#000000" points="123.2697,-5797.7 123.2697,-5816.7 154.2697,-5816.7 154.2697,-5797.7 123.2697,-5797.7"/>
+<text text-anchor="start" x="135.675" y="-5803.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
 </a>
 </g>
 </g>
 <!-- global_SiteMaster&#45;&gt;global_ibraID -->
-<g id="edge163" class="edge">
+<g id="edge164" class="edge">
 <title>global_SiteMaster:w&#45;&gt;global_ibraID:e</title>
-<path fill="none" stroke="#000000" d="M202.8353,-5930.2397C171.9042,-5912.1941 202.4005,-5829.7 154.2697,-5829.7"/>
-<polygon fill="#000000" stroke="#000000" points="209.4901,-5931.835 216.4304,-5937.2008 213.3799,-5932.7675 217.2697,-5933.7 217.2697,-5933.7 217.2697,-5933.7 213.3799,-5932.7675 218.1089,-5930.1992 209.4901,-5931.835 209.4901,-5931.835"/>
-<ellipse fill="none" stroke="#000000" cx="206.3782" cy="-5931.089" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M203.264,-5939.2881C182.8464,-5927.7195 184.9028,-5890.7 154.2697,-5890.7"/>
+<polygon fill="#000000" stroke="#000000" points="209.497,-5940.8065 216.4176,-5946.1977 213.3833,-5941.7532 217.2697,-5942.7 217.2697,-5942.7 217.2697,-5942.7 213.3833,-5941.7532 218.1218,-5939.2023 209.497,-5940.8065 209.497,-5940.8065"/>
+<ellipse fill="none" stroke="#000000" cx="206.3879" cy="-5940.0491" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_SiteCode -->
 <g id="node79" class="node">
 <title>global_SiteCode</title>
 <g id="a_node79"><a xlink:href="../../tables/global_SiteCode.html" xlink:title="global_SiteCode" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="29.7697,-5593.2 29.7697,-5698.2 162.7697,-5698.2 162.7697,-5593.2 29.7697,-5593.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="30.2697,-5674.7 30.2697,-5697.7 163.2697,-5697.7 163.2697,-5674.7 30.2697,-5674.7"/>
-<polygon fill="none" stroke="#000000" points="30.2697,-5674.7 30.2697,-5697.7 163.2697,-5697.7 163.2697,-5674.7 30.2697,-5674.7"/>
-<text text-anchor="start" x="35.2697" y="-5683.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_SiteCode</text>
-<text text-anchor="start" x="128.7915" y="-5682.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="30.2697,-5652.7 30.2697,-5674.7 163.2697,-5674.7 163.2697,-5652.7 30.2697,-5652.7"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="35.2697" y="-5669.7"/>
-<text text-anchor="start" x="59.2697" y="-5659.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITECODEID</text>
-<polygon fill="none" stroke="#000000" points="30.2697,-5630.7 30.2697,-5652.7 163.2697,-5652.7 163.2697,-5630.7 30.2697,-5630.7"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="35.2697" y="-5647.7"/>
-<text text-anchor="start" x="59.2697" y="-5637.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">PARENTID</text>
-<polygon fill="none" stroke="#000000" points="30.2697,-5611.7 30.2697,-5630.7 163.2697,-5630.7 163.2697,-5611.7 30.2697,-5611.7"/>
-<text text-anchor="start" x="33.2697" y="-5617.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="30.2697,-5592.7 30.2697,-5611.7 74.2697,-5611.7 74.2697,-5592.7 30.2697,-5592.7"/>
-<polygon fill="none" stroke="#000000" points="30.2697,-5592.7 30.2697,-5611.7 74.2697,-5611.7 74.2697,-5592.7 30.2697,-5592.7"/>
-<text text-anchor="start" x="33.2697" y="-5598.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 1</text>
-<polygon fill="#ffffff" stroke="transparent" points="74.2697,-5592.7 74.2697,-5611.7 130.2697,-5611.7 130.2697,-5592.7 74.2697,-5592.7"/>
-<polygon fill="none" stroke="#000000" points="74.2697,-5592.7 74.2697,-5611.7 130.2697,-5611.7 130.2697,-5592.7 74.2697,-5592.7"/>
-<text text-anchor="start" x="88.7653" y="-5598.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">79 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="130.2697,-5592.7 130.2697,-5611.7 163.2697,-5611.7 163.2697,-5592.7 130.2697,-5592.7"/>
-<polygon fill="none" stroke="#000000" points="130.2697,-5592.7 130.2697,-5611.7 163.2697,-5611.7 163.2697,-5592.7 130.2697,-5592.7"/>
-<text text-anchor="start" x="144.675" y="-5598.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">2 &gt;</text>
+<polygon fill="#ffffff" stroke="transparent" points="29.7697,-5654.2 29.7697,-5759.2 162.7697,-5759.2 162.7697,-5654.2 29.7697,-5654.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="30.2697,-5735.7 30.2697,-5758.7 163.2697,-5758.7 163.2697,-5735.7 30.2697,-5735.7"/>
+<polygon fill="none" stroke="#000000" points="30.2697,-5735.7 30.2697,-5758.7 163.2697,-5758.7 163.2697,-5735.7 30.2697,-5735.7"/>
+<text text-anchor="start" x="35.2697" y="-5744.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_SiteCode</text>
+<text text-anchor="start" x="128.7915" y="-5743.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="30.2697,-5713.7 30.2697,-5735.7 163.2697,-5735.7 163.2697,-5713.7 30.2697,-5713.7"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="35.2697" y="-5730.7"/>
+<text text-anchor="start" x="59.2697" y="-5720.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITECODEID</text>
+<polygon fill="none" stroke="#000000" points="30.2697,-5691.7 30.2697,-5713.7 163.2697,-5713.7 163.2697,-5691.7 30.2697,-5691.7"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="35.2697" y="-5708.7"/>
+<text text-anchor="start" x="59.2697" y="-5698.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">PARENTID</text>
+<polygon fill="none" stroke="#000000" points="30.2697,-5672.7 30.2697,-5691.7 163.2697,-5691.7 163.2697,-5672.7 30.2697,-5672.7"/>
+<text text-anchor="start" x="33.2697" y="-5678.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="30.2697,-5653.7 30.2697,-5672.7 74.2697,-5672.7 74.2697,-5653.7 30.2697,-5653.7"/>
+<polygon fill="none" stroke="#000000" points="30.2697,-5653.7 30.2697,-5672.7 74.2697,-5672.7 74.2697,-5653.7 30.2697,-5653.7"/>
+<text text-anchor="start" x="33.2697" y="-5659.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 1</text>
+<polygon fill="#ffffff" stroke="transparent" points="74.2697,-5653.7 74.2697,-5672.7 130.2697,-5672.7 130.2697,-5653.7 74.2697,-5653.7"/>
+<polygon fill="none" stroke="#000000" points="74.2697,-5653.7 74.2697,-5672.7 130.2697,-5672.7 130.2697,-5653.7 74.2697,-5653.7"/>
+<text text-anchor="start" x="88.7653" y="-5659.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">79 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="130.2697,-5653.7 130.2697,-5672.7 163.2697,-5672.7 163.2697,-5653.7 130.2697,-5653.7"/>
+<polygon fill="none" stroke="#000000" points="130.2697,-5653.7 130.2697,-5672.7 163.2697,-5672.7 163.2697,-5653.7 130.2697,-5653.7"/>
+<text text-anchor="start" x="144.675" y="-5659.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">2 &gt;</text>
 </a>
 </g>
 </g>
 <!-- global_SiteMaster&#45;&gt;global_SiteCode -->
-<g id="edge166" class="edge">
+<g id="edge167" class="edge">
 <title>global_SiteMaster:w&#45;&gt;global_SiteCode:e</title>
-<path fill="none" stroke="#000000" d="M202.7136,-5909.9839C120.5455,-5888.0725 270.5665,-5663.7 163.2697,-5663.7"/>
-<polygon fill="#000000" stroke="#000000" points="209.3247,-5910.7633 216.8481,-5915.2752 213.2972,-5911.2316 217.2697,-5911.7 217.2697,-5911.7 217.2697,-5911.7 213.2972,-5911.2316 217.6912,-5908.1248 209.3247,-5910.7633 209.3247,-5910.7633"/>
-<ellipse fill="none" stroke="#000000" cx="206.1467" cy="-5910.3886" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M202.7656,-5918.4988C141.9042,-5896.9656 247.9791,-5724.7 163.2697,-5724.7"/>
+<polygon fill="#000000" stroke="#000000" points="209.3602,-5919.4996 216.7295,-5924.2592 213.315,-5920.0998 217.2697,-5920.7 217.2697,-5920.7 217.2697,-5920.7 213.315,-5920.0998 217.8098,-5917.1408 209.3602,-5919.4996 209.3602,-5919.4996"/>
+<ellipse fill="none" stroke="#000000" cx="206.1965" cy="-5919.0194" rx="3.2" ry="3.2"/>
+</g>
+<!-- global_biomeID -->
+<g id="node83" class="node">
+<title>global_biomeID</title>
+<g id="a_node83"><a xlink:href="../../tables/global_biomeID.html" xlink:title="global_biomeID" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="32.2697,-5488.2 32.2697,-5615.2 160.2697,-5615.2 160.2697,-5488.2 32.2697,-5488.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="32.2697,-5591.7 32.2697,-5614.7 160.2697,-5614.7 160.2697,-5591.7 32.2697,-5591.7"/>
+<polygon fill="none" stroke="#000000" points="32.2697,-5591.7 32.2697,-5614.7 160.2697,-5614.7 160.2697,-5591.7 32.2697,-5591.7"/>
+<text text-anchor="start" x="37.2697" y="-5600.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_biomeID</text>
+<text text-anchor="start" x="125.7915" y="-5599.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="32.2697,-5569.7 32.2697,-5591.7 160.2697,-5591.7 160.2697,-5569.7 32.2697,-5569.7"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="37.2697" y="-5586.7"/>
+<text text-anchor="start" x="61.2697" y="-5576.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BIOMEID</text>
+<polygon fill="#ffffff" stroke="transparent" points="32.2697,-5547.7 32.2697,-5569.7 160.2697,-5569.7 160.2697,-5547.7 32.2697,-5547.7"/>
+<polygon fill="none" stroke="#000000" points="32.2697,-5547.7 32.2697,-5569.7 160.2697,-5569.7 160.2697,-5547.7 32.2697,-5547.7"/>
+<text text-anchor="start" x="61.2697" y="-5554.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BIOMETYPE</text>
+<polygon fill="none" stroke="#000000" points="32.2697,-5525.7 32.2697,-5547.7 160.2697,-5547.7 160.2697,-5525.7 32.2697,-5525.7"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="37.2697" y="-5542.7"/>
+<text text-anchor="start" x="61.2697" y="-5532.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">PARENTID</text>
+<polygon fill="none" stroke="#000000" points="32.2697,-5506.7 32.2697,-5525.7 160.2697,-5525.7 160.2697,-5506.7 32.2697,-5506.7"/>
+<text text-anchor="start" x="35.2697" y="-5512.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="32.2697,-5487.7 32.2697,-5506.7 74.2697,-5506.7 74.2697,-5487.7 32.2697,-5487.7"/>
+<polygon fill="none" stroke="#000000" points="32.2697,-5487.7 32.2697,-5506.7 74.2697,-5506.7 74.2697,-5487.7 32.2697,-5487.7"/>
+<text text-anchor="start" x="35.2697" y="-5493.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 1</text>
+<polygon fill="#ffffff" stroke="transparent" points="74.2697,-5487.7 74.2697,-5506.7 128.2697,-5506.7 128.2697,-5487.7 74.2697,-5487.7"/>
+<polygon fill="none" stroke="#000000" points="74.2697,-5487.7 74.2697,-5506.7 128.2697,-5506.7 128.2697,-5487.7 74.2697,-5487.7"/>
+<text text-anchor="start" x="86.7653" y="-5493.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">63 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="128.2697,-5487.7 128.2697,-5506.7 160.2697,-5506.7 160.2697,-5487.7 128.2697,-5487.7"/>
+<polygon fill="none" stroke="#000000" points="128.2697,-5487.7 128.2697,-5506.7 160.2697,-5506.7 160.2697,-5487.7 128.2697,-5487.7"/>
+<text text-anchor="start" x="141.675" y="-5493.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">2 &gt;</text>
+</a>
+</g>
+</g>
+<!-- global_SiteMaster&#45;&gt;global_biomeID -->
+<g id="edge163" class="edge">
+<title>global_SiteMaster:w&#45;&gt;global_biomeID:e</title>
+<path fill="none" stroke="#000000" d="M203.4807,-5893.4458C157.7486,-5852.0998 226.594,-5580.7 160.2697,-5580.7"/>
+<polygon fill="#000000" stroke="#000000" points="209.794,-5895.8514 215.9878,-5902.0641 213.5318,-5897.2757 217.2697,-5898.7 217.2697,-5898.7 217.2697,-5898.7 213.5318,-5897.2757 218.5515,-5895.3359 209.794,-5895.8514 209.794,-5895.8514"/>
+<ellipse fill="none" stroke="#000000" cx="206.8037" cy="-5894.712" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_SiteMaster&#45;&gt;global_MetaSite -->
-<g id="edge164" class="edge">
+<g id="edge165" class="edge">
 <title>global_SiteMaster:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" d="M203.3705,-5981.655C180.3601,-5998.0348 199.5406,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="209.5751,-5979.8895 218.255,-5981.1625 213.4224,-5978.7948 217.2697,-5977.7 217.2697,-5977.7 217.2697,-5977.7 213.4224,-5978.7948 216.2844,-5974.2375 209.5751,-5979.8895 209.5751,-5979.8895"/>
-<ellipse fill="none" stroke="#000000" cx="206.4973" cy="-5980.7654" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M203.0057,-5989.7505C164.7457,-6009.6965 220.0176,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="209.4466,-5988.3731 218.0226,-5990.2204 213.3581,-5987.5366 217.2697,-5986.7 217.2697,-5986.7 217.2697,-5986.7 213.3581,-5987.5366 216.5168,-5983.1796 209.4466,-5988.3731 209.4466,-5988.3731"/>
+<ellipse fill="none" stroke="#000000" cx="206.3173" cy="-5989.0424" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_v3_basins_EPSG3857 -->
 <g id="node6" class="node">
@@ -1238,9 +1280,9 @@
 <!-- fos_Sample&#45;&gt;global_SiteMaster -->
 <g id="edge150" class="edge">
 <title>fos_Sample:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" d="M468.6051,-5833.9055C435.4928,-5839.8646 428.4166,-5867.1949 403.7697,-5899.7 374.2674,-5938.6084 407.0984,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="475.2966,-5833.3555 483.5646,-5836.2879 479.2831,-5833.0277 483.2697,-5832.7 483.2697,-5832.7 483.2697,-5832.7 479.2831,-5833.0277 482.9747,-5829.1121 475.2966,-5833.3555 475.2966,-5833.3555"/>
-<ellipse fill="none" stroke="#000000" cx="472.1073" cy="-5833.6177" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M468.5838,-5833.8896C435.3719,-5839.7744 427.9006,-5866.81 403.7697,-5899.7 372.7158,-5942.0257 410.7654,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="475.2958,-5833.346 483.5604,-5836.2882 479.2827,-5833.023 483.2697,-5832.7 483.2697,-5832.7 483.2697,-5832.7 479.2827,-5833.023 482.979,-5829.1118 475.2958,-5833.346 475.2958,-5833.346"/>
+<ellipse fill="none" stroke="#000000" cx="472.1062" cy="-5833.6044" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_depositID -->
 <g id="node10" class="node">
@@ -1313,7 +1355,7 @@
 <!-- arch_Sample&#45;&gt;global_SiteMaster -->
 <g id="edge48" class="edge">
 <title>arch_Sample:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" d="M465.6649,-1086.75C432.0585,-1091.9799 420.376,-1116.42 403.7697,-1152.7 376.6004,-1212.0568 373.7666,-5787.4894 370.7697,-5852.7 367.7594,-5918.2 423.8388,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" d="M465.6649,-1086.75C432.0586,-1091.9799 420.3764,-1116.4202 403.7697,-1152.7 376.6749,-1211.8923 373.4012,-5774.6544 370.7697,-5839.7 367.7251,-5914.9547 433.586,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="472.2903,-1086.2737 480.5278,-1089.2907 476.28,-1085.9869 480.2697,-1085.7 480.2697,-1085.7 480.2697,-1085.7 476.28,-1085.9869 480.0115,-1082.1093 472.2903,-1086.2737 472.2903,-1086.2737"/>
 <ellipse fill="none" stroke="#000000" cx="469.0985" cy="-1086.5032" rx="3.2" ry="3.2"/>
 </g>
@@ -1394,7 +1436,7 @@
 <!-- crn_int_basins&#45;&gt;global_SiteMaster -->
 <g id="edge101" class="edge">
 <title>crn_int_basins:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.8962,-8053.5341C405.0777,-8043.688 419.6781,-7973.1972 403.7697,-7907.7 391.2568,-7856.1828 411.2847,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.8963,-8053.534C405.0782,-8043.6878 419.6818,-7973.1963 403.7697,-7907.7 391.3129,-7856.4263 411.0348,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="467.2959,-8054.0531 474.9786,-8058.2882 471.2828,-8054.3766 475.2697,-8054.7 475.2697,-8054.7 475.2697,-8054.7 471.2828,-8054.3766 475.5608,-8051.1118 467.2959,-8054.0531 467.2959,-8054.0531"/>
 <ellipse fill="none" stroke="#000000" cx="464.1063" cy="-8053.7944" rx="3.2" ry="3.2"/>
 </g>
@@ -1467,16 +1509,16 @@
 <!-- crn_int_basins&#45;&gt;global_dbDOI -->
 <g id="edge97" class="edge">
 <title>crn_int_basins:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.8104,-8075.6148C396.9948,-8065.2413 419.4968,-7982.3617 403.7697,-7907.7 353.3101,-7668.1516 387.2921,-5948.947 370.7697,-5704.7 364.6362,-5614.0303 437.1466,-5501.7 346.2697,-5501.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.8104,-8075.6148C396.9944,-8065.2414 419.4935,-7982.3624 403.7697,-7907.7 353.023,-7666.7361 388.3775,-5937.3192 370.7697,-5691.7 364.6816,-5606.7743 431.4133,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="467.2921,-8076.1012 475.0002,-8080.2899 471.2809,-8076.4006 475.2697,-8076.7 475.2697,-8076.7 475.2697,-8076.7 471.2809,-8076.4006 475.5391,-8073.1101 467.2921,-8076.1012 467.2921,-8076.1012"/>
 <ellipse fill="none" stroke="#000000" cx="464.1011" cy="-8075.8617" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_int_basins&#45;&gt;global_MetaSite -->
 <g id="edge98" class="edge">
 <title>crn_int_basins:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.7589,-8032.398C292.7951,-8025.2606 268.67,-7892.5089 203.7697,-7728.7 186.6875,-7685.5845 207.6458,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="467.2714,-8032.5335 475.1947,-8036.2992 471.2705,-8032.6167 475.2697,-8032.7 475.2697,-8032.7 475.2697,-8032.7 471.2705,-8032.6167 475.3446,-8029.1008 467.2714,-8032.5335 467.2714,-8032.5335"/>
-<ellipse fill="none" stroke="#000000" cx="464.0721" cy="-8032.4669" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.7591,-8032.3979C292.7994,-8025.2589 268.749,-7892.4775 203.7697,-7728.7 187.2914,-7687.1672 205.9519,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="467.2714,-8032.5334 475.1947,-8036.2992 471.2705,-8032.6167 475.2697,-8032.7 475.2697,-8032.7 475.2697,-8032.7 471.2705,-8032.6167 475.3446,-8029.1008 467.2714,-8032.5334 467.2714,-8032.5334"/>
+<ellipse fill="none" stroke="#000000" cx="464.0721" cy="-8032.4668" rx="3.2" ry="3.2"/>
 </g>
 <!-- expage_Sample -->
 <g id="node14" class="node">
@@ -1513,48 +1555,48 @@
 <!-- expage_Sample&#45;&gt;global_SiteMaster -->
 <g id="edge129" class="edge">
 <title>expage_Sample:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" d="M457.5334,-6385.1912C423.4011,-6377.457 421.0735,-6341.0888 403.7697,-6301.7 376.4724,-6239.5631 426.1382,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="464.3113,-6385.8851 471.903,-6390.2813 468.2905,-6386.2926 472.2697,-6386.7 472.2697,-6386.7 472.2697,-6386.7 468.2905,-6386.2926 472.6364,-6383.1187 464.3113,-6385.8851 464.3113,-6385.8851"/>
-<ellipse fill="none" stroke="#000000" cx="461.1279" cy="-6385.5592" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M457.5368,-6385.1897C423.4213,-6377.4481 421.1625,-6341.0496 403.7697,-6301.7 377.1312,-6241.4332 424.1612,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="464.3114,-6385.8841 471.9025,-6390.2812 468.2905,-6386.2921 472.2697,-6386.7 472.2697,-6386.7 472.2697,-6386.7 468.2905,-6386.2921 472.6368,-6383.1188 464.3114,-6385.8841 464.3114,-6385.8841"/>
+<ellipse fill="none" stroke="#000000" cx="461.1281" cy="-6385.5578" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_GrainSize -->
 <g id="node86" class="node">
 <title>global_GrainSize</title>
 <g id="a_node86"><a xlink:href="../../tables/global_GrainSize.html" xlink:title="global_GrainSize" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="219.2697,-5715.2 219.2697,-5842.2 355.2697,-5842.2 355.2697,-5715.2 219.2697,-5715.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="219.2697,-5818.7 219.2697,-5841.7 355.2697,-5841.7 355.2697,-5818.7 219.2697,-5818.7"/>
-<polygon fill="none" stroke="#000000" points="219.2697,-5818.7 219.2697,-5841.7 355.2697,-5841.7 355.2697,-5818.7 219.2697,-5818.7"/>
-<text text-anchor="start" x="224.2697" y="-5827.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_GrainSize</text>
-<text text-anchor="start" x="320.7915" y="-5826.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="219.2697,-5796.7 219.2697,-5818.7 355.2697,-5818.7 355.2697,-5796.7 219.2697,-5796.7"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="224.27" y="-5813.7"/>
-<text text-anchor="start" x="248.2697" y="-5803.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">GRNSIZEID</text>
-<polygon fill="#ffffff" stroke="transparent" points="219.2697,-5774.7 219.2697,-5796.7 355.2697,-5796.7 355.2697,-5774.7 219.2697,-5774.7"/>
-<polygon fill="none" stroke="#000000" points="219.2697,-5774.7 219.2697,-5796.7 355.2697,-5796.7 355.2697,-5774.7 219.2697,-5774.7"/>
-<text text-anchor="start" x="248.2697" y="-5781.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">GRNSIZE</text>
-<polygon fill="#ffffff" stroke="transparent" points="219.2697,-5752.7 219.2697,-5774.7 355.2697,-5774.7 355.2697,-5752.7 219.2697,-5752.7"/>
-<polygon fill="none" stroke="#000000" points="219.2697,-5752.7 219.2697,-5774.7 355.2697,-5774.7 355.2697,-5752.7 219.2697,-5752.7"/>
-<text text-anchor="start" x="248.2697" y="-5759.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">GRNSIZEABB</text>
-<polygon fill="none" stroke="#000000" points="219.2697,-5733.7 219.2697,-5752.7 355.2697,-5752.7 355.2697,-5733.7 219.2697,-5733.7"/>
-<text text-anchor="start" x="222.2697" y="-5739.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="219.2697,-5714.7 219.2697,-5733.7 260.2697,-5733.7 260.2697,-5714.7 219.2697,-5714.7"/>
-<polygon fill="none" stroke="#000000" points="219.2697,-5714.7 219.2697,-5733.7 260.2697,-5733.7 260.2697,-5714.7 219.2697,-5714.7"/>
-<text text-anchor="start" x="222.2697" y="-5720.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="260.2697,-5714.7 260.2697,-5733.7 319.2697,-5733.7 319.2697,-5714.7 260.2697,-5714.7"/>
-<polygon fill="none" stroke="#000000" points="260.2697,-5714.7 260.2697,-5733.7 319.2697,-5733.7 319.2697,-5714.7 260.2697,-5714.7"/>
-<text text-anchor="start" x="277.7653" y="-5720.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">29 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="319.2697,-5714.7 319.2697,-5733.7 355.2697,-5733.7 355.2697,-5714.7 319.2697,-5714.7"/>
-<polygon fill="none" stroke="#000000" points="319.2697,-5714.7 319.2697,-5733.7 355.2697,-5733.7 355.2697,-5714.7 319.2697,-5714.7"/>
-<text text-anchor="start" x="336.675" y="-5720.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">3 &gt;</text>
+<polygon fill="#ffffff" stroke="transparent" points="219.2697,-5702.2 219.2697,-5829.2 355.2697,-5829.2 355.2697,-5702.2 219.2697,-5702.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="219.2697,-5805.7 219.2697,-5828.7 355.2697,-5828.7 355.2697,-5805.7 219.2697,-5805.7"/>
+<polygon fill="none" stroke="#000000" points="219.2697,-5805.7 219.2697,-5828.7 355.2697,-5828.7 355.2697,-5805.7 219.2697,-5805.7"/>
+<text text-anchor="start" x="224.2697" y="-5814.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_GrainSize</text>
+<text text-anchor="start" x="320.7915" y="-5813.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="219.2697,-5783.7 219.2697,-5805.7 355.2697,-5805.7 355.2697,-5783.7 219.2697,-5783.7"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="224.27" y="-5800.7"/>
+<text text-anchor="start" x="248.2697" y="-5790.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">GRNSIZEID</text>
+<polygon fill="#ffffff" stroke="transparent" points="219.2697,-5761.7 219.2697,-5783.7 355.2697,-5783.7 355.2697,-5761.7 219.2697,-5761.7"/>
+<polygon fill="none" stroke="#000000" points="219.2697,-5761.7 219.2697,-5783.7 355.2697,-5783.7 355.2697,-5761.7 219.2697,-5761.7"/>
+<text text-anchor="start" x="248.2697" y="-5768.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">GRNSIZE</text>
+<polygon fill="#ffffff" stroke="transparent" points="219.2697,-5739.7 219.2697,-5761.7 355.2697,-5761.7 355.2697,-5739.7 219.2697,-5739.7"/>
+<polygon fill="none" stroke="#000000" points="219.2697,-5739.7 219.2697,-5761.7 355.2697,-5761.7 355.2697,-5739.7 219.2697,-5739.7"/>
+<text text-anchor="start" x="248.2697" y="-5746.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">GRNSIZEABB</text>
+<polygon fill="none" stroke="#000000" points="219.2697,-5720.7 219.2697,-5739.7 355.2697,-5739.7 355.2697,-5720.7 219.2697,-5720.7"/>
+<text text-anchor="start" x="222.2697" y="-5726.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="219.2697,-5701.7 219.2697,-5720.7 260.2697,-5720.7 260.2697,-5701.7 219.2697,-5701.7"/>
+<polygon fill="none" stroke="#000000" points="219.2697,-5701.7 219.2697,-5720.7 260.2697,-5720.7 260.2697,-5701.7 219.2697,-5701.7"/>
+<text text-anchor="start" x="222.2697" y="-5707.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="260.2697,-5701.7 260.2697,-5720.7 319.2697,-5720.7 319.2697,-5701.7 260.2697,-5701.7"/>
+<polygon fill="none" stroke="#000000" points="260.2697,-5701.7 260.2697,-5720.7 319.2697,-5720.7 319.2697,-5701.7 260.2697,-5701.7"/>
+<text text-anchor="start" x="277.7653" y="-5707.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">29 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="319.2697,-5701.7 319.2697,-5720.7 355.2697,-5720.7 355.2697,-5701.7 319.2697,-5701.7"/>
+<polygon fill="none" stroke="#000000" points="319.2697,-5701.7 319.2697,-5720.7 355.2697,-5720.7 355.2697,-5701.7 319.2697,-5701.7"/>
+<text text-anchor="start" x="336.675" y="-5707.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">3 &gt;</text>
 </a>
 </g>
 </g>
 <!-- expage_Sample&#45;&gt;global_GrainSize -->
 <g id="edge128" class="edge">
 <title>expage_Sample:w&#45;&gt;global_GrainSize:e</title>
-<path fill="none" stroke="#000000" d="M457.7925,-6363.4464C428.4045,-6357.8679 419.4509,-6334.1393 403.7697,-6301.7 379.7661,-6252.0446 410.4225,-5807.7 355.2697,-5807.7"/>
-<polygon fill="#000000" stroke="#000000" points="464.2995,-6364.0098 471.9591,-6368.2866 468.2846,-6364.3549 472.2697,-6364.7 472.2697,-6364.7 472.2697,-6364.7 468.2846,-6364.3549 472.5803,-6361.1134 464.2995,-6364.0098 464.2995,-6364.0098"/>
-<ellipse fill="none" stroke="#000000" cx="461.1114" cy="-6363.7337" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M457.7908,-6363.4472C428.3959,-6357.8721 419.4175,-6334.1554 403.7697,-6301.7 379.1928,-6250.7249 411.8602,-5794.7 355.2697,-5794.7"/>
+<polygon fill="#000000" stroke="#000000" points="464.2994,-6364.0103 471.9593,-6368.2866 468.2846,-6364.3552 472.2697,-6364.7 472.2697,-6364.7 472.2697,-6364.7 468.2846,-6364.3552 472.58,-6361.1134 464.2994,-6364.0103 464.2994,-6364.0103"/>
+<ellipse fill="none" stroke="#000000" cx="461.1114" cy="-6363.7345" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_faciesID -->
 <g id="node15" class="node">
@@ -1657,25 +1699,25 @@
 </g>
 </g>
 <!-- sahulsed_aeolian_osl&#45;&gt;global_SiteMaster -->
-<g id="edge179" class="edge">
+<g id="edge180" class="edge">
 <title>sahulsed_aeolian_osl:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M440.6499,-7026.8555C406.5511,-7017.0463 415.3283,-6969.7933 403.7697,-6925.7 390.709,-6875.8769 409.7762,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="447.3326,-7027.6985 454.819,-7032.2717 451.3011,-7028.1993 455.2697,-7028.7 455.2697,-7028.7 455.2697,-7028.7 451.3011,-7028.1993 455.7203,-7025.1283 447.3326,-7027.6985 447.3326,-7027.6985"/>
-<ellipse fill="none" stroke="#000000" cx="444.1578" cy="-7027.298" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M440.6503,-7026.8554C406.5534,-7017.0457 415.3389,-6969.7906 403.7697,-6925.7 390.8238,-6876.3631 409.2768,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="447.3326,-7027.6985 454.819,-7032.2717 451.3011,-7028.1992 455.2697,-7028.7 455.2697,-7028.7 455.2697,-7028.7 451.3011,-7028.1992 455.7204,-7025.1283 447.3326,-7027.6985 447.3326,-7027.6985"/>
+<ellipse fill="none" stroke="#000000" cx="444.1578" cy="-7027.2979" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_aeolian_osl&#45;&gt;global_dbDOI -->
-<g id="edge177" class="edge">
+<g id="edge178" class="edge">
 <title>sahulsed_aeolian_osl:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M440.6849,-7049.0829C398.7656,-7038.605 415.0874,-6979.0837 403.7697,-6925.7 347.4751,-6660.1694 390.7195,-5975.3983 370.7697,-5704.7 364.0904,-5614.0689 437.1466,-5501.7 346.2697,-5501.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M440.6847,-7049.083C398.7642,-7038.6053 415.0798,-6979.0853 403.7697,-6925.7 346.9144,-6657.3363 392.0049,-5965.1971 370.7697,-5691.7 364.1787,-5606.8119 431.4133,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="447.3184,-7049.8184 454.8729,-7054.2781 451.294,-7050.2592 455.2697,-7050.7 455.2697,-7050.7 455.2697,-7050.7 451.294,-7050.2592 455.6664,-7047.1219 447.3184,-7049.8184 447.3184,-7049.8184"/>
 <ellipse fill="none" stroke="#000000" cx="444.1379" cy="-7049.4657" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_aeolian_osl&#45;&gt;global_MetaSite -->
-<g id="edge178" class="edge">
+<g id="edge179" class="edge">
 <title>sahulsed_aeolian_osl:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M441.1845,-7009.9899C396.9578,-7029.3738 369.5134,-7110.2797 203.7697,-6572.7 186.9183,-6518.0435 218.4649,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="447.4794,-7008.5197 456.0885,-7010.2056 451.3745,-7007.6098 455.2697,-7006.7 455.2697,-7006.7 455.2697,-7006.7 451.3745,-7007.6098 454.4508,-7003.1944 447.4794,-7008.5197 447.4794,-7008.5197"/>
-<ellipse fill="none" stroke="#000000" cx="444.3632" cy="-7009.2475" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M441.0652,-7010.192C401.6259,-7027.234 363.4583,-7082.1615 203.7697,-6591.7 187.5019,-6541.7357 213.8156,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="447.501,-7008.6099 456.1291,-7010.1959 451.3853,-7007.6549 455.2697,-7006.7 455.2697,-7006.7 455.2697,-7006.7 451.3853,-7007.6549 454.4102,-7003.2041 447.501,-7008.6099 447.501,-7008.6099"/>
+<ellipse fill="none" stroke="#000000" cx="444.3935" cy="-7009.3738" rx="3.2" ry="3.2"/>
 </g>
 <!-- expage_points_EPSG3857 -->
 <g id="node19" class="node">
@@ -1810,8 +1852,8 @@
 <!-- crn_xxl_basins&#45;&gt;global_SiteMaster -->
 <g id="edge115" class="edge">
 <title>crn_xxl_basins:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M459.5952,-7839.4685C404.4292,-7829.3683 419.5207,-7758.9052 403.7697,-7693.7 392.7167,-7647.9435 405.3422,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="466.2977,-7840.0309 473.9686,-7844.2874 470.2837,-7840.3655 474.2697,-7840.7 474.2697,-7840.7 474.2697,-7840.7 470.2837,-7840.3655 474.5707,-7837.1126 466.2977,-7840.0309 466.2977,-7840.0309"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M459.5953,-7839.4685C404.4299,-7829.3682 419.5254,-7758.9041 403.7697,-7693.7 392.7721,-7648.1872 405.0923,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="466.2977,-7840.0309 473.9686,-7844.2874 470.2837,-7840.3655 474.2697,-7840.7 474.2697,-7840.7 474.2697,-7840.7 470.2837,-7840.3655 474.5708,-7837.1126 466.2977,-7840.0309 466.2977,-7840.0309"/>
 <ellipse fill="none" stroke="#000000" cx="463.1089" cy="-7839.7633" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_xxl_basins&#45;&gt;global_Author -->
@@ -1831,16 +1873,16 @@
 <!-- crn_xxl_basins&#45;&gt;global_dbDOI -->
 <g id="edge111" class="edge">
 <title>crn_xxl_basins:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M459.8495,-7861.6132C396.2496,-7851.2244 419.3362,-7768.2309 403.7697,-7693.7 358.5803,-7477.3383 385.8652,-5925.2143 370.7697,-5704.7 364.5631,-5614.0353 437.1466,-5501.7 346.2697,-5501.7"/>
-<polygon fill="#000000" stroke="#000000" points="466.2923,-7862.0987 473.9991,-7866.2898 470.281,-7862.3994 474.2697,-7862.7 474.2697,-7862.7 474.2697,-7862.7 470.281,-7862.3994 474.5403,-7859.1102 466.2923,-7862.0987 466.2923,-7862.0987"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M459.8494,-7861.6132C396.249,-7851.2245 419.3322,-7768.2317 403.7697,-7693.7 358.2967,-7475.9222 386.8541,-5913.5925 370.7697,-5691.7 364.614,-5606.7792 431.4133,-5501.7 346.2697,-5501.7"/>
+<polygon fill="#000000" stroke="#000000" points="466.2923,-7862.0987 473.9991,-7866.2898 470.281,-7862.3994 474.2697,-7862.7 474.2697,-7862.7 474.2697,-7862.7 470.281,-7862.3994 474.5402,-7859.1102 466.2923,-7862.0987 466.2923,-7862.0987"/>
 <ellipse fill="none" stroke="#000000" cx="463.1013" cy="-7861.8582" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_xxl_basins&#45;&gt;global_MetaSite -->
 <g id="edge112" class="edge">
 <title>crn_xxl_basins:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M459.6959,-7818.5041C325.3042,-7814.8073 271.1617,-7758.6276 203.7697,-7635.7 161.6643,-7558.8971 248.8571,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="466.2704,-7818.5924 474.2213,-7822.2997 470.27,-7818.6462 474.2697,-7818.7 474.2697,-7818.7 474.2697,-7818.7 470.27,-7818.6462 474.3181,-7815.1003 466.2704,-7818.5924 466.2704,-7818.5924"/>
-<ellipse fill="none" stroke="#000000" cx="463.0707" cy="-7818.5494" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M459.6962,-7818.5039C325.3088,-7814.8048 271.2284,-7758.591 203.7697,-7635.7 163.2528,-7561.8895 245.4694,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="466.2704,-7818.5923 474.2212,-7822.2997 470.27,-7818.6462 474.2697,-7818.7 474.2697,-7818.7 474.2697,-7818.7 470.27,-7818.6462 474.3181,-7815.1003 466.2704,-7818.5923 466.2704,-7818.5923"/>
+<ellipse fill="none" stroke="#000000" cx="463.0707" cy="-7818.5493" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_polygons_EPSG3857 -->
 <g id="node22" class="node">
@@ -2006,9 +2048,9 @@
 <!-- fossahul_webmercator_nrand_25000&#45;&gt;global_SiteMaster -->
 <g id="edge153" class="edge">
 <title>fossahul_webmercator_nrand_25000:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M399.015,-6851.7855C330.4664,-6770.4911 448.8594,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="405.1768,-6854.9999 410.6046,-6861.8918 408.7232,-6856.8499 412.2697,-6858.7 412.2697,-6858.7 412.2697,-6858.7 408.7232,-6856.8499 413.9347,-6855.5082 405.1768,-6854.9999 405.1768,-6854.9999"/>
-<ellipse fill="none" stroke="#000000" cx="402.3396" cy="-6853.5198" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M399.1487,-6851.858C331.2622,-6771.4153 447.914,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="405.1762,-6855.001 410.6051,-6861.8921 408.7229,-6856.8505 412.2697,-6858.7 412.2697,-6858.7 412.2697,-6858.7 408.7229,-6856.8505 413.9342,-6855.5079 405.1762,-6855.001 405.1762,-6855.001"/>
+<ellipse fill="none" stroke="#000000" cx="402.3388" cy="-6853.5214" rx="3.2" ry="3.2"/>
 </g>
 <!-- fossahul_webmercator_nrand_25000&#45;&gt;global_dbDOI -->
 <g id="edge151" class="edge">
@@ -2020,9 +2062,9 @@
 <!-- fossahul_webmercator_nrand_25000&#45;&gt;global_MetaSite -->
 <g id="edge152" class="edge">
 <title>fossahul_webmercator_nrand_25000:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M398.9423,-6830.7427C334.3938,-6777.8201 218.9678,-6388.8774 203.7697,-6334.7 187.0677,-6275.1617 223.1063,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="404.9661,-6833.4353 410.8005,-6839.9866 408.6179,-6835.0676 412.2697,-6836.7 412.2697,-6836.7 412.2697,-6836.7 408.6179,-6835.0676 413.7388,-6833.4134 404.9661,-6833.4353 404.9661,-6833.4353"/>
-<ellipse fill="none" stroke="#000000" cx="402.0447" cy="-6832.1294" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M398.7968,-6830.5264C336.526,-6778.9343 219.0711,-6420.1497 203.7697,-6369.7 187.4772,-6315.9829 217.4032,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="404.9968,-6833.3674 410.77,-6839.9728 408.6333,-6835.0337 412.2697,-6836.7 412.2697,-6836.7 412.2697,-6836.7 408.6333,-6835.0337 413.7693,-6833.4272 404.9968,-6833.3674 404.9968,-6833.3674"/>
+<ellipse fill="none" stroke="#000000" cx="402.0877" cy="-6832.0343" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_aus_basins -->
 <g id="node24" class="node">
@@ -2068,7 +2110,7 @@
 <!-- crn_aus_basins&#45;&gt;global_SiteMaster -->
 <g id="edge86" class="edge">
 <title>crn_aus_basins:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M457.6938,-7625.4638C402.9936,-7615.3259 419.2032,-7544.6196 403.7697,-7479.7 394.2567,-7439.6847 399.4002,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M457.6939,-7625.4638C402.9945,-7615.3257 419.2093,-7544.6181 403.7697,-7479.7 394.3107,-7439.9287 399.1503,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="464.2983,-7626.0239 471.9654,-7630.2871 468.284,-7626.3619 472.2697,-7626.7 472.2697,-7626.7 472.2697,-7626.7 468.284,-7626.3619 472.5739,-7623.1129 464.2983,-7626.0239 464.2983,-7626.0239"/>
 <ellipse fill="none" stroke="#000000" cx="461.1097" cy="-7625.7534" rx="3.2" ry="3.2"/>
 </g>
@@ -2089,16 +2131,16 @@
 <!-- crn_aus_basins&#45;&gt;global_dbDOI -->
 <g id="edge82" class="edge">
 <title>crn_aus_basins:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M457.5314,-7647.5439C394.8487,-7636.8451 418.9383,-7553.8285 403.7697,-7479.7 364.2254,-7286.4481 384.4382,-5901.4822 370.7697,-5704.7 364.4725,-5614.0415 437.1466,-5501.7 346.2697,-5501.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M457.5314,-7647.5439C394.848,-7636.8453 418.9332,-7553.8296 403.7697,-7479.7 363.949,-7285.0305 385.3307,-5889.8663 370.7697,-5691.7 364.5302,-5606.7853 431.4133,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="464.2942,-7648.0743 471.9881,-7652.289 468.2819,-7648.3872 472.2697,-7648.7 472.2697,-7648.7 472.2697,-7648.7 468.2819,-7648.3872 472.5512,-7645.111 464.2942,-7648.0743 464.2942,-7648.0743"/>
 <ellipse fill="none" stroke="#000000" cx="461.104" cy="-7647.8241" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_aus_basins&#45;&gt;global_MetaSite -->
 <g id="edge83" class="edge">
 <title>crn_aus_basins:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M457.8604,-7605.1224C347.6679,-7611.5685 285.8014,-7688.5119 203.7697,-7608.7 142.0672,-7548.6672 247.3576,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="464.2731,-7604.9345 472.3752,-7608.2985 468.2714,-7604.8172 472.2697,-7604.7 472.2697,-7604.7 472.2697,-7604.7 468.2714,-7604.8172 472.1641,-7601.1015 464.2731,-7604.9345 464.2731,-7604.9345"/>
-<ellipse fill="none" stroke="#000000" cx="461.0745" cy="-7605.0283" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M457.8606,-7605.1222C347.6716,-7611.5647 285.8462,-7688.4658 203.7697,-7608.7 144.4628,-7551.0628 243.97,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="464.2731,-7604.9344 472.3751,-7608.2985 468.2714,-7604.8172 472.2697,-7604.7 472.2697,-7604.7 472.2697,-7604.7 468.2714,-7604.8172 472.1642,-7601.1015 464.2731,-7604.9344 464.2731,-7604.9344"/>
+<ellipse fill="none" stroke="#000000" cx="461.0745" cy="-7605.0281" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_points_EPSG3857 -->
 <g id="node27" class="node">
@@ -2219,7 +2261,7 @@
 </g>
 </g>
 <!-- sed&#45;osl_points_EPSG3857&#45;&gt;sed&#45;osl_DataCore -->
-<g id="edge215" class="edge">
+<g id="edge216" class="edge">
 <title>sed&#45;osl_points_EPSG3857:w&#45;&gt;sed&#45;osl_DataCore:e</title>
 <path fill="none" stroke="#000000" d="M950.8385,-3176.7C920.9077,-3176.7 909.7593,-3176.7 875.2697,-3176.7"/>
 <polygon fill="#000000" stroke="#000000" points="960.4696,-3172.7 960.4697,-3180.7 958.8697,-3180.7 958.8696,-3172.7 960.4696,-3172.7"/>
@@ -2403,21 +2445,21 @@
 </g>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_ed_procID -->
-<g id="edge221" class="edge">
+<g id="edge222" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_ed_procID:e</title>
 <path fill="none" stroke="#000000" d="M724.8188,-2365.7232C649.5664,-2331.9832 708.3292,-2021.2461 668.7697,-1938.7 649.9311,-1899.3909 646.8598,-1865.7 603.2697,-1865.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.4342,-2367.0859 738.5433,-2372.226 735.3519,-2367.893 739.2697,-2368.7 739.2697,-2368.7 739.2697,-2368.7 735.3519,-2367.893 739.996,-2365.174 731.4342,-2367.0859 731.4342,-2367.0859"/>
 <ellipse fill="none" stroke="#000000" cx="728.3" cy="-2366.4403" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;cabah_col_mtdID -->
-<g id="edge219" class="edge">
+<g id="edge220" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;cabah_col_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M724.5652,-2433.9488C612.78,-2421.7271 712.8843,-2262.7682 701.7697,-2133.7 695.1939,-2057.3393 699.9241,-1514.7257 668.7697,-1444.7 652.6096,-1408.3772 645.0251,-1381.7 605.2697,-1381.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.2801,-2434.2918 739.086,-2438.2953 735.2749,-2434.4959 739.2697,-2434.7 739.2697,-2434.7 739.2697,-2434.7 735.2749,-2434.4959 739.4534,-2431.1047 731.2801,-2434.2918 731.2801,-2434.2918"/>
 <ellipse fill="none" stroke="#000000" cx="728.0843" cy="-2434.1285" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;cabah_LabCodes -->
-<g id="edge224" class="edge">
+<g id="edge225" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;cabah_LabCodes:e</title>
 <path fill="none" stroke="#000000" d="M724.869,-2586.8971C697.948,-2579.2854 697.156,-2549.1396 668.7697,-2526.7 641.6339,-2505.249 639.86,-2481.7 605.2697,-2481.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3316,-2587.7061 738.8224,-2592.2721 735.3007,-2588.2031 739.2697,-2588.7 739.2697,-2588.7 739.2697,-2588.7 735.3007,-2588.2031 739.7169,-2585.1279 731.3316,-2587.7061 731.3316,-2587.7061"/>
@@ -2456,7 +2498,7 @@
 </g>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_agemodelID -->
-<g id="edge216" class="edge">
+<g id="edge217" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_agemodelID:e</title>
 <path fill="none" stroke="#000000" d="M724.5013,-2345.5926C650.9467,-2333.4379 713.6589,-2223.5954 701.7697,-2133.7 690.9173,-2051.6446 709.4582,-1834.7785 668.7697,-1762.7 652.1201,-1733.2059 641.1387,-1717.7 607.2697,-1717.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.2921,-2346.1017 739.0005,-2350.2899 735.2809,-2346.4009 739.2697,-2346.7 739.2697,-2346.7 739.2697,-2346.7 735.2809,-2346.4009 739.5389,-2343.1101 731.2921,-2346.1017 731.2921,-2346.1017"/>
@@ -2516,7 +2558,7 @@
 </g>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;sed_Sample -->
-<g id="edge232" class="edge">
+<g id="edge233" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;sed_Sample:e</title>
 <path fill="none" stroke="#000000" d="M724.7652,-2612.0424C643.2953,-2628.1448 687.2186,-2783.7 591.2697,-2783.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3037,-2611.4373 739.6014,-2614.2847 735.2867,-2611.0686 739.2697,-2610.7 739.2697,-2610.7 739.2697,-2610.7 735.2867,-2611.0686 738.9379,-2607.1153 731.3037,-2611.4373 731.3037,-2611.4373"/>
@@ -2555,49 +2597,49 @@
 </g>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge217" class="edge">
+<g id="edge218" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M724.8394,-2234.5266C694.9743,-2223.8641 710.077,-2175.8984 701.7697,-2133.7 683.878,-2042.8162 716.7848,-1379.9119 668.7697,-1300.7 647.9237,-1266.3099 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3589,-2235.5085 738.7335,-2240.2598 735.3143,-2236.1042 739.2697,-2236.7 739.2697,-2236.7 739.2697,-2236.7 735.3143,-2236.1042 739.8059,-2233.1402 731.3589,-2235.5085 731.3589,-2235.5085"/>
 <ellipse fill="none" stroke="#000000" cx="728.1946" cy="-2235.0318" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge218" class="edge">
+<g id="edge219" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M725.0564,-2212.1805C702.4803,-2202.5147 709.7241,-2166.6918 701.7697,-2133.7 680.0588,-2043.6522 716.7848,-1379.9119 668.7697,-1300.7 647.9237,-1266.3099 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3925,-2213.3036 738.6413,-2218.2447 735.3311,-2214.0018 739.2697,-2214.7 739.2697,-2214.7 739.2697,-2214.7 735.3311,-2214.0018 739.898,-2211.1553 731.3925,-2213.3036 731.3925,-2213.3036"/>
 <ellipse fill="none" stroke="#000000" cx="728.2416" cy="-2212.7451" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge222" class="edge">
+<g id="edge223" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M725.0655,-2189.7965C708.8378,-2181.6851 709.2997,-2157.7957 701.7697,-2133.7 674.1407,-2045.2884 716.7848,-1379.9119 668.7697,-1300.7 647.9237,-1266.3099 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.4317,-2191.0978 738.5487,-2196.2271 735.3507,-2191.8989 739.2697,-2192.7 739.2697,-2192.7 739.2697,-2192.7 735.3507,-2191.8989 739.9907,-2189.1729 731.4317,-2191.0978 731.4317,-2191.0978"/>
 <ellipse fill="none" stroke="#000000" cx="728.2966" cy="-2190.4569" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge223" class="edge">
+<g id="edge224" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M724.6775,-2256.8335C686.761,-2245.5605 710.3934,-2185.3221 701.7697,-2133.7 686.5072,-2042.3379 716.7848,-1379.9119 668.7697,-1300.7 647.9237,-1266.3099 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3343,-2257.6849 738.8129,-2262.2709 735.302,-2258.1925 739.2697,-2258.7 739.2697,-2258.7 739.2697,-2258.7 735.302,-2258.1925 739.7265,-2255.1291 731.3343,-2257.6849 731.3343,-2257.6849"/>
 <ellipse fill="none" stroke="#000000" cx="728.1602" cy="-2257.2789" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge233" class="edge">
+<g id="edge234" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M724.8489,-2301.363C668.9764,-2289.745 710.9695,-2204.6342 701.7697,-2133.7 689.856,-2041.8412 716.7848,-1379.9119 668.7697,-1300.7 647.9237,-1266.3099 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3038,-2301.9614 738.9373,-2306.2846 735.2867,-2302.3307 739.2697,-2302.7 739.2697,-2302.7 739.2697,-2302.7 735.2867,-2302.3307 739.602,-2299.1154 731.3038,-2301.9614 731.3038,-2301.9614"/>
 <ellipse fill="none" stroke="#000000" cx="728.1175" cy="-2301.666" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge234" class="edge">
+<g id="edge235" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M724.7029,-2323.4989C659.8756,-2311.6399 711.2155,-2214.2508 701.7697,-2133.7 690.9815,-2041.7022 716.7848,-1379.9119 668.7697,-1300.7 647.9237,-1266.3099 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.2967,-2324.0426 738.9738,-2328.2878 735.2832,-2324.3713 739.2697,-2324.7 739.2697,-2324.7 739.2697,-2324.7 735.2832,-2324.3713 739.5655,-2321.1122 731.2967,-2324.0426 731.2967,-2324.0426"/>
 <ellipse fill="none" stroke="#000000" cx="728.1075" cy="-2323.7796" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge235" class="edge">
+<g id="edge236" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M724.7518,-2279.1312C678.0164,-2267.6205 710.6937,-2194.948 701.7697,-2133.7 688.4145,-2042.0397 716.7848,-1379.9119 668.7697,-1300.7 647.9237,-1266.3099 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.316,-2279.8405 738.8829,-2284.2792 735.2928,-2280.2702 739.2697,-2280.7 739.2697,-2280.7 739.2697,-2280.7 735.2928,-2280.2702 739.6565,-2277.1208 731.316,-2279.8405 731.316,-2279.8405"/>
@@ -2636,49 +2678,49 @@
 </g>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_lum_matID -->
-<g id="edge225" class="edge">
+<g id="edge226" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_lum_matID:e</title>
 <path fill="none" stroke="#000000" d="M724.644,-2411.355C662.3669,-2398.5415 718.1646,-2297.1278 668.7697,-2234.7 647.081,-2207.2887 639.2236,-2189.7 604.2697,-2189.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3033,-2411.9673 738.94,-2416.2849 735.2865,-2412.3337 739.2697,-2412.7 739.2697,-2412.7 739.2697,-2412.7 735.2865,-2412.3337 739.5994,-2409.1151 731.3033,-2411.9673 731.3033,-2411.9673"/>
 <ellipse fill="none" stroke="#000000" cx="728.1167" cy="-2411.6743" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;global_dbDOI -->
-<g id="edge220" class="edge">
+<g id="edge221" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;global_dbDOI:e</title>
 <path fill="none" stroke="#000000" d="M724.9058,-2546.3894C683.4605,-2557.5937 710.1301,-2622.4308 701.7697,-2677.7 690.9891,-2748.9681 717.9587,-3922.0141 668.7697,-3974.7 628.4035,-4017.9358 444.4123,-3956.7239 403.7697,-3999.7 346.3924,-4060.3715 429.7752,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3244,-2545.6345 739.6902,-2548.2754 735.2971,-2545.1673 739.2697,-2544.7 739.2697,-2544.7 739.2697,-2544.7 735.2971,-2545.1673 738.8491,-2541.1246 731.3244,-2545.6345 731.3244,-2545.6345"/>
 <ellipse fill="none" stroke="#000000" cx="728.1463" cy="-2546.0083" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;cabah_methodID -->
-<g id="edge226" class="edge">
+<g id="edge227" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;cabah_methodID:e</title>
 <path fill="none" stroke="#000000" d="M724.879,-2565.2492C674.0001,-2553.7239 707.3521,-2476.0391 668.7697,-2422.7 645.2839,-2390.2316 644.3418,-2359.7 604.2697,-2359.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.31,-2565.8975 738.9085,-2570.2818 735.2898,-2566.2987 739.2697,-2566.7 739.2697,-2566.7 739.2697,-2566.7 735.2898,-2566.2987 739.6308,-2563.1182 731.31,-2565.8975 731.31,-2565.8975"/>
 <ellipse fill="none" stroke="#000000" cx="728.1262" cy="-2565.5765" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge228" class="edge">
+<g id="edge229" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M724.6634,-2524.205C674.788,-2535.8576 710.6234,-2612.9635 701.7697,-2677.7 672.9355,-2888.5304 725.095,-3429.4968 668.7697,-3634.7 652.0011,-3695.7909 663.6202,-3759.7 600.2697,-3759.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3118,-2523.52 739.6387,-2526.281 735.2907,-2523.11 739.2697,-2522.7 739.2697,-2522.7 739.2697,-2522.7 735.2907,-2523.11 738.9007,-2519.119 731.3118,-2523.52 731.3118,-2523.52"/>
 <ellipse fill="none" stroke="#000000" cx="728.1287" cy="-2523.848" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge229" class="edge">
+<g id="edge230" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M724.582,-2502.0258C665.7659,-2513.9054 710.8587,-2603.3375 701.7697,-2677.7 675.9529,-2888.9212 725.095,-3429.4968 668.7697,-3634.7 652.0011,-3695.7909 663.6202,-3759.7 600.2697,-3759.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.3021,-2501.4193 739.5933,-2504.2854 735.2859,-2501.0596 739.2697,-2500.7 739.2697,-2500.7 739.2697,-2500.7 735.2859,-2501.0596 738.946,-2497.1146 731.3021,-2501.4193 731.3021,-2501.4193"/>
 <ellipse fill="none" stroke="#000000" cx="728.115" cy="-2501.707" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge230" class="edge">
+<g id="edge231" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M724.5482,-2479.876C656.5613,-2491.8917 711.0822,-2593.6626 701.7697,-2677.7 678.3327,-2889.1985 725.095,-3429.4968 668.7697,-3634.7 652.0011,-3695.7909 663.6202,-3759.7 600.2697,-3759.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.2951,-2479.3371 739.5564,-2482.2886 735.2824,-2479.0185 739.2697,-2478.7 739.2697,-2478.7 739.2697,-2478.7 735.2824,-2479.0185 738.983,-2475.1114 731.2951,-2479.3371 731.2951,-2479.3371"/>
 <ellipse fill="none" stroke="#000000" cx="728.1052" cy="-2479.5919" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge231" class="edge">
+<g id="edge232" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M724.4248,-2457.7699C647.2941,-2469.963 711.2913,-2584.0047 701.7697,-2677.7 680.2557,-2889.4027 725.095,-3429.4968 668.7697,-3634.7 652.0011,-3695.7909 663.6202,-3759.7 600.2697,-3759.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.2904,-2457.2751 739.5285,-2460.2907 735.28,-2456.9876 739.2697,-2456.7 739.2697,-2456.7 739.2697,-2456.7 735.28,-2456.9876 739.0109,-2453.1093 731.2904,-2457.2751 731.2904,-2457.2751"/>
@@ -2717,7 +2759,7 @@
 </g>
 </g>
 <!-- sed&#45;tl_DataCore&#45;&gt;osl&#45;tl_mineralID -->
-<g id="edge227" class="edge">
+<g id="edge228" class="edge">
 <title>sed&#45;tl_DataCore:w&#45;&gt;osl&#45;tl_mineralID:e</title>
 <path fill="none" stroke="#000000" d="M724.638,-2389.8881C611.4515,-2376.3414 744.6876,-2196.408 668.7697,-2086.7 648.2527,-2057.0512 637.3252,-2041.7 601.2697,-2041.7"/>
 <polygon fill="#000000" stroke="#000000" points="731.282,-2390.2567 739.0702,-2394.2945 735.2758,-2390.4784 739.2697,-2390.7 739.2697,-2390.7 739.2697,-2390.7 735.2758,-2390.4784 739.4691,-2387.1055 731.282,-2390.2567 731.282,-2390.2567"/>
@@ -2901,7 +2943,7 @@
 <!-- expage&#45;&gt;global_SiteMaster -->
 <g id="edge118" class="edge">
 <title>expage:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M470.532,-3102.6415C435.0581,-3107.5273 421.762,-3131.2153 403.7697,-3168.7 371.5052,-3235.9188 374.3891,-5778.2267 370.7697,-5852.7 367.5867,-5918.1918 423.8388,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M470.5321,-3102.6415C435.0583,-3107.5274 421.7631,-3131.2159 403.7697,-3168.7 371.6594,-3235.5924 373.9661,-5765.5688 370.7697,-5839.7 367.5251,-5914.9464 433.586,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="477.2859,-3102.2101 485.4992,-3105.2927 481.2778,-3101.955 485.2697,-3101.7 485.2697,-3101.7 485.2697,-3101.7 481.2778,-3101.955 485.0401,-3098.1073 477.2859,-3102.2101 477.2859,-3102.2101"/>
 <ellipse fill="none" stroke="#000000" cx="474.0925" cy="-3102.4141" rx="3.2" ry="3.2"/>
 </g>
@@ -2915,7 +2957,7 @@
 <!-- expage&#45;&gt;global_MetaSite -->
 <g id="edge117" class="edge">
 <title>expage:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M470.7013,-3080.6715C422.0956,-3087.6073 418.3354,-3130.2611 370.7697,-3162.7 297.943,-3212.3664 246.5353,-3192.6184 203.7697,-3269.7 166.1666,-3337.4765 238.7787,-6059.7 161.2697,-6059.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M470.7013,-3080.6715C422.0956,-3087.6073 418.3354,-3130.2611 370.7697,-3162.7 297.943,-3212.3664 246.5251,-3192.6128 203.7697,-3269.7 165.3538,-3338.9631 240.4729,-6120.7 161.2697,-6120.7"/>
 <polygon fill="#000000" stroke="#000000" points="477.2874,-3080.2324 485.5092,-3083.292 481.2785,-3079.9662 485.2697,-3079.7 485.2697,-3079.7 485.2697,-3079.7 481.2785,-3079.9662 485.0301,-3076.108 477.2874,-3080.2324 477.2874,-3080.2324"/>
 <ellipse fill="none" stroke="#000000" cx="474.0945" cy="-3080.4453" rx="3.2" ry="3.2"/>
 </g>
@@ -3081,25 +3123,25 @@
 </g>
 </g>
 <!-- sahulsed_lacustrine_tl&#45;&gt;global_SiteMaster -->
-<g id="edge194" class="edge">
+<g id="edge195" class="edge">
 <title>sahulsed_lacustrine_tl:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M437.8407,-1549.8298C415.1657,-1557.5384 413.4883,-1585.0938 403.7697,-1614.7 367.0523,-1726.5535 376.2194,-5735.1004 370.7697,-5852.7 367.7344,-5918.1988 423.8388,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M437.8407,-1549.8298C415.1658,-1557.5385 413.4886,-1585.0939 403.7697,-1614.7 367.1636,-1726.2099 375.5592,-5722.4331 370.7697,-5839.7 367.6961,-5914.9535 433.586,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="444.3554,-1548.8682 452.7954,-1551.2614 448.3125,-1548.2841 452.2697,-1547.7 452.2697,-1547.7 452.2697,-1547.7 448.3125,-1548.2841 451.744,-1544.1386 444.3554,-1548.8682 444.3554,-1548.8682"/>
 <ellipse fill="none" stroke="#000000" cx="441.1897" cy="-1549.3355" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_lacustrine_tl&#45;&gt;global_dbDOI -->
-<g id="edge192" class="edge">
+<g id="edge193" class="edge">
 <title>sahulsed_lacustrine_tl:w&#45;&gt;global_dbDOI:e</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M437.8988,-1571.5505C420.0165,-1576.8069 413.479,-1592.8705 403.7697,-1614.7 377.5319,-1673.6902 371.7339,-3874.1451 370.7697,-3938.7 369.4726,-4025.5343 433.1137,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="444.3352,-1570.7218 452.7295,-1573.2705 448.3024,-1570.2109 452.2697,-1569.7 452.2697,-1569.7 452.2697,-1569.7 448.3024,-1570.2109 451.8099,-1566.1295 444.3352,-1570.7218 444.3352,-1570.7218"/>
 <ellipse fill="none" stroke="#000000" cx="441.1614" cy="-1571.1305" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_lacustrine_tl&#45;&gt;global_MetaSite -->
-<g id="edge193" class="edge">
+<g id="edge194" class="edge">
 <title>sahulsed_lacustrine_tl:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M438.2106,-1521.5603C354.8244,-1469.6952 418.1409,-968.0556 203.7697,-2174.7 194.3307,-2227.8296 215.2312,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="444.5954,-1523.4403 451.2528,-1529.1534 448.4326,-1524.5701 452.2697,-1525.7 452.2697,-1525.7 452.2697,-1525.7 448.4326,-1524.5701 453.2865,-1522.2466 444.5954,-1523.4403 444.5954,-1523.4403"/>
-<ellipse fill="none" stroke="#000000" cx="441.5257" cy="-1522.5364" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M438.208,-1521.5603C354.8025,-1469.6952 418.0566,-968.0556 203.7697,-2174.7 194.1862,-2228.6644 216.0784,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="444.5953,-1523.4407 451.253,-1529.1535 448.4325,-1524.5703 452.2697,-1525.7 452.2697,-1525.7 452.2697,-1525.7 448.4325,-1524.5703 453.2864,-1522.2465 444.5953,-1523.4407 444.5953,-1523.4407"/>
+<ellipse fill="none" stroke="#000000" cx="441.5256" cy="-1522.5369" rx="3.2" ry="3.2"/>
 </g>
 <!-- expage_DataCore&#45;&gt;expage_Sample -->
 <g id="edge126" class="edge">
@@ -3245,25 +3287,25 @@
 </g>
 </g>
 <!-- sahulsed_aeolian_tl&#45;&gt;global_SiteMaster -->
-<g id="edge182" class="edge">
+<g id="edge183" class="edge">
 <title>sahulsed_aeolian_tl:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M445.6188,-6002.5861C411.8019,-6002.0381 398.3078,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="452.2699,-6002.6377 460.2416,-6006.2999 456.2698,-6002.6689 460.2697,-6002.7 460.2697,-6002.7 460.2697,-6002.7 456.2698,-6002.6689 460.2977,-5999.1001 452.2699,-6002.6377 452.2699,-6002.6377"/>
-<ellipse fill="none" stroke="#000000" cx="449.07" cy="-6002.6128" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M445.6049,-6002.9279C411.7683,-6004.0239 398.3597,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="452.2706,-6002.8244 460.3256,-6006.2996 456.2702,-6002.7622 460.2697,-6002.7 460.2697,-6002.7 460.2697,-6002.7 456.2702,-6002.7622 460.2137,-5999.1004 452.2706,-6002.8244 452.2706,-6002.8244"/>
+<ellipse fill="none" stroke="#000000" cx="449.071" cy="-6002.8741" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_aeolian_tl&#45;&gt;global_dbDOI -->
-<g id="edge180" class="edge">
+<g id="edge181" class="edge">
 <title>sahulsed_aeolian_tl:w&#45;&gt;global_dbDOI:e</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M445.7475,-6023.1442C402.863,-6012.8194 419.3176,-5952.9668 403.7697,-5899.7 378.7306,-5813.9169 435.6324,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="452.3152,-6023.8478 459.8862,-6028.2795 456.2924,-6024.2739 460.2697,-6024.7 460.2697,-6024.7 460.2697,-6024.7 456.2924,-6024.2739 460.6532,-6021.1205 452.3152,-6023.8478 452.3152,-6023.8478"/>
 <ellipse fill="none" stroke="#000000" cx="449.1334" cy="-6023.5069" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_aeolian_tl&#45;&gt;global_MetaSite -->
-<g id="edge181" class="edge">
+<g id="edge182" class="edge">
 <title>sahulsed_aeolian_tl:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M445.5877,-5982.4115C411.9326,-5991.0458 411.5599,-6029.9892 370.7697,-6044.7 282.9564,-6076.3695 254.6191,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="452.3235,-5981.6263 460.6865,-5984.2758 456.2966,-5981.1632 460.2697,-5980.7 460.2697,-5980.7 460.2697,-5980.7 456.2966,-5981.1632 459.8528,-5977.1242 452.3235,-5981.6263 452.3235,-5981.6263"/>
-<ellipse fill="none" stroke="#000000" cx="449.145" cy="-5981.9969" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M445.8437,-5982.2344C409.8262,-5990.6695 411.1349,-6031.8123 370.7697,-6053.7 284.8336,-6100.2982 259.0265,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="452.3145,-5981.5462 460.6504,-5984.2798 456.2921,-5981.1231 460.2697,-5980.7 460.2697,-5980.7 460.2697,-5980.7 456.2921,-5981.1231 459.8889,-5977.1202 452.3145,-5981.5462 452.3145,-5981.5462"/>
+<ellipse fill="none" stroke="#000000" cx="449.1325" cy="-5981.8846" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_depconID -->
 <g id="node39" class="node">
@@ -3379,7 +3421,7 @@
 <!-- crn_be_DataCore&#45;&gt;global_dbDOI -->
 <g id="edge89" class="edge">
 <title>crn_be_DataCore:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" d="M720.8687,-6539.9812C701.8082,-6543.6578 693.7409,-6554.2027 668.7697,-6557.7 610.45,-6565.868 446.2076,-6598.5279 403.7697,-6557.7 319.0887,-6476.2318 463.7768,-5501.7 346.2697,-5501.7"/>
+<path fill="none" stroke="#000000" d="M720.8687,-6539.9812C701.8082,-6543.6578 693.7409,-6554.2027 668.7697,-6557.7 610.45,-6565.868 446.1958,-6598.5402 403.7697,-6557.7 319.1124,-6476.2072 463.7768,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="727.3011,-6539.409 735.5887,-6542.2858 731.2854,-6539.0545 735.2697,-6538.7 735.2697,-6538.7 735.2697,-6538.7 731.2854,-6539.0545 734.9506,-6535.1142 727.3011,-6539.409 727.3011,-6539.409"/>
 <ellipse fill="none" stroke="#000000" cx="724.1137" cy="-6539.6925" rx="3.2" ry="3.2"/>
 </g>
@@ -3492,9 +3534,9 @@
 <!-- crn_inprep_basins&#45;&gt;global_SiteMaster -->
 <g id="edge96" class="edge">
 <title>crn_inprep_basins:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M449.7316,-7411.3816C397.2105,-7400.8766 417.5785,-7329.4912 403.7697,-7265.7 388.8797,-7196.9144 428.6484,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M449.7317,-7411.3815C397.2118,-7400.8763 417.5867,-7329.4894 403.7697,-7265.7 388.9766,-7197.4047 428.1487,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="456.3024,-7411.9774 463.9445,-7416.2853 460.286,-7412.3387 464.2697,-7412.7 464.2697,-7412.7 464.2697,-7412.7 460.286,-7412.3387 464.5948,-7409.1147 456.3024,-7411.9774 456.3024,-7411.9774"/>
-<ellipse fill="none" stroke="#000000" cx="453.1154" cy="-7411.6884" rx="3.2" ry="3.2"/>
+<ellipse fill="none" stroke="#000000" cx="453.1154" cy="-7411.6883" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_inprep_basins&#45;&gt;global_Author -->
 <g id="edge94" class="edge">
@@ -3513,47 +3555,47 @@
 <!-- crn_inprep_basins&#45;&gt;global_dbDOI -->
 <g id="edge92" class="edge">
 <title>crn_inprep_basins:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M449.8308,-7433.5322C388.761,-7422.7278 417.2839,-7338.9449 403.7697,-7265.7 340.8145,-6924.4928 395.2531,-6050.8015 370.7697,-5704.7 364.357,-5614.0496 437.1466,-5501.7 346.2697,-5501.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M449.8307,-7433.5322C388.7601,-7422.7279 417.2775,-7338.9461 403.7697,-7265.7 340.3204,-6921.647 396.845,-6040.5816 370.7697,-5691.7 364.4237,-5606.7932 431.4133,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="456.2957,-7434.055 463.9794,-7438.2883 460.2827,-7434.3775 464.2697,-7434.7 464.2697,-7434.7 464.2697,-7434.7 460.2827,-7434.3775 464.5599,-7431.1117 456.2957,-7434.055 456.2957,-7434.055"/>
-<ellipse fill="none" stroke="#000000" cx="453.1061" cy="-7433.797" rx="3.2" ry="3.2"/>
+<ellipse fill="none" stroke="#000000" cx="453.1061" cy="-7433.7971" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_inprep_basins&#45;&gt;global_MetaSite -->
 <g id="edge93" class="edge">
 <title>crn_inprep_basins:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M449.8769,-7392.0092C399.174,-7399.3967 348.9494,-7415.8186 203.7697,-6797.7 194.3794,-6757.72 202.3376,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="456.3026,-7391.4248 464.5958,-7394.2852 460.2861,-7391.0624 464.2697,-7390.7 464.2697,-7390.7 464.2697,-7390.7 460.2861,-7391.0624 463.9435,-7387.1148 456.3026,-7391.4248 456.3026,-7391.4248"/>
-<ellipse fill="none" stroke="#000000" cx="453.1157" cy="-7391.7147" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M449.7671,-7391.9198C400.7334,-7398.1715 348.1726,-7405.9114 203.7697,-6803.7 194.9048,-6766.7302 199.2875,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="456.2978,-7391.3705 464.5714,-7394.2873 460.2837,-7391.0353 464.2697,-7390.7 464.2697,-7390.7 464.2697,-7390.7 460.2837,-7391.0353 463.9679,-7387.1127 456.2978,-7391.3705 456.2978,-7391.3705"/>
+<ellipse fill="none" stroke="#000000" cx="453.1091" cy="-7391.6387" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_Sample&#45;&gt;sed_geotypeID -->
-<g id="edge241" class="edge">
+<g id="edge242" class="edge">
 <title>sed_Sample:w&#45;&gt;sed_geotypeID:e</title>
 <path fill="none" stroke="#000000" d="M467.76,-2740.4169C370.8507,-2750.4951 397.0624,-2865.0426 370.7697,-2970.7 361.7752,-3006.8443 386.5163,-3051.7 349.2697,-3051.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.2794,-2740.0949 482.4474,-2743.2956 478.2745,-2739.8974 482.2697,-2739.7 482.2697,-2739.7 482.2697,-2739.7 478.2745,-2739.8974 482.092,-2736.1044 474.2794,-2740.0949 474.2794,-2740.0949"/>
 <ellipse fill="none" stroke="#000000" cx="471.0833" cy="-2740.2528" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_Sample&#45;&gt;global_SiteMaster -->
-<g id="edge245" class="edge">
+<g id="edge246" class="edge">
 <title>sed_Sample:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" d="M467.8828,-2762.6663C433.3315,-2767.6733 421.0051,-2791.8596 403.7697,-2828.7 368.1717,-2904.7896 374.7895,-5768.7912 370.7697,-5852.7 367.632,-5918.194 423.8388,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" d="M467.8828,-2762.6663C433.3317,-2767.6733 421.006,-2791.86 403.7697,-2828.7 368.323,-2904.4617 374.3147,-5756.1312 370.7697,-5839.7 367.5776,-5914.9486 433.586,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.2877,-2762.2362 482.5109,-2765.2919 478.2787,-2761.9681 482.2697,-2761.7 482.2697,-2761.7 482.2697,-2761.7 478.2787,-2761.9681 482.0284,-2758.1081 474.2877,-2762.2362 474.2877,-2762.2362"/>
 <ellipse fill="none" stroke="#000000" cx="471.0948" cy="-2762.4506" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_Sample&#45;&gt;sed_geommodID -->
-<g id="edge240" class="edge">
+<g id="edge241" class="edge">
 <title>sed_Sample:w&#45;&gt;sed_geommodID:e</title>
 <path fill="none" stroke="#000000" d="M467.8231,-2697.2509C411.5678,-2710.1881 422.9528,-2799.7 355.2697,-2799.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.3154,-2696.554 482.654,-2699.2794 478.2925,-2696.127 482.2697,-2695.7 482.2697,-2695.7 482.2697,-2695.7 478.2925,-2696.127 481.8854,-2692.1206 474.3154,-2696.554 474.3154,-2696.554"/>
 <ellipse fill="none" stroke="#000000" cx="471.1337" cy="-2696.8955" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_Sample&#45;&gt;sed_faciesID -->
-<g id="edge239" class="edge">
+<g id="edge240" class="edge">
 <title>sed_Sample:w&#45;&gt;sed_faciesID:e</title>
 <path fill="none" stroke="#000000" d="M467.8864,-2606.824C403.2687,-2598.4439 408.2771,-2531.3512 370.7697,-2466.7 359.0077,-2446.4259 366.7086,-2421.7 343.2697,-2421.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.2845,-2607.2136 482.0508,-2611.2933 478.2771,-2607.4568 482.2697,-2607.7 482.2697,-2607.7 482.2697,-2607.7 478.2771,-2607.4568 482.4885,-2604.1067 474.2845,-2607.2136 474.2845,-2607.2136"/>
 <ellipse fill="none" stroke="#000000" cx="471.0904" cy="-2607.0191" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_Sample&#45;&gt;sed_depconID -->
-<g id="edge238" class="edge">
+<g id="edge239" class="edge">
 <title>sed_Sample:w&#45;&gt;sed_depconID:e</title>
 <path fill="none" stroke="#000000" d="M467.7075,-2719.104C424.0567,-2728.4171 433.3366,-2782.3293 403.7697,-2828.7 377.0661,-2870.58 397.9387,-2925.7 348.2697,-2925.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.3066,-2718.4678 482.6152,-2721.2834 478.2881,-2718.0839 482.2697,-2717.7 482.2697,-2717.7 482.2697,-2717.7 478.2881,-2718.0839 481.9241,-2714.1166 474.3066,-2718.4678 474.3066,-2718.4678"/>
@@ -3592,7 +3634,7 @@
 </g>
 </g>
 <!-- sed_Sample&#45;&gt;sed_laketypeID -->
-<g id="edge242" class="edge">
+<g id="edge243" class="edge">
 <title>sed_Sample:w&#45;&gt;sed_laketypeID:e</title>
 <path fill="none" stroke="#000000" d="M467.7307,-2584.7518C435.558,-2580.1916 423.8502,-2559.3836 403.7697,-2526.7 344.5154,-2430.2561 463.462,-2277.7 350.2697,-2277.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.2866,-2585.1793 482.0354,-2589.2924 478.2781,-2585.4397 482.2697,-2585.7 482.2697,-2585.7 482.2697,-2585.7 478.2781,-2585.4397 482.504,-2582.1076 474.2866,-2585.1793 474.2866,-2585.1793"/>
@@ -3628,16 +3670,16 @@
 </g>
 </g>
 <!-- sed_Sample&#45;&gt;sed_morphID -->
-<g id="edge243" class="edge">
+<g id="edge244" class="edge">
 <title>sed_Sample:w&#45;&gt;sed_morphID:e</title>
 <path fill="none" stroke="#000000" d="M467.8407,-2673.7C418.5018,-2673.7 401.0448,-2673.7 345.2697,-2673.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.2697,-2673.7001 482.2697,-2677.3 478.2697,-2673.7 482.2697,-2673.7 482.2697,-2673.7 482.2697,-2673.7 478.2697,-2673.7 482.2696,-2670.1 474.2697,-2673.7001 474.2697,-2673.7001"/>
 <ellipse fill="none" stroke="#000000" cx="471.0697" cy="-2673.7001" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_Sample&#45;&gt;global_GrainSize -->
-<g id="edge244" class="edge">
+<g id="edge245" class="edge">
 <title>sed_Sample:w&#45;&gt;global_GrainSize:e</title>
-<path fill="none" stroke="#000000" d="M467.8073,-2630.6291C390.8507,-2641.2244 421.0911,-2740.5073 403.7697,-2828.7 374.6664,-2976.8802 376.164,-5395.7852 370.7697,-5546.7 368.6942,-5604.7651 413.3719,-5807.7 355.2697,-5807.7"/>
+<path fill="none" stroke="#000000" d="M467.8073,-2630.6291C390.8507,-2641.2244 421.0911,-2740.5073 403.7697,-2828.7 374.6664,-2976.8802 376.398,-5395.7938 370.7697,-5546.7 368.7116,-5601.8803 410.4883,-5794.7 355.2697,-5794.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.2861,-2630.2129 482.5005,-2633.2926 478.2779,-2629.9565 482.2697,-2629.7 482.2697,-2629.7 482.2697,-2629.7 478.2779,-2629.9565 482.0389,-2626.1074 474.2861,-2630.2129 474.2861,-2630.2129"/>
 <ellipse fill="none" stroke="#000000" cx="471.0927" cy="-2630.4181" rx="3.2" ry="3.2"/>
 </g>
@@ -3671,14 +3713,14 @@
 </g>
 </g>
 <!-- sed_Sample&#45;&gt;sed_sitetypeID -->
-<g id="edge246" class="edge">
+<g id="edge247" class="edge">
 <title>sed_Sample:w&#45;&gt;sed_sitetypeID:e</title>
 <path fill="none" stroke="#000000" d="M467.7436,-2650.2298C409.178,-2637.5892 419.031,-2547.7 349.2697,-2547.7"/>
 <polygon fill="#000000" stroke="#000000" points="474.3103,-2650.8944 481.9071,-2655.2817 478.29,-2651.2972 482.2697,-2651.7 482.2697,-2651.7 482.2697,-2651.7 478.29,-2651.2972 482.6322,-2648.1183 474.3103,-2650.8944 474.3103,-2650.8944"/>
 <ellipse fill="none" stroke="#000000" cx="471.1266" cy="-2650.5721" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_laketypeID&#45;&gt;sed_laketypeID -->
-<g id="edge237" class="edge">
+<g id="edge238" class="edge">
 <title>sed_laketypeID:w&#45;&gt;sed_laketypeID:e</title>
 <path fill="none" stroke="#000000" d="M212.2146,-2242.2589C177.7409,-2272.8048 187.129,-2329.2 287.2697,-2329.2 397.7697,-2329.2 397.7697,-2304.5333 350.2697,-2277.7"/>
 <polygon fill="#000000" stroke="#000000" points="217.7465,-2238.3313 226.3538,-2236.6354 221.0081,-2236.0157 224.2697,-2233.7 224.2697,-2233.7 224.2697,-2233.7 221.0081,-2236.0157 222.1856,-2230.7646 217.7465,-2238.3313 217.7465,-2238.3313"/>
@@ -4177,25 +4219,25 @@
 </g>
 </g>
 <!-- sahulsed_lacustrine_osl&#45;&gt;global_SiteMaster -->
-<g id="edge191" class="edge">
+<g id="edge192" class="edge">
 <title>sahulsed_lacustrine_osl:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M432.8354,-5709.2994C413.0353,-5717.8638 414.9779,-5746.2191 403.7697,-5773.7 384.4225,-5821.1362 409.4996,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="439.3963,-5708.1179 447.9077,-5710.243 443.333,-5707.409 447.2697,-5706.7 447.2697,-5706.7 447.2697,-5706.7 443.333,-5707.409 446.6316,-5703.157 439.3963,-5708.1179 439.3963,-5708.1179"/>
-<ellipse fill="none" stroke="#000000" cx="436.247" cy="-5708.6851" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M432.8272,-5709.2961C413.0018,-5717.8502 414.8759,-5746.1777 403.7697,-5773.7 383.8644,-5823.0272 411.4617,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="439.3959,-5708.1154 447.9066,-5710.2432 443.3328,-5707.4077 447.2697,-5706.7 447.2697,-5706.7 447.2697,-5706.7 443.3328,-5707.4077 446.6328,-5703.1568 439.3959,-5708.1154 439.3959,-5708.1154"/>
+<ellipse fill="none" stroke="#000000" cx="436.2463" cy="-5708.6815" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_lacustrine_osl&#45;&gt;global_dbDOI -->
-<g id="edge189" class="edge">
+<g id="edge190" class="edge">
 <title>sahulsed_lacustrine_osl:w&#45;&gt;global_dbDOI:e</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M432.6876,-5727.1292C348.0001,-5707.0732 451.3024,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="439.3157,-5727.8431 446.8841,-5732.2793 443.2927,-5728.2716 447.2697,-5728.7 447.2697,-5728.7 447.2697,-5728.7 443.2927,-5728.2716 447.6553,-5725.1207 439.3157,-5727.8431 439.3157,-5727.8431"/>
 <ellipse fill="none" stroke="#000000" cx="436.1341" cy="-5727.5004" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_lacustrine_osl&#45;&gt;global_MetaSite -->
-<g id="edge190" class="edge">
+<g id="edge191" class="edge">
 <title>sahulsed_lacustrine_osl:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M432.6367,-5684.3663C333.4045,-5679.8674 278.0851,-5632.5146 203.7697,-5704.7 146.7777,-5760.0585 240.7219,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="439.2717,-5684.5176 447.1876,-5688.2991 443.2707,-5684.6088 447.2697,-5684.7 447.2697,-5684.7 447.2697,-5684.7 443.2707,-5684.6088 447.3518,-5681.1009 439.2717,-5684.5176 439.2717,-5684.5176"/>
-<ellipse fill="none" stroke="#000000" cx="436.0726" cy="-5684.4446" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M432.6824,-5684.2954C333.7775,-5678.8276 278.9778,-5620.8894 203.7697,-5691.7 134.0204,-5757.371 257.0697,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="439.2727,-5684.4781 447.1698,-5688.2986 443.2712,-5684.5891 447.2697,-5684.7 447.2697,-5684.7 447.2697,-5684.7 443.2712,-5684.5891 447.3695,-5681.1014 439.2727,-5684.4781 439.2727,-5684.4781"/>
+<ellipse fill="none" stroke="#000000" cx="436.074" cy="-5684.3894" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_Journal -->
 <g id="node56" class="node">
@@ -4226,7 +4268,7 @@
 <!-- crn_Sample&#45;&gt;global_SiteMaster -->
 <g id="edge104" class="edge">
 <title>crn_Sample:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" d="M468.7018,-7197.503C424.9466,-7189.7174 421.7495,-7145.0458 403.7697,-7095.7 382.9066,-7038.4411 419.211,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" d="M468.702,-7197.5029C424.9482,-7189.7168 421.758,-7145.0427 403.7697,-7095.7 383.0679,-7038.9141 418.7114,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="475.2965,-7198.0448 482.9748,-7202.2879 479.2831,-7198.3724 483.2697,-7198.7 483.2697,-7198.7 483.2697,-7198.7 479.2831,-7198.3724 483.5645,-7195.1121 475.2965,-7198.0448 475.2965,-7198.0448"/>
 <ellipse fill="none" stroke="#000000" cx="472.1073" cy="-7197.7827" rx="3.2" ry="3.2"/>
 </g>
@@ -4240,145 +4282,145 @@
 <!-- crn_Sample&#45;&gt;global_GrainSize -->
 <g id="edge102" class="edge">
 <title>crn_Sample:w&#45;&gt;global_GrainSize:e</title>
-<path fill="none" stroke="#000000" d="M468.6202,-7175.5732C430.7389,-7169.2769 421.3951,-7137.2376 403.7697,-7095.7 375.7993,-7029.7825 426.8759,-5807.7 355.2697,-5807.7"/>
-<polygon fill="#000000" stroke="#000000" points="475.2932,-7176.0864 482.9935,-7180.2894 479.2814,-7176.3932 483.2697,-7176.7 483.2697,-7176.7 483.2697,-7176.7 479.2814,-7176.3932 483.5458,-7173.1106 475.2932,-7176.0864 475.2932,-7176.0864"/>
+<path fill="none" stroke="#000000" d="M468.62,-7175.5732C430.7377,-7169.2774 421.3894,-7137.24 403.7697,-7095.7 375.5266,-7029.1142 427.5977,-5794.7 355.2697,-5794.7"/>
+<polygon fill="#000000" stroke="#000000" points="475.2932,-7176.0865 482.9936,-7180.2894 479.2814,-7176.3932 483.2697,-7176.7 483.2697,-7176.7 483.2697,-7176.7 479.2814,-7176.3932 483.5458,-7173.1106 475.2932,-7176.0865 475.2932,-7176.0865"/>
 <ellipse fill="none" stroke="#000000" cx="472.1027" cy="-7175.841" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_ed_procID -->
-<g id="edge200" class="edge">
+<g id="edge201" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_ed_procID:e</title>
 <path fill="none" stroke="#000000" d="M719.5728,-2889.5927C646.4723,-2877.4389 710.6104,-2767.6046 701.7697,-2677.7 693.726,-2595.9016 699.8635,-2014.7845 668.7697,-1938.7 652.2794,-1898.3494 646.8598,-1865.7 603.2697,-1865.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.2923,-2890.0989 733.9992,-2894.2898 730.281,-2890.3995 734.2697,-2890.7 734.2697,-2890.7 734.2697,-2890.7 730.281,-2890.3995 734.5402,-2887.1102 726.2923,-2890.0989 726.2923,-2890.0989"/>
 <ellipse fill="none" stroke="#000000" cx="723.1013" cy="-2889.8585" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;cabah_col_mtdID -->
-<g id="edge198" class="edge">
+<g id="edge199" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;cabah_col_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M720.3811,-2974.6087C672.8641,-2943.1749 705.9317,-2739.5818 701.7697,-2677.7 697.1712,-2609.3299 695.9618,-1507.5983 668.7697,-1444.7 652.9938,-1408.2087 645.0251,-1381.7 605.2697,-1381.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.5957,-2976.4393 733.2524,-2982.1533 730.4327,-2977.5697 734.2697,-2978.7 734.2697,-2978.7 734.2697,-2978.7 730.4327,-2977.5697 735.287,-2975.2467 726.5957,-2976.4393 726.5957,-2976.4393"/>
 <ellipse fill="none" stroke="#000000" cx="723.5261" cy="-2975.5351" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;cabah_LabCodes -->
-<g id="edge203" class="edge">
+<g id="edge204" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;cabah_LabCodes:e</title>
 <path fill="none" stroke="#000000" d="M719.9591,-3130.6188C609.0711,-3095.977 734.7462,-2639.0528 668.7697,-2526.7 651.254,-2496.8722 639.86,-2481.7 605.2697,-2481.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.353,-3131.5486 733.7515,-3136.2625 730.3113,-3132.1243 734.2697,-3132.7 734.2697,-3132.7 734.2697,-3132.7 730.3113,-3132.1243 734.7878,-3129.1375 726.353,-3131.5486 726.353,-3131.5486"/>
 <ellipse fill="none" stroke="#000000" cx="723.1863" cy="-3131.0881" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_agemodelID -->
-<g id="edge195" class="edge">
+<g id="edge196" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_agemodelID:e</title>
 <path fill="none" stroke="#000000" d="M719.811,-2867.4961C655.6828,-2855.6092 710.0134,-2758.0052 701.7697,-2677.7 691.3809,-2576.4991 716.4302,-1852.5779 668.7697,-1762.7 652.9025,-1732.7777 641.1387,-1717.7 607.2697,-1717.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.2973,-2868.0361 733.9709,-2872.2876 730.2835,-2868.3681 734.2697,-2868.7 734.2697,-2868.7 734.2697,-2868.7 730.2835,-2868.3681 734.5684,-2865.1124 726.2973,-2868.0361 726.2973,-2868.0361"/>
 <ellipse fill="none" stroke="#000000" cx="723.1083" cy="-2867.7705" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl_typeID -->
-<g id="edge207" class="edge">
+<g id="edge208" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl_typeID:e</title>
 <path fill="none" stroke="#000000" d="M719.9784,-2914.839C614.5869,-2948.6223 715.7967,-3372.7821 668.7697,-3486.7 646.4949,-3540.6582 645.6448,-3589.7 587.2697,-3589.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.3578,-2913.8842 734.8026,-2916.2603 730.3137,-2913.2921 734.2697,-2912.7 734.2697,-2912.7 734.2697,-2912.7 730.3137,-2913.2921 733.7368,-2909.1397 726.3578,-2913.8842 726.3578,-2913.8842"/>
 <ellipse fill="none" stroke="#000000" cx="723.193" cy="-2914.3579" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;sed_Sample -->
-<g id="edge212" class="edge">
+<g id="edge213" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;sed_Sample:e</title>
 <path fill="none" stroke="#000000" d="M719.8304,-3153.9494C598.0067,-3140.332 751.7934,-2944.6252 668.7697,-2828.7 645.5783,-2796.3182 631.0996,-2783.7 591.2697,-2783.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.2805,-3154.2846 734.0828,-3158.2951 730.2751,-3154.4923 734.2697,-3154.7 734.2697,-3154.7 734.2697,-3154.7 730.2751,-3154.4923 734.4566,-3151.1049 726.2805,-3154.2846 726.2805,-3154.2846"/>
 <ellipse fill="none" stroke="#000000" cx="723.0848" cy="-3154.1185" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge196" class="edge">
+<g id="edge197" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M719.7891,-2778.3655C691.4706,-2767.3444 708.6913,-2719.3181 701.7697,-2677.7 689.2156,-2602.2149 707.9232,-1366.4466 668.7697,-1300.7 648.1932,-1266.148 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.3716,-2779.4267 733.6967,-2784.2541 730.3207,-2780.0633 734.2697,-2780.7 734.2697,-2780.7 734.2697,-2780.7 730.3207,-2780.0633 734.8427,-2777.1459 726.3716,-2779.4267 726.3716,-2779.4267"/>
 <ellipse fill="none" stroke="#000000" cx="723.2124" cy="-2778.9174" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge197" class="edge">
+<g id="edge198" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M719.9596,-2755.8755C699.2678,-2745.7132 708.3911,-2709.9067 701.7697,-2677.7 686.3598,-2602.7457 707.9232,-1366.4466 668.7697,-1300.7 648.1932,-1266.148 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.4211,-2757.1508 733.5725,-2762.2319 730.3454,-2757.9254 734.2697,-2758.7 734.2697,-2758.7 734.2697,-2758.7 730.3454,-2757.9254 734.9668,-2755.1681 726.4211,-2757.1508 726.4211,-2757.1508"/>
 <ellipse fill="none" stroke="#000000" cx="723.2817" cy="-2756.5311" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge201" class="edge">
+<g id="edge202" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M719.9768,-2733.2368C705.9234,-2724.5221 707.9886,-2700.7315 701.7697,-2677.7 681.8219,-2603.8238 707.9232,-1366.4466 668.7697,-1300.7 648.1932,-1266.148 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.4947,-2734.816 733.4219,-2740.1988 730.3822,-2735.758 734.2697,-2736.7 734.2697,-2736.7 734.2697,-2736.7 730.3822,-2735.758 735.1174,-2733.2012 726.4947,-2734.816 726.4947,-2734.816"/>
 <ellipse fill="none" stroke="#000000" cx="723.3846" cy="-2734.0625" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge202" class="edge">
+<g id="edge203" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M719.913,-2800.8241C682.8967,-2789.4968 708.9547,-2728.9961 701.7697,-2677.7 691.1549,-2601.9178 707.9232,-1366.4466 668.7697,-1300.7 648.1932,-1266.148 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.3371,-2801.6635 733.8032,-2806.2697 730.3034,-2802.1817 734.2697,-2802.7 734.2697,-2802.7 734.2697,-2802.7 730.3034,-2802.1817 734.7361,-2799.1303 726.3371,-2801.6635 726.3371,-2801.6635"/>
 <ellipse fill="none" stroke="#000000" cx="723.1641" cy="-2801.2489" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge213" class="edge">
+<g id="edge214" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M719.9232,-2823.1257C673.9867,-2811.5757 709.1699,-2738.6748 701.7697,-2677.7 692.5502,-2601.7354 707.9232,-1366.4466 668.7697,-1300.7 648.1932,-1266.148 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.3174,-2823.8273 733.877,-2828.2785 730.2935,-2824.2636 734.2697,-2824.7 734.2697,-2824.7 734.2697,-2824.7 730.2935,-2824.2636 734.6624,-2821.1215 726.3174,-2823.8273 726.3174,-2823.8273"/>
 <ellipse fill="none" stroke="#000000" cx="723.1365" cy="-2823.4782" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge214" class="edge">
+<g id="edge215" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M719.6315,-2845.2852C665.0051,-2833.3541 709.3461,-2748.2544 701.7697,-2677.7 693.5994,-2601.6155 707.9232,-1366.4466 668.7697,-1300.7 648.1932,-1266.148 630.4845,-1255.7 590.2697,-1255.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.3068,-2845.9303 733.9233,-2850.2833 730.2882,-2846.3152 734.2697,-2846.7 734.2697,-2846.7 734.2697,-2846.7 730.2882,-2846.3152 734.616,-2843.1167 726.3068,-2845.9303 726.3068,-2845.9303"/>
 <ellipse fill="none" stroke="#000000" cx="723.1216" cy="-2845.6225" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_lum_matID -->
-<g id="edge204" class="edge">
+<g id="edge205" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_lum_matID:e</title>
 <path fill="none" stroke="#000000" d="M719.729,-2955.8952C617.9777,-2943.7591 713.1333,-2796.7551 701.7697,-2677.7 692.3899,-2579.4294 717.6483,-2320.4669 668.7697,-2234.7 651.4626,-2204.3315 639.2236,-2189.7 604.2697,-2189.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.2819,-2956.2578 734.0707,-2960.2945 730.2758,-2956.4789 734.2697,-2956.7 734.2697,-2956.7 734.2697,-2956.7 730.2758,-2956.4789 734.4686,-2953.1055 726.2819,-2956.2578 726.2819,-2956.2578"/>
 <ellipse fill="none" stroke="#000000" cx="723.0868" cy="-2956.081" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_dbDOI -->
-<g id="edge199" class="edge">
+<g id="edge200" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_dbDOI:e</title>
 <path fill="none" stroke="#000000" d="M720.8583,-3094.4985C642.8229,-3168.5924 735.4137,-3929.0155 668.7697,-3998.7 586.8107,-4084.3981 484.3117,-3942.6689 403.7697,-4029.7 348.1826,-4089.7656 428.1098,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.9266,-3091.8749 735.6984,-3092.0044 730.5981,-3090.2874 734.2697,-3088.7 734.2697,-3088.7 734.2697,-3088.7 730.5981,-3090.2874 732.841,-3085.3956 726.9266,-3091.8749 726.9266,-3091.8749"/>
 <ellipse fill="none" stroke="#000000" cx="723.9894" cy="-3093.1448" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;cabah_methodID -->
-<g id="edge205" class="edge">
+<g id="edge206" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;cabah_methodID:e</title>
 <path fill="none" stroke="#000000" d="M721.2434,-3103.7345C662.7288,-3035.5059 699.8262,-2487.6473 668.7697,-2422.7 651.4827,-2386.5484 644.3418,-2359.7 604.2697,-2359.7"/>
 <polygon fill="#000000" stroke="#000000" points="727.2149,-3106.9276 732.5721,-3113.8746 730.7423,-3108.8138 734.2697,-3110.7 734.2697,-3110.7 734.2697,-3110.7 730.7423,-3108.8138 735.9672,-3107.5254 727.2149,-3106.9276 727.2149,-3106.9276"/>
 <ellipse fill="none" stroke="#000000" cx="724.393" cy="-3105.4187" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge208" class="edge">
+<g id="edge209" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M721.7186,-3074.2902C673.0487,-3137.71 686.6403,-3578.5362 668.7697,-3634.7 649.5612,-3695.0682 663.6202,-3759.7 600.2697,-3759.7"/>
 <polygon fill="#000000" stroke="#000000" points="727.4241,-3070.8399 736.1326,-3069.7805 730.8469,-3068.7699 734.2697,-3066.7 734.2697,-3066.7 734.2697,-3066.7 730.8469,-3068.7699 732.4067,-3063.6195 727.4241,-3070.8399 727.4241,-3070.8399"/>
 <ellipse fill="none" stroke="#000000" cx="724.6859" cy="-3072.4958" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge209" class="edge">
+<g id="edge210" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M721.5923,-3052.1732C670.9707,-3116.5291 687.2385,-3576.2268 668.7697,-3634.7 649.6894,-3695.1088 663.6202,-3759.7 600.2697,-3759.7"/>
 <polygon fill="#000000" stroke="#000000" points="727.378,-3048.7626 736.0978,-3047.8013 730.8238,-3046.7313 734.2697,-3044.7 734.2697,-3044.7 734.2697,-3044.7 730.8238,-3046.7313 732.4415,-3041.5987 727.378,-3048.7626 727.378,-3048.7626"/>
 <ellipse fill="none" stroke="#000000" cx="724.6213" cy="-3050.3877" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge210" class="edge">
+<g id="edge211" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M721.4876,-3030.0364C668.8699,-3095.2005 687.8393,-3573.9074 668.7697,-3634.7 649.8086,-3695.1464 663.6202,-3759.7 600.2697,-3759.7"/>
 <polygon fill="#000000" stroke="#000000" points="727.3313,-3026.6824 736.0617,-3025.8223 730.8005,-3024.6912 734.2697,-3022.7 734.2697,-3022.7 734.2697,-3022.7 730.8005,-3024.6912 732.4776,-3019.5777 727.3313,-3026.6824 727.3313,-3026.6824"/>
 <ellipse fill="none" stroke="#000000" cx="724.5559" cy="-3028.2753" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge211" class="edge">
+<g id="edge212" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M721.4048,-3007.881C666.7461,-3073.7239 688.4427,-3571.5782 668.7697,-3634.7 649.9197,-3695.1811 663.6202,-3759.7 600.2697,-3759.7"/>
 <polygon fill="#000000" stroke="#000000" points="727.2842,-3004.5992 736.0243,-3003.8434 730.7769,-3002.6496 734.2697,-3000.7 734.2697,-3000.7 734.2697,-3000.7 730.7769,-3002.6496 732.515,-2997.5566 727.2842,-3004.5992 727.2842,-3004.5992"/>
 <ellipse fill="none" stroke="#000000" cx="724.4901" cy="-3006.1589" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mineralID -->
-<g id="edge206" class="edge">
+<g id="edge207" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mineralID:e</title>
 <path fill="none" stroke="#000000" d="M719.7022,-2933.8168C627.4632,-2921.6918 711.7285,-2787.0952 701.7697,-2677.7 695.807,-2612.2019 701.4082,-2143.7989 668.7697,-2086.7 650.8767,-2055.3976 637.3252,-2041.7 601.2697,-2041.7"/>
 <polygon fill="#000000" stroke="#000000" points="726.2843,-2934.2158 734.0518,-2938.2934 730.277,-2934.4579 734.2697,-2934.7 734.2697,-2934.7 734.2697,-2934.7 730.277,-2934.4579 734.4875,-2931.1066 726.2843,-2934.2158 726.2843,-2934.2158"/>
@@ -4420,25 +4462,25 @@
 </g>
 </g>
 <!-- sahulsed_fluvial_osl&#45;&gt;global_SiteMaster -->
-<g id="edge185" class="edge">
+<g id="edge186" class="edge">
 <title>sahulsed_fluvial_osl:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M443.4986,-6686.9138C407.405,-6677.0129 416.7131,-6627.6521 403.7697,-6581.7 386.1836,-6519.2655 423.1337,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="450.3275,-6687.7396 457.8375,-6692.274 454.2986,-6688.2198 458.2697,-6688.7 458.2697,-6688.7 458.2697,-6688.7 454.2986,-6688.2198 458.7019,-6685.126 450.3275,-6687.7396 450.3275,-6687.7396"/>
-<ellipse fill="none" stroke="#000000" cx="447.1507" cy="-6687.3554" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M443.4995,-6686.9136C407.4109,-6677.0113 416.7411,-6627.6442 403.7697,-6581.7 386.4164,-6520.2356 422.1367,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="450.3275,-6687.7394 457.8374,-6692.274 454.2986,-6688.2197 458.2697,-6688.7 458.2697,-6688.7 458.2697,-6688.7 454.2986,-6688.2197 458.702,-6685.126 450.3275,-6687.7394 450.3275,-6687.7394"/>
+<ellipse fill="none" stroke="#000000" cx="447.1507" cy="-6687.3551" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_fluvial_osl&#45;&gt;global_dbDOI -->
-<g id="edge183" class="edge">
+<g id="edge184" class="edge">
 <title>sahulsed_fluvial_osl:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M443.7131,-6709.17C399.4952,-6698.7621 416.085,-6637.1179 403.7697,-6581.7 361.4617,-6391.3175 386.1335,-5899.1207 370.7697,-5704.7 363.6106,-5614.1055 437.1466,-5501.7 346.2697,-5501.7"/>
-<polygon fill="#000000" stroke="#000000" points="450.3135,-6709.8637 457.8933,-6714.2803 454.2916,-6710.2818 458.2697,-6710.7 458.2697,-6710.7 458.2697,-6710.7 454.2916,-6710.2818 458.646,-6707.1197 450.3135,-6709.8637 450.3135,-6709.8637"/>
-<ellipse fill="none" stroke="#000000" cx="447.131" cy="-6709.5291" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M443.7127,-6709.17C399.4925,-6698.7627 416.0698,-6637.1212 403.7697,-6581.7 360.8885,-6388.4876 387.1088,-5888.9381 370.7697,-5691.7 363.7405,-5606.8471 431.4133,-5501.7 346.2697,-5501.7"/>
+<polygon fill="#000000" stroke="#000000" points="450.3135,-6709.8637 457.8934,-6714.2803 454.2916,-6710.2819 458.2697,-6710.7 458.2697,-6710.7 458.2697,-6710.7 454.2916,-6710.2819 458.646,-6707.1197 450.3135,-6709.8637 450.3135,-6709.8637"/>
+<ellipse fill="none" stroke="#000000" cx="447.131" cy="-6709.5292" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_fluvial_osl&#45;&gt;global_MetaSite -->
-<g id="edge184" class="edge">
+<g id="edge185" class="edge">
 <title>sahulsed_fluvial_osl:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M443.8078,-6664.7369C308.1523,-6627.0606 306.4535,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="450.3424,-6665.6239 457.7854,-6670.2673 454.306,-6666.1619 458.2697,-6666.7 458.2697,-6666.7 458.2697,-6666.7 454.306,-6666.1619 458.7539,-6663.1327 450.3424,-6665.6239 450.3424,-6665.6239"/>
-<ellipse fill="none" stroke="#000000" cx="447.1715" cy="-6665.1934" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M443.746,-6664.613C318.4942,-6627.9558 294.4012,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="450.351,-6665.5621 457.7576,-6670.2634 454.3103,-6666.131 458.2697,-6666.7 458.2697,-6666.7 458.2697,-6666.7 454.3103,-6666.131 458.7817,-6663.1366 450.351,-6665.5621 450.351,-6665.5621"/>
+<ellipse fill="none" stroke="#000000" cx="447.1835" cy="-6665.1069" rx="3.2" ry="3.2"/>
 </g>
 <!-- c14_materia2ID&#45;&gt;c14_materia2ID -->
 <g id="edge73" class="edge">
@@ -4483,25 +4525,25 @@
 </g>
 </g>
 <!-- sahularch_osl&#45;&gt;global_SiteMaster -->
-<g id="edge173" class="edge">
+<g id="edge174" class="edge">
 <title>sahularch_osl:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M462.5937,-3272.8506C430.2586,-3278.3621 419.6952,-3303.2647 403.7697,-3338.7 375.1404,-3402.4017 374.1889,-5782.9444 370.7697,-5852.7 367.5595,-5918.1905 423.8388,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="469.2941,-3272.3253 477.5511,-3275.289 473.2819,-3272.0127 477.2697,-3271.7 477.2697,-3271.7 477.2697,-3271.7 473.2819,-3272.0127 476.9883,-3268.111 469.2941,-3272.3253 469.2941,-3272.3253"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M462.5937,-3272.8506C430.2589,-3278.3622 419.6965,-3303.2652 403.7697,-3338.7 375.2863,-3402.0713 373.7919,-5770.2875 370.7697,-5839.7 367.4935,-5914.945 433.586,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="469.2941,-3272.3254 477.5511,-3275.289 473.2819,-3272.0127 477.2697,-3271.7 477.2697,-3271.7 477.2697,-3271.7 473.2819,-3272.0127 476.9883,-3268.111 469.2941,-3272.3254 469.2941,-3272.3254"/>
 <ellipse fill="none" stroke="#000000" cx="466.1039" cy="-3272.5755" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahularch_osl&#45;&gt;global_dbDOI -->
-<g id="edge171" class="edge">
+<g id="edge172" class="edge">
 <title>sahularch_osl:w&#45;&gt;global_dbDOI:e</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M462.7434,-3294.388C434.5244,-3297.3352 420.3142,-3310.0705 403.7697,-3338.7 343.6234,-3442.7801 466.4788,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="469.2786,-3294.0785 477.44,-3297.296 473.2741,-3293.8893 477.2697,-3293.7 477.2697,-3293.7 477.2697,-3293.7 473.2741,-3293.8893 477.0993,-3290.104 469.2786,-3294.0785 469.2786,-3294.0785"/>
 <ellipse fill="none" stroke="#000000" cx="466.0822" cy="-3294.2299" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahularch_osl&#45;&gt;global_MetaSite -->
-<g id="edge172" class="edge">
+<g id="edge173" class="edge">
 <title>sahularch_osl:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M462.5227,-3249.9938C303.4489,-3256.4636 268.6638,-3369.1317 203.7697,-3522.7 176.3347,-3587.6234 231.7518,-6059.7 161.2697,-6059.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M462.5227,-3249.9938C303.4475,-3256.463 268.6392,-3369.1213 203.7697,-3522.7 175.6858,-3589.1885 233.446,-6120.7 161.2697,-6120.7"/>
 <polygon fill="#000000" stroke="#000000" points="469.2713,-3249.8594 477.3414,-3253.2993 473.2705,-3249.7797 477.2697,-3249.7 477.2697,-3249.7 477.2697,-3249.7 473.2705,-3249.7797 477.1979,-3246.1007 469.2713,-3249.8594 469.2713,-3249.8594"/>
-<ellipse fill="none" stroke="#000000" cx="466.0719" cy="-3249.9232" rx="3.2" ry="3.2"/>
+<ellipse fill="none" stroke="#000000" cx="466.0719" cy="-3249.9231" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_RefAbstract -->
 <g id="node69" class="node">
@@ -4546,7 +4588,7 @@
 <!-- crn_al_DataCore&#45;&gt;global_dbDOI -->
 <g id="edge79" class="edge">
 <title>crn_al_DataCore:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" d="M722.7171,-6323.5961C702.835,-6320.3177 694.3515,-6310.5647 668.7697,-6305.7 610.5955,-6294.6374 444.6308,-6320.56 403.7697,-6277.7 344.1108,-6215.1227 432.7283,-5501.7 346.2697,-5501.7"/>
+<path fill="none" stroke="#000000" d="M722.7171,-6323.5961C702.835,-6320.3177 694.3515,-6310.5647 668.7697,-6305.7 610.5955,-6294.6374 444.6035,-6320.586 403.7697,-6277.7 344.1507,-6215.0848 432.7283,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="729.2926,-6324.0948 736.9973,-6328.2897 733.2811,-6324.3974 737.2697,-6324.7 737.2697,-6324.7 737.2697,-6324.7 733.2811,-6324.3974 737.542,-6321.1103 729.2926,-6324.0948 729.2926,-6324.0948"/>
 <ellipse fill="none" stroke="#000000" cx="726.1018" cy="-6323.8528" rx="3.2" ry="3.2"/>
 </g>
@@ -4600,7 +4642,7 @@
 </g>
 </g>
 <!-- global_varunitID&#45;&gt;global_varunitID -->
-<g id="edge167" class="edge">
+<g id="edge168" class="edge">
 <title>global_varunitID:w&#45;&gt;global_varunitID:e</title>
 <path fill="none" stroke="#000000" d="M977.6236,-6775.1433C927.946,-6810.3199 936.6281,-6885.2 1056.7697,-6885.2 1186.2697,-6885.2 1186.2697,-6864.2 1123.2697,-6833.7"/>
 <polygon fill="#000000" stroke="#000000" points="983.3752,-6771.758 992.0958,-6770.8025 986.8225,-6769.729 990.2697,-6767.7 990.2697,-6767.7 990.2697,-6767.7 986.8225,-6769.729 988.4436,-6764.5975 983.3752,-6771.758 983.3752,-6771.758"/>
@@ -4610,25 +4652,25 @@
 <g id="node76" class="node">
 <title>spatial_ref_sys</title>
 <g id="a_node76"><a xlink:href="../../tables/spatial_ref_sys.html" xlink:title="spatial_ref_sys" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="741.7697,-6931.2 741.7697,-7014.2 866.7697,-7014.2 866.7697,-6931.2 741.7697,-6931.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="742.2697,-6990.7 742.2697,-7013.7 867.2697,-7013.7 867.2697,-6990.7 742.2697,-6990.7"/>
-<polygon fill="none" stroke="#000000" points="742.2697,-6990.7 742.2697,-7013.7 867.2697,-7013.7 867.2697,-6990.7 742.2697,-6990.7"/>
-<text text-anchor="start" x="747.2697" y="-6999.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">spatial_ref_sys</text>
-<text text-anchor="start" x="832.7915" y="-6998.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="742.2697,-6968.7 742.2697,-6990.7 867.2697,-6990.7 867.2697,-6968.7 742.2697,-6968.7"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="747.27" y="-6985.7"/>
-<text text-anchor="start" x="771.2697" y="-6975.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">srid</text>
-<polygon fill="none" stroke="#000000" points="742.2697,-6949.7 742.2697,-6968.7 867.2697,-6968.7 867.2697,-6949.7 742.2697,-6949.7"/>
-<text text-anchor="start" x="745.2697" y="-6955.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="742.2697,-6930.7 742.2697,-6949.7 775.2697,-6949.7 775.2697,-6930.7 742.2697,-6930.7"/>
-<polygon fill="none" stroke="#000000" points="742.2697,-6930.7 742.2697,-6949.7 775.2697,-6949.7 775.2697,-6930.7 742.2697,-6930.7"/>
-<text text-anchor="start" x="745.2697" y="-6936.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="775.2697,-6930.7 775.2697,-6949.7 844.2697,-6949.7 844.2697,-6930.7 775.2697,-6930.7"/>
-<polygon fill="none" stroke="#000000" points="775.2697,-6930.7 775.2697,-6949.7 844.2697,-6949.7 844.2697,-6930.7 775.2697,-6930.7"/>
-<text text-anchor="start" x="787.4786" y="-6936.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">8.500 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="844.2697,-6930.7 844.2697,-6949.7 867.2697,-6949.7 867.2697,-6930.7 844.2697,-6930.7"/>
-<polygon fill="none" stroke="#000000" points="844.2697,-6930.7 844.2697,-6949.7 867.2697,-6949.7 867.2697,-6930.7 844.2697,-6930.7"/>
-<text text-anchor="start" x="858.1559" y="-6936.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="741.7697,-6932.2 741.7697,-7015.2 866.7697,-7015.2 866.7697,-6932.2 741.7697,-6932.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="742.2697,-6991.7 742.2697,-7014.7 867.2697,-7014.7 867.2697,-6991.7 742.2697,-6991.7"/>
+<polygon fill="none" stroke="#000000" points="742.2697,-6991.7 742.2697,-7014.7 867.2697,-7014.7 867.2697,-6991.7 742.2697,-6991.7"/>
+<text text-anchor="start" x="747.2697" y="-7000.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">spatial_ref_sys</text>
+<text text-anchor="start" x="832.7915" y="-6999.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="742.2697,-6969.7 742.2697,-6991.7 867.2697,-6991.7 867.2697,-6969.7 742.2697,-6969.7"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="747.27" y="-6986.7"/>
+<text text-anchor="start" x="771.2697" y="-6976.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">srid</text>
+<polygon fill="none" stroke="#000000" points="742.2697,-6950.7 742.2697,-6969.7 867.2697,-6969.7 867.2697,-6950.7 742.2697,-6950.7"/>
+<text text-anchor="start" x="745.2697" y="-6956.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="742.2697,-6931.7 742.2697,-6950.7 775.2697,-6950.7 775.2697,-6931.7 742.2697,-6931.7"/>
+<polygon fill="none" stroke="#000000" points="742.2697,-6931.7 742.2697,-6950.7 775.2697,-6950.7 775.2697,-6931.7 742.2697,-6931.7"/>
+<text text-anchor="start" x="745.2697" y="-6937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="775.2697,-6931.7 775.2697,-6950.7 844.2697,-6950.7 844.2697,-6931.7 775.2697,-6931.7"/>
+<polygon fill="none" stroke="#000000" points="775.2697,-6931.7 775.2697,-6950.7 844.2697,-6950.7 844.2697,-6931.7 775.2697,-6931.7"/>
+<text text-anchor="start" x="787.4786" y="-6937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">8.500 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="844.2697,-6931.7 844.2697,-6950.7 867.2697,-6950.7 867.2697,-6931.7 844.2697,-6931.7"/>
+<polygon fill="none" stroke="#000000" points="844.2697,-6931.7 844.2697,-6950.7 867.2697,-6950.7 867.2697,-6931.7 844.2697,-6931.7"/>
+<text text-anchor="start" x="858.1559" y="-6937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
 </a>
 </g>
 </g>
@@ -4782,9 +4824,9 @@
 <!-- global_SiteCode&#45;&gt;global_SiteCode -->
 <g id="edge162" class="edge">
 <title>global_SiteCode:w&#45;&gt;global_SiteCode:e</title>
-<path fill="none" stroke="#000000" d="M17.7746,-5649.1922C-16.1431,-5674.2174 -6.0975,-5715.2 96.7697,-5715.2 210.7697,-5715.2 210.7697,-5686.8667 163.2697,-5663.7"/>
-<polygon fill="#000000" stroke="#000000" points="23.4085,-5645.814 32.121,-5644.7875 26.8391,-5643.757 30.2697,-5641.7 30.2697,-5641.7 30.2697,-5641.7 26.8391,-5643.757 28.4184,-5638.6125 23.4085,-5645.814 23.4085,-5645.814"/>
-<ellipse fill="none" stroke="#000000" cx="20.6641" cy="-5647.4596" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M17.7746,-5710.1922C-16.1431,-5735.2174 -6.0975,-5776.2 96.7697,-5776.2 210.7697,-5776.2 210.7697,-5747.8667 163.2697,-5724.7"/>
+<polygon fill="#000000" stroke="#000000" points="23.4085,-5706.814 32.121,-5705.7875 26.8391,-5704.757 30.2697,-5702.7 30.2697,-5702.7 30.2697,-5702.7 26.8391,-5704.757 28.4184,-5699.6125 23.4085,-5706.814 23.4085,-5706.814"/>
+<ellipse fill="none" stroke="#000000" cx="20.6641" cy="-5708.4596" rx="3.2" ry="3.2"/>
 </g>
 <!-- c14_calprogram -->
 <g id="node80" class="node">
@@ -4940,44 +4982,12 @@
 <polygon fill="#000000" stroke="#000000" points="739.2945,-3675.3293 747.5529,-3678.2888 743.2821,-3675.0146 747.2697,-3674.7 747.2697,-3674.7 747.2697,-3674.7 743.2821,-3675.0146 746.9865,-3671.1112 739.2945,-3675.3293 739.2945,-3675.3293"/>
 <ellipse fill="none" stroke="#000000" cx="736.1044" cy="-3675.581" rx="3.2" ry="3.2"/>
 </g>
-<!-- global_biomeID -->
-<g id="node83" class="node">
-<title>global_biomeID</title>
-<g id="a_node83"><a xlink:href="../../tables/global_biomeID.html" xlink:title="global_biomeID" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="992.2697,-7078.2 992.2697,-7205.2 1120.2697,-7205.2 1120.2697,-7078.2 992.2697,-7078.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="992.2697,-7181.7 992.2697,-7204.7 1120.2697,-7204.7 1120.2697,-7181.7 992.2697,-7181.7"/>
-<polygon fill="none" stroke="#000000" points="992.2697,-7181.7 992.2697,-7204.7 1120.2697,-7204.7 1120.2697,-7181.7 992.2697,-7181.7"/>
-<text text-anchor="start" x="997.2697" y="-7190.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_biomeID</text>
-<text text-anchor="start" x="1085.7915" y="-7189.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="992.2697,-7159.7 992.2697,-7181.7 1120.2697,-7181.7 1120.2697,-7159.7 992.2697,-7159.7"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="997.27" y="-7176.7"/>
-<text text-anchor="start" x="1021.2697" y="-7166.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BIOMEID</text>
-<polygon fill="#ffffff" stroke="transparent" points="992.2697,-7137.7 992.2697,-7159.7 1120.2697,-7159.7 1120.2697,-7137.7 992.2697,-7137.7"/>
-<polygon fill="none" stroke="#000000" points="992.2697,-7137.7 992.2697,-7159.7 1120.2697,-7159.7 1120.2697,-7137.7 992.2697,-7137.7"/>
-<text text-anchor="start" x="1021.2697" y="-7144.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BIOMETYPE</text>
-<polygon fill="none" stroke="#000000" points="992.2697,-7115.7 992.2697,-7137.7 1120.2697,-7137.7 1120.2697,-7115.7 992.2697,-7115.7"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="997.27" y="-7132.7"/>
-<text text-anchor="start" x="1021.2697" y="-7122.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">PARENTID</text>
-<polygon fill="none" stroke="#000000" points="992.2697,-7096.7 992.2697,-7115.7 1120.2697,-7115.7 1120.2697,-7096.7 992.2697,-7096.7"/>
-<text text-anchor="start" x="995.2697" y="-7102.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="992.2697,-7077.7 992.2697,-7096.7 1034.2697,-7096.7 1034.2697,-7077.7 992.2697,-7077.7"/>
-<polygon fill="none" stroke="#000000" points="992.2697,-7077.7 992.2697,-7096.7 1034.2697,-7096.7 1034.2697,-7077.7 992.2697,-7077.7"/>
-<text text-anchor="start" x="995.2697" y="-7083.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 1</text>
-<polygon fill="#ffffff" stroke="transparent" points="1034.2697,-7077.7 1034.2697,-7096.7 1088.2697,-7096.7 1088.2697,-7077.7 1034.2697,-7077.7"/>
-<polygon fill="none" stroke="#000000" points="1034.2697,-7077.7 1034.2697,-7096.7 1088.2697,-7096.7 1088.2697,-7077.7 1034.2697,-7077.7"/>
-<text text-anchor="start" x="1046.7653" y="-7083.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">63 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="1088.2697,-7077.7 1088.2697,-7096.7 1120.2697,-7096.7 1120.2697,-7077.7 1088.2697,-7077.7"/>
-<polygon fill="none" stroke="#000000" points="1088.2697,-7077.7 1088.2697,-7096.7 1120.2697,-7096.7 1120.2697,-7077.7 1088.2697,-7077.7"/>
-<text text-anchor="start" x="1101.675" y="-7083.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
-</a>
-</g>
-</g>
 <!-- global_biomeID&#45;&gt;global_biomeID -->
 <g id="edge156" class="edge">
 <title>global_biomeID:w&#45;&gt;global_biomeID:e</title>
-<path fill="none" stroke="#000000" d="M979.3096,-7133.3207C929.9692,-7163.3478 938.6955,-7222.2 1056.2697,-7222.2 1183.2697,-7222.2 1183.2697,-7197.5333 1120.2697,-7170.7"/>
-<polygon fill="#000000" stroke="#000000" points="985.1454,-7130.3395 993.9074,-7129.9059 988.7076,-7128.5197 992.2697,-7126.7 992.2697,-7126.7 992.2697,-7126.7 988.7076,-7128.5197 990.6319,-7123.4941 985.1454,-7130.3395 985.1454,-7130.3395"/>
-<ellipse fill="none" stroke="#000000" cx="982.2958" cy="-7131.7953" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M20.2155,-5545.2589C-14.2504,-5575.8048 -4.7772,-5632.2 96.2697,-5632.2 207.7697,-5632.2 207.7697,-5607.5333 160.2697,-5580.7"/>
+<polygon fill="#000000" stroke="#000000" points="25.7467,-5541.3315 34.3539,-5539.6353 29.0082,-5539.0158 32.2697,-5536.7 32.2697,-5536.7 32.2697,-5536.7 29.0082,-5539.0158 30.1855,-5533.7647 25.7467,-5541.3315 25.7467,-5541.3315"/>
+<ellipse fill="none" stroke="#000000" cx="23.1375" cy="-5543.1841" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;tl_points_EPSG3857 -->
 <g id="node92" class="node">
@@ -5012,7 +5022,7 @@
 </g>
 </g>
 <!-- sed&#45;tl_points_EPSG3857&#45;&gt;sed&#45;tl_DataCore -->
-<g id="edge236" class="edge">
+<g id="edge237" class="edge">
 <title>sed&#45;tl_points_EPSG3857:w&#45;&gt;sed&#45;tl_DataCore:e</title>
 <path fill="none" stroke="#000000" d="M955.4982,-2632.7C921.428,-2632.7 909.103,-2632.7 870.2697,-2632.7"/>
 <polygon fill="#000000" stroke="#000000" points="965.4696,-2628.7 965.4697,-2636.7 963.8697,-2636.7 963.8696,-2628.7 965.4696,-2628.7"/>
@@ -5055,23 +5065,23 @@
 </g>
 </g>
 <!-- sahularch_c14&#45;&gt;global_SiteMaster -->
-<g id="edge170" class="edge">
+<g id="edge171" class="edge">
 <title>sahularch_c14:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.8356,-2932.8684C429.0961,-2938.46 419.1923,-2963.6689 403.7697,-2998.7 371.8238,-3071.2622 374.5893,-5773.509 370.7697,-5852.7 367.6107,-5918.193 423.8388,-5999.7 358.2697,-5999.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.8356,-2932.8684C429.0963,-2938.4601 419.1932,-2963.6693 403.7697,-2998.7 371.9674,-3070.9309 374.1404,-5760.85 370.7697,-5839.7 367.5529,-5914.9476 433.586,-6008.7 358.2697,-6008.7"/>
 <polygon fill="#000000" stroke="#000000" points="467.2958,-2932.3455 475.5602,-2935.2883 471.2827,-2932.0228 475.2697,-2931.7 475.2697,-2931.7 475.2697,-2931.7 471.2827,-2932.0228 474.9792,-2928.1117 467.2958,-2932.3455 467.2958,-2932.3455"/>
 <ellipse fill="none" stroke="#000000" cx="464.1062" cy="-2932.6037" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahularch_c14&#45;&gt;global_dbDOI -->
-<g id="edge168" class="edge">
+<g id="edge169" class="edge">
 <title>sahularch_c14:w&#45;&gt;global_dbDOI:e</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.6715,-2954.4543C433.3222,-2957.5728 419.691,-2970.6339 403.7697,-2998.7 369.4544,-3059.1907 415.8158,-5501.7 346.2697,-5501.7"/>
 <polygon fill="#000000" stroke="#000000" points="467.2803,-2954.1129 475.4555,-2957.2952 471.275,-2953.9064 475.2697,-2953.7 475.2697,-2953.7 475.2697,-2953.7 471.275,-2953.9064 475.0839,-2950.1048 467.2803,-2954.1129 467.2803,-2954.1129"/>
 <ellipse fill="none" stroke="#000000" cx="464.0846" cy="-2954.278" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahularch_c14&#45;&gt;global_MetaSite -->
-<g id="edge169" class="edge">
+<g id="edge170" class="edge">
 <title>sahularch_c14:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.9323,-2911.1326C424.9789,-2919.0851 425.5616,-2958.8859 403.7697,-2998.7 381.7036,-3039.0149 402.3326,-3063.2937 370.7697,-3096.7 315.8469,-3154.8304 248.9551,-3097.7157 203.7697,-3163.7 158.3129,-3230.0806 241.7228,-6059.7 161.2697,-6059.7"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M460.9323,-2911.1326C424.9789,-2919.0851 425.5616,-2958.8859 403.7697,-2998.7 381.7036,-3039.0149 402.3326,-3063.2937 370.7697,-3096.7 315.8469,-3154.8304 248.947,-3097.7101 203.7697,-3163.7 157.3639,-3231.4842 243.417,-6120.7 161.2697,-6120.7"/>
 <polygon fill="#000000" stroke="#000000" points="467.3093,-2910.4954 475.6276,-2913.2822 471.2895,-2910.0977 475.2697,-2909.7 475.2697,-2909.7 475.2697,-2909.7 471.2895,-2910.0977 474.9117,-2906.1178 467.3093,-2910.4954 467.3093,-2910.4954"/>
 <ellipse fill="none" stroke="#000000" cx="464.1252" cy="-2910.8136" rx="3.2" ry="3.2"/>
 </g>
@@ -5150,25 +5160,25 @@
 </g>
 </g>
 <!-- sahulsed_fluvial_tl&#45;&gt;global_SiteMaster -->
-<g id="edge188" class="edge">
+<g id="edge189" class="edge">
 <title>sahulsed_fluvial_tl:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M448.7666,-4134.3194C421.859,-4141.0138 416.3004,-4167.6848 403.7697,-4199.7 370.292,-4285.2334 375.5801,-5760.9744 370.7697,-5852.7 367.3357,-5918.1791 423.8388,-5999.7 358.2697,-5999.7"/>
-<polygon fill="#000000" stroke="#000000" points="455.3191,-4133.5878 463.6692,-4136.2778 459.2944,-4133.1439 463.2697,-4132.7 463.2697,-4132.7 463.2697,-4132.7 459.2944,-4133.1439 462.8702,-4129.1222 455.3191,-4133.5878 455.3191,-4133.5878"/>
-<ellipse fill="none" stroke="#000000" cx="452.1388" cy="-4133.9429" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M448.7668,-4134.3194C421.8597,-4141.0141 416.3029,-4167.6858 403.7697,-4199.7 370.5484,-4284.5584 375.0489,-5748.671 370.7697,-5839.7 367.233,-5914.9332 433.586,-6008.7 358.2697,-6008.7"/>
+<polygon fill="#000000" stroke="#000000" points="455.3191,-4133.5878 463.6692,-4136.2778 459.2944,-4133.1439 463.2697,-4132.7 463.2697,-4132.7 463.2697,-4132.7 459.2944,-4133.1439 462.8701,-4129.1222 455.3191,-4133.5878 455.3191,-4133.5878"/>
+<ellipse fill="none" stroke="#000000" cx="452.1388" cy="-4133.943" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_fluvial_tl&#45;&gt;global_dbDOI -->
-<g id="edge186" class="edge">
+<g id="edge187" class="edge">
 <title>sahulsed_fluvial_tl:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M448.6279,-4155.955C426.4082,-4160.2033 416.6594,-4175.1634 403.7697,-4199.7 370.0974,-4263.7976 418.6735,-5501.7 346.2697,-5501.7"/>
-<polygon fill="#000000" stroke="#000000" points="455.2989,-4155.3832 463.5771,-4158.2868 459.2843,-4155.0416 463.2697,-4154.7 463.2697,-4154.7 463.2697,-4154.7 459.2843,-4155.0416 462.9622,-4151.1132 455.2989,-4155.3832 455.2989,-4155.3832"/>
-<ellipse fill="none" stroke="#000000" cx="452.1106" cy="-4155.6565" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M448.6221,-4155.9519C426.3846,-4160.1909 416.5873,-4175.1257 403.7697,-4199.7 359.4437,-4284.6826 375.2675,-4965.9577 370.7697,-5061.7 366.1741,-5159.5214 444.1989,-5501.7 346.2697,-5501.7"/>
+<polygon fill="#000000" stroke="#000000" points="455.2987,-4155.3813 463.5763,-4158.2869 459.2842,-4155.0407 463.2697,-4154.7 463.2697,-4154.7 463.2697,-4154.7 459.2842,-4155.0407 462.9631,-4151.1131 455.2987,-4155.3813 455.2987,-4155.3813"/>
+<ellipse fill="none" stroke="#000000" cx="452.1104" cy="-4155.6539" rx="3.2" ry="3.2"/>
 </g>
 <!-- sahulsed_fluvial_tl&#45;&gt;global_MetaSite -->
-<g id="edge187" class="edge">
+<g id="edge188" class="edge">
 <title>sahulsed_fluvial_tl:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M448.9619,-4112.3301C416.2243,-4120.6739 417.3778,-4159.7639 403.7697,-4199.7 368.7124,-4302.5832 386.2171,-4580.1112 370.7697,-4687.7 321.9276,-5027.8778 251.1742,-5102.3189 203.7697,-5442.7 199.0303,-5476.7306 195.6287,-6059.7 161.2697,-6059.7"/>
-<polygon fill="#000000" stroke="#000000" points="455.3211,-4111.6056 463.6772,-4114.2769 459.2954,-4111.1528 463.2697,-4110.7 463.2697,-4110.7 463.2697,-4110.7 459.2954,-4111.1528 462.8621,-4107.1231 455.3211,-4111.6056 455.3211,-4111.6056"/>
-<ellipse fill="none" stroke="#000000" cx="452.1417" cy="-4111.9679" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M448.6059,-4112.4696C416.6594,-4121.1742 419.1321,-4160.605 403.7697,-4199.7 199.1261,-4720.4851 263.1921,-4886.3143 203.7697,-5442.7 199.7617,-5480.2272 199.0103,-6120.7 161.2697,-6120.7"/>
+<polygon fill="#000000" stroke="#000000" points="455.3273,-4111.6585 463.701,-4114.2741 459.2985,-4111.1793 463.2697,-4110.7 463.2697,-4110.7 463.2697,-4110.7 459.2985,-4111.1793 462.8383,-4107.1259 455.3273,-4111.6585 455.3273,-4111.6585"/>
+<ellipse fill="none" stroke="#000000" cx="452.1503" cy="-4112.0419" rx="3.2" ry="3.2"/>
 </g>
 <!-- geography_columns -->
 <g id="node98" class="node">
@@ -5190,9 +5200,9 @@
 <!-- geography_columns&#45;&gt;spatial_ref_sys -->
 <g id="edge154" class="edge">
 <title>geography_columns:w&#45;&gt;spatial_ref_sys:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M964.6689,-7021.5051C924.4058,-7014.5602 915.2788,-6979.7 867.2697,-6979.7"/>
-<polygon fill="#000000" stroke="#000000" points="971.2963,-7022.0474 978.976,-7026.288 975.283,-7022.3737 979.2697,-7022.7 979.2697,-7022.7 979.2697,-7022.7 975.283,-7022.3737 979.5633,-7019.112 971.2963,-7022.0474 971.2963,-7022.0474"/>
-<ellipse fill="none" stroke="#000000" cx="968.107" cy="-7021.7864" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M964.7028,-7021.5328C924.5053,-7014.7495 915.1369,-6980.7 867.2697,-6980.7"/>
+<polygon fill="#000000" stroke="#000000" points="971.2952,-7022.061 978.9821,-7026.2885 975.2824,-7022.3805 979.2697,-7022.7 979.2697,-7022.7 979.2697,-7022.7 975.2824,-7022.3805 979.5572,-7019.1115 971.2952,-7022.061 971.2952,-7022.061"/>
+<ellipse fill="none" stroke="#000000" cx="968.1054" cy="-7021.8054" rx="3.2" ry="3.2"/>
 </g>
 <!-- geometry_columns -->
 <g id="node99" class="node">
@@ -5214,9 +5224,9 @@
 <!-- geometry_columns&#45;&gt;spatial_ref_sys -->
 <g id="edge155" class="edge">
 <title>geometry_columns:w&#45;&gt;spatial_ref_sys:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M967.8881,-6938.7804C926.233,-6945.3544 916.4753,-6979.7 867.2697,-6979.7"/>
-<polygon fill="#000000" stroke="#000000" points="974.2921,-6938.2994 982.5394,-6941.2899 978.2809,-6937.9997 982.2697,-6937.7 982.2697,-6937.7 982.2697,-6937.7 978.2809,-6937.9997 982,-6934.1101 974.2921,-6938.2994 974.2921,-6938.2994"/>
-<ellipse fill="none" stroke="#000000" cx="971.1011" cy="-6938.5391" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M967.8557,-6938.8061C926.1337,-6945.5366 916.6146,-6980.7 867.2697,-6980.7"/>
+<polygon fill="#000000" stroke="#000000" points="974.2931,-6938.3122 982.5451,-6941.2894 978.2814,-6938.0061 982.2697,-6937.7 982.2697,-6937.7 982.2697,-6937.7 978.2814,-6938.0061 981.9942,-6934.1106 974.2931,-6938.3122 974.2931,-6938.3122"/>
+<ellipse fill="none" stroke="#000000" cx="971.1025" cy="-6938.557" rx="3.2" ry="3.2"/>
 </g>
 </g>
 </svg>

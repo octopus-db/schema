@@ -1026,7 +1026,7 @@
             <column ascending="true" name="AMSID"/>
          </index>
       </table>
-      <table name="crn_aus_basins" numRows="273" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/mpr9-yn15. Table creation date: 2023-09-26 13:21:02 UTC" schema="public" type="TABLE">
+      <table name="crn_aus_basins" numRows="273" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/mpr9-yn15. Table creation date: 2023-09-26 14:26:24 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1135,7 +1135,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_aus_outlets" numRows="273" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/mpr9-yn15. Tble creation date: 2023-09-26 13:21:05 UTC" schema="public" type="TABLE">
+      <table name="crn_aus_outlets" numRows="273" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/mpr9-yn15. Tble creation date: 2023-09-26 14:26:27 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1210,7 +1210,7 @@
             <column ascending="true" name="BESTNDID"/>
          </index>
       </table>
-      <table name="crn_inprep_basins" numRows="0" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 13:21:07 UTC" schema="public" type="TABLE">
+      <table name="crn_inprep_basins" numRows="0" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 14:26:30 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1319,7 +1319,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_inprep_outlets" numRows="0" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 13:21:10 UTC" schema="public" type="TABLE">
+      <table name="crn_inprep_outlets" numRows="0" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 14:26:33 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1330,7 +1330,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_int_basins" numRows="4152" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/g76f-0h45. Table creation date: 2023-09-26 13:21:16 UTC" schema="public" type="TABLE">
+      <table name="crn_int_basins" numRows="4152" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/g76f-0h45. Table creation date: 2023-09-26 14:26:38 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1439,7 +1439,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_int_outlets" numRows="4152" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/g76f-0h45. Table creation date: 2023-09-26 13:21:18 UTC" schema="public" type="TABLE">
+      <table name="crn_int_outlets" numRows="4152" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/g76f-0h45. Table creation date: 2023-09-26 14:26:41 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1573,7 +1573,7 @@
             <column ascending="true" name="OBSID1"/>
          </index>
       </table>
-      <table name="crn_xxl_basins" numRows="206" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 13:21:24 UTC" schema="public" type="TABLE">
+      <table name="crn_xxl_basins" numRows="206" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 14:26:46 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1682,7 +1682,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="crn_xxl_outlets" numRows="206" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 13:21:26 UTC" schema="public" type="TABLE">
+      <table name="crn_xxl_outlets" numRows="206" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 14:26:49 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1702,7 +1702,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="desc" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="zips" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
       </table>
-      <table name="expage" numRows="16009" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 13:21:30 UTC" schema="public" type="TABLE">
+      <table name="expage" numRows="16009" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 14:26:52 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -2189,7 +2189,7 @@
             <column ascending="true" name="SPECIES"/>
          </index>
       </table>
-      <table name="fossahul_webmercator_nrand_25000" numRows="11858" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 13:21:34 UTC" schema="public" type="TABLE">
+      <table name="fossahul_webmercator_nrand_25000" numRows="11858" remarks="Is flat **GeoServer input** table. Table creation date: 2023-09-26 14:26:56 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="254" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="254" type="varchar" typeCode="12"/>
@@ -2356,6 +2356,7 @@
       <table name="global_biomeID" numRows="63" remarks="The global_biomeID table stores iconic *biome types* that allow for a coarse characterisation/classifications of sampled sites amongst Earth’s major biogeographic units." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;global_biomeID_seq&quot;'::regclass)" digits="0" id="0" name="BIOMEID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="PARENTID" foreignKey="global_biomeid_fk" implied="false" onDeleteCascade="false" schema="public" table="global_biomeID"/>
+            <child column="BIOMEID" foreignKey="&lt;--BIOMEID_from_global_biomeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_SiteMaster"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="BIOMETYPE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="PARENTID" nullable="true" remarks="" size="5" type="int2" typeCode="5">
@@ -2729,6 +2730,9 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="SITE_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="24" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="25" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="BIOMEID" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="BIOMEID" foreignKey="&lt;--BIOMEID_from_global_biomeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_biomeID"/>
+         </column>
          <primaryKey column="SITEID" sequenceNumberInPK="1"/>
          <index name="global_SiteMaster_pkey" unique="true">
             <column ascending="true" name="SITEID"/>
@@ -2908,7 +2912,7 @@
             <column ascending="true" name="OSL_TYPEAB"/>
          </index>
       </table>
-      <table name="publications" numRows="4631" remarks="Is flat **GeoServer input** table (bbox). Table creation date: 2023-09-26 13:21:37 UTC" schema="public" type="TABLE">
+      <table name="publications" numRows="4631" remarks="Is flat **GeoServer input** table (bbox). Table creation date: 2023-09-26 14:26:59 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="bbox" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CRN_SUBCMP" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
@@ -2920,7 +2924,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahularch_c14" numRows="9501" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2mb4-rr36. Table creation date: 2023-09-26 13:21:40 UTC" schema="public" type="TABLE">
+      <table name="sahularch_c14" numRows="9501" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2mb4-rr36. Table creation date: 2023-09-26 14:27:02 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3054,7 +3058,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahularch_osl" numRows="973" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/ypr0-j711. Table creation date: 2023-09-26 13:21:43 UTC" schema="public" type="TABLE">
+      <table name="sahularch_osl" numRows="973" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/ypr0-j711. Table creation date: 2023-09-26 14:27:05 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3211,7 +3215,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahularch_tl" numRows="240" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/xq40-t003. Table creation date: 2023-09-26 13:21:46 UTC" schema="public" type="TABLE">
+      <table name="sahularch_tl" numRows="240" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/xq40-t003. Table creation date: 2023-09-26 14:27:08 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3366,7 +3370,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_aeolian_osl" numRows="772" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/5jcw-tn50. Table creation date: 2023-09-26 13:21:49 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_aeolian_osl" numRows="772" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/5jcw-tn50. Table creation date: 2023-09-26 14:27:11 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3532,7 +3536,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_aeolian_tl" numRows="361" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/a2k9-kj43. Table creation date: 2023-09-26 13:21:52 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_aeolian_tl" numRows="361" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/a2k9-kj43. Table creation date: 2023-09-26 14:27:14 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3696,7 +3700,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_fluvial_osl" numRows="1212" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/p5ye-rn35. Table creation date: 2023-09-26 13:21:55 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_fluvial_osl" numRows="1212" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/p5ye-rn35. Table creation date: 2023-09-26 14:27:17 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3862,7 +3866,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_fluvial_tl" numRows="564" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2a76-vw55. Table creation date: 2023-09-26 13:21:58 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_fluvial_tl" numRows="564" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2a76-vw55. Table creation date: 2023-09-26 14:27:20 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4026,7 +4030,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_lacustrine_osl" numRows="474" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/6hmv-zz61. Table creation date: 2023-09-26 13:22:01 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_lacustrine_osl" numRows="474" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/6hmv-zz61. Table creation date: 2023-09-26 14:27:23 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4192,7 +4196,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahulsed_lacustrine_tl" numRows="41" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/32de-mj32. Table creation date: 2023-09-26 13:22:03 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_lacustrine_tl" numRows="41" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/32de-mj32. Table creation date: 2023-09-26 14:27:26 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>

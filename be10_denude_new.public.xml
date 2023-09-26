@@ -933,7 +933,7 @@
             <column ascending="true" name="METHODABBR"/>
          </index>
       </table>
-      <table name="cabah_unittypeID" numRows="15" remarks="" schema="public" type="TABLE">
+      <table name="cabah_unittypeID" numRows="15" remarks="Is lookup table for compilations that involve collection units, i.e., **SahulCHAR**. This table, according to Neotoma's IPPD template, stores *collection unit types*." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;cabah_unittypeID_UNITTYPEID_seq&quot;'::regclass)" digits="0" id="0" name="UNITTYPEID" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="UNITTYPE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="UNITTDESCR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1523,8 +1523,8 @@
          <column autoUpdated="true" defaultValue="nextval('crn_v3_basins_webmercator_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID1" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
-            <parent column="OBSID1" foreignKey="&lt;--OBSID1_from_crn_al_DataCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="crn_al_DataCore"/>
             <parent column="OBSID1" foreignKey="&lt;--OBSID1_from_crn_be_DataCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="crn_be_DataCore"/>
+            <parent column="OBSID1" foreignKey="&lt;--OBSID1_from_crn_al_DataCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="crn_al_DataCore"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="STUDYID" nullable="true" remarks="" size="5" type="varchar" typeCode="12">
@@ -1550,8 +1550,8 @@
          <column autoUpdated="true" defaultValue="nextval('crn_v3_outlets_webmercator_id_seq'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID1" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
-            <parent column="OBSID1" foreignKey="&lt;--OBSID1_from_crn_al_DataCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="crn_al_DataCore"/>
             <parent column="OBSID1" foreignKey="&lt;--OBSID1_from_crn_be_DataCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="crn_be_DataCore"/>
+            <parent column="OBSID1" foreignKey="&lt;--OBSID1_from_crn_al_DataCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="crn_al_DataCore"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="STUDYID" nullable="true" remarks="" size="5" type="varchar" typeCode="12">
@@ -2555,8 +2555,8 @@
             <child column="REFDBID2" foreignKey="&lt;--REFDBID(2)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
             <child column="REFDBID3" foreignKey="&lt;--REFDBID(3)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
             <child column="REFDBID4" foreignKey="&lt;--REFDBID(4)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
-            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefKeyword"/>
             <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefAbstract_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefAbstract"/>
+            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefKeyword"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OAID" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
             <parent column="OAID" foreignKey="&lt;--OAID_from_global_Author_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_Author"/>

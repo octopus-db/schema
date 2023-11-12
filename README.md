@@ -14,8 +14,7 @@ If you'd like to learn more about the OCTOPUS project, please visit ...
 ## A way to run SchemSpy on your database
 
 SchemaSpy is a Java-based software that creates database documentation of even highly complex relational database database management systems (DMS).
-Here is *one way* to run SchemaSpy (from the terminal on your **Mac**).\
-BTW SchemaSpy will only look at your database's structure, but never at its content. We, therefore, consider it safe to use.
+Here is *one way* to run SchemaSpy (from the terminal on your **Mac**). BTW SchemaSpy will only look at your database's structure, but never at its content. We, therefore, consider it safe to use.
 
 ### Open Terminal
 
@@ -33,13 +32,15 @@ To install Homebrew, paste the following in your macOS terminal ...
 
 ### Download and install SchemaSpy
 
-Visit the SchemaSpy GitHub releases page and download the latest release (`.jar`` file). Save it to a directory on your machine.
+Visit the SchemaSpy GitHub releases page and download the latest release (`.jar` file). Save it to a directory on your machine.
 
 ### Download and install Graphviz
 
-SchemaSpy relies on Graphviz for generating graphical representations of the database schema. To install Graphviz paste the following homebrew command in your macOS terminal
+SchemaSpy relies on Graphviz for generating graphical representations of the database schema. To install Graphviz paste the following homebrew command in your macOS terminal ...
 
     brew install graphviz
+
+... and Homebrew will do the job for you.
 
 ### Download JDBC driver
 
@@ -65,7 +66,7 @@ Create a `schemaspy.properties` file within that directory, where you set the pa
     # change in case public should be the wrong db schema
     schemaspy.s=public
 
-Replace the placeholders (your_database_host, your_database_name, your_username, your_password, output_directory) with your actual database connection details and desired output directory.
+Replace the placeholders (your_database_host, your_database_name, your_username, your_password, output_directory etc.) with your actual database connection details and desired output directory.
 
 In terminal, use the `cd` command to navigate to the directory where you saved SchemaSpy and the JDBC driver for your database. For example
 
@@ -77,7 +78,7 @@ Within the above path, run the following command to run SchemaSpy
 
 ### View the Output
 
-Once SchemaSpy completes, open the generated HTML report in your web browser. The main HTML file is usually named `index.html`` and is located in the output directory you specified.
+Once SchemaSpy completes, open the generated HTML report in your web browser. The main HTML file is usually named `index.html` and is located in the output directory you specified.
 Remember to replace placeholder values in the command with your actual database connection details. If you encounter any issues, refer to the SchemaSpy documentation or check for error messages in the terminal for troubleshooting.
 
 ----

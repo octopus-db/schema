@@ -13,7 +13,7 @@ If you'd like to learn more about the OCTOPUS project, please visit ...
 
 ## A way to run SchemaSpy against your database
 
-SchemaSpy is a Java-based software that creates database documentation of even highly complex relational database database management systems (DMS).
+SchemaSpy is a Java-based software that creates database documentation of even highly complex relational database management systems (DMS).
 Here is *one way* to run SchemaSpy (from the terminal on your **Mac**). BTW SchemaSpy will only look at your database's structure, but never at its content. We, therefore, consider it safe to use.
 
 ### Open Terminal

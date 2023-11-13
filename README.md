@@ -34,6 +34,13 @@ To install Homebrew, paste the following in your macOS terminal ...
 
 Visit the SchemaSpy GitHub releases page and download the latest release (`.jar` file). Save it to a directory on your machine.
 
+Alternatively just paste ...
+
+    curl -L https://github.com/schemaspy/schemaspy/releases/download/v6.2.4/schemaspy-6.2.4.jar \
+    --output ~/Downloads/schemaspy.jar
+
+... to your terminal. You'll find the file in Downloads. Move it to a directory on your machine.
+
 ### Download and install Graphviz
 
 SchemaSpy relies on Graphviz for generating graphical representations of the database schema. To install Graphviz paste the following homebrew command in your macOS terminal ...
@@ -45,6 +52,13 @@ SchemaSpy relies on Graphviz for generating graphical representations of the dat
 ### Download JDBC driver
 
 A JDBC driver is a software component allowing a Java application, in this case SchemaSpy, to talk to a database. The JCBD driver will have to match your DMS, which is PostgreSQL in the OCTOPUS case. You'll find the latest PostgreSQL via https://jdbc.postgresql.org. However, no matter what DMS, download the matching JDBC driver `.jar` file and save it to the directory where the SchemaSpy `.jar` file is already sitting.
+
+Alternatively  just paste ...
+
+     curl -L https://jdbc.postgresql.org/download/postgresql-42.5.4.jar \
+    --output ~/Downloads/jdbc-driver.jar
+
+... to your terminal. You'll find the file in Downloads. Move it to a directory on your machine.
 
 ### Run SchemaSpy
 
@@ -74,7 +88,7 @@ In terminal, use the `cd` command to navigate to the directory where you saved S
 
 Within the above path, run the following command to run SchemaSpy
 
-    java -jar schemaspy.jar -vizjs
+    java -jar schemaspy.jar
 
 ### View the Output
 

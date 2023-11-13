@@ -11,7 +11,7 @@ If you'd like to learn more about the OCTOPUS project, please visit ...
 * OCTOPUS database documentation: https://octopus-db.github.io/documentation/
 * OCTOPUS database accompanying peer reviewed publication: https://doi.org/10.5194/essd-14-3695-2022
 
-## A way to run SchemSpy on your database
+## A way to run SchemaSpy on your database
 
 SchemaSpy is a Java-based software that creates database documentation of even highly complex relational database database management systems (DMS).
 Here is *one way* to run SchemaSpy (from the terminal on your **Mac**). BTW SchemaSpy will only look at your database's structure, but never at its content. We, therefore, consider it safe to use.

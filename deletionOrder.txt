@@ -5,10 +5,7 @@ crn_int_outlets
 crn_inprep_outlets
 crn_aus_outlets
 cabah_unittypeID
-cabah_flowtypeID
 cabah_charmethodID
-cabah_catchmentsizeID
-cabah_basinsizeID
 cabah_agetypeID
 crn_xxl_basins
 crn_int_basins
@@ -83,7 +80,10 @@ fos_mtdsID
 fos_fosmat2ID
 fos_fosmat1ID
 fos_chemtypeID
+cabah_flowtypeID
 cabah_datasourceID
+cabah_catchmentsizeID
+cabah_basinsizeID
 c14_solvent2ID
 c14_materia1ID
 c14_hum_modID

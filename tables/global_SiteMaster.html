@@ -181,6 +181,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="global_UnitMaster.SITEID references global_SiteMaster.SITEID via &lt;--SITEID_from_global_SiteMaster_fkey"><a href='global_UnitMaster.html'>global_UnitMaster</a><span class='relatedKey'>.SITEID</span></td>
+                                                <td class="constraint detail">&lt;--SITEID_from_global_SiteMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="sahularch_c14.SITEID&#39;s name implies that it&#39;s a child of global_SiteMaster.SITEID, but it doesn&#39;t reference that column."><a href='sahularch_c14.html'>sahularch_c14</a><span class='relatedKey'>.SITEID</span></td>
                                                 <td class="constraint detail">Implied Constraint</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -786,7 +791,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td><p>Is the corresponding neotoma/IPPD site ID, if available</p></td>
+                                    <td><p>Is the corresponding neotoma/IPPD site ID, if applicable</p></td>
                                 </tr>
                                 <tr>
                                     <td><span id="SITEDESRC">SITEDESRC</span></td>

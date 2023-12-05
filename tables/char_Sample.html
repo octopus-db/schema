@@ -74,6 +74,19 @@
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
                     <h1>char_Sample</h1><p><span id="recordNumber">41793</span> rows</p><br />
+                    <div class="box box-primary">
+                        <div class="box-header with-border">
+                            <i class="fa fa-file-text-o"></i>
+                            <h3 id="Description" class="box-title">Description</h3>
+                            <div class="box-tools pull-right">
+                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
+                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
+                            </div>
+                        </div><!-- /.box-header -->
+                        <div class="box-body clearfix">
+                            <p>Is Sahul Charcoal / Black Carbon (<strong>SahulChar</strong>) sample table. This table stores SahulChar samples and is, therefore, situated between the collection-specific DataCore tables (subordinate) and the <code>global_UnitMaster</code> table (superordinate).</p>
+                        </div><!-- /.box-body -->
+                    </div>
                 </section>
                 <!-- Main content -->
                 <section class="content">
@@ -117,6 +130,11 @@
                                     <td>nextval(&#39;&quot;char_Sample_SMPID_seq&quot;&#39;::regclass)</td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="char_DataCore.SMPID references char_Sample.SMPID via &lt;--SMPID_from_char_Sample_fkey"><a href='char_DataCore.html'>char_DataCore</a><span class='relatedKey'>.SMPID</span></td>
+                                                <td class="constraint detail">&lt;--SMPID_from_char_Sample_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td>

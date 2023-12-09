@@ -5,6 +5,9 @@ digraph "oneDegreeRelationshipsDiagramImplied" {
   "global_UnitMaster":"DEPOSITID":w -> "cabah_depositID":"DEPOSITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"UNITTYPEID":w -> "cabah_unittypeID":"UNITTYPEID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "sahulchar":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar":"SMPID":w -> "char_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar":"UNITID":w -> "global_UnitMaster":"UNITID.type":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "cabah_col_mtdID" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -52,7 +55,7 @@ digraph "oneDegreeRelationshipsDiagramImplied" {
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="80" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="UNITID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="80" HEIGHT="16">UNITID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">41.793 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">41.793 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/char_Sample.html"
     target="_top"
@@ -72,7 +75,7 @@ digraph "oneDegreeRelationshipsDiagramImplied" {
       <TR><TD PORT="BASINSZEID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">BASINSZEID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="FLOWTYPEID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">FLOWTYPEID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23.734 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23.734 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">22 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_SiteMaster.html"
     target="_top"
@@ -96,11 +99,28 @@ digraph "oneDegreeRelationshipsDiagramImplied" {
       <TR><TD PORT="CREATED_AT" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16">CREATED_AT</TD></TR></TABLE></TD><TD PORT="CREATED_AT.type" ALIGN="LEFT">timestamptz[35,6]</TD></TR>
       <TR><TD PORT="UPDATED_AT" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16">UPDATED_AT</TD></TR></TABLE></TD><TD PORT="UPDATED_AT.type" ALIGN="LEFT">timestamptz[35,6]</TD></TR>
       <TR><TD PORT="COLL_SPEC" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16">COLL_SPEC</TD></TR></TABLE></TD><TD PORT="COLL_SPEC.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="UNIT_DESCR" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16">UNIT_DESCR</TD></TR></TABLE></TD><TD PORT="UNIT_DESCR.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_UnitMaster.html"
     target="_top"
     tooltip="global_UnitMaster"
+  ];
+  "sahulchar" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="56" HEIGHT="16"><B>sahulchar</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="OBSID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">OBSID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="METASITEID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">METASITEID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="SITEID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">SITEID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="UNITID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">UNITID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/sahulchar.html"
+    target="_top"
+    tooltip="sahulchar"
   ];
 }

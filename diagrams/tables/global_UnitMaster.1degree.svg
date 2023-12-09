@@ -43,7 +43,7 @@
 <g id="node2" class="node">
 <title>global_UnitMaster</title>
 <g id="a_node2"><a xlink:href="../../tables/global_UnitMaster.html" xlink:title="global_UnitMaster" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="198,-78.7 198,-454.7 419,-454.7 419,-78.7 198,-78.7"/>
+<polygon fill="#ffffff" stroke="transparent" points="198,-100.7 198,-454.7 419,-454.7 419,-100.7 198,-100.7"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="200.5,-429.7 200.5,-452.7 417.5,-452.7 417.5,-429.7 200.5,-429.7"/>
 <polygon fill="none" stroke="#000000" points="200.5,-429.7 200.5,-452.7 417.5,-452.7 417.5,-429.7 200.5,-429.7"/>
 <text text-anchor="start" x="205.5" y="-438.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_UnitMaster</text>
@@ -111,20 +111,16 @@
 <text text-anchor="start" x="220.5" y="-128.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">COLL_SPEC</text>
 <polygon fill="none" stroke="#000000" points="325.5,-121.7 325.5,-143.7 417.5,-143.7 417.5,-121.7 325.5,-121.7"/>
 <text text-anchor="start" x="328.5" y="-129.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
-<polygon fill="none" stroke="#000000" points="200.5,-99.7 200.5,-121.7 325.5,-121.7 325.5,-99.7 200.5,-99.7"/>
-<text text-anchor="start" x="220.5" y="-106.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">UNIT_DESCR</text>
-<polygon fill="none" stroke="#000000" points="325.5,-99.7 325.5,-121.7 417.5,-121.7 417.5,-99.7 325.5,-99.7"/>
-<text text-anchor="start" x="328.5" y="-107.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
-<polygon fill="#ffffff" stroke="transparent" points="200.5,-80.7 200.5,-99.7 248.5,-99.7 248.5,-80.7 200.5,-80.7"/>
-<polygon fill="none" stroke="#000000" points="200.5,-80.7 200.5,-99.7 248.5,-99.7 248.5,-80.7 200.5,-80.7"/>
-<text text-anchor="start" x="203.5" y="-86.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 4</text>
-<polygon fill="#ffffff" stroke="transparent" points="248.5,-80.7 248.5,-99.7 325.5,-99.7 325.5,-80.7 248.5,-80.7"/>
-<polygon fill="none" stroke="#000000" points="248.5,-80.7 248.5,-99.7 325.5,-99.7 325.5,-80.7 248.5,-80.7"/>
-<text text-anchor="start" x="277.8807" y="-86.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">531 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="325.5,-80.7 325.5,-99.7 417.5,-99.7 417.5,-80.7 325.5,-80.7"/>
-<polygon fill="none" stroke="#000000" points="325.5,-80.7 325.5,-99.7 417.5,-99.7 417.5,-80.7 325.5,-80.7"/>
-<text text-anchor="start" x="398.9053" y="-86.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
-<polygon fill="none" stroke="#000000" stroke-width="2" points="199,-79.7 199,-453.7 418,-453.7 418,-79.7 199,-79.7"/>
+<polygon fill="#ffffff" stroke="transparent" points="200.5,-102.7 200.5,-121.7 248.5,-121.7 248.5,-102.7 200.5,-102.7"/>
+<polygon fill="none" stroke="#000000" points="200.5,-102.7 200.5,-121.7 248.5,-121.7 248.5,-102.7 200.5,-102.7"/>
+<text text-anchor="start" x="203.5" y="-108.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 4</text>
+<polygon fill="#ffffff" stroke="transparent" points="248.5,-102.7 248.5,-121.7 325.5,-121.7 325.5,-102.7 248.5,-102.7"/>
+<polygon fill="none" stroke="#000000" points="248.5,-102.7 248.5,-121.7 325.5,-121.7 325.5,-102.7 248.5,-102.7"/>
+<text text-anchor="start" x="277.8807" y="-108.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">531 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="325.5,-102.7 325.5,-121.7 417.5,-121.7 417.5,-102.7 325.5,-102.7"/>
+<polygon fill="none" stroke="#000000" points="325.5,-102.7 325.5,-121.7 417.5,-121.7 417.5,-102.7 325.5,-102.7"/>
+<text text-anchor="start" x="398.9053" y="-108.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
+<polygon fill="none" stroke="#000000" stroke-width="2" points="199,-101.7 199,-453.7 418,-453.7 418,-101.7 199,-101.7"/>
 </a>
 </g>
 </g>

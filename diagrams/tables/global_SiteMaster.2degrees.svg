@@ -275,7 +275,7 @@
 <polygon fill="none" stroke="#000000" points="562,-280.7 562,-302.7 671,-302.7 671,-280.7 562,-280.7"/>
 <text text-anchor="start" x="565" y="-288.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">int4[10]</text>
 <polygon fill="none" stroke="#000000" points="439,-258.7 439,-280.7 562,-280.7 562,-258.7 439,-258.7"/>
-<text text-anchor="start" x="459" y="-265.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITEDESRC</text>
+<text text-anchor="start" x="459" y="-265.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITEDESCR</text>
 <polygon fill="none" stroke="#000000" points="562,-258.7 562,-280.7 671,-280.7 671,-258.7 562,-258.7"/>
 <text text-anchor="start" x="565" y="-266.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
 <polygon fill="#ffffff" stroke="transparent" points="439,-239.7 439,-258.7 478,-258.7 478,-239.7 439,-239.7"/>
@@ -484,7 +484,7 @@
 <text text-anchor="start" x="242.5" y="-356.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CATCHSZEID</text>
 <polygon fill="#ffffff" stroke="transparent" points="213.5,-327.7 213.5,-349.7 388.5,-349.7 388.5,-327.7 213.5,-327.7"/>
 <polygon fill="none" stroke="#000000" points="213.5,-327.7 213.5,-349.7 388.5,-349.7 388.5,-327.7 213.5,-327.7"/>
-<text text-anchor="start" x="242.5" y="-334.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CATCHMSIZE</text>
+<text text-anchor="start" x="242.5" y="-334.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CATCHSIZE</text>
 <polygon fill="none" stroke="#000000" points="213.5,-308.7 213.5,-327.7 388.5,-327.7 388.5,-308.7 213.5,-308.7"/>
 <text text-anchor="start" x="216.5" y="-314.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
 <polygon fill="#ffffff" stroke="transparent" points="213.5,-289.7 213.5,-308.7 277.5,-308.7 277.5,-289.7 213.5,-289.7"/>

@@ -733,7 +733,7 @@
 <g id="node7" class="node">
 <title>char_DataCore</title>
 <g id="a_node7"><a xlink:href="../../tables/char_DataCore.html" xlink:title="char_DataCore" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="662,-2321.2 662,-2734.2 786,-2734.2 786,-2321.2 662,-2321.2"/>
+<polygon fill="#ffffff" stroke="transparent" points="662,-2299.2 662,-2734.2 786,-2734.2 786,-2299.2 662,-2299.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="662,-2710.7 662,-2733.7 786,-2733.7 786,-2710.7 662,-2710.7"/>
 <polygon fill="none" stroke="#000000" points="662,-2710.7 662,-2733.7 786,-2733.7 786,-2710.7 662,-2710.7"/>
 <text text-anchor="start" x="667" y="-2719.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">char_DataCore</text>
@@ -779,24 +779,27 @@
 <text text-anchor="start" x="691" y="-2431.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DATASRCID</text>
 <polygon fill="none" stroke="#000000" points="662,-2402.7 662,-2424.7 786,-2424.7 786,-2402.7 662,-2402.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="667" y="-2419.7"/>
-<text text-anchor="start" x="691" y="-2409.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REF1</text>
+<text text-anchor="start" x="691" y="-2409.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
 <polygon fill="none" stroke="#000000" points="662,-2380.7 662,-2402.7 786,-2402.7 786,-2380.7 662,-2380.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="667" y="-2397.7"/>
-<text text-anchor="start" x="691" y="-2387.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REF2</text>
+<text text-anchor="start" x="691" y="-2387.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID2</text>
 <polygon fill="none" stroke="#000000" points="662,-2358.7 662,-2380.7 786,-2380.7 786,-2358.7 662,-2358.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="667" y="-2375.7"/>
-<text text-anchor="start" x="691" y="-2365.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REF3</text>
-<polygon fill="none" stroke="#000000" points="662,-2339.7 662,-2358.7 786,-2358.7 786,-2339.7 662,-2339.7"/>
-<text text-anchor="start" x="665" y="-2345.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="662,-2320.7 662,-2339.7 699,-2339.7 699,-2320.7 662,-2320.7"/>
-<polygon fill="none" stroke="#000000" points="662,-2320.7 662,-2339.7 699,-2339.7 699,-2320.7 662,-2320.7"/>
-<text text-anchor="start" x="665" y="-2326.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 15</text>
-<polygon fill="#ffffff" stroke="transparent" points="699,-2320.7 699,-2339.7 769,-2339.7 769,-2320.7 699,-2320.7"/>
-<polygon fill="none" stroke="#000000" points="699,-2320.7 699,-2339.7 769,-2339.7 769,-2320.7 699,-2320.7"/>
-<text text-anchor="start" x="706.094" y="-2326.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">48.234 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="769,-2320.7 769,-2339.7 786,-2339.7 786,-2320.7 769,-2320.7"/>
-<polygon fill="none" stroke="#000000" points="769,-2320.7 769,-2339.7 786,-2339.7 786,-2320.7 769,-2320.7"/>
-<text text-anchor="start" x="776.8862" y="-2326.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+<text text-anchor="start" x="691" y="-2365.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID3</text>
+<polygon fill="none" stroke="#000000" points="662,-2336.7 662,-2358.7 786,-2358.7 786,-2336.7 662,-2336.7"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="667" y="-2353.7"/>
+<text text-anchor="start" x="691" y="-2343.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<polygon fill="none" stroke="#000000" points="662,-2317.7 662,-2336.7 786,-2336.7 786,-2317.7 662,-2317.7"/>
+<text text-anchor="start" x="665" y="-2323.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="662,-2298.7 662,-2317.7 699,-2317.7 699,-2298.7 662,-2298.7"/>
+<polygon fill="none" stroke="#000000" points="662,-2298.7 662,-2317.7 699,-2317.7 699,-2298.7 662,-2298.7"/>
+<text text-anchor="start" x="665" y="-2304.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 16</text>
+<polygon fill="#ffffff" stroke="transparent" points="699,-2298.7 699,-2317.7 769,-2317.7 769,-2298.7 699,-2298.7"/>
+<polygon fill="none" stroke="#000000" points="699,-2298.7 699,-2317.7 769,-2317.7 769,-2298.7 699,-2298.7"/>
+<text text-anchor="start" x="706.094" y="-2304.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">48.234 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="769,-2298.7 769,-2317.7 786,-2317.7 786,-2298.7 769,-2298.7"/>
+<polygon fill="none" stroke="#000000" points="769,-2298.7 769,-2317.7 786,-2317.7 786,-2298.7 769,-2298.7"/>
+<text text-anchor="start" x="776.8862" y="-2304.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
 </a>
 </g>
 </g>

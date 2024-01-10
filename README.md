@@ -92,7 +92,7 @@ Within the above path, run the following command to run SchemaSpy
 
 (in case this causes an cairo error try
 
-    java -jar schemaspy-6.2.4.jar -vizjs
+    java -jar schemaspy.jar -vizjs
 )
 
 ### View the Output

@@ -61,6 +61,10 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "sahulchar":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"SMPID":w -> "char_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"UNITID":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"METASITEID":w -> "global_MetaSite":"METASITEID.type":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"OAID":w -> "global_Author":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"UNITID":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"DBDOI":w -> "global_dbDOI":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"METASITEID":w -> "global_MetaSite":"METASITEID.type":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
@@ -274,7 +278,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="81" HEIGHT="16"><B>global_Author</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.716 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">5 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.723 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_Author.html"
     target="_top"
@@ -327,7 +331,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD PORT="META_DESCR" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="91" HEIGHT="16">META_DESCR</TD></TR></TABLE></TD><TD PORT="META_DESCR.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="FEATURESRC" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="91" HEIGHT="16">FEATURESRC</TD></TR></TABLE></TD><TD PORT="FEATURESRC.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="FEATURETYP" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="91" HEIGHT="16">FEATURETYP</TD></TR></TABLE></TD><TD PORT="FEATURETYP.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">12.140 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">17 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">12.140 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">18 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_MetaSite.html"
     target="_top"
@@ -360,7 +364,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16"><B>global_SiteMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23.734 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">22 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23.734 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_SiteMaster.html"
     target="_top"
@@ -371,7 +375,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16"><B>global_UnitMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_UnitMaster.html"
     target="_top"
@@ -420,6 +424,17 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     URL="../../tables/sahulchar.html"
     target="_top"
     tooltip="sahulchar"
+  ];
+  "sahulchar_units" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16"><B>sahulchar_units</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/sahulchar_units.html"
+    target="_top"
+    tooltip="sahulchar_units"
   ];
   "sahulsed_aeolian_osl" [
    label=<

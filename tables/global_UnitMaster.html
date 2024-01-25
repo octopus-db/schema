@@ -140,6 +140,11 @@
                                                 <td class="constraint detail">Implied Constraint</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
+                                            <tr>
+                                                <td title="sahulchar_units.UNITID&#39;s name implies that it&#39;s a child of global_UnitMaster.UNITID, but it doesn&#39;t reference that column."><a href='sahulchar_units.html'>sahulchar_units</a><span class='relatedKey'>.UNITID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td>
@@ -168,7 +173,7 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Is fkey. Refer to global_SiteMaster table</p></td>
                                 </tr>
                                 <tr>
                                     <td><span id="UNITNAME">UNITNAME</span></td>
@@ -185,7 +190,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Name of the site</p></td>
                                 </tr>
                                 <tr>
                                     <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="UNITHANDLE">UNITHANDLE</span></td>
@@ -202,7 +207,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Code name for the Collection Unit. This code may be up to 10 characters, but an effort is made to keep these to 8 characters or less. Neither special characters nor whitespace allowed</p></td>
                                 </tr>
                                 <tr>
                                     <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UNITTYPEID">UNITTYPEID</span></td>
@@ -224,7 +229,7 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Is fkey. For available values refer to cabah_unittypeID table</p></td>
                                 </tr>
                                 <tr>
                                     <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="COLLECTID">COLLECTID</span></td>
@@ -246,7 +251,7 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Is fkey. For available values refer to cabah_col_mtdID table</p></td>
                                 </tr>
                                 <tr>
                                     <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="DEPOSITID">DEPOSITID</span></td>
@@ -268,7 +273,7 @@
                                             </tr>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Is fkey. For available values refer to cabah_depositID table</p></td>
                                 </tr>
                                 <tr>
                                     <td><span id="COLLDATE">COLLDATE</span></td>
@@ -285,7 +290,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Is unit collection date, if reported, at the highest possible dd/mm/yyyy level.</p></td>
                                 </tr>
                                 <tr>
                                     <td><span id="WATERDEPTH">WATERDEPTH</span></td>
@@ -302,7 +307,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Water depth in m. (-9999.99 = no data)</p></td>
                                 </tr>
                                 <tr>
                                     <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="NEO_HANDLE">NEO_HANDLE</span></td>
@@ -319,7 +324,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Is neotoma unit handle (if available)</p></td>
                                 </tr>
                                 <tr>
                                     <td><span id="UNIT_COMMT">UNIT_COMMT</span></td>
@@ -336,7 +341,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td><p>Is neotoma unit handle (if available)</p></td>
+                                    <td><p>Free text site comment field</p></td>
                                 </tr>
                                 <tr>
                                     <td><span id="CREATED_AT">CREATED_AT</span></td>
@@ -388,6 +393,79 @@
                                         </table>
                                     </td>
                                     <td><p>Stores collection process specifics (if applicable)</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="IS_CHAR">IS_CHAR</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>false</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Is this collection unit part of the SahulChar collection?</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="IS_IPPD">IS_IPPD</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>false</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Is this collection unit part of the IPPD collection?</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="IS_NEOTOMA">IS_NEOTOMA</span></td>
+                                    <td>bool</td>
+                                    <td>1</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>false</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Is this collection unit part of Neotoma db?</p></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="UNIT_REF">UNIT_REF</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="global_UnitMaster.UNIT_REF references global_RefCore.REFDBID via &lt;--REFDBID_from_global_RefCore_fkey"><a href='global_RefCore.html'>global_RefCore</a><span class='relatedKey'>.REFDBID</span></td>
+                                                <td class="constraint detail">&lt;--REFDBID_from_global_RefCore_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td><p>Is fkey. Refer to global_RefCore table</p></td>
                                 </tr>
                                 </tbody>
                             </table>

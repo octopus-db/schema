@@ -84,6 +84,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "global_SiteMaster":"RIVID":w -> "global_rivID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_SiteMaster":"SITECODEID":w -> "global_SiteCode":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "global_UnitMaster":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sahularch_c14":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahularch_c14":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahularch_c14":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
@@ -98,6 +99,10 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "sahulchar":"elipses":w -> "char_DataCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"elipses":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"elipses":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"elipses":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
@@ -481,7 +486,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="81" HEIGHT="16"><B>global_Author</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="OAID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">OAID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.716 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">5 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.723 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_Author.html"
     target="_top"
@@ -526,7 +531,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="91" HEIGHT="16"><B>global_MetaSite</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">12.140 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">17 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">12.140 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">18 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_MetaSite.html"
     target="_top"
@@ -537,7 +542,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16"><B>global_RefCore</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3.860 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">35 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3.936 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">36 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_RefCore.html"
     target="_top"
@@ -570,7 +575,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16"><B>global_SiteMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23.734 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">22 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23.734 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_SiteMaster.html"
     target="_top"
@@ -581,7 +586,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16"><B>global_UnitMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_UnitMaster.html"
     target="_top"
@@ -630,6 +635,17 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     URL="../../tables/sahulchar.html"
     target="_top"
     tooltip="sahulchar"
+  ];
+  "sahulchar_units" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16"><B>sahulchar_units</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/sahulchar_units.html"
+    target="_top"
+    tooltip="sahulchar_units"
   ];
   "sahulsed_aeolian_osl" [
    label=<

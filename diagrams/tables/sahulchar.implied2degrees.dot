@@ -102,6 +102,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "global_UnitMaster":"COLLECTID":w -> "cabah_col_mtdID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"DEPOSITID":w -> "cabah_depositID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "global_UnitMaster":"UNIT_REF":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"UNITTYPEID":w -> "cabah_unittypeID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sahularch_c14":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahularch_c14":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
@@ -118,6 +119,9 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "sahulchar":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"SMPID":w -> "char_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"UNITID":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "sahulchar_units":"elipses":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
@@ -556,7 +560,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="91" HEIGHT="16"><B>global_MetaSite</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">12.140 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">17 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">12.140 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">18 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_MetaSite.html"
     target="_top"
@@ -567,7 +571,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16"><B>global_RefCore</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3.860 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">35 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3.936 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">36 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_RefCore.html"
     target="_top"
@@ -600,7 +604,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16"><B>global_SiteMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23.734 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">22 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23.734 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">23 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_SiteMaster.html"
     target="_top"
@@ -611,7 +615,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16"><B>global_UnitMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_UnitMaster.html"
     target="_top"
@@ -690,6 +694,8 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD PORT="RIVDIV" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">RIVDIV</TD></TR></TABLE></TD><TD PORT="RIVDIV.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="IBRACODE" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">IBRACODE</TD></TR></TABLE></TD><TD PORT="IBRACODE.type" ALIGN="LEFT">varchar[3]</TD></TR>
       <TR><TD PORT="IBRAREGION" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">IBRAREGION</TD></TR></TABLE></TD><TD PORT="IBRAREGION.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="X_WGS84" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">X_WGS84</TD></TR></TABLE></TD><TD PORT="X_WGS84.type" ALIGN="LEFT">numeric[10,6]</TD></TR>
+      <TR><TD PORT="Y_WGS84" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">Y_WGS84</TD></TR></TABLE></TD><TD PORT="Y_WGS84.type" ALIGN="LEFT">numeric[10,6]</TD></TR>
       <TR><TD PORT="CORDS_ELEV" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">CORDS_ELEV</TD></TR></TABLE></TD><TD PORT="CORDS_ELEV.type" ALIGN="LEFT">varchar[2147483647]</TD></TR>
       <TR><TD PORT="ELEVATION" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">ELEVATION</TD></TR></TABLE></TD><TD PORT="ELEVATION.type" ALIGN="LEFT">numeric[6,2]</TD></TR>
       <TR><TD PORT="BIOME" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16">BIOME</TD></TR></TABLE></TD><TD PORT="BIOME.type" ALIGN="LEFT">text[2147483647]</TD></TR>
@@ -759,6 +765,17 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     URL="../../tables/sahulchar.html"
     target="_top"
     tooltip="sahulchar"
+  ];
+  "sahulchar_units" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16"><B>sahulchar_units</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">531 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/sahulchar_units.html"
+    target="_top"
+    tooltip="sahulchar_units"
   ];
   "sahulsed_aeolian_osl" [
    label=<

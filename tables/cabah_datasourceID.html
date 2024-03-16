@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>cabah_datasourceID</h1><p><span id="recordNumber">10</span> rows</p><br />
+                    <h1>cabah_datasourceID</h1><p><span id="recordNumber">11</span> rows</p><br />
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-file-text-o"></i>
@@ -131,7 +131,27 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="cabah_ecolgroupID.ECOGRPSRC references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='cabah_ecolgroupID.html'>cabah_ecolgroupID</a><span class='relatedKey'>.ECOGRPSRC</span></td>
+                                                <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cabah_elementtypeID.ELMTSOURCE references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='cabah_elementtypeID.html'>cabah_elementtypeID</a><span class='relatedKey'>.ELMTSOURCE</span></td>
+                                                <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cabah_taxagroupID.TXAGRPSRC references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='cabah_taxagroupID.html'>cabah_taxagroupID</a><span class='relatedKey'>.TXAGRPSRC</span></td>
+                                                <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="char_DataCore.DATASRCID references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='char_DataCore.html'>char_DataCore</a><span class='relatedKey'>.DATASRCID</span></td>
+                                                <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="global_DataSetID.DSETSOURCE references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='global_DataSetID.html'>global_DataSetID</a><span class='relatedKey'>.DSETSOURCE</span></td>
                                                 <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>

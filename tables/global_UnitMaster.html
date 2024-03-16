@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>global_UnitMaster</h1><p><span id="recordNumber">531</span> rows</p><br />
+                    <h1>global_UnitMaster</h1><p><span id="recordNumber">597</span> rows</p><br />
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-file-text-o"></i>
@@ -136,12 +136,22 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="global_DataSetID.UNITID references global_UnitMaster.UNITID via &lt;--UNITID_from_global_UnitMaster_fkey"><a href='global_DataSetID.html'>global_DataSetID</a><span class='relatedKey'>.UNITID</span></td>
+                                                <td class="constraint detail">&lt;--UNITID_from_global_UnitMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="sahulchar.UNITID&#39;s name implies that it&#39;s a child of global_UnitMaster.UNITID, but it doesn&#39;t reference that column."><a href='sahulchar.html'>sahulchar</a><span class='relatedKey'>.UNITID</span></td>
                                                 <td class="constraint detail">Implied Constraint</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
                                                 <td title="sahulchar_units.UNITID&#39;s name implies that it&#39;s a child of global_UnitMaster.UNITID, but it doesn&#39;t reference that column."><a href='sahulchar_units.html'>sahulchar_units</a><span class='relatedKey'>.UNITID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="sahulchar_units_points_EPSG3857.UNITID&#39;s name implies that it&#39;s a child of global_UnitMaster.UNITID, but it doesn&#39;t reference that column."><a href='sahulchar_units_points_EPSG3857.html'>sahulchar_units_points_EPSG3857</a><span class='relatedKey'>.UNITID</span></td>
                                                 <td class="constraint detail">Implied Constraint</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>

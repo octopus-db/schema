@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>cabah_depositID</h1><p><span id="recordNumber">117</span> rows</p><br />
+                    <h1>cabah_depositID</h1><p><span id="recordNumber">119</span> rows</p><br />
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-file-text-o"></i>
@@ -131,8 +131,13 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="cabah_depositID.PARENTID references cabah_depositID.DEPOSITID via cabah_depositid_fk"><a href='cabah_depositID.html'>cabah_depositID</a><span class='relatedKey'>.PARENTID</span></td>
-                                                <td class="constraint detail">cabah_depositid_fk</td>
+                                                <td title="cabah_AnalysisUnit.FACIESID references cabah_depositID.DEPOSITID via &lt;--DEPOSITID_from_cabah_depositID_fkey"><a href='cabah_AnalysisUnit.html'>cabah_AnalysisUnit</a><span class='relatedKey'>.FACIESID</span></td>
+                                                <td class="constraint detail">&lt;--DEPOSITID_from_cabah_depositID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cabah_depositID.PARENTID references cabah_depositID.DEPOSITID via &lt;--DEPOSITID_from_cabah_depositID_fkey"><a href='cabah_depositID.html'>cabah_depositID</a><span class='relatedKey'>.PARENTID</span></td>
+                                                <td class="constraint detail">&lt;--DEPOSITID_from_cabah_depositID_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
@@ -179,8 +184,8 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="cabah_depositID.PARENTID references cabah_depositID.DEPOSITID via cabah_depositid_fk"><a href='cabah_depositID.html'>cabah_depositID</a><span class='relatedKey'>.DEPOSITID</span></td>
-                                                <td class="constraint detail">cabah_depositid_fk</td>
+                                                <td title="cabah_depositID.PARENTID references cabah_depositID.DEPOSITID via &lt;--DEPOSITID_from_cabah_depositID_fkey"><a href='cabah_depositID.html'>cabah_depositID</a><span class='relatedKey'>.DEPOSITID</span></td>
+                                                <td class="constraint detail">&lt;--DEPOSITID_from_cabah_depositID_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>

@@ -266,6 +266,11 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
+                                                <td title="global_datasetpublicationID.REFDBID references global_RefCore.REFDBID via &lt;--REFDBID_from_global_RefCore_fkey"><a href='global_datasetpublicationID.html'>global_datasetpublicationID</a><span class='relatedKey'>.REFDBID</span></td>
+                                                <td class="constraint detail">&lt;--REFDBID_from_global_RefCore_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="global_UnitMaster.UNIT_REF references global_RefCore.REFDBID via &lt;--REFDBID_from_global_RefCore_fkey"><a href='global_UnitMaster.html'>global_UnitMaster</a><span class='relatedKey'>.UNIT_REF</span></td>
                                                 <td class="constraint detail">&lt;--REFDBID_from_global_RefCore_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -315,13 +320,13 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="global_RefCore.REFDBID references global_RefAbstract.REFDBID via &lt;--REFDBID_from_global_RefAbstract_fkey"><a href='global_RefAbstract.html'>global_RefAbstract</a><span class='relatedKey'>.REFDBID</span></td>
-                                                <td class="constraint detail">&lt;--REFDBID_from_global_RefAbstract_fkey</td>
+                                                <td title="global_RefCore.REFDBID references global_RefKeyword.REFDBID via &lt;--REFDBID_from_global_RefKeyword_fkey"><a href='global_RefKeyword.html'>global_RefKeyword</a><span class='relatedKey'>.REFDBID</span></td>
+                                                <td class="constraint detail">&lt;--REFDBID_from_global_RefKeyword_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
-                                                <td title="global_RefCore.REFDBID references global_RefKeyword.REFDBID via &lt;--REFDBID_from_global_RefKeyword_fkey"><a href='global_RefKeyword.html'>global_RefKeyword</a><span class='relatedKey'>.REFDBID</span></td>
-                                                <td class="constraint detail">&lt;--REFDBID_from_global_RefKeyword_fkey</td>
+                                                <td title="global_RefCore.REFDBID references global_RefAbstract.REFDBID via &lt;--REFDBID_from_global_RefAbstract_fkey"><a href='global_RefAbstract.html'>global_RefAbstract</a><span class='relatedKey'>.REFDBID</span></td>
+                                                <td class="constraint detail">&lt;--REFDBID_from_global_RefAbstract_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>

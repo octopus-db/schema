@@ -78,7 +78,7 @@
                         <div class="col-md-12">
                             <div class="callout callout-info">
                                 <h4>SchemaSpy Analysis of be10_denude_new.public</h4>
-                                <p>Generated on Sat Mar 16 12:31 CET 2024</p>
+                                <p>Generated on Thu Apr 04 11:31 CEST 2024</p>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@
                                 <span class="info-box-icon bg-aqua"><i class="fa fa-table"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">TABLES</span>
-                                    <span class="info-box-number">121</span>
+                                    <span class="info-box-number">128</span>
                                 </div>
                                 <!-- /.info-box-content -->
                             </div>
@@ -118,7 +118,7 @@
                                 <span class="info-box-icon bg-green"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">COLUMNS</span>
-                                    <span class="info-box-number">3296</span>
+                                    <span class="info-box-number">3372</span>
                                 </div>
                                 <!-- /.info-box-content -->
                             </div>
@@ -130,7 +130,7 @@
                                 <span class="info-box-icon bg-yellow"><i class="ion ion-key"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Constraints</span>
-                                    <span class="info-box-number">225</span>
+                                    <span class="info-box-number">238</span>
                                 </div>
                                 <!-- /.info-box-content -->
                             </div>
@@ -142,7 +142,7 @@
                                 <span class="info-box-icon bg-red-active"><i class="fa fa-question" aria-hidden="true"></i></span>
                                 <div class="info-box-content">
                                     <span class="info-box-text">Anomalies</span>
-                                    <span class="info-box-number">108</span>
+                                    <span class="info-box-number">109</span>
                                 </div>
                                 <!-- /.info-box-content -->
                             </div>
@@ -205,6 +205,15 @@
                                     </tr>
                                 </thead>
                                 <tbody>
+                                    <tr class="tbl even" valign="top">
+                                        <td class="detail"><a href="tables/global_datasetpublicationID.html">global_datasetpublicationID</a></td>
+                                        <td class="detail" align="right">0</td>
+                                        <td class="detail" align="right">2</td>
+                                        <td class="detail" align="right">7</td>
+                                        <td class="detail" align="right">218</td>
+                                        <td class="detail" align="right">Table</td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived lookup table for compilations involving datasets, e.g. <strong>IPPD</strong>. This table stores <em>dataset publications</em>. NOTE &ndash; DATASETID and REFDBID together form a combined primary key.</p></td>
+                                    </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/cabah_elementtypeID.html">cabah_elementtypeID</a></td>
                                         <td class="detail" align="right">0</td>
@@ -269,6 +278,15 @@
                                         <td class="comment detail" style="display: table-cell;"><p>Is flat <strong>GeoServer input</strong> table (bbox). Table creation date: 2024-03-16 11:30:23 UTC</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
+                                        <td class="detail"><a href="tables/cabah_taxaID.html">cabah_taxaID</a></td>
+                                        <td class="detail" align="right">1</td>
+                                        <td class="detail" align="right">3</td>
+                                        <td class="detail" align="right">14</td>
+                                        <td class="detail" align="right">47144</td>
+                                        <td class="detail" align="right">Table</td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived taxa table for compilations dealing with taxa, e.g. <strong>IPPD</strong>. This table, according to Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa">https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa</a>), stores <em>taxa</em>  <a href="./null">&hellip;</a> IMPORTANT NOTE: Primary key (and, with the exception of &ldquo;TAXAGRPID&rdquo;, the other IDs too) have been migrated unaltered from Neotoma. Therefore, database relations will only work (and be updatable from the Neotoma source) if these IDs stay untouched.</p></td>
+                                    </tr>
+                                    <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/c13_valID.html">c13_valID</a></td>
                                         <td class="detail" align="right">1</td>
                                         <td class="detail" align="right">0</td>
@@ -324,10 +342,10 @@
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/cabah_depositID.html">cabah_depositID</a></td>
-                                        <td class="detail" align="right">2</td>
+                                        <td class="detail" align="right">3</td>
                                         <td class="detail" align="right">1</td>
                                         <td class="detail" align="right">6</td>
-                                        <td class="detail" align="right">117</td>
+                                        <td class="detail" align="right">119</td>
                                         <td class="detail" align="right">Table</td>
                                         <td class="comment detail" style="display: table-cell;"><p>Is lookup table for Sahul-related compilations. The cabah_depositID table stores the <em>type of deposit</em> sampled.</p></td>
                                     </tr>
@@ -366,6 +384,15 @@
                                         <td class="detail" align="right">4152</td>
                                         <td class="detail" align="right">Table</td>
                                         <td class="comment detail" style="display: table-cell;"><p>Is flat <strong>GeoServer input</strong> table. Refer to <a href="http://dx.doi.org/10.25900/g76f-0h45">http://dx.doi.org/10.25900/g76f-0h45</a>. Table creation date: 2024-03-16 11:30:06 UTC</p></td>
+                                    </tr>
+                                    <tr class="tbl even" valign="top">
+                                        <td class="detail"><a href="tables/neo_chronologies.html">neo_chronologies</a></td>
+                                        <td class="detail" align="right">0</td>
+                                        <td class="detail" align="right">4</td>
+                                        <td class="detail" align="right">14</td>
+                                        <td class="detail" align="right">31641</td>
+                                        <td class="detail" align="right">Table</td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived table for compilations dealing with chronologies, e.g. IPPD. This table, according to Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_chron.html#chronologies">https://neotoma-manual.readthedocs.io/en/latest/tables_chron.html#chronologies</a>), stores <em>chronology data</em>. <a href="./null">&hellip;</a> <em>A Chronology refers to an explicit chronology assigned to a Collection Unit. A Chronology has Chronology Controls, the actual age-depth control points, which are stored in the ChronControls table. A Chronology is also based on an Age Model, which may be a numerical method that fits a curve to a set of age-depth control points or may simply be individually dated Analysis Units.</em> IMPORTANT NOTE: The primary key values have been migrated unaltered from Neotoma. Therefore, database relations will only work (and be updatable from the Neotoma source) if these ID stays untouched.</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/crn_int_basins.html">crn_int_basins</a></td>
@@ -449,15 +476,6 @@
                                         <td class="comment detail" style="display: table-cell;"><p>Is <strong>Expage</strong> <em>spatial features table</em> (points, EPSG:900913)</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
-                                        <td class="detail"><a href="tables/global_DataSetID.html">global_DataSetID</a></td>
-                                        <td class="detail" align="right">0</td>
-                                        <td class="detail" align="right">3</td>
-                                        <td class="detail" align="right">12</td>
-                                        <td class="detail" align="right">154</td>
-                                        <td class="detail" align="right">Table</td>
-                                        <td class="comment detail" style="display: table-cell;"><p>Is the global master table that stores <em>dataset related information for all relevant compilations</em>. A Dataset is the set of samples for a particular data type, e.g. pollen,  from a certain collection unit (according to Neotoma db). Dataset types are defined in the <code>cabah_datasettypeID</code> table. In OCTOPUS data model hierarchy <code>global_DataSetID</code> is situated between the collection-specific sample tables (subordinate) and the <code>global_UnitMaster</code> table (superordinate); (= UNITID). <code>global_DataSetID</code> table is exclusively used for collections with a corresponding demand, i.e., will be bypassed for any collection that does not deal with multiple samples / observations from one and the same location / site / unit (e.g. a core).</p></td>
-                                    </tr>
-                                    <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/crn_xxl_basins.html">crn_xxl_basins</a></td>
                                         <td class="detail" align="right">0</td>
                                         <td class="detail" align="right">5</td>
@@ -468,9 +486,9 @@
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/global_UnitMaster.html">global_UnitMaster</a></td>
+                                        <td class="detail" align="right">8</td>
                                         <td class="detail" align="right">5</td>
-                                        <td class="detail" align="right">5</td>
-                                        <td class="detail" align="right">18</td>
+                                        <td class="detail" align="right">19</td>
                                         <td class="detail" align="right">597</td>
                                         <td class="detail" align="right">Table</td>
                                         <td class="comment detail" style="display: table-cell;"><p>Is the global master table that stores <em>collection-unit related information for all compilations</em>. Collection units are defined in the <code>cabah_unittypeID</code> table. In OCTOPUS data model hierarchy <code>global_UnitMaster</code> is situated between the collection-specific sample tables (subordinate) and the <code>global_SiteMaster</code> table (superordinate); (= SITEID). <code>global_UnitMaster</code> table is exclusively used for collections with a corresponding demand, i.e., will be bypassed for any collection that does not deal with multiple samples / observations from one and the same location / site / unit (e.g. a core).</p></td>
@@ -585,7 +603,7 @@
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/cabah_agetypeID.html">cabah_agetypeID</a></td>
-                                        <td class="detail" align="right">1</td>
+                                        <td class="detail" align="right">2</td>
                                         <td class="detail" align="right">0</td>
                                         <td class="detail" align="right">6</td>
                                         <td class="detail" align="right">11</td>
@@ -782,6 +800,15 @@
                                         <td class="comment detail" style="display: table-cell;"><p>Is <strong>FosSahul</strong> data table. This table stores <em>observations</em> (= smallest datamodel intity) for the FosSahul compilation and is subordinate to the <code>fos_Sample</code> table.</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
+                                        <td class="detail"><a href="tables/cabah_chroncontroltypeID.html">cabah_chroncontroltypeID</a></td>
+                                        <td class="detail" align="right">1</td>
+                                        <td class="detail" align="right">2</td>
+                                        <td class="detail" align="right">6</td>
+                                        <td class="detail" align="right">99</td>
+                                        <td class="detail" align="right">Table</td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived table for compilations dealing with chronologies, e.g. IPPD. This table, according to Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_chron.html#chroncontroltypes">https://neotoma-manual.readthedocs.io/en/latest/tables_chron.html#chroncontroltypes</a>), stores <em>chronology control types</em>.</p></td>
+                                    </tr>
+                                    <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/sahulsed_lacustrine_osl.html">sahulsed_lacustrine_osl</a></td>
                                         <td class="detail" align="right">0</td>
                                         <td class="detail" align="right">3</td>
@@ -845,6 +872,15 @@
                                         <td class="comment detail" style="display: table-cell;"><p>Is parent table for <code>global_RefCore</code> table. The latter stores reference information for <strong>all compilations</strong>. <code>global_Journal</code> store information about <em>journals</em> and is part of OCTOPUS reference system (= JOURNALID).</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
+                                        <td class="detail"><a href="tables/neo_contacts.html">neo_contacts</a></td>
+                                        <td class="detail" align="right">2</td>
+                                        <td class="detail" align="right">1</td>
+                                        <td class="detail" align="right">18</td>
+                                        <td class="detail" align="right">13396</td>
+                                        <td class="detail" align="right">Table</td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived lookup table for compilations involving Neotoma contacts, e.g. <strong>IPPD</strong>. This table stores <em>contacts</em> of both individuals and legal entities. To preserve table usability down the database pipeline, primary key values have NOT been altered and MUST BE always identical with those from the Neotoma original.</p></td>
+                                    </tr>
+                                    <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/osl-tl_mtdID.html">osl-tl_mtdID</a></td>
                                         <td class="detail" align="right">26</td>
                                         <td class="detail" align="right">0</td>
@@ -900,12 +936,12 @@
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/cabah_taxagroupID.html">cabah_taxagroupID</a></td>
-                                        <td class="detail" align="right">0</td>
+                                        <td class="detail" align="right">1</td>
                                         <td class="detail" align="right">1</td>
                                         <td class="detail" align="right">6</td>
                                         <td class="detail" align="right">56</td>
                                         <td class="detail" align="right">Table</td>
-                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. <strong>IPPD</strong>. This table, according Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa">https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa</a>), stores <em>taxa groups</em>  <a href="./null">&hellip;</a> <em>The TaxaGroupID facilitates rapid extraction of taxa groups that are typically grouped together for analysis. Some of these groups contain taxa in different classes or phyla.</em></p></td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. <strong>IPPD</strong>. This table, according to Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa">https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa</a>), stores <em>taxa groups</em>  <a href="./null">&hellip;</a> <em>The TaxaGroupID facilitates rapid extraction of taxa groups that are typically grouped together for analysis. Some of these groups contain taxa in different classes or phyla.</em></p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/fos_fosmat1ID.html">fos_fosmat1ID</a></td>
@@ -941,7 +977,7 @@
                                         <td class="detail" align="right">6</td>
                                         <td class="detail" align="right">194</td>
                                         <td class="detail" align="right">Table</td>
-                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. <strong>IPPD</strong>. This table, according Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#ecolgroups">https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#ecolgroups</a>), stores <em>ecological groups</em> that facilitate subsequent data handling <a href="./null">&hellip;</a> <em>Taxa are assigned to Sets of Ecological Groups. A taxon may be assigned to more than one Set of Ecological Groups, representing different schemes for organizing taxa</em></p></td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. <strong>IPPD</strong>. This table, according Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#ecolgroups">https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#ecolgroups</a>), stores <em>ecological groups</em> that facilitate subsequent data handling … <em>Taxa are assigned to Sets of Ecological Groups. A taxon may be assigned to more than one Set of Ecological Groups, representing different schemes for organizing taxa</em> …</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/c14_materia2ID.html">c14_materia2ID</a></td>
@@ -1071,10 +1107,10 @@
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/cabah_methodID.html">cabah_methodID</a></td>
-                                        <td class="detail" align="right">8</td>
+                                        <td class="detail" align="right">9</td>
                                         <td class="detail" align="right">1</td>
                                         <td class="detail" align="right">7</td>
-                                        <td class="detail" align="right">102</td>
+                                        <td class="detail" align="right">103</td>
                                         <td class="detail" align="right">Table</td>
                                         <td class="comment detail" style="display: table-cell;"><p>Is lookup table for Sahul-related compilations, i.e., <strong>SahulArch, FosSahul, SahulSed</strong>. This table stores the <em>type of method used in age determination</em> (= METHOD, = FOS_MTD).</p></td>
                                     </tr>
@@ -1095,6 +1131,15 @@
                                         <td class="detail" align="right">973</td>
                                         <td class="detail" align="right">Table</td>
                                         <td class="comment detail" style="display: table-cell;"><p>Is Sahul Archaeology (SahulArch) data table. This table stores <em>observations</em> (= smallest data model intity) for the <strong>SahulArch/ OSL collection</strong> and is subordinate to the <code>arch_Sample</code> table.</p></td>
+                                    </tr>
+                                    <tr class="tbl even" valign="top">
+                                        <td class="detail"><a href="tables/cabah_AnalysisUnit.html">cabah_AnalysisUnit</a></td>
+                                        <td class="detail" align="right">0</td>
+                                        <td class="detail" align="right">2</td>
+                                        <td class="detail" align="right">11</td>
+                                        <td class="detail" align="right">14167</td>
+                                        <td class="detail" align="right">Table</td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived table for compilations dealing with analysis units, e.g. <strong>IPPD</strong>. This table, according to Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_samples.html#analysisunits">https://neotoma-manual.readthedocs.io/en/latest/tables_samples.html#analysisunits</a>), stores <em>analysis units</em>, i.e., depth increments / bins that are considered analytical entities. Prior to db intake, this table has been filtered so it stores OCTOPUS relevant analysis units only. IMPORTANT NOTE: The primary key values have been migrated unaltered from Neotoma. Therefore, database relations will only work (and be updatable from the Neotoma source) if these ID stays untouched.</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/global_SiteCode.html">global_SiteCode</a></td>
@@ -1125,7 +1170,7 @@
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/global_RefCore.html">global_RefCore</a></td>
-                                        <td class="detail" align="right">36</td>
+                                        <td class="detail" align="right">37</td>
                                         <td class="detail" align="right">5</td>
                                         <td class="detail" align="right">23</td>
                                         <td class="detail" align="right">3943</td>
@@ -1268,6 +1313,15 @@
                                         <td class="comment detail" style="display: table-cell;"><p>Is <strong>FosSahul</strong> lookup table for most updated <em>vertebrata order</em> name (= ORDR)</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
+                                        <td class="detail"><a href="tables/global_contactstatusID.html">global_contactstatusID</a></td>
+                                        <td class="detail" align="right">1</td>
+                                        <td class="detail" align="right">0</td>
+                                        <td class="detail" align="right">5</td>
+                                        <td class="detail" align="right">7</td>
+                                        <td class="detail" align="right">Table</td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is Neotoma-derived lookup table for compilations involving Neotoma contacts, e.g. <strong>IPPD</strong>. This table stores <em>contact statuses</em>.</p></td>
+                                    </tr>
+                                    <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/fos_polygons_EPSG3857.html">fos_polygons_EPSG3857</a></td>
                                         <td class="detail" align="right">0</td>
                                         <td class="detail" align="right">1</td>
@@ -1275,6 +1329,15 @@
                                         <td class="detail" align="right">11858</td>
                                         <td class="detail" align="right">Table</td>
                                         <td class="comment detail" style="display: table-cell;"><p>Is <strong>FosSahul</strong> <em>spatial features</em> table (polygons, EPSG:900913)</p></td>
+                                    </tr>
+                                    <tr class="tbl even" valign="top">
+                                        <td class="detail"><a href="tables/global_DataSetMaster.html">global_DataSetMaster</a></td>
+                                        <td class="detail" align="right">1</td>
+                                        <td class="detail" align="right">3</td>
+                                        <td class="detail" align="right">12</td>
+                                        <td class="detail" align="right">148</td>
+                                        <td class="detail" align="right">Table</td>
+                                        <td class="comment detail" style="display: table-cell;"><p>Is the global master table that stores <em>dataset related information for all relevant compilations</em>. A Dataset is the set of samples for a particular data type, e.g. pollen,  from a certain collection unit (according to Neotoma db). Dataset types are defined in the <code>cabah_datasettypeID</code> table. In OCTOPUS data model hierarchy <code>global_DataSetID</code> is situated between the collection-specific sample tables (subordinate) and the <code>global_UnitMaster</code> table (superordinate); (= UNITID). <code>global_DataSetID</code> table is exclusively used for collections with a corresponding demand, i.e., will be bypassed for any collection that does not deal with multiple samples / observations from one and the same location / site / unit (e.g. a core).</p></td>
                                     </tr>
                                     <tr class="tbl even" valign="top">
                                         <td class="detail"><a href="tables/fos_TaxRank5_genusID.html">fos_TaxRank5_genusID</a></td>

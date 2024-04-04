@@ -136,7 +136,17 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
-                                                <td title="global_DataSetID.UNITID references global_UnitMaster.UNITID via &lt;--UNITID_from_global_UnitMaster_fkey"><a href='global_DataSetID.html'>global_DataSetID</a><span class='relatedKey'>.UNITID</span></td>
+                                                <td title="global_DataSetMaster.UNITID references global_UnitMaster.UNITID via &lt;--UNITID_from_global_UnitMaster_fkey"><a href='global_DataSetMaster.html'>global_DataSetMaster</a><span class='relatedKey'>.UNITID</span></td>
+                                                <td class="constraint detail">&lt;--UNITID_from_global_UnitMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="neo_chronologies.NEO_UNITID&#39;s name implies that it&#39;s a child of global_UnitMaster.UNITID, but it doesn&#39;t reference that column."><a href='neo_chronologies.html'>neo_chronologies</a><span class='relatedKey'>.NEO_UNITID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="neo_chronologies.UNITID references global_UnitMaster.UNITID via &lt;--UNITID_from_global_UnitMaster_fkey"><a href='neo_chronologies.html'>neo_chronologies</a><span class='relatedKey'>.UNITID</span></td>
                                                 <td class="constraint detail">&lt;--UNITID_from_global_UnitMaster_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
@@ -477,6 +487,28 @@
                                     </td>
                                     <td><p>Is fkey. Refer to global_RefCore table</p></td>
                                 </tr>
+                                <tr>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="NEO_UNITID">NEO_UNITID</span></td>
+                                    <td>int4</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="cabah_AnalysisUnit.NEO_UNITID references global_UnitMaster.NEO_UNITID via &lt;--NEO_UNITID_from_global_UnitMaster_fkey"><a href='cabah_AnalysisUnit.html'>cabah_AnalysisUnit</a><span class='relatedKey'>.NEO_UNITID</span></td>
+                                                <td class="constraint detail">&lt;--NEO_UNITID_from_global_UnitMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
                                 </tbody>
                             </table>
                         </div>
@@ -518,6 +550,12 @@
                                     <td>Must be unique</td>
                                     <td><span title='Ascending'>Asc</span></td>
                                     <td>NEO_HANDLE</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> global_unitmaster_NEO_UNITID_ukey</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>NEO_UNITID</td>
                                 </tr>
                                 <tr>
                                     <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> global_UnitMaster_UNITHANDLE_key</td>

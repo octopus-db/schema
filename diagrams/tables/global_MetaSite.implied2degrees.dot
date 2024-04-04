@@ -38,8 +38,8 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "fossahul_webmercator_nrand_25000":"DBDOI":w -> "global_dbDOI":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "fossahul_webmercator_nrand_25000":"METASITEID":w -> "global_MetaSite":"METASITEID.type":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "fossahul_webmercator_nrand_25000":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "global_DataSetID":"elipses":w -> "cabah_datasourceID":"DATASRCID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_DataSetID":"elipses":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "global_DataSetMaster":"elipses":w -> "cabah_datasourceID":"DATASRCID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "global_DataSetMaster":"elipses":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_MetaSite":"FEATURESRC":w -> "cabah_datasourceID":"DATASRCID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_MetaSite":"FEATURETYP":w -> "global_SiteCode":"SITECODEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_SiteMaster":"BASINSZEID":w -> "cabah_basinsizeID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -173,7 +173,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="111" HEIGHT="16"><B>cabah_taxagroupID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">56 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">56 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/cabah_taxagroupID.html"
     target="_top"
@@ -333,16 +333,16 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     target="_top"
     tooltip="global_biomeID"
   ];
-  "global_DataSetID" [
+  "global_DataSetMaster" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="98" HEIGHT="16"><B>global_DataSetID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="125" HEIGHT="16"><B>global_DataSetMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">154 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">148 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
     </TABLE>>
-    URL="../../tables/global_DataSetID.html"
+    URL="../../tables/global_DataSetMaster.html"
     target="_top"
-    tooltip="global_DataSetID"
+    tooltip="global_DataSetMaster"
   ];
   "global_dbDOI" [
    label=<
@@ -424,7 +424,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16"><B>global_UnitMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">597 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">5 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">597 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">8 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_UnitMaster.html"
     target="_top"

@@ -54,6 +54,7 @@ digraph "twoDegreesRelationshipsDiagram" {
   "arch_tl_DataCore":"elipses":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "c14_calcurve":"elipses":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "c14_calprogram":"elipses":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "cabah_chroncontroltypeID":"elipses":w -> "cabah_methodID":"METHODID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"elipses":w -> "c14_calcurve":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"elipses":w -> "c14_calprogram":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -78,6 +79,7 @@ digraph "twoDegreesRelationshipsDiagram" {
   "fos_DataCore":"elipses":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"elipses":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"elipses":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "global_datasetpublicationID":"elipses":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_RefCore":"JOURNALID":w -> "global_Journal":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_RefCore":"OAID":w -> "global_Author":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_RefCore":"PUBTYPEID":w -> "global_PubType":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -307,6 +309,17 @@ digraph "twoDegreesRelationshipsDiagram" {
     target="_top"
     tooltip="c14_calprogram"
   ];
+  "cabah_chroncontroltypeID" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="152" HEIGHT="16"><B>cabah_chroncontroltypeID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">99 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
+    </TABLE>>
+    URL="../../tables/cabah_chroncontroltypeID.html"
+    target="_top"
+    tooltip="cabah_chroncontroltypeID"
+  ];
   "cabah_col_mtdID" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -341,7 +354,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="METHODABBR" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16">METHODABBR</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="PARENTID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="96" HEIGHT="16">PARENTID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">102 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">8 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">103 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">9 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/cabah_methodID.html"
     target="_top"
@@ -413,6 +426,17 @@ digraph "twoDegreesRelationshipsDiagram" {
     target="_top"
     tooltip="global_Author"
   ];
+  "global_datasetpublicationID" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="160" HEIGHT="16"><B>global_datasetpublicationID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">218 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/global_datasetpublicationID.html"
+    target="_top"
+    tooltip="global_datasetpublicationID"
+  ];
   "global_dbDOI" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -467,7 +491,7 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="PUBTYPEID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">PUBTYPEID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="JOURNALID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16">JOURNALID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3.943 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">36 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3.943 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">37 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_RefCore.html"
     target="_top"
@@ -500,7 +524,7 @@ digraph "twoDegreesRelationshipsDiagram" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16"><B>global_UnitMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">597 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">597 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">4 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_UnitMaster.html"
     target="_top"

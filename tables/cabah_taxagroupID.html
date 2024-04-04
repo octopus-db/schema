@@ -84,7 +84,7 @@
                             </div>
                         </div><!-- /.box-header -->
                         <div class="box-body clearfix">
-                            <p>Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. <strong>IPPD</strong>. This table, according Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa">https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa</a>), stores <em>taxa groups</em>  <a href="./../null">&hellip;</a> <em>The TaxaGroupID facilitates rapid extraction of taxa groups that are typically grouped together for analysis. Some of these groups contain taxa in different classes or phyla.</em></p>
+                            <p>Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. <strong>IPPD</strong>. This table, according to Neotoma db (<a href="https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa">https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa</a>), stores <em>taxa groups</em>  <a href="./../null">&hellip;</a> <em>The TaxaGroupID facilitates rapid extraction of taxa groups that are typically grouped together for analysis. Some of these groups contain taxa in different classes or phyla.</em></p>
                         </div><!-- /.box-body -->
                     </div>
                 </section>
@@ -130,6 +130,11 @@
                                     <td>nextval(&#39;&quot;cabah_taxagroupID_TAXAGRPID_seq&quot;&#39;::regclass)</td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="cabah_taxaID.TAXAGRPID references cabah_taxagroupID.TAXAGRPID via &lt;--TAXAGRPID_from_cabah_taxagroupID_table"><a href='cabah_taxaID.html'>cabah_taxaID</a><span class='relatedKey'>.TAXAGRPID</span></td>
+                                                <td class="constraint detail">&lt;--TAXAGRPID_from_cabah_taxagroupID_table</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td>

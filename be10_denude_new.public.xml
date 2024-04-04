@@ -42,6 +42,7 @@
       <sequence increment="1" name="global_DataSetID_DATASETID_seq" startValue="1"/>
       <sequence increment="1" name="global_UnitMaster_UNITID_seq" startValue="1"/>
       <sequence increment="1" name="global_biomeID_seq" startValue="1"/>
+      <sequence increment="1" name="global_contactstatusID_CSTATUSID_seq" startValue="1"/>
       <sequence increment="1" name="global_datasettypeID_DSETTYPEID_seq" startValue="1"/>
       <sequence increment="1" name="global_journal_seq" startValue="248"/>
       <sequence increment="1" name="global_sitecode_seq" startValue="20"/>
@@ -753,6 +754,7 @@
       <table name="cabah_agetypeID" numRows="11" remarks="Is lookup table for radiocarbon-related compilations. The cabah_agetypeID table stores the *type of time unit* used for sample age specification." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;cabah_agetypeID_AGETYPEID_seq&quot;'::regclass)" digits="0" id="0" name="AGETYPEID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="AGETYPEID" foreignKey="&lt;--AGETYPEID_from_cabah_agetypeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="char_DataCore"/>
+            <child column="AGETYPEID" foreignKey="&lt;--AGETYPEID_from_cabah_agetypeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="neo_chronologies"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="AGETYPE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AGETDESCR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -765,6 +767,27 @@
          </index>
          <index name="cabah_agetypeID_AGETYPE_key" unique="true">
             <column ascending="true" name="AGETYPE"/>
+         </index>
+      </table>
+      <table name="cabah_AnalysisUnit" numRows="14167" remarks="Is Neotoma-derived table for compilations dealing with analysis units, e.g. **IPPD**. This table, according to Neotoma db (https://neotoma-manual.readthedocs.io/en/latest/tables_samples.html#analysisunits), stores *analysis units*, i.e., depth increments / bins that are considered analytical entities. Prior to db intake, this table has been filtered so it stores OCTOPUS relevant analysis units only. IMPORTANT NOTE: The primary key values have been migrated unaltered from Neotoma. Therefore, database relations will only work (and be updatable from the Neotoma source) if these ID stays untouched." schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="ANLYSUNTID" nullable="false" remarks="Is original Neotoma _analysisunitid_" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="NEO_UNITID" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="NEO_UNITID" foreignKey="&lt;--NEO_UNITID_from_global_UnitMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_UnitMaster"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AUIT_NAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AUIT_DEPTH" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="AUIT_THICK" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="FACIESID" nullable="true" remarks="" size="5" type="int2" typeCode="5">
+            <parent column="DEPOSITID" foreignKey="&lt;--DEPOSITID_from_cabah_depositID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_depositID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="AUIT_MIXED" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="AUIT_ISGN" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="AUIT_NOTES" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="9" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="10" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="ANLYSUNTID" sequenceNumberInPK="1"/>
+         <index name="cabah_analysisunitID_pkey" unique="true">
+            <column ascending="true" name="ANLYSUNTID"/>
          </index>
       </table>
       <table name="cabah_basinsizeID" numRows="6" remarks="Is lookup table for charcoal-related compilations, i.e., **SahulCHAR**. This table, according to the Global Paleofire Database (https://www.paleofire.org/) template, stores arbitrary *water body area classes* (basin = water body itself)." schema="public" type="TABLE">
@@ -836,6 +859,24 @@
             <column ascending="true" name="CHEMPREPAB"/>
          </index>
       </table>
+      <table name="cabah_chroncontroltypeID" numRows="99" remarks="Is Neotoma-derived table for compilations dealing with chronologies, e.g. IPPD. This table, according to Neotoma db (https://neotoma-manual.readthedocs.io/en/latest/tables_chron.html#chroncontroltypes), stores *chronology control types*." schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CCONTRLID" nullable="false" remarks="Is original Neotoma _chroncontroltypeid_" size="10" type="int4" typeCode="4">
+            <child column="PARENTID" foreignKey="&lt;--CCONTRLID_from_cabah_chroncontroltypeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_chroncontroltypeID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="CCONTRLTYP" nullable="false" remarks="Is type of chronology control" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="PARENTID" nullable="true" remarks="Is self reference to primary key, i.e., CCONTRLID" size="10" type="int4" typeCode="4">
+            <parent column="CCONTRLID" foreignKey="&lt;--CCONTRLID_from_cabah_chroncontroltypeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_chroncontroltypeID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="METHODID" nullable="true" remarks="Is cabah_methodID table fkey" size="10" type="int4" typeCode="4">
+            <parent column="METHODID" foreignKey="&lt;--METHODID_from_cabah_methodID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_methodID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="4" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="5" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="CCONTRLID" sequenceNumberInPK="1"/>
+         <index name="cabah_chroncontroltypeID_pkey" unique="true">
+            <column ascending="true" name="CCONTRLID"/>
+         </index>
+      </table>
       <table name="cabah_col_mtdID" numRows="44" remarks="Is lookup table for Sahul-related compilations, i.e., **SahulArch, FosSahul, SahulSed**. This table stores the *sample collection method* (= COL_MTD)." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('cabah_col_mtdid_seq'::regclass)" digits="0" id="0" name="COL_MTDID" nullable="false" remarks="" size="5" type="smallserial" typeCode="5">
             <child column="COL_MTDID" foreignKey="&lt;--COL_MTDID_from_cabah_col_mtdID_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
@@ -863,7 +904,7 @@
             <child column="ELMTSOURCE" foreignKey="&lt;--DATASRCID_from_cabah_datasourceID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_elementtypeID"/>
             <child column="TXAGRPSRC" foreignKey="&lt;--DATASRCID_from_cabah_datasourceID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_taxagroupID"/>
             <child column="DATASRCID" foreignKey="&lt;--DATASRCID_from_cabah_datasourceID_fkey" implied="false" onDeleteCascade="false" schema="public" table="char_DataCore"/>
-            <child column="DSETSOURCE" foreignKey="&lt;--DATASRCID_from_cabah_datasourceID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_DataSetID"/>
+            <child column="DSETSOURCE" foreignKey="&lt;--DATASRCID_from_cabah_datasourceID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_DataSetMaster"/>
             <child column="FEATURESRC" foreignKey="&lt;--DATASRCID_from_cabah_datasourceID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_MetaSite"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="DATASOURCE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -879,14 +920,15 @@
             <column ascending="true" name="DATASOURCE"/>
          </index>
       </table>
-      <table name="cabah_depositID" numRows="117" remarks="Is lookup table for Sahul-related compilations. The cabah_depositID table stores the *type of deposit* sampled." schema="public" type="TABLE">
+      <table name="cabah_depositID" numRows="119" remarks="Is lookup table for Sahul-related compilations. The cabah_depositID table stores the *type of deposit* sampled." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;cabah_depositID_DEPOSITID_seq&quot;'::regclass)" digits="0" id="0" name="DEPOSITID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
-            <child column="PARENTID" foreignKey="cabah_depositid_fk" implied="false" onDeleteCascade="false" schema="public" table="cabah_depositID"/>
+            <child column="FACIESID" foreignKey="&lt;--DEPOSITID_from_cabah_depositID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_AnalysisUnit"/>
+            <child column="PARENTID" foreignKey="&lt;--DEPOSITID_from_cabah_depositID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_depositID"/>
             <child column="DEPOSITID" foreignKey="&lt;--DEPOSITID_from_cabah_depositID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_UnitMaster"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="DEPOSIT" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="PARENTID" nullable="false" remarks="" size="5" type="int2" typeCode="5">
-            <parent column="DEPOSITID" foreignKey="cabah_depositid_fk" implied="false" onDeleteCascade="false" schema="public" table="cabah_depositID"/>
+            <parent column="DEPOSITID" foreignKey="&lt;--DEPOSITID_from_cabah_depositID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_depositID"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="DEPOSITDSC" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="4" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
@@ -899,7 +941,7 @@
             <column ascending="true" name="DEPOSIT"/>
          </index>
       </table>
-      <table name="cabah_ecolgroupID" numRows="194" remarks="Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. **IPPD**. This table, according Neotoma db (https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#ecolgroups), stores *ecological groups* that facilitate subsequent data handling [...] _Taxa are assigned to Sets of Ecological Groups. A taxon may be assigned to more than one Set of Ecological Groups, representing different schemes for organizing taxa_" schema="public" type="TABLE">
+      <table name="cabah_ecolgroupID" numRows="194" remarks="Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. **IPPD**. This table, according Neotoma db (https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#ecolgroups), stores *ecological groups* that facilitate subsequent data handling … _Taxa are assigned to Sets of Ecological Groups. A taxon may be assigned to more than one Set of Ecological Groups, representing different schemes for organizing taxa_ …" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;cabah_ecolgroupID_ECOGROUPID_seq&quot;'::regclass)" digits="0" id="0" name="ECOGROUPID" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ECOLGROUP" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="ECOGRPHNDL" nullable="false" remarks="" size="4" type="varchar" typeCode="12"/>
@@ -969,11 +1011,12 @@
             <column ascending="true" name="LAB_ORIGID"/>
          </index>
       </table>
-      <table name="cabah_methodID" numRows="102" remarks="Is lookup table for Sahul-related compilations, i.e., **SahulArch, FosSahul, SahulSed**. This table stores the *type of method used in age determination* (= METHOD, = FOS_MTD)." schema="public" type="TABLE">
+      <table name="cabah_methodID" numRows="103" remarks="Is lookup table for Sahul-related compilations, i.e., **SahulArch, FosSahul, SahulSed**. This table stores the *type of method used in age determination* (= METHOD, = FOS_MTD)." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('cabah_methodid_seq'::regclass)" digits="0" id="0" name="METHODID" nullable="false" remarks="" size="5" type="smallserial" typeCode="5">
             <child column="METHODID" foreignKey="&lt;--METHODID_from_cabah_methodID_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
             <child column="METHODID" foreignKey="&lt;--METHODID_from_cabah_methodID_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_osl_DataCore"/>
             <child column="METHODID" foreignKey="&lt;--METHODID_from_cabah_methodID_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_tl_DataCore"/>
+            <child column="METHODID" foreignKey="&lt;--METHODID_from_cabah_methodID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_chroncontroltypeID"/>
             <child column="PARENTID" foreignKey="cabah_methodid_fk" implied="false" onDeleteCascade="false" schema="public" table="cabah_methodID"/>
             <child column="METHODID" foreignKey="&lt;--METHODID_from_cabah_methodID_fkey" implied="false" onDeleteCascade="false" schema="public" table="char_DataCore"/>
             <child column="FOS_MTDID" foreignKey="&lt;--METHODID_from_CABAH_methodID_fkey" implied="false" onDeleteCascade="false" schema="public" table="fos_DataCore"/>
@@ -999,8 +1042,10 @@
             <column ascending="true" name="METHODABBR"/>
          </index>
       </table>
-      <table name="cabah_taxagroupID" numRows="56" remarks="Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. **IPPD**. This table, according Neotoma db (https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa), stores *taxa groups*  [...] _The TaxaGroupID facilitates rapid extraction of taxa groups that are typically grouped together for analysis. Some of these groups contain taxa in different classes or phyla._" schema="public" type="TABLE">
-         <column autoUpdated="true" defaultValue="nextval('&quot;cabah_taxagroupID_TAXAGRPID_seq&quot;'::regclass)" digits="0" id="0" name="TAXAGRPID" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+      <table name="cabah_taxagroupID" numRows="56" remarks="Is Neotoma-derived lookup table for compilations dealing with taxa, e.g. **IPPD**. This table, according to Neotoma db (https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa), stores *taxa groups*  [...] _The TaxaGroupID facilitates rapid extraction of taxa groups that are typically grouped together for analysis. Some of these groups contain taxa in different classes or phyla._" schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('&quot;cabah_taxagroupID_TAXAGRPID_seq&quot;'::regclass)" digits="0" id="0" name="TAXAGRPID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
+            <child column="TAXAGRPID" foreignKey="&lt;--TAXAGRPID_from_cabah_taxagroupID_table" implied="false" onDeleteCascade="false" schema="public" table="cabah_taxaID"/>
+         </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="TAXAGROUP" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="TXAGRPHDLE" nullable="false" remarks="" size="3" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="TXAGRPSRC" nullable="true" remarks="" size="5" type="int2" typeCode="5">
@@ -1014,6 +1059,34 @@
          </index>
          <index name="cabah_taxagroupID_TXAGRPHDLE_key" unique="true">
             <column ascending="true" name="TXAGRPHDLE"/>
+         </index>
+      </table>
+      <table name="cabah_taxaID" numRows="47144" remarks="Is Neotoma-derived taxa table for compilations dealing with taxa, e.g. **IPPD**. This table, according to Neotoma db (https://neotoma-manual.readthedocs.io/en/latest/tables_taxa.html#taxa), stores *taxa*  [...] IMPORTANT NOTE: Primary key (and, with the exception of &quot;TAXAGRPID&quot;, the other IDs too) have been migrated unaltered from Neotoma. Therefore, database relations will only work (and be updatable from the Neotoma source) if these IDs stay untouched." schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="TAXONID" nullable="false" remarks="Is original Neotoma _taxonid_" size="10" type="int4" typeCode="4">
+            <child column="PARENTID" foreignKey="&lt;--TAXONID_from_cabah_taxaID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_taxaID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="TAXONCODE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="TAXONNAME" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="AUTHOR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="TAXONVALID" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="PARENTID" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="TAXONID" foreignKey="&lt;--TAXONID_from_cabah_taxaID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_taxaID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="TAXEXTINCT" nullable="false" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="TAXAGRPID" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="TAXAGRPID" foreignKey="&lt;--TAXAGRPID_from_cabah_taxagroupID_table" implied="false" onDeleteCascade="false" schema="public" table="cabah_taxagroupID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="NEOTXPUBID" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="NEOVALORID" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="CONTACTID" foreignKey="&lt;--CONTACTID_from_neo_contacts_fkey" implied="false" onDeleteCascade="false" schema="public" table="neo_contacts"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="VALIDDATE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="TAXONNOTE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="12" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="13" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="TAXONID" sequenceNumberInPK="1"/>
+         <index name="cabah_taxaID_pkey" unique="true">
+            <column ascending="true" name="TAXONID"/>
          </index>
       </table>
       <table name="cabah_unittypeID" numRows="16" remarks="Is lookup table for compilations that involve collection units, i.e., **SahulCHAR**. This table, according to Neotoma's IPPD template, stores *collection unit types*." schema="public" type="TABLE">
@@ -2547,8 +2620,23 @@
             <column ascending="true" name="BIOMETYPE"/>
          </index>
       </table>
-      <table name="global_DataSetID" numRows="154" remarks="Is the global master table that stores *dataset related information for all relevant compilations*. A Dataset is the set of samples for a particular data type, e.g. pollen,  from a certain collection unit (according to Neotoma db). Dataset types are defined in the `cabah_datasettypeID` table. In OCTOPUS data model hierarchy `global_DataSetID` is situated between the collection-specific sample tables (subordinate) and the `global_UnitMaster` table (superordinate); (= UNITID). `global_DataSetID` table is exclusively used for collections with a corresponding demand, i.e., will be bypassed for any collection that does not deal with multiple samples / observations from one and the same location / site / unit (e.g. a core)." schema="public" type="TABLE">
-         <column autoUpdated="true" defaultValue="nextval('&quot;global_DataSetID_DATASETID_seq&quot;'::regclass)" digits="0" id="0" name="DATASETID" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+      <table name="global_contactstatusID" numRows="7" remarks="Is Neotoma-derived lookup table for compilations involving Neotoma contacts, e.g. **IPPD**. This table stores *contact statuses*." schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('&quot;global_contactstatusID_CSTATUSID_seq&quot;'::regclass)" digits="0" id="0" name="CSTATUSID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
+            <child column="CSTATUSID" foreignKey="&lt;--CSTATUSID_from_global_contactstatusID_fkey" implied="false" onDeleteCascade="false" schema="public" table="neo_contacts"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="CONTSTATUS" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CSTATUSDSC" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="3" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="4" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="CSTATUSID" sequenceNumberInPK="1"/>
+         <index name="global_contactstatusID_pkey" unique="true">
+            <column ascending="true" name="CSTATUSID"/>
+         </index>
+      </table>
+      <table name="global_DataSetMaster" numRows="148" remarks="Is the global master table that stores *dataset related information for all relevant compilations*. A Dataset is the set of samples for a particular data type, e.g. pollen,  from a certain collection unit (according to Neotoma db). Dataset types are defined in the `cabah_datasettypeID` table. In OCTOPUS data model hierarchy `global_DataSetID` is situated between the collection-specific sample tables (subordinate) and the `global_UnitMaster` table (superordinate); (= UNITID). `global_DataSetID` table is exclusively used for collections with a corresponding demand, i.e., will be bypassed for any collection that does not deal with multiple samples / observations from one and the same location / site / unit (e.g. a core)." schema="public" type="TABLE">
+         <column autoUpdated="true" defaultValue="nextval('&quot;global_DataSetID_DATASETID_seq&quot;'::regclass)" digits="0" id="0" name="DATASETID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
+            <child column="DATASETID" foreignKey="&lt;--DATASETID_from_global_DataSetMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_datasetpublicationID"/>
+         </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="UNITID" nullable="false" remarks="Is dataset parent unit ID" size="10" type="int4" typeCode="4">
             <parent column="UNITID" foreignKey="&lt;--UNITID_from_global_UnitMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_UnitMaster"/>
          </column>
@@ -2571,9 +2659,28 @@
             <column ascending="true" name="DATASETID"/>
          </index>
       </table>
+      <table name="global_datasetpublicationID" numRows="218" remarks="Is Neotoma-derived lookup table for compilations involving datasets, e.g. **IPPD**. This table stores *dataset publications*. NOTE -- DATASETID and REFDBID together form a combined primary key." schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="DATASETID" nullable="false" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="DATASETID" foreignKey="&lt;--DATASETID_from_global_DataSetMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_DataSetMaster"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="REFDBID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefCore"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="NEODSETID" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="NEO_REFID" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PRIMARYPUB" nullable="true" remarks="" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="5" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="6" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="DATASETID" sequenceNumberInPK="1"/>
+         <primaryKey column="REFDBID" sequenceNumberInPK="2"/>
+         <index name="global_datasetpublicationID_pkey" unique="true">
+            <column ascending="true" name="DATASETID"/>
+            <column ascending="true" name="REFDBID"/>
+         </index>
+      </table>
       <table name="global_datasettypeID" numRows="42" remarks="The global_datasettypeID table stores *dataset types*, e.g., _pollen_. To facilitate data migration where necessary, table structure, primary keys and content resemble Neotoma's _datasettypes_ table." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;global_datasettypeID_DSETTYPEID_seq&quot;'::regclass)" digits="0" id="0" name="DSETTYPEID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
-            <child column="DSETTYPEID" foreignKey="&lt;--DSETTYPEID_from_global_datasettypeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_DataSetID"/>
+            <child column="DSETTYPEID" foreignKey="&lt;--DSETTYPEID_from_global_datasettypeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_DataSetMaster"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="DSETTYPE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DSTYPNOTE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -2773,6 +2880,7 @@
             <child column="REFDBID2" foreignKey="&lt;--REFDBID(2)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="fos_DataCore"/>
             <child column="REFDBID3" foreignKey="&lt;--REFDBID(3)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="fos_DataCore"/>
             <child column="REFDBID4" foreignKey="&lt;--REFDBID(4)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="fos_DataCore"/>
+            <child column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_datasetpublicationID"/>
             <child column="UNIT_REF" foreignKey="&lt;--REFDBID_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_UnitMaster"/>
             <child column="REFDBID1" foreignKey="&lt;--REFDBID(1)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-osl_DataCore"/>
             <child column="REFDBID2" foreignKey="&lt;--REFDBID(2)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-osl_DataCore"/>
@@ -2782,8 +2890,8 @@
             <child column="REFDBID2" foreignKey="&lt;--REFDBID(2)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
             <child column="REFDBID3" foreignKey="&lt;--REFDBID(3)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
             <child column="REFDBID4" foreignKey="&lt;--REFDBID(4)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
-            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefAbstract_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefAbstract"/>
             <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefKeyword"/>
+            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefAbstract_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefAbstract"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OAID" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
             <parent column="OAID" foreignKey="&lt;--OAID_from_global_Author_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_Author"/>
@@ -2987,7 +3095,9 @@
       <table name="global_UnitMaster" numRows="597" remarks="Is the global master table that stores *collection-unit related information for all compilations*. Collection units are defined in the `cabah_unittypeID` table. In OCTOPUS data model hierarchy `global_UnitMaster` is situated between the collection-specific sample tables (subordinate) and the `global_SiteMaster` table (superordinate); (= SITEID). `global_UnitMaster` table is exclusively used for collections with a corresponding demand, i.e., will be bypassed for any collection that does not deal with multiple samples / observations from one and the same location / site / unit (e.g. a core)." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;global_UnitMaster_UNITID_seq&quot;'::regclass)" digits="0" id="0" name="UNITID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="UNITID" foreignKey="&lt;--UNITID_from_global_UnitMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="char_Sample"/>
-            <child column="UNITID" foreignKey="&lt;--UNITID_from_global_UnitMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_DataSetID"/>
+            <child column="UNITID" foreignKey="&lt;--UNITID_from_global_UnitMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_DataSetMaster"/>
+            <child column="NEO_UNITID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="neo_chronologies"/>
+            <child column="UNITID" foreignKey="&lt;--UNITID_from_global_UnitMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="neo_chronologies"/>
             <child column="UNITID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulchar"/>
             <child column="UNITID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulchar_units"/>
             <child column="UNITID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulchar_units_points_EPSG3857"/>
@@ -3019,12 +3129,18 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="UNIT_REF" nullable="false" remarks="Is fkey. Refer to global_RefCore table" size="2147483647" type="text" typeCode="12">
             <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefCore"/>
          </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="NEO_UNITID" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <child column="NEO_UNITID" foreignKey="&lt;--NEO_UNITID_from_global_UnitMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_AnalysisUnit"/>
+         </column>
          <primaryKey column="UNITID" sequenceNumberInPK="1"/>
          <index name="global_UnitMaster_pkey" unique="true">
             <column ascending="true" name="UNITID"/>
          </index>
          <index name="global_UnitMaster_NEO_HANDLE_key" unique="true">
             <column ascending="true" name="NEO_HANDLE"/>
+         </index>
+         <index name="global_unitmaster_NEO_UNITID_ukey" unique="true">
+            <column ascending="true" name="NEO_UNITID"/>
          </index>
          <index name="global_UnitMaster_UNITHANDLE_key" unique="true">
             <column ascending="true" name="UNITHANDLE"/>
@@ -3053,6 +3169,63 @@
          </index>
          <index name="global_varunitid_V_UNITNAME_ukey" unique="true">
             <column ascending="true" name="V_UNITNAME"/>
+         </index>
+      </table>
+      <table name="neo_chronologies" numRows="31641" remarks="Is Neotoma-derived table for compilations dealing with chronologies, e.g. IPPD. This table, according to Neotoma db (https://neotoma-manual.readthedocs.io/en/latest/tables_chron.html#chronologies), stores *chronology data*. [...] _A Chronology refers to an explicit chronology assigned to a Collection Unit. A Chronology has Chronology Controls, the actual age-depth control points, which are stored in the ChronControls table. A Chronology is also based on an Age Model, which may be a numerical method that fits a curve to a set of age-depth control points or may simply be individually dated Analysis Units._ IMPORTANT NOTE: The primary key values have been migrated unaltered from Neotoma. Therefore, database relations will only work (and be updatable from the Neotoma source) if these ID stays untouched." schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CHRONLGYID" nullable="false" remarks="Is original Neotoma _chronologyid_" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="NEO_UNITID" nullable="false" remarks="Is original Neotoma _collectionunitid_" size="10" type="int4" typeCode="4">
+            <parent column="UNITID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="global_UnitMaster"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="AGETYPEID" nullable="true" remarks="Is fkey to cabah_agetype table. IMPORTANT: values have been changed to match OCTOPUS db" size="10" type="int4" typeCode="4">
+            <parent column="AGETYPEID" foreignKey="&lt;--AGETYPEID_from_cabah_agetypeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_agetypeID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CONTACTID" nullable="true" remarks="Is original Neotoma _contactid_" size="10" type="int4" typeCode="4">
+            <parent column="CONTACTID" foreignKey="&lt;--CONTACTID_from_neo_contacts_fkey" implied="false" onDeleteCascade="false" schema="public" table="neo_contacts"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="IS_DEFAULT" nullable="true" remarks="If TRUE, then chronology is the default chronology" size="1" type="bool" typeCode="-7"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="5" name="CHRONNAME" nullable="true" remarks="" size="80" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="PREPDATE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="7" name="AGEMODEL" nullable="true" remarks="" size="80" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="AGEYOUNG" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="AGEOLD" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CHRONNOTE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="UNITID" nullable="true" remarks="" size="10" type="int4" typeCode="4">
+            <parent column="UNITID" foreignKey="&lt;--UNITID_from_global_UnitMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_UnitMaster"/>
+         </column>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="12" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="13" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="CHRONLGYID" sequenceNumberInPK="1"/>
+         <index name="neo_chronologies_pkey" unique="true">
+            <column ascending="true" name="CHRONLGYID"/>
+         </index>
+      </table>
+      <table name="neo_contacts" numRows="13396" remarks="Is Neotoma-derived lookup table for compilations involving Neotoma contacts, e.g. **IPPD**. This table stores *contacts* of both individuals and legal entities. To preserve table usability down the database pipeline, primary key values have NOT been altered and MUST BE always identical with those from the Neotoma original." schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="CONTACTID" nullable="false" remarks="Is original Neotoma _contactid_" size="10" type="int4" typeCode="4">
+            <child column="NEOVALORID" foreignKey="&lt;--CONTACTID_from_neo_contacts_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_taxaID"/>
+            <child column="CONTACTID" foreignKey="&lt;--CONTACTID_from_neo_contacts_fkey" implied="false" onDeleteCascade="false" schema="public" table="neo_chronologies"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="ALIASID" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CONTACTNAM" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="CSTATUSID" nullable="true" remarks="" size="5" type="int2" typeCode="5">
+            <parent column="CSTATUSID" foreignKey="&lt;--CSTATUSID_from_global_contactstatusID_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_contactstatusID"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="FAMILYNAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="PHONE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="FAX" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="EMAIL" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="URL" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="ADDRESS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="10" name="LEADINITIA" nullable="true" remarks="" size="24" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="GIVENNAMES" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="12" name="TITLE" nullable="true" remarks="" size="24" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="13" name="SUFFIX" nullable="true" remarks="" size="24" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="NOTES" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="NULL::character varying" digits="0" id="15" name="OAID" nullable="true" remarks="" size="19" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="16" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="17" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <primaryKey column="CONTACTID" sequenceNumberInPK="1"/>
+         <index name="neo_contacts_pkey" unique="true">
+            <column ascending="true" name="CONTACTID"/>
          </index>
       </table>
       <table name="osl-tl_agemodelID" numRows="15" remarks="Is Luminescence (**SahulSed, SahulArch/ OSL collection, SahulArch/ TL collection**) lookup table for the *model used to combine individual equivalent dose estimates for age determination* (= AGEMODEL)" schema="public" type="TABLE">

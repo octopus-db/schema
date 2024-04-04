@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>cabah_methodID</h1><p><span id="recordNumber">102</span> rows</p><br />
+                    <h1>cabah_methodID</h1><p><span id="recordNumber">103</span> rows</p><br />
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-file-text-o"></i>
@@ -142,6 +142,11 @@
                                             </tr>
                                             <tr>
                                                 <td title="arch_tl_DataCore.METHODID references cabah_methodID.METHODID via &lt;--METHODID_from_cabah_methodID_fkey"><a href='arch_tl_DataCore.html'>arch_tl_DataCore</a><span class='relatedKey'>.METHODID</span></td>
+                                                <td class="constraint detail">&lt;--METHODID_from_cabah_methodID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="cabah_chroncontroltypeID.METHODID references cabah_methodID.METHODID via &lt;--METHODID_from_cabah_methodID_fkey"><a href='cabah_chroncontroltypeID.html'>cabah_chroncontroltypeID</a><span class='relatedKey'>.METHODID</span></td>
                                                 <td class="constraint detail">&lt;--METHODID_from_cabah_methodID_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>

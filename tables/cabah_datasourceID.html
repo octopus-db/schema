@@ -136,11 +136,6 @@
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
-                                                <td title="cabah_elementtypeID.ELMTSOURCE references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='cabah_elementtypeID.html'>cabah_elementtypeID</a><span class='relatedKey'>.ELMTSOURCE</span></td>
-                                                <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
                                                 <td title="cabah_taxagroupID.TXAGRPSRC references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='cabah_taxagroupID.html'>cabah_taxagroupID</a><span class='relatedKey'>.TXAGRPSRC</span></td>
                                                 <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -157,6 +152,11 @@
                                             </tr>
                                             <tr>
                                                 <td title="global_MetaSite.FEATURESRC references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='global_MetaSite.html'>global_MetaSite</a><span class='relatedKey'>.FEATURESRC</span></td>
+                                                <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="neo_elementtypes.DATASRCID references cabah_datasourceID.DATASRCID via &lt;--DATASRCID_from_cabah_datasourceID_fkey"><a href='neo_elementtypes.html'>neo_elementtypes</a><span class='relatedKey'>.DATASRCID</span></td>
                                                 <td class="constraint detail">&lt;--DATASRCID_from_cabah_datasourceID_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>

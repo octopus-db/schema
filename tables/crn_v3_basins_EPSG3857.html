@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>crn_v3_basins_EPSG3857</h1><p><span id="recordNumber">4631</span> rows</p><br />
+                    <h1>crn_v3_basins_EPSG3857</h1><p><span id="recordNumber">6091</span> rows</p><br />
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-file-text-o"></i>
@@ -84,7 +84,7 @@
                             </div>
                         </div><!-- /.box-header -->
                         <div class="box-body clearfix">
-                            <p>Is <strong>CRN denudation</strong> <em>spatial features table</em> (polygons, EPSG:900913)</p>
+                            <p>Is <strong>CRN denudation</strong> <em>spatial features table</em> (polygons, EPSG:3857)</p>
                         </div><!-- /.box-body -->
                     </div>
                 </section>
@@ -127,7 +127,7 @@
                                     <td>10</td>
                                     <td title=''></td>
                                     <td title='Automatically updated by the database'>√</td>
-                                    <td>nextval(&#39;crn_v3_basins_webmercator_id_seq&#39;::regclass)</td>
+                                    <td>nextval(&#39;&quot;crn_v3_basins_EPSG3857_id_seq&quot;&#39;::regclass)</td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
@@ -139,7 +139,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="geom">geom</span></td>
+                                    <td><span id="geom">geom</span></td>
                                     <td>geometry</td>
                                     <td>2147483647</td>
                                     <td title='nullable'>√</td>
@@ -156,10 +156,10 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="OBSID1">OBSID1</span></td>
-                                    <td>text</td>
-                                    <td>2147483647</td>
-                                    <td title=''></td>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="OBSID1">OBSID1</span></td>
+                                    <td>varchar</td>
+                                    <td>254</td>
+                                    <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
                                     <td>
@@ -184,8 +184,8 @@
                                 </tr>
                                 <tr>
                                     <td><span id="OBSID2">OBSID2</span></td>
-                                    <td>text</td>
-                                    <td>2147483647</td>
+                                    <td>varchar</td>
+                                    <td>254</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
@@ -202,7 +202,7 @@
                                 <tr>
                                     <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="STUDYID">STUDYID</span></td>
                                     <td>varchar</td>
-                                    <td>5</td>
+                                    <td>254</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
@@ -224,7 +224,7 @@
                                 <tr>
                                     <td><span id="CRN_SUBCMP">CRN_SUBCMP</span></td>
                                     <td>varchar</td>
-                                    <td>3</td>
+                                    <td>254</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
@@ -237,40 +237,6 @@
                                         </table>
                                     </td>
                                     <td></td>
-                                </tr>
-                                <tr>
-                                    <td><span id="CREATED_AT">CREATED_AT</span></td>
-                                    <td>timestamptz</td>
-                                    <td>35,6</td>
-                                    <td title=''></td>
-                                    <td title=''></td>
-                                    <td>timezone(&#39;UTC&#39;::text, now())</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td><p>Is record timestamp with timezone based on UTC</p></td>
-                                </tr>
-                                <tr>
-                                    <td><span id="UPDATED_AT">UPDATED_AT</span></td>
-                                    <td>timestamptz</td>
-                                    <td>35,6</td>
-                                    <td title='nullable'>√</td>
-                                    <td title=''></td>
-                                    <td>timezone(&#39;UTC&#39;::text, now())</td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table border='0' cellspacing='0' cellpadding='0'>
-                                        </table>
-                                    </td>
-                                    <td><p>Is timestamp of record update with timezone based on UTC</p></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -303,16 +269,10 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> crn_v3_basins_webmercator_pkey</td>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> crn_v3_basins_EPSG3857_pkey</td>
                                     <td>Primary key</td>
-                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
-                                    <td>id + OBSID1</td>
-                                </tr>
-                                <tr>
-                                    <td title='Indexed'>sidx_crn_v3_basins_webmercator_geom</td>
-                                    <td>Performance</td>
                                     <td><span title='Ascending'>Asc</span></td>
-                                    <td>geom</td>
+                                    <td>id</td>
                                 </tr>
                                 <tr>
                                     <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> unique_crn_v3_basins_EPSG3857_OBSID1</td>

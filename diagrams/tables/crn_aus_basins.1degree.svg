@@ -34,11 +34,11 @@
 <polygon fill="none" stroke="#000000" points="10,-2017.2 10,-2039.2 121,-2039.2 121,-2017.2 10,-2017.2"/>
 <text text-anchor="start" x="30" y="-2024.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">STUDYID</text>
 <polygon fill="none" stroke="#000000" points="121,-2017.2 121,-2039.2 240,-2039.2 240,-2017.2 121,-2017.2"/>
-<text text-anchor="start" x="124" y="-2024.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">varchar[5]</text>
+<text text-anchor="start" x="124" y="-2024.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">varchar[254]</text>
 <polygon fill="none" stroke="#000000" points="10,-1995.2 10,-2017.2 121,-2017.2 121,-1995.2 10,-1995.2"/>
 <text text-anchor="start" x="30" y="-2002.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CRN_SUBCMP</text>
 <polygon fill="none" stroke="#000000" points="121,-1995.2 121,-2017.2 240,-2017.2 240,-1995.2 121,-1995.2"/>
-<text text-anchor="start" x="124" y="-2002.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">varchar[3]</text>
+<text text-anchor="start" x="124" y="-2002.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">varchar[254]</text>
 <polygon fill="none" stroke="#000000" points="10,-1973.2 10,-1995.2 121,-1995.2 121,-1973.2 10,-1973.2"/>
 <text text-anchor="start" x="30" y="-1980.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IGSNID</text>
 <polygon fill="none" stroke="#000000" points="121,-1973.2 121,-1995.2 240,-1995.2 240,-1973.2 121,-1973.2"/>
@@ -203,11 +203,11 @@
 <polygon fill="none" stroke="#000000" points="10,-1115.2 10,-1137.2 121,-1137.2 121,-1115.2 10,-1115.2"/>
 <text text-anchor="start" x="30" y="-1122.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SLP_AVE</text>
 <polygon fill="none" stroke="#000000" points="121,-1115.2 121,-1137.2 240,-1137.2 240,-1115.2 121,-1115.2"/>
-<text text-anchor="start" x="124" y="-1122.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-1122.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[6,2]</text>
 <polygon fill="none" stroke="#000000" points="10,-1093.2 10,-1115.2 121,-1115.2 121,-1093.2 10,-1093.2"/>
 <text text-anchor="start" x="30" y="-1100.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SLP_STD</text>
 <polygon fill="none" stroke="#000000" points="121,-1093.2 121,-1115.2 240,-1115.2 240,-1093.2 121,-1093.2"/>
-<text text-anchor="start" x="124" y="-1100.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-1100.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[6,2]</text>
 <polygon fill="none" stroke="#000000" points="10,-1071.2 10,-1093.2 121,-1093.2 121,-1071.2 10,-1071.2"/>
 <text text-anchor="start" x="30" y="-1078.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SMP_DAY</text>
 <polygon fill="none" stroke="#000000" points="121,-1071.2 121,-1093.2 240,-1093.2 240,-1071.2 121,-1071.2"/>
@@ -263,51 +263,51 @@
 <polygon fill="none" stroke="#000000" points="10,-785.2 10,-807.2 121,-807.2 121,-785.2 10,-785.2"/>
 <text text-anchor="start" x="30" y="-792.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BEPROD</text>
 <polygon fill="none" stroke="#000000" points="121,-785.2 121,-807.2 240,-807.2 240,-785.2 121,-785.2"/>
-<text text-anchor="start" x="124" y="-792.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-792.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-763.2 10,-785.2 121,-785.2 121,-763.2 10,-763.2"/>
 <text text-anchor="start" x="30" y="-770.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BETOPO</text>
 <polygon fill="none" stroke="#000000" points="121,-763.2 121,-785.2 240,-785.2 240,-763.2 121,-763.2"/>
-<text text-anchor="start" x="124" y="-770.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-770.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-741.2 10,-763.2 121,-763.2 121,-741.2 10,-741.2"/>
 <text text-anchor="start" x="30" y="-748.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BESELF</text>
 <polygon fill="none" stroke="#000000" points="121,-741.2 121,-763.2 240,-763.2 240,-741.2 121,-741.2"/>
-<text text-anchor="start" x="124" y="-748.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-748.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-719.2 10,-741.2 121,-741.2 121,-719.2 10,-719.2"/>
 <text text-anchor="start" x="30" y="-726.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BESNOW</text>
 <polygon fill="none" stroke="#000000" points="121,-719.2 121,-741.2 240,-741.2 240,-719.2 121,-719.2"/>
-<text text-anchor="start" x="124" y="-726.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-726.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-697.2 10,-719.2 121,-719.2 121,-697.2 10,-697.2"/>
 <text text-anchor="start" x="30" y="-704.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BETOTS</text>
 <polygon fill="none" stroke="#000000" points="121,-697.2 121,-719.2 240,-719.2 240,-697.2 121,-697.2"/>
-<text text-anchor="start" x="124" y="-704.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-704.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-675.2 10,-697.2 121,-697.2 121,-675.2 10,-675.2"/>
 <text text-anchor="start" x="30" y="-682.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">EBE_GCMYR</text>
 <polygon fill="none" stroke="#000000" points="121,-675.2 121,-697.2 240,-697.2 240,-675.2 121,-675.2"/>
-<text text-anchor="start" x="124" y="-682.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-682.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-653.2 10,-675.2 121,-675.2 121,-653.2 10,-653.2"/>
 <text text-anchor="start" x="30" y="-660.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ERRBE_AMS</text>
 <polygon fill="none" stroke="#000000" points="121,-653.2 121,-675.2 240,-675.2 240,-653.2 121,-653.2"/>
-<text text-anchor="start" x="124" y="-660.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-660.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-631.2 10,-653.2 121,-653.2 121,-631.2 10,-631.2"/>
 <text text-anchor="start" x="30" y="-638.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ERRBE_MUON</text>
 <polygon fill="none" stroke="#000000" points="121,-631.2 121,-653.2 240,-653.2 240,-631.2 121,-631.2"/>
-<text text-anchor="start" x="124" y="-638.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-638.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-609.2 10,-631.2 121,-631.2 121,-609.2 10,-609.2"/>
 <text text-anchor="start" x="30" y="-616.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ERRBE_PROD</text>
 <polygon fill="none" stroke="#000000" points="121,-609.2 121,-631.2 240,-631.2 240,-609.2 121,-609.2"/>
-<text text-anchor="start" x="124" y="-616.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-616.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-587.2 10,-609.2 121,-609.2 121,-587.2 10,-587.2"/>
 <text text-anchor="start" x="30" y="-594.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ERRBE_TOT</text>
 <polygon fill="none" stroke="#000000" points="121,-587.2 121,-609.2 240,-609.2 240,-587.2 121,-587.2"/>
-<text text-anchor="start" x="124" y="-594.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-594.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-565.2 10,-587.2 121,-587.2 121,-565.2 10,-565.2"/>
 <text text-anchor="start" x="30" y="-572.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">EBE_MMKYR</text>
 <polygon fill="none" stroke="#000000" points="121,-565.2 121,-587.2 240,-587.2 240,-565.2 121,-565.2"/>
-<text text-anchor="start" x="124" y="-572.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-572.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,2]</text>
 <polygon fill="none" stroke="#000000" points="10,-543.2 10,-565.2 121,-565.2 121,-543.2 10,-543.2"/>
 <text text-anchor="start" x="30" y="-550.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">EBE_ERR</text>
 <polygon fill="none" stroke="#000000" points="121,-543.2 121,-565.2 240,-565.2 240,-543.2 121,-543.2"/>
-<text text-anchor="start" x="124" y="-550.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-550.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,2]</text>
 <polygon fill="none" stroke="#000000" points="10,-521.2 10,-543.2 121,-543.2 121,-521.2 10,-521.2"/>
 <text text-anchor="start" x="30" y="-528.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">AL26NP</text>
 <polygon fill="none" stroke="#000000" points="121,-521.2 121,-543.2 240,-543.2 240,-521.2 121,-521.2"/>
@@ -347,51 +347,51 @@
 <polygon fill="none" stroke="#000000" points="10,-323.2 10,-345.2 121,-345.2 121,-323.2 10,-323.2"/>
 <text text-anchor="start" x="30" y="-330.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ALPROD</text>
 <polygon fill="none" stroke="#000000" points="121,-323.2 121,-345.2 240,-345.2 240,-323.2 121,-323.2"/>
-<text text-anchor="start" x="124" y="-330.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-330.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-301.2 10,-323.2 121,-323.2 121,-301.2 10,-301.2"/>
 <text text-anchor="start" x="30" y="-308.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ALTOPO</text>
 <polygon fill="none" stroke="#000000" points="121,-301.2 121,-323.2 240,-323.2 240,-301.2 121,-301.2"/>
-<text text-anchor="start" x="124" y="-308.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-308.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-279.2 10,-301.2 121,-301.2 121,-279.2 10,-279.2"/>
 <text text-anchor="start" x="30" y="-286.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ALSELF</text>
 <polygon fill="none" stroke="#000000" points="121,-279.2 121,-301.2 240,-301.2 240,-279.2 121,-279.2"/>
-<text text-anchor="start" x="124" y="-286.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-286.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-257.2 10,-279.2 121,-279.2 121,-257.2 10,-257.2"/>
 <text text-anchor="start" x="30" y="-264.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ALSNOW</text>
 <polygon fill="none" stroke="#000000" points="121,-257.2 121,-279.2 240,-279.2 240,-257.2 121,-257.2"/>
-<text text-anchor="start" x="124" y="-264.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-264.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-235.2 10,-257.2 121,-257.2 121,-235.2 10,-235.2"/>
 <text text-anchor="start" x="30" y="-242.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ALTOTS</text>
 <polygon fill="none" stroke="#000000" points="121,-235.2 121,-257.2 240,-257.2 240,-235.2 121,-235.2"/>
-<text text-anchor="start" x="124" y="-242.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-242.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,3]</text>
 <polygon fill="none" stroke="#000000" points="10,-213.2 10,-235.2 121,-235.2 121,-213.2 10,-213.2"/>
 <text text-anchor="start" x="30" y="-220.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">EAL_GCMYR</text>
 <polygon fill="none" stroke="#000000" points="121,-213.2 121,-235.2 240,-235.2 240,-213.2 121,-213.2"/>
-<text text-anchor="start" x="124" y="-220.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-220.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-191.2 10,-213.2 121,-213.2 121,-191.2 10,-191.2"/>
 <text text-anchor="start" x="30" y="-198.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ERRAL_AMS</text>
 <polygon fill="none" stroke="#000000" points="121,-191.2 121,-213.2 240,-213.2 240,-191.2 121,-191.2"/>
-<text text-anchor="start" x="124" y="-198.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-198.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-169.2 10,-191.2 121,-191.2 121,-169.2 10,-169.2"/>
 <text text-anchor="start" x="30" y="-176.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ERRAL_MUON</text>
 <polygon fill="none" stroke="#000000" points="121,-169.2 121,-191.2 240,-191.2 240,-169.2 121,-169.2"/>
-<text text-anchor="start" x="124" y="-176.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-176.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-147.2 10,-169.2 121,-169.2 121,-147.2 10,-147.2"/>
 <text text-anchor="start" x="30" y="-154.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ERRAL_PROD</text>
 <polygon fill="none" stroke="#000000" points="121,-147.2 121,-169.2 240,-169.2 240,-147.2 121,-147.2"/>
-<text text-anchor="start" x="124" y="-154.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-154.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-125.2 10,-147.2 121,-147.2 121,-125.2 10,-125.2"/>
 <text text-anchor="start" x="30" y="-132.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">ERRAL_TOT</text>
 <polygon fill="none" stroke="#000000" points="121,-125.2 121,-147.2 240,-147.2 240,-125.2 121,-125.2"/>
-<text text-anchor="start" x="124" y="-132.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-132.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,5]</text>
 <polygon fill="none" stroke="#000000" points="10,-103.2 10,-125.2 121,-125.2 121,-103.2 10,-103.2"/>
 <text text-anchor="start" x="30" y="-110.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">EAL_MMKYR</text>
 <polygon fill="none" stroke="#000000" points="121,-103.2 121,-125.2 240,-125.2 240,-103.2 121,-103.2"/>
-<text text-anchor="start" x="124" y="-110.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-110.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,2]</text>
 <polygon fill="none" stroke="#000000" points="10,-81.2 10,-103.2 121,-103.2 121,-81.2 10,-81.2"/>
 <text text-anchor="start" x="30" y="-88.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">EAL_ERR</text>
 <polygon fill="none" stroke="#000000" points="121,-81.2 121,-103.2 240,-103.2 240,-81.2 121,-81.2"/>
-<text text-anchor="start" x="124" y="-88.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
+<text text-anchor="start" x="124" y="-88.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[12,2]</text>
 <polygon fill="none" stroke="#000000" points="10,-59.2 10,-81.2 121,-81.2 121,-59.2 10,-59.2"/>
 <image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="15" y="-76.2"/>
 <text text-anchor="start" x="30" y="-66.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">id</text>
@@ -402,7 +402,7 @@
 <text text-anchor="start" x="13" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 0</text>
 <polygon fill="#ffffff" stroke="transparent" points="51,-40.2 51,-59.2 121,-59.2 121,-40.2 51,-40.2"/>
 <polygon fill="none" stroke="#000000" points="51,-40.2 51,-59.2 121,-59.2 121,-40.2 51,-40.2"/>
-<text text-anchor="start" x="73.3807" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">273 rows</text>
+<text text-anchor="start" x="73.3807" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">297 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="121,-40.2 121,-59.2 240,-59.2 240,-40.2 121,-40.2"/>
 <polygon fill="none" stroke="#000000" points="121,-40.2 121,-59.2 240,-59.2 240,-40.2 121,-40.2"/>
 <text text-anchor="start" x="221.4053" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">0 &gt;</text>

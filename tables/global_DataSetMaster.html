@@ -73,7 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>global_DataSetMaster</h1><p><span id="recordNumber">148</span> rows</p><br />
+                    <h1>global_DataSetMaster</h1><p><span id="recordNumber">311</span> rows</p><br />
                     <div class="box box-primary">
                         <div class="box-header with-border">
                             <i class="fa fa-file-text-o"></i>
@@ -135,6 +135,16 @@
                                                 <td class="constraint detail">&lt;--DATASETID_from_global_DataSetMaster_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
+                                            <tr>
+                                                <td title="ippd_datasets.DATASETID&#39;s name implies that it&#39;s a child of global_DataSetMaster.DATASETID, but it doesn&#39;t reference that column."><a href='ippd_datasets.html'>ippd_datasets</a><span class='relatedKey'>.DATASETID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="ippd_Sample.DATASETID&#39;s name implies that it&#39;s a child of global_DataSetMaster.DATASETID, but it doesn&#39;t reference that column."><a href='ippd_Sample.html'>ippd_Sample</a><span class='relatedKey'>.DATASETID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td>
@@ -188,7 +198,7 @@
                                     <td><p>Is type of dataset</p></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="NEODSETID">NEODSETID</span></td>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="NEODSETID">NEODSETID</span></td>
                                     <td>int4</td>
                                     <td>10</td>
                                     <td title=''></td>
@@ -196,6 +206,11 @@
                                     <td>null</td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="ippd_Sample.NEODSETID references global_DataSetMaster.NEODSETID via &lt;--NEODSETID_from_global_DataSetMaster_fkey"><a href='ippd_Sample.html'>ippd_Sample</a><span class='relatedKey'>.NEODSETID</span></td>
+                                                <td class="constraint detail">&lt;--NEODSETID_from_global_DataSetMaster_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td>
@@ -380,6 +395,12 @@
                                     <td>Primary key</td>
                                     <td><span title='Ascending'>Asc</span></td>
                                     <td>DATASETID</td>
+                                </tr>
+                                <tr>
+                                    <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> neodsetid_unique</td>
+                                    <td>Must be unique</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>NEODSETID</td>
                                 </tr>
                                 </tbody>
                             </table>

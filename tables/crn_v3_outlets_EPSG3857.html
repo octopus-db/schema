@@ -169,13 +169,13 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="crn_v3_outlets_EPSG3857.OBSID1 references crn_al_DataCore.OBSID1 via &lt;--OBSID1_from_crn_al_DataCore_fkey"><a href='crn_al_DataCore.html'>crn_al_DataCore</a><span class='relatedKey'>.OBSID1</span></td>
-                                                <td class="constraint detail">&lt;--OBSID1_from_crn_al_DataCore_fkey</td>
+                                                <td title="crn_v3_outlets_EPSG3857.OBSID1 references crn_be_DataCore.OBSID1 via &lt;--OBSID1_from_crn_be_DataCore_fkey"><a href='crn_be_DataCore.html'>crn_be_DataCore</a><span class='relatedKey'>.OBSID1</span></td>
+                                                <td class="constraint detail">&lt;--OBSID1_from_crn_be_DataCore_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
-                                                <td title="crn_v3_outlets_EPSG3857.OBSID1 references crn_be_DataCore.OBSID1 via &lt;--OBSID1_from_crn_be_DataCore_fkey"><a href='crn_be_DataCore.html'>crn_be_DataCore</a><span class='relatedKey'>.OBSID1</span></td>
-                                                <td class="constraint detail">&lt;--OBSID1_from_crn_be_DataCore_fkey</td>
+                                                <td title="crn_v3_outlets_EPSG3857.OBSID1 references crn_al_DataCore.OBSID1 via &lt;--OBSID1_from_crn_al_DataCore_fkey"><a href='crn_al_DataCore.html'>crn_al_DataCore</a><span class='relatedKey'>.OBSID1</span></td>
+                                                <td class="constraint detail">&lt;--OBSID1_from_crn_al_DataCore_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
@@ -213,8 +213,8 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="crn_v3_outlets_EPSG3857.STUDYID references crn_studies_boundingbox.STUDYID via &lt;--STUDYID_from_crn_studies_boundingbox"><a href='crn_studies_boundingbox.html'>crn_studies_boundingbox</a><span class='relatedKey'>.STUDYID</span></td>
-                                                <td class="constraint detail">&lt;--STUDYID_from_crn_studies_boundingbox</td>
+                                                <td title="crn_v3_outlets_EPSG3857.STUDYID references crn_studies_boundingbox.STUDYID via &lt;--STUDYID_from_crn_studies_boundingbox_fkey"><a href='crn_studies_boundingbox.html'>crn_studies_boundingbox</a><span class='relatedKey'>.STUDYID</span></td>
+                                                <td class="constraint detail">&lt;--STUDYID_from_crn_studies_boundingbox_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
@@ -339,6 +339,8 @@
                                 <ul class="nav nav-tabs pull-left ui-sortable-handle">
                                     <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
                                     <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
                                 </ul>
                                 <div class="tab-content no-padding">
                                     <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
@@ -348,6 +350,14 @@
                                     <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
                                         
                                         <a name='diagram'><object type="image/svg+xml" id="twodegreesDegreeImg" data="../diagrams/tables/crn_v3_outlets_EPSG3857.2degrees.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="oneimpliedDegreeImg" data="../diagrams/tables/crn_v3_outlets_EPSG3857.implied1degrees.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="twoimpliedDegreeImg" data="../diagrams/tables/crn_v3_outlets_EPSG3857.implied2degrees.svg" class="diagram" border="0" align="left"></object></a>
                                     </div>
                                 </div>
                             </div>

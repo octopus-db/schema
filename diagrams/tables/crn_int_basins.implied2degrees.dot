@@ -5,21 +5,16 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "arch_c14_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "arch_c14_DataCore":"elipses":w -> "arch_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "arch_osl_DataCore":"elipses":w -> "arch_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "arch_Sample":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "arch_tl_DataCore":"elipses":w -> "arch_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "char_DataCore":"elipses":w -> "cabah_datasourceID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -28,117 +23,64 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "crn_al_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_al_DataCore":"elipses":w -> "crn_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_aus_basins":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_aus_basins":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_aus_basins":"elipses":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_aus_basins":"elipses":w -> "crn_projepsgID":"PROJEPSGID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_aus_basins":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_aus_basins":"elipses":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_aus_outlets":"elipses":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_be_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_be_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_be_DataCore":"elipses":w -> "crn_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "crn_inprep_basins":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_inprep_basins":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_inprep_basins":"elipses":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_inprep_basins":"elipses":w -> "crn_projepsgID":"PROJEPSGID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_inprep_basins":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_inprep_basins":"elipses":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_inprep_outlets":"elipses":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_int_basins":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_int_basins":"METASITEID":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_int_basins":"OAID":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_int_basins":"PROJEPSGID":w -> "crn_projepsgID":"PROJEPSGID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_int_basins":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_int_basins":"STUDYID":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_int_outlets":"elipses":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_Sample":"elipses":w -> "crn_projepsgID":"PROJEPSGID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "crn_Sample":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "crn_xxl_basins":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_xxl_basins":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_studies_boundingbox":"elipses":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=teeodot style=dashed];
   "crn_xxl_basins":"elipses":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "crn_xxl_basins":"elipses":w -> "crn_projepsgID":"PROJEPSGID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "crn_xxl_basins":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_xxl_basins":"elipses":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "crn_xxl_outlets":"elipses":w -> "crn_studynote":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "expage":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "expage":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "expage":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "expage_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "expage_DataCore":"elipses":w -> "expage_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "expage_Sample":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "fos_DataCore":"elipses":w -> "fos_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "fos_Sample":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fossahul_webmercator_nrand_25000":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "fossahul_webmercator_nrand_25000":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "fossahul_webmercator_nrand_25000":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "global_MetaSite":"FEATURESRC":w -> "cabah_datasourceID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_MetaSite":"FEATURETYP":w -> "global_SiteCode":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_RefCore":"elipses":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_SiteMaster":"BASINSZEID":w -> "cabah_basinsizeID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_SiteMaster":"BIOMEID":w -> "global_biomeID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_SiteMaster":"CATCHSZEID":w -> "cabah_catchmentsizeID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_SiteMaster":"FLOWTYPEID":w -> "cabah_flowtypeID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_SiteMaster":"IBRAID":w -> "global_ibraID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_SiteMaster":"METASITEID":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_SiteMaster":"RIVID":w -> "global_rivID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_SiteMaster":"SITECODEID":w -> "global_SiteCode":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_UnitMaster":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "global_UnitMaster":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "ippd_datasets":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "ippd_datasets":"elipses":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "ippd_datasets":"elipses":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "ippd_datasets":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "ippd_datasets":"elipses":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahularch_c14":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahularch_c14":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahularch_c14":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahularch_osl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahularch_osl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahularch_osl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahularch_tl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahularch_tl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahularch_tl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulchar":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"elipses":w -> "char_DataCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulchar":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulchar":"elipses":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulchar_units":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar_units":"elipses":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulchar_units":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulchar_units":"elipses":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_osl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_aeolian_osl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_aeolian_osl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_aeolian_tl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_aeolian_tl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_aeolian_tl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_fluvial_osl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_fluvial_osl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_fluvial_osl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_fluvial_tl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_fluvial_tl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_fluvial_tl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_lacustrine_osl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_lacustrine_osl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_lacustrine_osl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulsed_lacustrine_tl":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_lacustrine_tl":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "sahulsed_lacustrine_tl":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sed-osl_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "sed-osl_DataCore":"elipses":w -> "sed_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"elipses":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"elipses":w -> "global_RefCore":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "sed-tl_DataCore":"elipses":w -> "sed_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "sed_Sample":"elipses":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -161,17 +103,6 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     target="_top"
     tooltip="arch_osl_DataCore"
   ];
-  "arch_Sample" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="74" HEIGHT="16"><B>arch_Sample</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">10.412 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/arch_Sample.html"
-    target="_top"
-    tooltip="arch_Sample"
-  ];
   "arch_tl_DataCore" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -182,50 +113,6 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     URL="../../tables/arch_tl_DataCore.html"
     target="_top"
     tooltip="arch_tl_DataCore"
-  ];
-  "cabah_basinsizeID" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="107" HEIGHT="16"><B>cabah_basinsizeID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/cabah_basinsizeID.html"
-    target="_top"
-    tooltip="cabah_basinsizeID"
-  ];
-  "cabah_catchmentsizeID" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="136" HEIGHT="16"><B>cabah_catchmentsizeID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">4 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/cabah_catchmentsizeID.html"
-    target="_top"
-    tooltip="cabah_catchmentsizeID"
-  ];
-  "cabah_datasourceID" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="117" HEIGHT="16"><B>cabah_datasourceID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">11 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/cabah_datasourceID.html"
-    target="_top"
-    tooltip="cabah_datasourceID"
-  ];
-  "cabah_flowtypeID" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16"><B>cabah_flowtypeID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">6 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/cabah_flowtypeID.html"
-    target="_top"
-    tooltip="cabah_flowtypeID"
   ];
   "char_DataCore" [
    label=<
@@ -254,11 +141,22 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16"><B>crn_aus_basins</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">297 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">297 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
     </TABLE>>
     URL="../../tables/crn_aus_basins.html"
     target="_top"
     tooltip="crn_aus_basins"
+  ];
+  "crn_aus_outlets" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16"><B>crn_aus_outlets</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">297 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/crn_aus_outlets.html"
+    target="_top"
+    tooltip="crn_aus_outlets"
   ];
   "crn_be_DataCore" [
    label=<
@@ -276,11 +174,22 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="106" HEIGHT="16"><B>crn_inprep_basins</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">157 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">157 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
     </TABLE>>
     URL="../../tables/crn_inprep_basins.html"
     target="_top"
     tooltip="crn_inprep_basins"
+  ];
+  "crn_inprep_outlets" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="108" HEIGHT="16"><B>crn_inprep_outlets</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">157 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/crn_inprep_outlets.html"
+    target="_top"
+    tooltip="crn_inprep_outlets"
   ];
   "crn_int_basins" [
    label=<
@@ -289,33 +198,15 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD PORT="geom" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">geom</TD></TR></TABLE></TD><TD PORT="geom.type" ALIGN="LEFT">geometry[2147483647]</TD></TR>
       <TR><TD PORT="OBSID1" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">OBSID1</TD></TR></TABLE></TD><TD PORT="OBSID1.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="OBSID2" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">OBSID2</TD></TR></TABLE></TD><TD PORT="OBSID2.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="STUDYID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">STUDYID</TD></TR></TABLE></TD><TD PORT="STUDYID.type" ALIGN="LEFT">varchar[254]</TD></TR>
-      <TR><TD PORT="CRN_SUBCMP" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CRN_SUBCMP</TD></TR></TABLE></TD><TD PORT="CRN_SUBCMP.type" ALIGN="LEFT">varchar[254]</TD></TR>
+      <TR><TD PORT="STUDYID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">STUDYID</TD></TR></TABLE></TD><TD PORT="STUDYID.type" ALIGN="LEFT">varchar[5]</TD></TR>
+      <TR><TD PORT="CRN_SUBCMP" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CRN_SUBCMP</TD></TR></TABLE></TD><TD PORT="CRN_SUBCMP.type" ALIGN="LEFT">varchar[3]</TD></TR>
       <TR><TD PORT="IGSNID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">IGSNID</TD></TR></TABLE></TD><TD PORT="IGSNID.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="DBDOI" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">DBDOI</TD></TR></TABLE></TD><TD PORT="DBDOI.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="DBVERNO" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">DBVERNO</TD></TR></TABLE></TD><TD PORT="DBVERNO.type" ALIGN="LEFT">numeric[7,3]</TD></TR>
-      <TR><TD PORT="SMPID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SMPID</TD></TR></TABLE></TD><TD PORT="SMPID.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="SITEID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SITEID</TD></TR></TABLE></TD><TD PORT="SITEID.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="METASITEID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">METASITEID</TD></TR></TABLE></TD><TD PORT="METASITEID.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="CNTRY" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CNTRY</TD></TR></TABLE></TD><TD PORT="CNTRY.type" ALIGN="LEFT">varchar[2147483647]</TD></TR>
       <TR><TD PORT="REGION_INT" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REGION_INT</TD></TR></TABLE></TD><TD PORT="REGION_INT.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="REGION_REG" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REGION_REG</TD></TR></TABLE></TD><TD PORT="REGION_REG.type" ALIGN="LEFT">varchar[2147483647]</TD></TR>
-      <TR><TD PORT="DIV_ADMIN" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">DIV_ADMIN</TD></TR></TABLE></TD><TD PORT="DIV_ADMIN.type" ALIGN="LEFT">varchar[2147483647]</TD></TR>
-      <TR><TD PORT="DIV_OTHER" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">DIV_OTHER</TD></TR></TABLE></TD><TD PORT="DIV_OTHER.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="ISL_NAME" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">ISL_NAME</TD></TR></TABLE></TD><TD PORT="ISL_NAME.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="LAKE" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">LAKE</TD></TR></TABLE></TD><TD PORT="LAKE.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="BASIN" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">BASIN</TD></TR></TABLE></TD><TD PORT="BASIN.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="AHGFL1" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">AHGFL1</TD></TR></TABLE></TD><TD PORT="AHGFL1.type" ALIGN="LEFT">varchar[3]</TD></TR>
-      <TR><TD PORT="AHGFL2" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">AHGFL2</TD></TR></TABLE></TD><TD PORT="AHGFL2.type" ALIGN="LEFT">varchar[6]</TD></TR>
-      <TR><TD PORT="RIVNAME" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">RIVNAME</TD></TR></TABLE></TD><TD PORT="RIVNAME.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="RIVDIV" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">RIVDIV</TD></TR></TABLE></TD><TD PORT="RIVDIV.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="IBRACODE" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">IBRACODE</TD></TR></TABLE></TD><TD PORT="IBRACODE.type" ALIGN="LEFT">varchar[3]</TD></TR>
-      <TR><TD PORT="IBRAREGION" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">IBRAREGION</TD></TR></TABLE></TD><TD PORT="IBRAREGION.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD PORT="X_WGS84" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">X_WGS84</TD></TR></TABLE></TD><TD PORT="X_WGS84.type" ALIGN="LEFT">numeric[10,6]</TD></TR>
-      <TR><TD PORT="Y_WGS84" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">Y_WGS84</TD></TR></TABLE></TD><TD PORT="Y_WGS84.type" ALIGN="LEFT">numeric[10,6]</TD></TR>
-      <TR><TD PORT="CORDS_ELEV" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CORDS_ELEV</TD></TR></TABLE></TD><TD PORT="CORDS_ELEV.type" ALIGN="LEFT">varchar[2147483647]</TD></TR>
-      <TR><TD PORT="ELEVATION" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">ELEVATION</TD></TR></TABLE></TD><TD PORT="ELEVATION.type" ALIGN="LEFT">numeric[6,2]</TD></TR>
-      <TR><TD PORT="SITE_COMMT" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SITE_COMMT</TD></TR></TABLE></TD><TD PORT="SITE_COMMT.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="REFDBID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REFDBID</TD></TR></TABLE></TD><TD PORT="REFDBID.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="OAID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">OAID</TD></TR></TABLE></TD><TD PORT="OAID.type" ALIGN="LEFT">varchar[11]</TD></TR>
       <TR><TD PORT="AUTHOR" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">AUTHOR</TD></TR></TABLE></TD><TD PORT="AUTHOR.type" ALIGN="LEFT">text[2147483647]</TD></TR>
@@ -332,6 +223,8 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD PORT="ELEV_STD" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">ELEV_STD</TD></TR></TABLE></TD><TD PORT="ELEV_STD.type" ALIGN="LEFT">numeric[6,2]</TD></TR>
       <TR><TD PORT="SLP_AVE" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SLP_AVE</TD></TR></TABLE></TD><TD PORT="SLP_AVE.type" ALIGN="LEFT">numeric[6,2]</TD></TR>
       <TR><TD PORT="SLP_STD" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SLP_STD</TD></TR></TABLE></TD><TD PORT="SLP_STD.type" ALIGN="LEFT">numeric[6,2]</TD></TR>
+      <TR><TD PORT="CENTR_LAT" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CENTR_LAT</TD></TR></TABLE></TD><TD PORT="CENTR_LAT.type" ALIGN="LEFT">numeric[6,4]</TD></TR>
+      <TR><TD PORT="ATM_PRESS" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">ATM_PRESS</TD></TR></TABLE></TD><TD PORT="ATM_PRESS.type" ALIGN="LEFT">numeric[6,2]</TD></TR>
       <TR><TD PORT="SMP_DAY" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SMP_DAY</TD></TR></TABLE></TD><TD PORT="SMP_DAY.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="SMP_MONTH" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SMP_MONTH</TD></TR></TABLE></TD><TD PORT="SMP_MONTH.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="SMP_YEAR" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SMP_YEAR</TD></TR></TABLE></TD><TD PORT="SMP_YEAR.type" ALIGN="LEFT">int2[5]</TD></TR>
@@ -379,11 +272,22 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD PORT="EAL_MMKYR" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">EAL_MMKYR</TD></TR></TABLE></TD><TD PORT="EAL_MMKYR.type" ALIGN="LEFT">numeric[12,2]</TD></TR>
       <TR><TD PORT="EAL_ERR" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">EAL_ERR</TD></TR></TABLE></TD><TD PORT="EAL_ERR.type" ALIGN="LEFT">numeric[12,2]</TD></TR>
       <TR><TD PORT="id" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">id</TD></TR></TABLE></TD><TD PORT="id.type" ALIGN="LEFT">serial[10]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">5.376 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 4</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">5.376 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/crn_int_basins.html"
     target="_top"
     tooltip="crn_int_basins"
+  ];
+  "crn_int_outlets" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16"><B>crn_int_outlets</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">5.376 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/crn_int_outlets.html"
+    target="_top"
+    tooltip="crn_int_outlets"
   ];
   "crn_projepsgID" [
    label=<
@@ -408,16 +312,50 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     target="_top"
     tooltip="crn_Sample"
   ];
+  "crn_studies_boundingbox" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="150" HEIGHT="16"><B>crn_studies_boundingbox</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">301 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
+    </TABLE>>
+    URL="../../tables/crn_studies_boundingbox.html"
+    target="_top"
+    tooltip="crn_studies_boundingbox"
+  ];
+  "crn_studynote" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16"><B>crn_studynote</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="STUDYID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16">STUDYID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">301 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">9 &gt;</TD></TR>
+    </TABLE>>
+    URL="../../tables/crn_studynote.html"
+    target="_top"
+    tooltip="crn_studynote"
+  ];
   "crn_xxl_basins" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="86" HEIGHT="16"><B>crn_xxl_basins</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">261 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">261 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
     </TABLE>>
     URL="../../tables/crn_xxl_basins.html"
     target="_top"
     tooltip="crn_xxl_basins"
+  ];
+  "crn_xxl_outlets" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="88" HEIGHT="16"><B>crn_xxl_outlets</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">261 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/crn_xxl_outlets.html"
+    target="_top"
+    tooltip="crn_xxl_outlets"
   ];
   "expage" [
    label=<
@@ -441,17 +379,6 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     target="_top"
     tooltip="expage_DataCore"
   ];
-  "expage_Sample" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16"><B>expage_Sample</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">15.805 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/expage_Sample.html"
-    target="_top"
-    tooltip="expage_Sample"
-  ];
   "fos_DataCore" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -462,17 +389,6 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     URL="../../tables/fos_DataCore.html"
     target="_top"
     tooltip="fos_DataCore"
-  ];
-  "fos_Sample" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="67" HEIGHT="16"><B>fos_Sample</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2.235 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/fos_Sample.html"
-    target="_top"
-    tooltip="fos_Sample"
   ];
   "fossahul_webmercator_nrand_25000" [
    label=<
@@ -491,22 +407,11 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="81" HEIGHT="16"><B>global_Author</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="OAID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">OAID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.733 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">8 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.733 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">7 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_Author.html"
     target="_top"
     tooltip="global_Author"
-  ];
-  "global_biomeID" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="89" HEIGHT="16"><B>global_biomeID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">75 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_biomeID.html"
-    target="_top"
-    tooltip="global_biomeID"
   ];
   "global_dbDOI" [
    label=<
@@ -514,33 +419,11 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="78" HEIGHT="16"><B>global_dbDOI</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="83" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">26 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">26 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">26 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_dbDOI.html"
     target="_top"
     tooltip="global_dbDOI"
-  ];
-  "global_ibraID" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="76" HEIGHT="16"><B>global_ibraID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">90 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_ibraID.html"
-    target="_top"
-    tooltip="global_ibraID"
-  ];
-  "global_MetaSite" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="91" HEIGHT="16"><B>global_MetaSite</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">12.144 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">19 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_MetaSite.html"
-    target="_top"
-    tooltip="global_MetaSite"
   ];
   "global_RefCore" [
    label=<
@@ -552,50 +435,6 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     URL="../../tables/global_RefCore.html"
     target="_top"
     tooltip="global_RefCore"
-  ];
-  "global_rivID" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="68" HEIGHT="16"><B>global_rivID</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">219 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_rivID.html"
-    target="_top"
-    tooltip="global_rivID"
-  ];
-  "global_SiteCode" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="94" HEIGHT="16"><B>global_SiteCode</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">87 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_SiteCode.html"
-    target="_top"
-    tooltip="global_SiteCode"
-  ];
-  "global_SiteMaster" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16"><B>global_SiteMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 8</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">25.221 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_SiteMaster.html"
-    target="_top"
-    tooltip="global_SiteMaster"
-  ];
-  "global_UnitMaster" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="104" HEIGHT="16"><B>global_UnitMaster</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">607 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">9 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_UnitMaster.html"
-    target="_top"
-    tooltip="global_UnitMaster"
   ];
   "ippd_datasets" [
    label=<
@@ -750,16 +589,5 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     URL="../../tables/sed-tl_DataCore.html"
     target="_top"
     tooltip="sed-tl_DataCore"
-  ];
-  "sed_Sample" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="70" HEIGHT="16"><B>sed_Sample</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 9</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3.181 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/sed_Sample.html"
-    target="_top"
-    tooltip="sed_Sample"
   ];
 }

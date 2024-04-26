@@ -156,7 +156,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="STUDYID">STUDYID</span></td>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="STUDYID">STUDYID</span></td>
                                     <td>varchar</td>
                                     <td>5</td>
                                     <td title=''></td>
@@ -165,19 +165,24 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="crn_v3_basins_EPSG3857.STUDYID references crn_studies_boundingbox.STUDYID via &lt;--STUDYID_from_crn_studies_boundingbox"><a href='crn_v3_basins_EPSG3857.html'>crn_v3_basins_EPSG3857</a><span class='relatedKey'>.STUDYID</span></td>
-                                                <td class="constraint detail">&lt;--STUDYID_from_crn_studies_boundingbox</td>
+                                                <td title="crn_v3_basins_EPSG3857.STUDYID references crn_studies_boundingbox.STUDYID via &lt;--STUDYID_from_crn_studies_boundingbox_fkey"><a href='crn_v3_basins_EPSG3857.html'>crn_v3_basins_EPSG3857</a><span class='relatedKey'>.STUDYID</span></td>
+                                                <td class="constraint detail">&lt;--STUDYID_from_crn_studies_boundingbox_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
-                                                <td title="crn_v3_outlets_EPSG3857.STUDYID references crn_studies_boundingbox.STUDYID via &lt;--STUDYID_from_crn_studies_boundingbox"><a href='crn_v3_outlets_EPSG3857.html'>crn_v3_outlets_EPSG3857</a><span class='relatedKey'>.STUDYID</span></td>
-                                                <td class="constraint detail">&lt;--STUDYID_from_crn_studies_boundingbox</td>
+                                                <td title="crn_v3_outlets_EPSG3857.STUDYID references crn_studies_boundingbox.STUDYID via &lt;--STUDYID_from_crn_studies_boundingbox_fkey"><a href='crn_v3_outlets_EPSG3857.html'>crn_v3_outlets_EPSG3857</a><span class='relatedKey'>.STUDYID</span></td>
+                                                <td class="constraint detail">&lt;--STUDYID_from_crn_studies_boundingbox_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
                                     </td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="crn_studies_boundingbox.STUDYID&#39;s name implies that it&#39;s a child of crn_studynote.STUDYID, but it doesn&#39;t reference that column."><a href='crn_studynote.html'>crn_studynote</a><span class='relatedKey'>.STUDYID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
                                     <td></td>
@@ -249,8 +254,8 @@
                                 <tr>
                                     <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> crn_studies_boundingbox_pkey</td>
                                     <td>Primary key</td>
-                                    <td><span title='Ascending'>Asc</span>/<span title='Ascending'>Asc</span></td>
-                                    <td>id + STUDYID</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>id</td>
                                 </tr>
                                 <tr>
                                     <td title='Indexed'>sidx_crn_studies_boundingbox_geom</td>
@@ -283,6 +288,8 @@
                                 <ul class="nav nav-tabs pull-left ui-sortable-handle">
                                     <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
                                     <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
                                 </ul>
                                 <div class="tab-content no-padding">
                                     <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
@@ -292,6 +299,14 @@
                                     <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
                                         
                                         <a name='diagram'><object type="image/svg+xml" id="twodegreesDegreeImg" data="../diagrams/tables/crn_studies_boundingbox.2degrees.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="oneimpliedDegreeImg" data="../diagrams/tables/crn_studies_boundingbox.implied1degrees.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="twoimpliedDegreeImg" data="../diagrams/tables/crn_studies_boundingbox.implied2degrees.svg" class="diagram" border="0" align="left"></object></a>
                                     </div>
                                 </div>
                             </div>

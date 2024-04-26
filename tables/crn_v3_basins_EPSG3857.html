@@ -139,7 +139,7 @@
                                     <td></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="geom">geom</span></td>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="geom">geom</span></td>
                                     <td>geometry</td>
                                     <td>2147483647</td>
                                     <td title='nullable'>√</td>
@@ -159,7 +159,7 @@
                                     <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="OBSID1">OBSID1</span></td>
                                     <td>varchar</td>
                                     <td>254</td>
-                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
                                     <td title=''></td>
                                     <td>null</td>
                                     <td>
@@ -169,13 +169,13 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="crn_v3_basins_EPSG3857.OBSID1 references crn_al_DataCore.OBSID1 via &lt;--OBSID1_from_crn_al_DataCore_fkey"><a href='crn_al_DataCore.html'>crn_al_DataCore</a><span class='relatedKey'>.OBSID1</span></td>
-                                                <td class="constraint detail">&lt;--OBSID1_from_crn_al_DataCore_fkey</td>
+                                                <td title="crn_v3_basins_EPSG3857.OBSID1 references crn_be_DataCore.OBSID1 via &lt;--OBSID1_from_crn_be_DataCore_fkey"><a href='crn_be_DataCore.html'>crn_be_DataCore</a><span class='relatedKey'>.OBSID1</span></td>
+                                                <td class="constraint detail">&lt;--OBSID1_from_crn_be_DataCore_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                             <tr>
-                                                <td title="crn_v3_basins_EPSG3857.OBSID1 references crn_be_DataCore.OBSID1 via &lt;--OBSID1_from_crn_be_DataCore_fkey"><a href='crn_be_DataCore.html'>crn_be_DataCore</a><span class='relatedKey'>.OBSID1</span></td>
-                                                <td class="constraint detail">&lt;--OBSID1_from_crn_be_DataCore_fkey</td>
+                                                <td title="crn_v3_basins_EPSG3857.OBSID1 references crn_al_DataCore.OBSID1 via &lt;--OBSID1_from_crn_al_DataCore_fkey"><a href='crn_al_DataCore.html'>crn_al_DataCore</a><span class='relatedKey'>.OBSID1</span></td>
+                                                <td class="constraint detail">&lt;--OBSID1_from_crn_al_DataCore_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
@@ -202,8 +202,8 @@
                                 <tr>
                                     <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="STUDYID">STUDYID</span></td>
                                     <td>varchar</td>
-                                    <td>254</td>
-                                    <td title='nullable'>√</td>
+                                    <td>5</td>
+                                    <td title=''></td>
                                     <td title=''></td>
                                     <td>null</td>
                                     <td>
@@ -213,8 +213,8 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
-                                                <td title="crn_v3_basins_EPSG3857.STUDYID references crn_studies_boundingbox.STUDYID via &lt;--STUDYID_from_crn_studies_boundingbox"><a href='crn_studies_boundingbox.html'>crn_studies_boundingbox</a><span class='relatedKey'>.STUDYID</span></td>
-                                                <td class="constraint detail">&lt;--STUDYID_from_crn_studies_boundingbox</td>
+                                                <td title="crn_v3_basins_EPSG3857.STUDYID references crn_studies_boundingbox.STUDYID via &lt;--STUDYID_from_crn_studies_boundingbox_fkey"><a href='crn_studies_boundingbox.html'>crn_studies_boundingbox</a><span class='relatedKey'>.STUDYID</span></td>
+                                                <td class="constraint detail">&lt;--STUDYID_from_crn_studies_boundingbox_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
                                             </tr>
                                         </table>
@@ -224,8 +224,8 @@
                                 <tr>
                                     <td><span id="CRN_SUBCMP">CRN_SUBCMP</span></td>
                                     <td>varchar</td>
-                                    <td>254</td>
-                                    <td title='nullable'>√</td>
+                                    <td>3</td>
+                                    <td title=''></td>
                                     <td title=''></td>
                                     <td>null</td>
                                     <td>
@@ -237,6 +237,74 @@
                                         </table>
                                     </td>
                                     <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CENTR_LAT">CENTR_LAT</span></td>
+                                    <td>numeric</td>
+                                    <td>6,4</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="ATM_PRESS">ATM_PRESS</span></td>
+                                    <td>numeric</td>
+                                    <td>6,2</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::numeric</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="CREATED_AT">CREATED_AT</span></td>
+                                    <td>timestamptz</td>
+                                    <td>35,6</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>timezone(&#39;UTC&#39;::text, now())</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Is record timestamp with timezone based on UTC</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="UPDATED_AT">UPDATED_AT</span></td>
+                                    <td>timestamptz</td>
+                                    <td>35,6</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>timezone(&#39;UTC&#39;::text, now())</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Is timestamp of record update with timezone based on UTC</p></td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -275,6 +343,12 @@
                                     <td>id</td>
                                 </tr>
                                 <tr>
+                                    <td title='Indexed'>sidx_crn_v3_basins_EPSG3857_geom</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>geom</td>
+                                </tr>
+                                <tr>
                                     <td class='uniqueKey' title='Unique Key'><i class='icon ion-key iconkey'></i> unique_crn_v3_basins_EPSG3857_OBSID1</td>
                                     <td>Must be unique</td>
                                     <td><span title='Ascending'>Asc</span></td>
@@ -299,6 +373,8 @@
                                 <ul class="nav nav-tabs pull-left ui-sortable-handle">
                                     <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
                                     <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
+                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
+                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
                                 </ul>
                                 <div class="tab-content no-padding">
                                     <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
@@ -308,6 +384,14 @@
                                     <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
                                         
                                         <a name='diagram'><object type="image/svg+xml" id="twodegreesDegreeImg" data="../diagrams/tables/crn_v3_basins_EPSG3857.2degrees.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="oneimpliedDegreeImg" data="../diagrams/tables/crn_v3_basins_EPSG3857.implied1degrees.svg" class="diagram" border="0" align="left"></object></a>
+                                    </div>
+                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
+                                        
+                                        <a name='diagram'><object type="image/svg+xml" id="twoimpliedDegreeImg" data="../diagrams/tables/crn_v3_basins_EPSG3857.implied2degrees.svg" class="diagram" border="0" align="left"></object></a>
                                     </div>
                                 </div>
                             </div>

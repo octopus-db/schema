@@ -43,7 +43,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "ippd_datasets":"elipses":w -> "global_MetaSite":"METASITEID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "ippd_datasets":"elipses":w -> "global_SiteMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "ippd_datasets":"elipses":w -> "global_UnitMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
-  "ippd_Sample":"elipses":w -> "global_DataSetMaster":"DATASETID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "ippd_Sample":"elipses":w -> "global_DataSetMaster":"DATASETID":e [arrowhead=none dir=back arrowtail=crowodot];
   "ippd_Sample":"elipses":w -> "global_DataSetMaster":"NEODSETID":e [arrowhead=none dir=back arrowtail=crowodot];
   "ippd_Sample":"elipses":w -> "cabah_taxaID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_elementtypes":"DATASRCID":w -> "cabah_datasourceID":"DATASRCID.type":e [arrowhead=none dir=back arrowtail=crowodot];

@@ -14,7 +14,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "ippd_datasets":"elipses":w -> "global_SiteMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "ippd_datasets":"elipses":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "ippd_Sample":"elipses":w -> "cabah_AnalysisUnit":"ANLYSUNTID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "ippd_Sample":"elipses":w -> "global_DataSetMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
+  "ippd_Sample":"elipses":w -> "global_DataSetMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "ippd_Sample":"elipses":w -> "global_DataSetMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_chronologies":"elipses":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "neo_chronologies":"elipses":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot];

@@ -60,7 +60,6 @@ sed_geotypeID
 sed_morphID
 sed_sitetypeID
 global_RefCore
-neo_contacts
 cabah_taxagroupID
 neo_elementtypes
 global_biomeID
@@ -69,6 +68,7 @@ global_SiteCode
 cabah_methodID
 global_varunitID
 c14_materia2ID
+neo_contacts
 cabah_chroncontroltypeID
 sed_laketypeID
 cabah_col_mtdID

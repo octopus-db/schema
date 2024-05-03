@@ -10,6 +10,7 @@ digraph "twoDegreesRelationshipsDiagram" {
   "char_DataCore":"elipses":w -> "char_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_Sample":"elipses":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_DataSetMaster":"elipses":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "global_RefCore":"elipses":w -> "global_Author":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"COLLECTID":w -> "cabah_col_mtdID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"DEPOSITID":w -> "cabah_depositID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_UnitMaster":"SITEID":w -> "global_SiteMaster":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -25,6 +26,7 @@ digraph "twoDegreesRelationshipsDiagram" {
   "neo_chronologies":"CONTACTID":w -> "neo_contacts":"CONTACTID":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_chronologies":"UNITID":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_contacts":"CSTATUSID":w -> "global_contactstatusID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
+  "neo_contacts":"OAID":w -> "global_Author":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "cabah_agetypeID" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -114,6 +116,17 @@ digraph "twoDegreesRelationshipsDiagram" {
     URL="../../tables/char_Sample.html"
     target="_top"
     tooltip="char_Sample"
+  ];
+  "global_Author" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="81" HEIGHT="16"><B>global_Author</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.733 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
+    </TABLE>>
+    URL="../../tables/global_Author.html"
+    target="_top"
+    tooltip="global_Author"
   ];
   "global_contactstatusID" [
    label=<
@@ -235,8 +248,9 @@ digraph "twoDegreesRelationshipsDiagram" {
       <TR><TD PORT="CONTACTID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CONTACTID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="ALIASID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">ALIASID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="CSTATUSID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CSTATUSID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="OAID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">OAID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">13.396 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">13.396 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/neo_contacts.html"
     target="_top"

@@ -1408,7 +1408,7 @@ digraph "largeImpliedRelationshipsDiagram" {
       <TR><TD PORT="UPDATED_AT" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">UPDATED_AT</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="AUTH_URL" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">AUTH_URL</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="URL_DATE" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">URL_DATE</TD></TR></TABLE></TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.733 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1.733 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">2 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_Author.html"
     target="_top"
@@ -2915,10 +2915,10 @@ digraph "largeImpliedRelationshipsDiagram" {
       <TR><TD PORT="TITLE" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">TITLE</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="SUFFIX" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">SUFFIX</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="NOTES" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">NOTES</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="OAID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">OAID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="OAID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">OAID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="CREATED_AT" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CREATED_AT</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="UPDATED_AT" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">UPDATED_AT</TD></TR></TABLE></TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">13.396 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 3</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">13.396 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">3 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/neo_contacts.html"
     target="_top"
@@ -5033,6 +5033,7 @@ digraph "largeImpliedRelationshipsDiagram" {
   "neo_chronologies":"UNITID":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_contacts":"ALIASID":w -> "neo_contacts":"CONTACTID":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_contacts":"CSTATUSID":w -> "global_contactstatusID":"CSTATUSID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "neo_contacts":"OAID":w -> "global_Author":"OAID":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_elementtypes":"DATASRCID":w -> "cabah_datasourceID":"DATASRCID":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_variableelements":"ELEMTYPEID":w -> "neo_elementtypes":"ELEMTYPEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "neo_variableelements":"MATURITYID":w -> "neo_elementmaturities":"MATURITYID":e [arrowhead=none dir=back arrowtail=crowodot];

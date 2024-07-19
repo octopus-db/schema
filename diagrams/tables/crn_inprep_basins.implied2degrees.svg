@@ -138,6 +138,7 @@
 <polygon fill="none" stroke="#000000" points="186,-1579.7 186,-1602.7 432,-1602.7 432,-1579.7 186,-1579.7"/>
 <text text-anchor="start" x="191" y="-1588.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">crn_inprep_basins</text>
 <text text-anchor="start" x="397.0437" y="-1587.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="#ffffff" stroke="transparent" points="186,-1557.7 186,-1579.7 313,-1579.7 313,-1557.7 186,-1557.7"/>
 <polygon fill="none" stroke="#000000" points="186,-1557.7 186,-1579.7 313,-1579.7 313,-1557.7 186,-1557.7"/>
 <text text-anchor="start" x="206" y="-1564.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">geom</text>
 <polygon fill="none" stroke="#000000" points="313,-1557.7 313,-1579.7 432,-1579.7 432,-1557.7 313,-1557.7"/>

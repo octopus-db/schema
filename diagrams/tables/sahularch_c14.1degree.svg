@@ -19,6 +19,7 @@
 <polygon fill="none" stroke="#000000" points="10,-2743.2 10,-2766.2 236,-2766.2 236,-2743.2 10,-2743.2"/>
 <text text-anchor="start" x="15" y="-2751.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">sahularch_c14</text>
 <text text-anchor="start" x="201.0437" y="-2751.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="#ffffff" stroke="transparent" points="10,-2721.2 10,-2743.2 117,-2743.2 117,-2721.2 10,-2721.2"/>
 <polygon fill="none" stroke="#000000" points="10,-2721.2 10,-2743.2 117,-2743.2 117,-2721.2 10,-2721.2"/>
 <text text-anchor="start" x="30" y="-2728.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">geom</text>
 <polygon fill="none" stroke="#000000" points="117,-2721.2 117,-2743.2 236,-2743.2 236,-2721.2 117,-2721.2"/>

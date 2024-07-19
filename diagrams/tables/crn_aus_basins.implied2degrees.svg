@@ -426,6 +426,7 @@
 <polygon fill="none" stroke="#000000" points="431.5,-1885.2 431.5,-1908.2 661.5,-1908.2 661.5,-1885.2 431.5,-1885.2"/>
 <text text-anchor="start" x="436.5" y="-1893.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">crn_aus_basins</text>
 <text text-anchor="start" x="626.5437" y="-1893.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="#ffffff" stroke="transparent" points="431.5,-1863.2 431.5,-1885.2 542.5,-1885.2 542.5,-1863.2 431.5,-1863.2"/>
 <polygon fill="none" stroke="#000000" points="431.5,-1863.2 431.5,-1885.2 542.5,-1885.2 542.5,-1863.2 431.5,-1863.2"/>
 <text text-anchor="start" x="451.5" y="-1870.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">geom</text>
 <polygon fill="none" stroke="#000000" points="542.5,-1863.2 542.5,-1885.2 661.5,-1885.2 661.5,-1863.2 542.5,-1863.2"/>

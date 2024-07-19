@@ -286,6 +286,7 @@
 <polygon fill="none" stroke="#000000" points="180,-169.2 180,-192.2 408,-192.2 408,-169.2 180,-169.2"/>
 <text text-anchor="start" x="185" y="-177.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">crn_xxl_outlets</text>
 <text text-anchor="start" x="373.0437" y="-177.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="#ffffff" stroke="transparent" points="180,-147.2 180,-169.2 289,-169.2 289,-147.2 180,-147.2"/>
 <polygon fill="none" stroke="#000000" points="180,-147.2 180,-169.2 289,-169.2 289,-147.2 180,-147.2"/>
 <text text-anchor="start" x="200" y="-154.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">the_geom</text>
 <polygon fill="none" stroke="#000000" points="289,-147.2 289,-169.2 408,-169.2 408,-147.2 289,-147.2"/>

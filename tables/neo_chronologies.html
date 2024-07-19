@@ -131,6 +131,11 @@
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                             <tr>
+                                                <td title="ippd_baseline_pollen.CHRONLGYID&#39;s name implies that it&#39;s a child of neo_chronologies.CHRONLGYID, but it doesn&#39;t reference that column."><a href='ippd_baseline_pollen.html'>ippd_baseline_pollen</a><span class='relatedKey'>.CHRONLGYID</span></td>
+                                                <td class="constraint detail">Implied Constraint</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
                                                 <td title="ippd_sampleages.CHRONLGYID references neo_chronologies.CHRONLGYID via &lt;--CHRONLGYID_from_neo_chronologies_fkey"><a href='ippd_sampleages.html'>ippd_sampleages</a><span class='relatedKey'>.CHRONLGYID</span></td>
                                                 <td class="constraint detail">&lt;--CHRONLGYID_from_neo_chronologies_fkey</td>
                                                 <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
@@ -224,7 +229,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td><p>If TRUE, then chronology is the default chronology</p></td>
+                                    <td><p>If TRUE, then chronology is the default chronology. Default status is determined by a Neotoma data steward. Collection Units may have more than one default Chronology, but may have only one default Chronology per Age Type. Thus, there may be a default radiocarbon year Chronology and a default calibrated radiocarbon year Chronology, but only one of each. Default Chronologies may be used by the Neotoma web site, or other web sites, for displaying default diagrams or time series of data. Default Chronologies may also be of considerable use for actual research purposes; however, users may of course choose to develop their own chronologies. <a href="./../null">Neotoma</a></p></td>
                                 </tr>
                                 <tr>
                                     <td><span id="CHRONNAME">CHRONNAME</span></td>
@@ -383,6 +388,23 @@
                                         </table>
                                     </td>
                                     <td><p>Is timestamp of record update with timezone based on UTC</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="TECH_NOTE">TECH_NOTE</span></td>
+                                    <td>text</td>
+                                    <td>2147483647</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td></td>
                                 </tr>
                                 </tbody>
                             </table>

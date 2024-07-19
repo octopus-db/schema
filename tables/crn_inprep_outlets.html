@@ -84,7 +84,7 @@
                             </div>
                         </div><!-- /.box-header -->
                         <div class="box-body clearfix">
-                            <p>Is flat <strong>GeoServer input</strong> table. Table creation date: 2024-04-26 13:28:58 UTC</p>
+                            <p>Is flat <strong>GeoServer input</strong> table. Table creation date: 2024-07-18 12:20:43 UTC</p>
                         </div><!-- /.box-body -->
                     </div>
                 </section>
@@ -122,7 +122,7 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td><span id="the_geom">the_geom</span></td>
+                                    <td class='indexedColumn' title='Indexed'><i class='fa fa-sitemap fa-rotate-120' style='padding-right: 5px;'></i><span id="the_geom">the_geom</span></td>
                                     <td>geometry</td>
                                     <td>2147483647</td>
                                     <td title='nullable'>√</td>
@@ -246,6 +246,12 @@
                                     <td>Primary key</td>
                                     <td><span title='Ascending'>Asc</span></td>
                                     <td>id</td>
+                                </tr>
+                                <tr>
+                                    <td title='Indexed'>crn_inprep_outlets_geom_idx</td>
+                                    <td>Performance</td>
+                                    <td><span title='Ascending'>Asc</span></td>
+                                    <td>the_geom</td>
                                 </tr>
                                 </tbody>
                             </table>

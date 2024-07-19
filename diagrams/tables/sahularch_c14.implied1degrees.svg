@@ -56,7 +56,7 @@
 <text text-anchor="start" x="231.594" y="-2315.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">25.221 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="294.5,-2309.2 294.5,-2328.2 328.5,-2328.2 328.5,-2309.2 294.5,-2309.2"/>
 <polygon fill="none" stroke="#000000" points="294.5,-2309.2 294.5,-2328.2 328.5,-2328.2 328.5,-2309.2 294.5,-2309.2"/>
-<text text-anchor="start" x="303.7904" y="-2315.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">20 &gt;</text>
+<text text-anchor="start" x="303.7904" y="-2315.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">21 &gt;</text>
 </a>
 </g>
 </g>
@@ -108,6 +108,7 @@
 <polygon fill="none" stroke="#000000" points="379,-2743.2 379,-2766.2 605,-2766.2 605,-2743.2 379,-2743.2"/>
 <text text-anchor="start" x="384" y="-2751.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">sahularch_c14</text>
 <text text-anchor="start" x="570.0437" y="-2751.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="#ffffff" stroke="transparent" points="379,-2721.2 379,-2743.2 486,-2743.2 486,-2721.2 379,-2721.2"/>
 <polygon fill="none" stroke="#000000" points="379,-2721.2 379,-2743.2 486,-2743.2 486,-2721.2 379,-2721.2"/>
 <text text-anchor="start" x="399" y="-2728.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">geom</text>
 <polygon fill="none" stroke="#000000" points="486,-2721.2 486,-2743.2 605,-2743.2 605,-2721.2 486,-2721.2"/>

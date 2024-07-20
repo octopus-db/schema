@@ -2226,9 +2226,9 @@
 <polygon fill="none" stroke="#000000" points="207.5,-11697 207.5,-11719 326.5,-11719 326.5,-11697 207.5,-11697"/>
 <text text-anchor="start" x="210.5" y="-11704.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
 <polygon fill="none" stroke="#000000" points="64.5,-11675 64.5,-11697 207.5,-11697 207.5,-11675 64.5,-11675"/>
-<text text-anchor="start" x="84.5" y="-11682.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">UNITNAME</text>
+<text text-anchor="start" x="84.5" y="-11682.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">UNITHANDLE</text>
 <polygon fill="none" stroke="#000000" points="207.5,-11675 207.5,-11697 326.5,-11697 326.5,-11675 207.5,-11675"/>
-<text text-anchor="start" x="210.5" y="-11682.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
+<text text-anchor="start" x="210.5" y="-11682.7" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">varchar[10]</text>
 <polygon fill="none" stroke="#000000" points="64.5,-11653 64.5,-11675 207.5,-11675 207.5,-11653 64.5,-11653"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="69.5" y="-11670"/>
 <text text-anchor="start" x="84.5" y="-11660.1" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">UNITID</text>

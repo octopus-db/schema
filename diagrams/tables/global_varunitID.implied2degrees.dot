@@ -9,7 +9,6 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "char_DataCore":"CHARMTDID":w -> "cabah_charmethodID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"CHARSIZEID":w -> "global_varunitID":"V_UNITID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"DATASRCID":w -> "cabah_datasourceID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
-  "char_DataCore":"DBDOI":w -> "global_dbDOI":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"LAB_ORIGID":w -> "cabah_LabCodes":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"MATERIA2ID":w -> "c14_materia2ID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"METHODID":w -> "cabah_methodID":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -19,7 +18,6 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
   "char_DataCore":"SMPID":w -> "char_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"WHATAMI":w -> "global_varunitID":"V_UNITID.type":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_varunitID":"PARENTID":w -> "global_varunitID":"V_UNITID.type":e [arrowhead=none dir=back arrowtail=crowodot];
-  "sahulchar":"elipses":w -> "global_dbDOI":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"elipses":w -> "char_DataCore":"OBSID":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "sahulchar":"elipses":w -> "char_Sample":"elipses":e [arrowhead=none dir=back arrowtail=crowodot style=dashed];
   "c14_calcurve" [
@@ -130,9 +128,8 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 16</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 15</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">1 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/char_DataCore.html"
     target="_top"
@@ -148,17 +145,6 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     URL="../../tables/char_Sample.html"
     target="_top"
     tooltip="char_Sample"
-  ];
-  "global_dbDOI" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="78" HEIGHT="16"><B>global_dbDOI</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">26 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">24 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_dbDOI.html"
-    target="_top"
-    tooltip="global_dbDOI"
   ];
   "global_RefCore" [
    label=<
@@ -192,7 +178,7 @@ digraph "twoDegreesRelationshipsDiagramImplied" {
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="56" HEIGHT="16"><B>sahulchar</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 6</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 5</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
     </TABLE>>
     URL="../../tables/sahulchar.html"
     target="_top"

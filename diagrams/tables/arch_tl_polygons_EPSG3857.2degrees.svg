@@ -33,7 +33,7 @@
 <text text-anchor="start" x="228" y="-513.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METHODID</text>
 <polygon fill="none" stroke="#000000" points="199,-484.7 199,-506.7 337,-506.7 337,-484.7 199,-484.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="204" y="-501.7"/>
-<text text-anchor="start" x="228" y="-491.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="228" y="-491.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="199,-462.7 199,-484.7 337,-484.7 337,-462.7 199,-462.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="204" y="-479.7"/>
 <text text-anchor="start" x="228" y="-469.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
@@ -164,35 +164,35 @@
 <ellipse fill="none" stroke="#000000" cx="188.0893" cy="-163.1709" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge7" class="edge">
+<g id="edge6" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M184.9885,-140.3484C158.6967,-125.4188 172.7352,-65.7 133,-65.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.2195,-141.8389 198.1625,-147.2012 195.1097,-142.7694 199,-143.7 199,-143.7 199,-143.7 195.1097,-142.7694 199.8375,-140.1988 191.2195,-141.8389 191.2195,-141.8389"/>
 <ellipse fill="none" stroke="#000000" cx="188.1073" cy="-141.0944" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge8" class="edge">
+<g id="edge7" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M184.7313,-207.0777C139.6472,-187.5609 197.7644,-65.7 133,-65.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.1318,-208.2539 198.3493,-213.2407 195.0659,-208.977 199,-209.7 199,-209.7 199,-209.7 195.0659,-208.977 199.6507,-206.1593 191.1318,-208.2539 191.1318,-208.2539"/>
 <ellipse fill="none" stroke="#000000" cx="187.9845" cy="-207.6755" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge18" class="edge">
+<g id="edge17" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M184.6383,-251.5887C123.5539,-230.9344 216.0202,-65.7 133,-65.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.0851,-252.5364 198.4764,-257.2617 195.0425,-253.1182 199,-253.7 199,-253.7 199,-253.7 195.0425,-253.1182 199.5236,-250.1383 191.0851,-252.5364 191.0851,-252.5364"/>
 <ellipse fill="none" stroke="#000000" cx="187.9191" cy="-252.0709" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge19" class="edge">
+<g id="edge18" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M184.4827,-273.7552C115.1248,-252.5847 225.2929,-65.7 133,-65.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.0708,-274.6377 198.522,-279.2681 195.0354,-275.1689 199,-275.7 199,-275.7 199,-275.7 195.0354,-275.1689 199.478,-272.1319 191.0708,-274.6377 191.0708,-274.6377"/>
 <ellipse fill="none" stroke="#000000" cx="187.8992" cy="-274.2128" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge20" class="edge">
+<g id="edge19" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M184.6866,-229.3534C131.8022,-209.1769 206.8128,-65.7 133,-65.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.1054,-230.4057 198.4175,-235.2526 195.0527,-231.0528 199,-231.7 199,-231.7 199,-231.7 195.0527,-231.0528 199.5825,-228.1474 191.1054,-230.4057 191.1054,-230.4057"/>
@@ -228,40 +228,10 @@
 <polygon fill="#000000" stroke="#000000" points="191.3306,-387.9761 200.0242,-389.1512 195.1653,-386.838 199,-385.7 199,-385.7 199,-385.7 195.1653,-386.838 197.9758,-382.2488 191.3306,-387.9761 191.3306,-387.9761"/>
 <ellipse fill="none" stroke="#000000" cx="188.2628" cy="-388.8865" rx="3.2" ry="3.2"/>
 </g>
-<!-- global_dbDOI -->
-<g id="node5" class="node">
-<title>global_dbDOI</title>
-<g id="a_node5"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="20.5,-612.2 20.5,-673.2 137.5,-673.2 137.5,-612.2 20.5,-612.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="21,-649.7 21,-672.7 138,-672.7 138,-649.7 21,-649.7"/>
-<polygon fill="none" stroke="#000000" points="21,-649.7 21,-672.7 138,-672.7 138,-649.7 21,-649.7"/>
-<text text-anchor="start" x="26" y="-658.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
-<text text-anchor="start" x="103.5219" y="-657.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="21,-630.7 21,-649.7 138,-649.7 138,-630.7 21,-630.7"/>
-<text text-anchor="start" x="24" y="-636.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="21,-611.7 21,-630.7 50,-630.7 50,-611.7 21,-611.7"/>
-<polygon fill="none" stroke="#000000" points="21,-611.7 21,-630.7 50,-630.7 50,-611.7 21,-611.7"/>
-<text text-anchor="start" x="24" y="-617.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="50,-611.7 50,-630.7 102,-630.7 102,-611.7 50,-611.7"/>
-<polygon fill="none" stroke="#000000" points="50,-611.7 50,-630.7 102,-630.7 102,-611.7 50,-611.7"/>
-<text text-anchor="start" x="60.4956" y="-617.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">26 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="102,-611.7 102,-630.7 138,-630.7 138,-611.7 102,-611.7"/>
-<polygon fill="none" stroke="#000000" points="102,-611.7 102,-630.7 138,-630.7 138,-611.7 102,-611.7"/>
-<text text-anchor="start" x="113.2904" y="-617.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">10 &gt;</text>
-</a>
-</g>
-</g>
-<!-- arch_tl_DataCore&#45;&gt;global_dbDOI -->
-<g id="edge5" class="edge">
-<title>arch_tl_DataCore:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" d="M184.7102,-498.448C141.3005,-518.356 201.8039,-639.7 138,-639.7"/>
-<polygon fill="#000000" stroke="#000000" points="191.1439,-497.2108 199.6799,-499.2352 195.072,-496.4554 199,-495.7 199,-495.7 199,-495.7 195.072,-496.4554 198.3201,-492.1648 191.1439,-497.2108 191.1439,-497.2108"/>
-<ellipse fill="none" stroke="#000000" cx="188.0015" cy="-497.8151" rx="3.2" ry="3.2"/>
-</g>
 <!-- osl&#45;tl_ed_procID -->
-<g id="node6" class="node">
+<g id="node5" class="node">
 <title>osl&#45;tl_ed_procID</title>
-<g id="a_node6"><a xlink:href="../../tables/osl-tl_ed_procID.html" xlink:title="osl&#45;tl_ed_procID" target="_top">
+<g id="a_node5"><a xlink:href="../../tables/osl-tl_ed_procID.html" xlink:title="osl&#45;tl_ed_procID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="12.5,-202.2 12.5,-263.2 145.5,-263.2 145.5,-202.2 12.5,-202.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="13,-239.7 13,-262.7 146,-262.7 146,-239.7 13,-239.7"/>
 <polygon fill="none" stroke="#000000" points="13,-239.7 13,-262.7 146,-262.7 146,-239.7 13,-239.7"/>
@@ -282,16 +252,16 @@
 </g>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;osl&#45;tl_ed_procID -->
-<g id="edge6" class="edge">
+<g id="edge5" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;osl&#45;tl_ed_procID:e</title>
 <path fill="none" stroke="#000000" d="M184.9789,-315.599C161.4176,-297.9924 186.4366,-229.7 146,-229.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.3217,-317.4542 197.9894,-323.1552 195.1608,-318.5771 199,-319.7 199,-319.7 199,-319.7 195.1608,-318.5771 200.0106,-316.2448 191.3217,-317.4542 191.3217,-317.4542"/>
 <ellipse fill="none" stroke="#000000" cx="188.2504" cy="-316.5558" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_LabCodes -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>cabah_LabCodes</title>
-<g id="a_node7"><a xlink:href="../../tables/cabah_LabCodes.html" xlink:title="cabah_LabCodes" target="_top">
+<g id="a_node6"><a xlink:href="../../tables/cabah_LabCodes.html" xlink:title="cabah_LabCodes" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="10,-776.2 10,-837.2 148,-837.2 148,-776.2 10,-776.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="10,-813.7 10,-836.7 148,-836.7 148,-813.7 10,-813.7"/>
 <polygon fill="none" stroke="#000000" points="10,-813.7 10,-836.7 148,-836.7 148,-813.7 10,-813.7"/>
@@ -312,16 +282,16 @@
 </g>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;cabah_LabCodes -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;cabah_LabCodes:e</title>
 <path fill="none" stroke="#000000" d="M185.8149,-545.71C150.5225,-585.0065 202.3831,-803.7 148,-803.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.7206,-543.0181 200.4932,-542.9757 195.3603,-541.3591 199,-539.7 199,-539.7 199,-539.7 195.3603,-541.3591 197.5068,-536.4243 191.7206,-543.0181 191.7206,-543.0181"/>
 <ellipse fill="none" stroke="#000000" cx="188.8088" cy="-544.3454" rx="3.2" ry="3.2"/>
 </g>
 <!-- osl&#45;tl_lum_matID -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>osl&#45;tl_lum_matID</title>
-<g id="a_node8"><a xlink:href="../../tables/osl-tl_lum_matID.html" xlink:title="osl&#45;tl_lum_matID" target="_top">
+<g id="a_node7"><a xlink:href="../../tables/osl-tl_lum_matID.html" xlink:title="osl&#45;tl_lum_matID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="11.5,-366.2 11.5,-427.2 146.5,-427.2 146.5,-366.2 11.5,-366.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="12,-403.7 12,-426.7 147,-426.7 147,-403.7 12,-403.7"/>
 <polygon fill="none" stroke="#000000" points="12,-403.7 12,-426.7 147,-426.7 147,-403.7 12,-403.7"/>
@@ -342,16 +312,16 @@
 </g>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;osl&#45;tl_lum_matID -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;osl&#45;tl_lum_matID:e</title>
 <path fill="none" stroke="#000000" d="M184.9291,-367.3786C171.5728,-375.3895 167.8449,-393.7 147,-393.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.2601,-365.7235 199.9106,-367.1829 195.1301,-364.7117 199,-363.7 199,-363.7 199,-363.7 195.1301,-364.7117 198.0894,-360.2171 191.2601,-365.7235 191.2601,-365.7235"/>
 <ellipse fill="none" stroke="#000000" cx="188.1642" cy="-366.5329" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_methodID -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>cabah_methodID</title>
-<g id="a_node9"><a xlink:href="../../tables/cabah_methodID.html" xlink:title="cabah_methodID" target="_top">
+<g id="a_node8"><a xlink:href="../../tables/cabah_methodID.html" xlink:title="cabah_methodID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="11.5,-694.2 11.5,-755.2 146.5,-755.2 146.5,-694.2 11.5,-694.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="12,-731.7 12,-754.7 147,-754.7 147,-731.7 12,-731.7"/>
 <polygon fill="none" stroke="#000000" points="12,-731.7 12,-754.7 147,-754.7 147,-731.7 12,-731.7"/>
@@ -372,16 +342,16 @@
 </g>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;cabah_methodID -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;cabah_methodID:e</title>
 <path fill="none" stroke="#000000" d="M184.4183,-519.853C120.9594,-541.6553 234.9007,-721.7 147,-721.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.0858,-518.8686 199.5259,-521.2614 195.0429,-518.2843 199,-517.7 199,-517.7 199,-517.7 195.0429,-518.2843 198.4741,-514.1386 191.0858,-518.8686 191.0858,-518.8686"/>
 <ellipse fill="none" stroke="#000000" cx="187.9201" cy="-519.336" rx="3.2" ry="3.2"/>
 </g>
 <!-- osl&#45;tl_mineralID -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>osl&#45;tl_mineralID</title>
-<g id="a_node10"><a xlink:href="../../tables/osl-tl_mineralID.html" xlink:title="osl&#45;tl_mineralID" target="_top">
+<g id="a_node9"><a xlink:href="../../tables/osl-tl_mineralID.html" xlink:title="osl&#45;tl_mineralID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="14.5,-284.2 14.5,-345.2 143.5,-345.2 143.5,-284.2 14.5,-284.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="15,-321.7 15,-344.7 144,-344.7 144,-321.7 15,-321.7"/>
 <polygon fill="none" stroke="#000000" points="15,-321.7 15,-344.7 144,-344.7 144,-321.7 15,-321.7"/>
@@ -402,16 +372,16 @@
 </g>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;osl&#45;tl_mineralID -->
-<g id="edge12" class="edge">
+<g id="edge11" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;osl&#45;tl_mineralID:e</title>
 <path fill="none" stroke="#000000" d="M184.6528,-338.2586C170.1766,-330.3786 165.9709,-311.7 144,-311.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.2207,-339.834 198.1603,-345.2007 195.1103,-340.767 199,-341.7 199,-341.7 199,-341.7 195.1103,-340.767 199.8397,-338.1993 191.2207,-339.834 191.2207,-339.834"/>
 <ellipse fill="none" stroke="#000000" cx="188.1089" cy="-339.0876" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_RefCore -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>global_RefCore</title>
-<g id="a_node11"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
+<g id="a_node10"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="15.5,-530.2 15.5,-591.2 142.5,-591.2 142.5,-530.2 15.5,-530.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="16,-567.7 16,-590.7 143,-590.7 143,-567.7 16,-567.7"/>
 <polygon fill="none" stroke="#000000" points="16,-567.7 16,-590.7 143,-590.7 143,-567.7 16,-567.7"/>
@@ -432,37 +402,37 @@
 </g>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge13" class="edge">
+<g id="edge12" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M184.9139,-477.7515C161.7061,-494.5308 181.9099,-557.7 143,-557.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.3117,-475.9114 199.9951,-477.1597 195.1558,-474.8057 199,-473.7 199,-473.7 199,-473.7 195.1558,-474.8057 198.0049,-470.2403 191.3117,-475.9114 191.3117,-475.9114"/>
 <ellipse fill="none" stroke="#000000" cx="188.2364" cy="-476.7959" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge14" class="edge">
+<g id="edge13" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M184.9721,-455.2268C155.5369,-473.6194 190.4538,-557.7 143,-557.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.2414,-453.6507 199.8778,-455.1913 195.1207,-452.6753 199,-451.7 199,-451.7 199,-451.7 195.1207,-452.6753 198.1222,-448.2087 191.2414,-453.6507 191.2414,-453.6507"/>
 <ellipse fill="none" stroke="#000000" cx="188.138" cy="-454.4309" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge15" class="edge">
+<g id="edge14" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M184.7563,-432.8641C148.5455,-452.575 199.2737,-557.7 143,-557.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.1904,-431.4349 199.7807,-433.2143 195.0952,-430.5674 199,-429.7 199,-429.7 199,-429.7 195.0952,-430.5674 198.2193,-426.1857 191.1904,-431.4349 191.1904,-431.4349"/>
 <ellipse fill="none" stroke="#000000" cx="188.0665" cy="-432.1288" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge16" class="edge">
+<g id="edge15" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M184.7725,-410.4316C140.6541,-430.7616 208.4626,-557.7 143,-557.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.1435,-409.2084 199.6788,-411.2354 195.0717,-408.4542 199,-407.7 199,-407.7 199,-407.7 195.0717,-408.4542 198.3212,-404.1646 191.1435,-409.2084 191.1435,-409.2084"/>
 <ellipse fill="none" stroke="#000000" cx="188.0009" cy="-409.8118" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_Sample -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>arch_Sample</title>
-<g id="a_node12"><a xlink:href="../../tables/arch_Sample.html" xlink:title="arch_Sample" target="_top">
+<g id="a_node11"><a xlink:href="../../tables/arch_Sample.html" xlink:title="arch_Sample" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="22.5,-858.2 22.5,-919.2 135.5,-919.2 135.5,-858.2 22.5,-858.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="23,-895.7 23,-918.7 136,-918.7 136,-895.7 23,-895.7"/>
 <polygon fill="none" stroke="#000000" points="23,-895.7 23,-918.7 136,-918.7 136,-895.7 23,-895.7"/>
@@ -483,11 +453,41 @@
 </g>
 </g>
 <!-- arch_tl_DataCore&#45;&gt;arch_Sample -->
-<g id="edge17" class="edge">
+<g id="edge16" class="edge">
 <title>arch_tl_DataCore:w&#45;&gt;arch_Sample:e</title>
 <path fill="none" stroke="#000000" d="M185.1353,-566.7893C137.2102,-608.009 203.9047,-885.7 136,-885.7"/>
 <polygon fill="#000000" stroke="#000000" points="191.49,-564.4567 200.2405,-565.0795 195.245,-563.0784 199,-561.7 199,-561.7 199,-561.7 195.245,-563.0784 197.7595,-558.3205 191.49,-564.4567 191.49,-564.4567"/>
 <ellipse fill="none" stroke="#000000" cx="188.4859" cy="-565.5594" rx="3.2" ry="3.2"/>
+</g>
+<!-- global_dbDOI -->
+<g id="node12" class="node">
+<title>global_dbDOI</title>
+<g id="a_node12"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="20.5,-612.2 20.5,-673.2 137.5,-673.2 137.5,-612.2 20.5,-612.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="21,-649.7 21,-672.7 138,-672.7 138,-649.7 21,-649.7"/>
+<polygon fill="none" stroke="#000000" points="21,-649.7 21,-672.7 138,-672.7 138,-649.7 21,-649.7"/>
+<text text-anchor="start" x="26" y="-658.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
+<text text-anchor="start" x="103.5219" y="-657.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="21,-630.7 21,-649.7 138,-649.7 138,-630.7 21,-630.7"/>
+<text text-anchor="start" x="24" y="-636.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="21,-611.7 21,-630.7 54,-630.7 54,-611.7 21,-611.7"/>
+<polygon fill="none" stroke="#000000" points="21,-611.7 21,-630.7 54,-630.7 54,-611.7 21,-611.7"/>
+<text text-anchor="start" x="24" y="-617.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
+<polygon fill="#ffffff" stroke="transparent" points="54,-611.7 54,-630.7 104,-630.7 104,-611.7 54,-611.7"/>
+<polygon fill="none" stroke="#000000" points="54,-611.7 54,-630.7 104,-630.7 104,-611.7 54,-611.7"/>
+<text text-anchor="start" x="62.4956" y="-617.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">30 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="104,-611.7 104,-630.7 138,-630.7 138,-611.7 104,-611.7"/>
+<polygon fill="none" stroke="#000000" points="104,-611.7 104,-630.7 138,-630.7 138,-611.7 104,-611.7"/>
+<text text-anchor="start" x="113.2904" y="-617.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">11 &gt;</text>
+</a>
+</g>
+</g>
+<!-- arch_tl_DataCore&#45;&gt;global_dbDOI -->
+<g id="edge20" class="edge">
+<title>arch_tl_DataCore:w&#45;&gt;global_dbDOI:e</title>
+<path fill="none" stroke="#000000" d="M184.7102,-498.448C141.3005,-518.356 201.8039,-639.7 138,-639.7"/>
+<polygon fill="#000000" stroke="#000000" points="191.1439,-497.2108 199.6799,-499.2352 195.072,-496.4554 199,-495.7 199,-495.7 199,-495.7 195.072,-496.4554 198.3201,-492.1648 191.1439,-497.2108 191.1439,-497.2108"/>
+<ellipse fill="none" stroke="#000000" cx="188.0015" cy="-497.8151" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_tl_polygons_EPSG3857 -->
 <g id="node13" class="node">

@@ -33,7 +33,7 @@
 <text text-anchor="start" x="313.5" y="-1066.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METHODID</text>
 <polygon fill="none" stroke="#000000" points="284.5,-1037.7 284.5,-1059.7 435.5,-1059.7 435.5,-1037.7 284.5,-1037.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="289.5" y="-1054.7"/>
-<text text-anchor="start" x="313.5" y="-1044.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="313.5" y="-1044.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="284.5,-1015.7 284.5,-1037.7 435.5,-1037.7 435.5,-1015.7 284.5,-1015.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="289.5" y="-1032.7"/>
 <text text-anchor="start" x="313.5" y="-1022.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
@@ -186,7 +186,7 @@
 <text text-anchor="start" x="324.5" y="-412.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">FOS_MTDSID</text>
 <polygon fill="none" stroke="#000000" points="301.5,-383.7 301.5,-405.7 418.5,-405.7 418.5,-383.7 301.5,-383.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="306.5" y="-400.7"/>
-<text text-anchor="start" x="324.5" y="-390.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="324.5" y="-390.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="301.5,-361.7 301.5,-383.7 418.5,-383.7 418.5,-361.7 301.5,-361.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="306.5" y="-378.7"/>
 <text text-anchor="start" x="324.5" y="-368.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>

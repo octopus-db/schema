@@ -33,7 +33,7 @@
 <text text-anchor="start" x="283" y="-456.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METHODID</text>
 <polygon fill="none" stroke="#000000" points="254,-427.7 254,-449.7 402,-449.7 402,-427.7 254,-427.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="259" y="-444.7"/>
-<text text-anchor="start" x="283" y="-434.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="283" y="-434.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="254,-405.7 254,-427.7 402,-427.7 402,-405.7 254,-405.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="259" y="-422.7"/>
 <text text-anchor="start" x="283" y="-412.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
@@ -164,28 +164,28 @@
 <ellipse fill="none" stroke="#000000" cx="242.8941" cy="-110.1487" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge7" class="edge">
+<g id="edge6" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M239.6817,-88.8637C202.6931,-101.1608 208.3621,-161.7 160.5,-161.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.0898,-87.8954 254.5379,-90.2596 250.0449,-87.2977 254,-86.7 254,-86.7 254,-86.7 250.0449,-87.2977 253.4621,-83.1404 246.0898,-87.8954 246.0898,-87.8954"/>
 <ellipse fill="none" stroke="#000000" cx="242.9257" cy="-88.3736" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge8" class="edge">
+<g id="edge7" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M239.3018,-153.1101C209.1456,-154.8708 196.8661,-161.7 160.5,-161.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.0031,-152.9232 254.1004,-156.2986 250.0016,-152.8116 254,-152.7 254,-152.7 254,-152.7 250.0016,-152.8116 253.8996,-149.1014 246.0031,-152.9232 246.0031,-152.9232"/>
 <ellipse fill="none" stroke="#000000" cx="242.8044" cy="-153.0124" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge19" class="edge">
+<g id="edge18" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M239.2499,-174.1076C209.0346,-171.5645 197.047,-161.7 160.5,-161.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.0064,-174.3789 253.8555,-178.2971 250.0032,-174.5395 254,-174.7 254,-174.7 254,-174.7 250.0032,-174.5395 254.1445,-171.1029 246.0064,-174.3789 246.0064,-174.3789"/>
 <ellipse fill="none" stroke="#000000" cx="242.809" cy="-174.2505" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge20" class="edge">
+<g id="edge19" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M239.4826,-195.2846C207.8955,-188.7367 199.4985,-161.7 160.5,-161.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.0378,-195.9237 253.6506,-200.283 250.0189,-196.3118 254,-196.7 254,-196.7 254,-196.7 250.0189,-196.3118 254.3494,-193.117 246.0378,-195.9237 246.0378,-195.9237"/>
@@ -221,40 +221,10 @@
 <polygon fill="#000000" stroke="#000000" points="246.2275,-330.5941 254.8524,-332.1976 250.1137,-329.6471 254,-328.7 254,-328.7 254,-328.7 250.1137,-329.6471 253.1476,-325.2024 246.2275,-330.5941 246.2275,-330.5941"/>
 <ellipse fill="none" stroke="#000000" cx="243.1184" cy="-331.3518" rx="3.2" ry="3.2"/>
 </g>
-<!-- global_dbDOI -->
-<g id="node5" class="node">
-<title>global_dbDOI</title>
-<g id="a_node5"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="48,-886.2 48,-947.2 165,-947.2 165,-886.2 48,-886.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="48.5,-923.7 48.5,-946.7 165.5,-946.7 165.5,-923.7 48.5,-923.7"/>
-<polygon fill="none" stroke="#000000" points="48.5,-923.7 48.5,-946.7 165.5,-946.7 165.5,-923.7 48.5,-923.7"/>
-<text text-anchor="start" x="53.5" y="-932.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
-<text text-anchor="start" x="131.0219" y="-931.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="48.5,-904.7 48.5,-923.7 165.5,-923.7 165.5,-904.7 48.5,-904.7"/>
-<text text-anchor="start" x="51.5" y="-910.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="48.5,-885.7 48.5,-904.7 77.5,-904.7 77.5,-885.7 48.5,-885.7"/>
-<polygon fill="none" stroke="#000000" points="48.5,-885.7 48.5,-904.7 77.5,-904.7 77.5,-885.7 48.5,-885.7"/>
-<text text-anchor="start" x="51.5" y="-891.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="77.5,-885.7 77.5,-904.7 129.5,-904.7 129.5,-885.7 77.5,-885.7"/>
-<polygon fill="none" stroke="#000000" points="77.5,-885.7 77.5,-904.7 129.5,-904.7 129.5,-885.7 77.5,-885.7"/>
-<text text-anchor="start" x="87.9956" y="-891.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">26 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="129.5,-885.7 129.5,-904.7 165.5,-904.7 165.5,-885.7 129.5,-885.7"/>
-<polygon fill="none" stroke="#000000" points="129.5,-885.7 129.5,-904.7 165.5,-904.7 165.5,-885.7 129.5,-885.7"/>
-<text text-anchor="start" x="140.7904" y="-891.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">10 &gt;</text>
-</a>
-</g>
-</g>
-<!-- arch_osl_DataCore&#45;&gt;global_dbDOI -->
-<g id="edge5" class="edge">
-<title>arch_osl_DataCore:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" d="M242.6882,-447.7025C210.3518,-506.6768 234.0776,-836.6365 213,-875.7 200.162,-899.4929 192.5354,-913.7 165.5,-913.7"/>
-<polygon fill="#000000" stroke="#000000" points="247.7404,-443.6817 256.2418,-441.5168 250.8702,-441.1909 254,-438.7 254,-438.7 254,-438.7 250.8702,-441.1909 251.7582,-435.8832 247.7404,-443.6817 247.7404,-443.6817"/>
-<ellipse fill="none" stroke="#000000" cx="245.2365" cy="-445.6744" rx="3.2" ry="3.2"/>
-</g>
 <!-- osl&#45;tl_ed_procID -->
-<g id="node6" class="node">
+<g id="node5" class="node">
 <title>osl&#45;tl_ed_procID</title>
-<g id="a_node6"><a xlink:href="../../tables/osl-tl_ed_procID.html" xlink:title="osl&#45;tl_ed_procID" target="_top">
+<g id="a_node5"><a xlink:href="../../tables/osl-tl_ed_procID.html" xlink:title="osl&#45;tl_ed_procID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="40,-298.2 40,-359.2 173,-359.2 173,-298.2 40,-298.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="40.5,-335.7 40.5,-358.7 173.5,-358.7 173.5,-335.7 40.5,-335.7"/>
 <polygon fill="none" stroke="#000000" points="40.5,-335.7 40.5,-358.7 173.5,-358.7 173.5,-335.7 40.5,-335.7"/>
@@ -275,16 +245,16 @@
 </g>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;osl&#45;tl_ed_procID -->
-<g id="edge6" class="edge">
+<g id="edge5" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;osl&#45;tl_ed_procID:e</title>
 <path fill="none" stroke="#000000" d="M240.0136,-244.2119C227.6399,-252.1527 227.9357,-272.0183 213,-287.7 196.1993,-305.3399 197.8605,-325.7 173.5,-325.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.2409,-242.6483 254.8768,-244.1916 250.1204,-241.6742 254,-240.7 254,-240.7 254,-240.7 250.1204,-241.6742 253.1232,-237.2084 246.2409,-242.6483 246.2409,-242.6483"/>
 <ellipse fill="none" stroke="#000000" cx="243.1372" cy="-243.4277" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_LabCodes -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>cabah_LabCodes</title>
-<g id="a_node7"><a xlink:href="../../tables/cabah_LabCodes.html" xlink:title="cabah_LabCodes" target="_top">
+<g id="a_node6"><a xlink:href="../../tables/cabah_LabCodes.html" xlink:title="cabah_LabCodes" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="37.5,-1050.2 37.5,-1111.2 175.5,-1111.2 175.5,-1050.2 37.5,-1050.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="37.5,-1087.7 37.5,-1110.7 175.5,-1110.7 175.5,-1087.7 37.5,-1087.7"/>
 <polygon fill="none" stroke="#000000" points="37.5,-1087.7 37.5,-1110.7 175.5,-1110.7 175.5,-1087.7 37.5,-1087.7"/>
@@ -305,16 +275,16 @@
 </g>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;cabah_LabCodes -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;cabah_LabCodes:e</title>
 <path fill="none" stroke="#000000" d="M239.9795,-486.4284C224.7086,-498.6489 248.6538,-538.607 246,-571.7 237.666,-675.6246 255.9485,-944.6989 213,-1039.7 203.2255,-1061.3211 199.2279,-1077.7 175.5,-1077.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.2687,-484.756 254.9252,-486.1791 250.1343,-483.728 254,-482.7 254,-482.7 254,-482.7 250.1343,-483.728 253.0748,-479.2209 246.2687,-484.756 246.2687,-484.756"/>
 <ellipse fill="none" stroke="#000000" cx="243.1762" cy="-485.5784" rx="3.2" ry="3.2"/>
 </g>
 <!-- osl&#45;tl_lum_matID -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>osl&#45;tl_lum_matID</title>
-<g id="a_node8"><a xlink:href="../../tables/osl-tl_lum_matID.html" xlink:title="osl&#45;tl_lum_matID" target="_top">
+<g id="a_node7"><a xlink:href="../../tables/osl-tl_lum_matID.html" xlink:title="osl&#45;tl_lum_matID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="39,-640.2 39,-701.2 174,-701.2 174,-640.2 39,-640.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="39.5,-677.7 39.5,-700.7 174.5,-700.7 174.5,-677.7 39.5,-677.7"/>
 <polygon fill="none" stroke="#000000" points="39.5,-677.7 39.5,-700.7 174.5,-700.7 174.5,-677.7 39.5,-677.7"/>
@@ -335,16 +305,16 @@
 </g>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;osl&#45;tl_lum_matID -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;osl&#45;tl_lum_matID:e</title>
 <path fill="none" stroke="#000000" d="M240.0391,-310.7813C190.5337,-343.9528 242.6831,-569.6522 213,-629.7 202.346,-651.2527 198.5421,-667.7 174.5,-667.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.3214,-308.9448 255.0101,-310.1554 250.1607,-307.8224 254,-306.7 254,-306.7 254,-306.7 250.1607,-307.8224 252.9899,-303.2446 246.3214,-308.9448 246.3214,-308.9448"/>
 <ellipse fill="none" stroke="#000000" cx="243.2499" cy="-309.8427" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_methodID -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>cabah_methodID</title>
-<g id="a_node9"><a xlink:href="../../tables/cabah_methodID.html" xlink:title="cabah_methodID" target="_top">
+<g id="a_node8"><a xlink:href="../../tables/cabah_methodID.html" xlink:title="cabah_methodID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="39,-968.2 39,-1029.2 174,-1029.2 174,-968.2 39,-968.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="39.5,-1005.7 39.5,-1028.7 174.5,-1028.7 174.5,-1005.7 39.5,-1005.7"/>
 <polygon fill="none" stroke="#000000" points="39.5,-1005.7 39.5,-1028.7 174.5,-1028.7 174.5,-1005.7 39.5,-1005.7"/>
@@ -365,16 +335,16 @@
 </g>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;cabah_methodID -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;cabah_methodID:e</title>
 <path fill="none" stroke="#000000" d="M242.1617,-469.2542C204.39,-531.3344 234.5326,-911.6181 213,-957.7 202.8222,-979.4816 198.5421,-995.7 174.5,-995.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.5157,-465.3855 256.1085,-463.618 250.7578,-463.0427 254,-460.7 254,-460.7 254,-460.7 250.7578,-463.0427 251.8915,-457.782 247.5157,-465.3855 247.5157,-465.3855"/>
 <ellipse fill="none" stroke="#000000" cx="244.9219" cy="-467.2597" rx="3.2" ry="3.2"/>
 </g>
 <!-- osl&#45;tl_mineralID -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>osl&#45;tl_mineralID</title>
-<g id="a_node10"><a xlink:href="../../tables/osl-tl_mineralID.html" xlink:title="osl&#45;tl_mineralID" target="_top">
+<g id="a_node9"><a xlink:href="../../tables/osl-tl_mineralID.html" xlink:title="osl&#45;tl_mineralID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="42,-558.2 42,-619.2 171,-619.2 171,-558.2 42,-558.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="42.5,-595.7 42.5,-618.7 171.5,-618.7 171.5,-595.7 42.5,-595.7"/>
 <polygon fill="none" stroke="#000000" points="42.5,-595.7 42.5,-618.7 171.5,-618.7 171.5,-595.7 42.5,-595.7"/>
@@ -395,16 +365,16 @@
 </g>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;osl&#45;tl_mineralID -->
-<g id="edge12" class="edge">
+<g id="edge11" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;osl&#45;tl_mineralID:e</title>
 <path fill="none" stroke="#000000" d="M239.9912,-289.9554C202.8415,-322.8423 238.3235,-500.4536 213,-547.7 201.1857,-569.7421 196.5086,-585.7 171.5,-585.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.5097,-287.51 255.2645,-288.0706 250.2549,-286.105 254,-284.7 254,-284.7 254,-284.7 250.2549,-286.105 252.7355,-281.3294 246.5097,-287.51 246.5097,-287.51"/>
 <ellipse fill="none" stroke="#000000" cx="243.5136" cy="-288.634" rx="3.2" ry="3.2"/>
 </g>
 <!-- osl_typeID -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>osl_typeID</title>
-<g id="a_node11"><a xlink:href="../../tables/osl_typeID.html" xlink:title="osl_typeID" target="_top">
+<g id="a_node10"><a xlink:href="../../tables/osl_typeID.html" xlink:title="osl_typeID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="8,-380.7 8,-536.7 205,-536.7 205,-380.7 8,-380.7"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="10.5,-511.7 10.5,-534.7 203.5,-534.7 203.5,-511.7 10.5,-511.7"/>
 <polygon fill="none" stroke="#000000" points="10.5,-511.7 10.5,-534.7 203.5,-534.7 203.5,-511.7 10.5,-511.7"/>
@@ -447,16 +417,16 @@
 </g>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;osl_typeID -->
-<g id="edge13" class="edge">
+<g id="edge12" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;osl_typeID:e</title>
 <path fill="none" stroke="#000000" d="M239.5739,-264.4789C161.9965,-286.2581 306.1416,-500.7 203.5,-500.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.0601,-263.6791 254.4406,-266.2729 250.0301,-263.1896 254,-262.7 254,-262.7 254,-262.7 250.0301,-263.1896 253.5594,-259.1271 246.0601,-263.6791 246.0601,-263.6791"/>
 <ellipse fill="none" stroke="#000000" cx="242.8842" cy="-264.0708" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_RefCore -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>global_RefCore</title>
-<g id="a_node12"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
+<g id="a_node11"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="43,-804.2 43,-865.2 170,-865.2 170,-804.2 43,-804.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="43.5,-841.7 43.5,-864.7 170.5,-864.7 170.5,-841.7 43.5,-841.7"/>
 <polygon fill="none" stroke="#000000" points="43.5,-841.7 43.5,-864.7 170.5,-864.7 170.5,-841.7 43.5,-841.7"/>
@@ -477,37 +447,37 @@
 </g>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge14" class="edge">
+<g id="edge13" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M239.6982,-420.3226C179.7725,-454.6926 249.0415,-723.5802 213,-793.7 201.4167,-816.2356 195.8382,-831.7 170.5,-831.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.2449,-418.6644 254.884,-420.1898 250.1225,-417.6822 254,-416.7 254,-416.7 254,-416.7 250.1225,-417.6822 253.116,-413.2102 246.2449,-418.6644 246.2449,-418.6644"/>
 <ellipse fill="none" stroke="#000000" cx="243.1429" cy="-419.4502" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge15" class="edge">
+<g id="edge14" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M242.985,-403.9776C213.5893,-460.5454 231.3174,-757.8016 213,-793.7 201.4836,-816.2698 195.8382,-831.7 170.5,-831.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.8812,-399.8537 256.3192,-397.4535 250.9406,-397.2768 254,-394.7 254,-394.7 254,-394.7 250.9406,-397.2768 251.6808,-391.9465 247.8812,-399.8537 247.8812,-399.8537"/>
 <ellipse fill="none" stroke="#000000" cx="245.4337" cy="-401.9152" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge16" class="edge">
+<g id="edge15" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M242.6381,-382.1051C211.6839,-440.8141 232.2579,-755.7093 213,-793.7 201.5436,-816.3004 195.8382,-831.7 170.5,-831.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.8374,-377.8012 256.2956,-375.4732 250.9187,-375.2506 254,-372.7 254,-372.7 254,-372.7 250.9187,-375.2506 251.7044,-369.9268 247.8374,-377.8012 247.8374,-377.8012"/>
 <ellipse fill="none" stroke="#000000" cx="245.3724" cy="-379.8417" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge17" class="edge">
+<g id="edge16" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M242.5198,-359.8121C209.6525,-419.5061 233.2461,-753.5214 213,-793.7 201.5978,-816.3278 195.8382,-831.7 170.5,-831.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.7339,-355.6736 256.2381,-353.5197 250.8669,-353.1868 254,-350.7 254,-350.7 254,-350.7 250.8669,-353.1868 251.7619,-347.8803 247.7339,-355.6736 247.7339,-355.6736"/>
 <ellipse fill="none" stroke="#000000" cx="245.2274" cy="-357.663" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_Sample -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>arch_Sample</title>
-<g id="a_node13"><a xlink:href="../../tables/arch_Sample.html" xlink:title="arch_Sample" target="_top">
+<g id="a_node12"><a xlink:href="../../tables/arch_Sample.html" xlink:title="arch_Sample" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="50,-1132.2 50,-1193.2 163,-1193.2 163,-1132.2 50,-1132.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="50.5,-1169.7 50.5,-1192.7 163.5,-1192.7 163.5,-1169.7 50.5,-1169.7"/>
 <polygon fill="none" stroke="#000000" points="50.5,-1169.7 50.5,-1192.7 163.5,-1192.7 163.5,-1169.7 50.5,-1169.7"/>
@@ -528,11 +498,41 @@
 </g>
 </g>
 <!-- arch_osl_DataCore&#45;&gt;arch_Sample -->
-<g id="edge18" class="edge">
+<g id="edge17" class="edge">
 <title>arch_osl_DataCore:w&#45;&gt;arch_Sample:e</title>
 <path fill="none" stroke="#000000" d="M240.6635,-510.603C234.3546,-522.2592 248.0287,-549.0645 246,-571.7 240.5351,-632.6766 241.7043,-1067.6253 213,-1121.7 199.9961,-1146.1976 191.2351,-1159.7 163.5,-1159.7"/>
 <polygon fill="#000000" stroke="#000000" points="246.6846,-507.938 255.4571,-507.9919 250.3423,-506.319 254,-504.7 254,-504.7 254,-504.7 250.3423,-506.319 252.5429,-501.4081 246.6846,-507.938 246.6846,-507.938"/>
 <ellipse fill="none" stroke="#000000" cx="243.7584" cy="-509.2332" rx="3.2" ry="3.2"/>
+</g>
+<!-- global_dbDOI -->
+<g id="node13" class="node">
+<title>global_dbDOI</title>
+<g id="a_node13"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="48,-886.2 48,-947.2 165,-947.2 165,-886.2 48,-886.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="48.5,-923.7 48.5,-946.7 165.5,-946.7 165.5,-923.7 48.5,-923.7"/>
+<polygon fill="none" stroke="#000000" points="48.5,-923.7 48.5,-946.7 165.5,-946.7 165.5,-923.7 48.5,-923.7"/>
+<text text-anchor="start" x="53.5" y="-932.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
+<text text-anchor="start" x="131.0219" y="-931.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="48.5,-904.7 48.5,-923.7 165.5,-923.7 165.5,-904.7 48.5,-904.7"/>
+<text text-anchor="start" x="51.5" y="-910.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="48.5,-885.7 48.5,-904.7 81.5,-904.7 81.5,-885.7 48.5,-885.7"/>
+<polygon fill="none" stroke="#000000" points="48.5,-885.7 48.5,-904.7 81.5,-904.7 81.5,-885.7 48.5,-885.7"/>
+<text text-anchor="start" x="51.5" y="-891.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
+<polygon fill="#ffffff" stroke="transparent" points="81.5,-885.7 81.5,-904.7 131.5,-904.7 131.5,-885.7 81.5,-885.7"/>
+<polygon fill="none" stroke="#000000" points="81.5,-885.7 81.5,-904.7 131.5,-904.7 131.5,-885.7 81.5,-885.7"/>
+<text text-anchor="start" x="89.9956" y="-891.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">30 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="131.5,-885.7 131.5,-904.7 165.5,-904.7 165.5,-885.7 131.5,-885.7"/>
+<polygon fill="none" stroke="#000000" points="131.5,-885.7 131.5,-904.7 165.5,-904.7 165.5,-885.7 131.5,-885.7"/>
+<text text-anchor="start" x="140.7904" y="-891.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">11 &gt;</text>
+</a>
+</g>
+</g>
+<!-- arch_osl_DataCore&#45;&gt;global_dbDOI -->
+<g id="edge20" class="edge">
+<title>arch_osl_DataCore:w&#45;&gt;global_dbDOI:e</title>
+<path fill="none" stroke="#000000" d="M242.6882,-447.7025C210.3518,-506.6768 234.0776,-836.6365 213,-875.7 200.162,-899.4929 192.5354,-913.7 165.5,-913.7"/>
+<polygon fill="#000000" stroke="#000000" points="247.7404,-443.6817 256.2418,-441.5168 250.8702,-441.1909 254,-438.7 254,-438.7 254,-438.7 250.8702,-441.1909 251.7582,-435.8832 247.7404,-443.6817 247.7404,-443.6817"/>
+<ellipse fill="none" stroke="#000000" cx="245.2365" cy="-445.6744" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_osl_polygons_EPSG3857 -->
 <g id="node14" class="node">
@@ -588,7 +588,7 @@
 <text text-anchor="start" x="287" y="-1000.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METHODID</text>
 <polygon fill="none" stroke="#000000" points="258,-971.7 258,-993.7 399,-993.7 399,-971.7 258,-971.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="263" y="-988.7"/>
-<text text-anchor="start" x="287" y="-978.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="287" y="-978.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="258,-949.7 258,-971.7 399,-971.7 399,-949.7 258,-949.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="263" y="-966.7"/>
 <text text-anchor="start" x="287" y="-956.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
@@ -673,28 +673,28 @@
 <ellipse fill="none" stroke="#000000" cx="247.245" cy="-649.5743" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge28" class="edge">
+<g id="edge27" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M244.8427,-624.1935C239.7481,-613.3661 248.8148,-590.9373 246,-571.7 234.1771,-490.8971 250.8253,-278.0749 213,-205.7 198.8985,-178.7183 190.9444,-161.7 160.5,-161.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.8289,-627.1538 256.4042,-633.927 254.4145,-628.9269 258,-630.7 258,-630.7 258,-630.7 254.4145,-628.9269 259.5958,-627.473 250.8289,-627.1538 250.8289,-627.1538"/>
 <ellipse fill="none" stroke="#000000" cx="247.9605" cy="-625.7353" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge29" class="edge">
+<g id="edge28" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M243.6517,-694.4808C211.9191,-682.2089 250.627,-621.4098 246,-571.7 238.4314,-490.3882 250.8253,-278.0749 213,-205.7 198.8985,-178.7183 190.9444,-161.7 160.5,-161.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.094,-695.4772 257.4497,-700.2577 254.047,-696.0886 258,-696.7 258,-696.7 258,-696.7 254.047,-696.0886 258.5503,-693.1423 250.094,-695.4772 250.094,-695.4772"/>
 <ellipse fill="none" stroke="#000000" cx="246.9316" cy="-694.988" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge40" class="edge">
+<g id="edge39" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M246.0159,-710.256C206.5554,-647.3055 237.3241,-252.3795 213,-205.7 198.9313,-178.7012 190.9444,-161.7 160.5,-161.7"/>
 <polygon fill="#000000" stroke="#000000" points="251.4603,-714.0921 255.9265,-721.6429 254.7301,-716.3961 258,-718.7 258,-718.7 258,-718.7 254.7301,-716.3961 260.0735,-715.7571 251.4603,-714.0921 251.4603,-714.0921"/>
 <ellipse fill="none" stroke="#000000" cx="248.8444" cy="-712.249" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mtdID -->
-<g id="edge41" class="edge">
+<g id="edge40" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M245.8005,-732.3079C204.5031,-667.999 238.3259,-254.5152 213,-205.7 198.9796,-178.6761 190.9444,-161.7 160.5,-161.7"/>
 <polygon fill="#000000" stroke="#000000" points="251.4089,-736.1659 255.9597,-743.666 254.7044,-738.433 258,-740.7 258,-740.7 258,-740.7 254.7044,-738.433 260.0403,-737.734 251.4089,-736.1659 251.4089,-736.1659"/>
@@ -707,82 +707,82 @@
 <polygon fill="#000000" stroke="#000000" points="250.1157,-871.3442 257.3899,-876.2479 254.0579,-872.0221 258,-872.7 258,-872.7 258,-872.7 254.0579,-872.0221 258.6101,-869.1521 250.1157,-871.3442 250.1157,-871.3442"/>
 <ellipse fill="none" stroke="#000000" cx="246.962" cy="-870.8018" rx="3.2" ry="3.2"/>
 </g>
-<!-- sed&#45;osl_DataCore&#45;&gt;global_dbDOI -->
-<g id="edge26" class="edge">
-<title>sed&#45;osl_DataCore:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" d="M243.6757,-980.5593C208.1542,-968.9128 211.3797,-913.7 165.5,-913.7"/>
-<polygon fill="#000000" stroke="#000000" points="250.0879,-981.5175 257.4679,-986.2605 254.0439,-982.1088 258,-982.7 258,-982.7 258,-982.7 254.0439,-982.1088 258.5321,-979.1395 250.0879,-981.5175 250.0879,-981.5175"/>
-<ellipse fill="none" stroke="#000000" cx="246.923" cy="-981.0445" rx="3.2" ry="3.2"/>
-</g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_ed_procID -->
-<g id="edge27" class="edge">
+<g id="edge26" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_ed_procID:e</title>
 <path fill="none" stroke="#000000" d="M246.6258,-775.4536C215.0776,-717.7319 230.1312,-408.0837 213,-369.7 202.2894,-345.7021 199.7796,-325.7 173.5,-325.7"/>
 <polygon fill="#000000" stroke="#000000" points="251.7924,-779.6536 255.7291,-787.4934 254.8962,-782.1768 258,-784.7 258,-784.7 258,-784.7 254.8962,-782.1768 260.2709,-781.9066 251.7924,-779.6536 251.7924,-779.6536"/>
 <ellipse fill="none" stroke="#000000" cx="249.3093" cy="-777.6351" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;cabah_LabCodes -->
-<g id="edge30" class="edge">
+<g id="edge29" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;cabah_LabCodes:e</title>
 <path fill="none" stroke="#000000" d="M243.4632,-1029.0239C215.0724,-1039.001 213.0503,-1077.7 175.5,-1077.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.1003,-1027.9629 258.5683,-1030.2549 254.0502,-1027.3315 258,-1026.7 258,-1026.7 258,-1026.7 254.0502,-1027.3315 257.4317,-1023.1451 250.1003,-1027.9629 250.1003,-1027.9629"/>
 <ellipse fill="none" stroke="#000000" cx="246.9404" cy="-1028.4681" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_lum_matID -->
-<g id="edge31" class="edge">
+<g id="edge30" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_lum_matID:e</title>
 <path fill="none" stroke="#000000" d="M243.7106,-848.7686C179.4632,-829.2107 258.487,-667.7 174.5,-667.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.0721,-849.6284 257.5178,-854.2676 254.036,-850.1642 258,-850.7 258,-850.7 258,-850.7 254.036,-850.1642 258.4822,-847.1324 250.0721,-849.6284 250.0721,-849.6284"/>
 <ellipse fill="none" stroke="#000000" cx="246.9009" cy="-849.1998" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;cabah_methodID -->
-<g id="edge32" class="edge">
+<g id="edge31" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;cabah_methodID:e</title>
 <path fill="none" stroke="#000000" d="M243.4284,-1004.1903C217.5215,-1002.2864 206.4313,-995.7 174.5,-995.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.0049,-1004.4203 257.8741,-1008.2978 254.0024,-1004.5602 258,-1004.7 258,-1004.7 258,-1004.7 254.0024,-1004.5602 258.1259,-1001.1022 250.0049,-1004.4203 250.0049,-1004.4203"/>
 <ellipse fill="none" stroke="#000000" cx="246.8068" cy="-1004.3084" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl&#45;tl_mineralID -->
-<g id="edge33" class="edge">
+<g id="edge32" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl&#45;tl_mineralID:e</title>
 <path fill="none" stroke="#000000" d="M243.4288,-827.4267C177.5345,-814.4372 253.0371,-704.8925 213,-629.7 200.366,-605.9724 198.3815,-585.7 171.5,-585.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.0304,-828.0035 257.6866,-832.2863 254.0152,-828.3518 258,-828.7 258,-828.7 258,-828.7 254.0152,-828.3518 258.3134,-825.1137 250.0304,-828.0035 250.0304,-828.0035"/>
 <ellipse fill="none" stroke="#000000" cx="246.8425" cy="-827.725" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;osl_typeID -->
-<g id="edge34" class="edge">
+<g id="edge33" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;osl_typeID:e</title>
 <path fill="none" stroke="#000000" d="M244.4623,-801.3888C201.0666,-760.7552 267.174,-500.7 203.5,-500.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.5526,-803.7782 256.6852,-810.0513 254.2763,-805.2391 258,-806.7 258,-806.7 258,-806.7 254.2763,-805.2391 259.3148,-803.3487 250.5526,-803.7782 250.5526,-803.7782"/>
 <ellipse fill="none" stroke="#000000" cx="247.5737" cy="-802.6094" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge35" class="edge">
+<g id="edge34" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M243.5421,-957.8942C220.7308,-946.8381 234.5669,-905.4367 213,-875.7 197.0375,-853.6907 197.6884,-831.7 170.5,-831.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.1465,-959.1759 257.3141,-964.2341 254.0733,-959.9379 258,-960.7 258,-960.7 258,-960.7 254.0733,-959.9379 258.6859,-957.1659 250.1465,-959.1759 250.1465,-959.1759"/>
 <ellipse fill="none" stroke="#000000" cx="247.0051" cy="-958.5662" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge36" class="edge">
+<g id="edge35" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M243.4307,-935.4301C226.616,-925.89 231.0574,-897.3947 213,-875.7 195.6066,-854.8031 197.6884,-831.7 170.5,-831.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.1942,-936.948 257.2116,-942.2126 254.0971,-937.824 258,-938.7 258,-938.7 258,-938.7 254.0971,-937.824 258.7884,-935.1874 250.1942,-936.948 250.1942,-936.948"/>
 <ellipse fill="none" stroke="#000000" cx="247.0719" cy="-936.2472" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge37" class="edge">
+<g id="edge36" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M243.6488,-914.2478C207.2599,-900.3111 219.2108,-831.7 170.5,-831.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.1143,-915.3525 257.3936,-920.2486 254.0571,-916.0263 258,-916.7 258,-916.7 258,-916.7 254.0571,-916.0263 258.6064,-913.1514 250.1143,-915.3525 250.1143,-915.3525"/>
 <ellipse fill="none" stroke="#000000" cx="246.96" cy="-914.8135" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;global_RefCore -->
-<g id="edge38" class="edge">
+<g id="edge37" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M243.717,-892.4578C211.2474,-881.235 212.9917,-831.7 170.5,-831.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.0968,-893.4593 257.4417,-898.2564 254.0484,-894.0796 258,-894.7 258,-894.7 258,-894.7 254.0484,-894.0796 258.5583,-891.1436 250.0968,-893.4593 250.0968,-893.4593"/>
 <ellipse fill="none" stroke="#000000" cx="246.9355" cy="-892.963" rx="3.2" ry="3.2"/>
+</g>
+<!-- sed&#45;osl_DataCore&#45;&gt;global_dbDOI -->
+<g id="edge41" class="edge">
+<title>sed&#45;osl_DataCore:w&#45;&gt;global_dbDOI:e</title>
+<path fill="none" stroke="#000000" d="M243.6757,-980.5593C208.1542,-968.9128 211.3797,-913.7 165.5,-913.7"/>
+<polygon fill="#000000" stroke="#000000" points="250.0879,-981.5175 257.4679,-986.2605 254.0439,-982.1088 258,-982.7 258,-982.7 258,-982.7 254.0439,-982.1088 258.5321,-979.1395 250.0879,-981.5175 250.0879,-981.5175"/>
+<ellipse fill="none" stroke="#000000" cx="246.923" cy="-981.0445" rx="3.2" ry="3.2"/>
 </g>
 <!-- sed_Sample -->
 <g id="node16" class="node">
@@ -808,7 +808,7 @@
 </g>
 </g>
 <!-- sed&#45;osl_DataCore&#45;&gt;sed_Sample -->
-<g id="edge39" class="edge">
+<g id="edge38" class="edge">
 <title>sed&#45;osl_DataCore:w&#45;&gt;sed_Sample:e</title>
 <path fill="none" stroke="#000000" d="M243.6233,-1050.397C196.1899,-1063.4966 250.8199,-1149.4531 213,-1203.7 196.7319,-1227.0342 189.9453,-1241.7 161.5,-1241.7"/>
 <polygon fill="#000000" stroke="#000000" points="250.0552,-1049.6379 258.422,-1052.2752 254.0276,-1049.1689 258,-1048.7 258,-1048.7 258,-1048.7 254.0276,-1049.1689 257.578,-1045.1248 250.0552,-1049.6379 250.0552,-1049.6379"/>

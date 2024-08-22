@@ -46,14 +46,13 @@
 <polygon fill="none" stroke="#000000" points="292.5,-1621.2 292.5,-1643.2 411.5,-1643.2 411.5,-1621.2 292.5,-1621.2"/>
 <text text-anchor="start" x="295.5" y="-1628.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
 <polygon fill="none" stroke="#000000" points="186.5,-1599.2 186.5,-1621.2 292.5,-1621.2 292.5,-1599.2 186.5,-1599.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="191.5" y="-1616.2"/>
 <text text-anchor="start" x="206.5" y="-1606.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
 <polygon fill="none" stroke="#000000" points="292.5,-1599.2 292.5,-1621.2 411.5,-1621.2 411.5,-1599.2 292.5,-1599.2"/>
-<text text-anchor="start" x="295.5" y="-1606.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
+<text text-anchor="start" x="295.5" y="-1606.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">varchar[256]</text>
 <polygon fill="none" stroke="#000000" points="186.5,-1577.2 186.5,-1599.2 292.5,-1599.2 292.5,-1577.2 186.5,-1577.2"/>
 <text text-anchor="start" x="206.5" y="-1584.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBVERNO</text>
 <polygon fill="none" stroke="#000000" points="292.5,-1577.2 292.5,-1599.2 411.5,-1599.2 411.5,-1577.2 292.5,-1577.2"/>
-<text text-anchor="start" x="295.5" y="-1584.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[7,3]</text>
+<text text-anchor="start" x="295.5" y="-1584.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
 <polygon fill="none" stroke="#000000" points="186.5,-1555.2 186.5,-1577.2 292.5,-1577.2 292.5,-1555.2 186.5,-1555.2"/>
 <text text-anchor="start" x="206.5" y="-1562.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CNTRY</text>
 <polygon fill="none" stroke="#000000" points="292.5,-1555.2 292.5,-1577.2 411.5,-1577.2 411.5,-1555.2 292.5,-1555.2"/>
@@ -335,7 +334,7 @@
 <text text-anchor="start" x="295.5" y="-66.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">serial[10]</text>
 <polygon fill="#ffffff" stroke="transparent" points="186.5,-40.2 186.5,-59.2 220.5,-59.2 220.5,-40.2 186.5,-40.2"/>
 <polygon fill="none" stroke="#000000" points="186.5,-40.2 186.5,-59.2 220.5,-59.2 220.5,-40.2 186.5,-40.2"/>
-<text text-anchor="start" x="189.5" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 4</text>
+<text text-anchor="start" x="189.5" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 3</text>
 <polygon fill="#ffffff" stroke="transparent" points="220.5,-40.2 220.5,-59.2 292.5,-59.2 292.5,-40.2 220.5,-40.2"/>
 <polygon fill="none" stroke="#000000" points="220.5,-40.2 220.5,-59.2 292.5,-59.2 292.5,-40.2 220.5,-40.2"/>
 <text text-anchor="start" x="235.7089" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">5.376 rows</text>
@@ -346,43 +345,10 @@
 </a>
 </g>
 </g>
-<!-- global_dbDOI -->
-<g id="node2" class="node">
-<title>global_dbDOI</title>
-<g id="a_node2"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="13,-1542.7 13,-1625.7 130,-1625.7 130,-1542.7 13,-1542.7"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="13.5,-1602.2 13.5,-1625.2 130.5,-1625.2 130.5,-1602.2 13.5,-1602.2"/>
-<polygon fill="none" stroke="#000000" points="13.5,-1602.2 13.5,-1625.2 130.5,-1625.2 130.5,-1602.2 13.5,-1602.2"/>
-<text text-anchor="start" x="18.5" y="-1610.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
-<text text-anchor="start" x="96.0219" y="-1610.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="13.5,-1580.2 13.5,-1602.2 130.5,-1602.2 130.5,-1580.2 13.5,-1580.2"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="18.5" y="-1597.2"/>
-<text text-anchor="start" x="40.5" y="-1587.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
-<polygon fill="none" stroke="#000000" points="13.5,-1561.2 13.5,-1580.2 130.5,-1580.2 130.5,-1561.2 13.5,-1561.2"/>
-<text text-anchor="start" x="16.5" y="-1567.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="13.5,-1542.2 13.5,-1561.2 42.5,-1561.2 42.5,-1542.2 13.5,-1542.2"/>
-<polygon fill="none" stroke="#000000" points="13.5,-1542.2 13.5,-1561.2 42.5,-1561.2 42.5,-1542.2 13.5,-1542.2"/>
-<text text-anchor="start" x="16.5" y="-1548.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="42.5,-1542.2 42.5,-1561.2 94.5,-1561.2 94.5,-1542.2 42.5,-1542.2"/>
-<polygon fill="none" stroke="#000000" points="42.5,-1542.2 42.5,-1561.2 94.5,-1561.2 94.5,-1542.2 42.5,-1542.2"/>
-<text text-anchor="start" x="52.9956" y="-1548.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">26 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="94.5,-1542.2 94.5,-1561.2 130.5,-1561.2 130.5,-1542.2 94.5,-1542.2"/>
-<polygon fill="none" stroke="#000000" points="94.5,-1542.2 94.5,-1561.2 130.5,-1561.2 130.5,-1542.2 94.5,-1542.2"/>
-<text text-anchor="start" x="105.7904" y="-1548.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">24 &gt;</text>
-</a>
-</g>
-</g>
-<!-- crn_int_basins&#45;&gt;global_dbDOI -->
-<g id="edge1" class="edge">
-<title>crn_int_basins:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M172.0537,-1607.8702C157.6214,-1602.7967 151.0331,-1591.2 130.5,-1591.2"/>
-<polygon fill="#000000" stroke="#000000" points="178.602,-1608.9262 185.9268,-1613.7541 182.551,-1609.5631 186.5,-1610.2 186.5,-1610.2 186.5,-1610.2 182.551,-1609.5631 187.0732,-1606.6459 178.602,-1608.9262 178.602,-1608.9262"/>
-<ellipse fill="none" stroke="#000000" cx="175.4429" cy="-1608.4167" rx="3.2" ry="3.2"/>
-</g>
 <!-- global_Author -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>global_Author</title>
-<g id="a_node3"><a xlink:href="../../tables/global_Author.html" xlink:title="global_Author" target="_top">
+<g id="a_node2"><a xlink:href="../../tables/global_Author.html" xlink:title="global_Author" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="11.5,-1407.7 11.5,-1490.7 131.5,-1490.7 131.5,-1407.7 11.5,-1407.7"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="11.5,-1467.2 11.5,-1490.2 131.5,-1490.2 131.5,-1467.2 11.5,-1467.2"/>
 <polygon fill="none" stroke="#000000" points="11.5,-1467.2 11.5,-1490.2 131.5,-1490.2 131.5,-1467.2 11.5,-1467.2"/>
@@ -406,16 +372,16 @@
 </g>
 </g>
 <!-- crn_int_basins&#45;&gt;global_Author -->
-<g id="edge2" class="edge">
+<g id="edge1" class="edge">
 <title>crn_int_basins:w&#45;&gt;global_Author:e</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M171.8617,-1456.2C158.1839,-1456.2 150.2153,-1456.2 131.5,-1456.2"/>
 <polygon fill="#000000" stroke="#000000" points="178.5,-1456.2001 186.5,-1459.8 182.5,-1456.2 186.5,-1456.2 186.5,-1456.2 186.5,-1456.2 182.5,-1456.2 186.5,-1452.6 178.5,-1456.2001 178.5,-1456.2001"/>
 <ellipse fill="none" stroke="#000000" cx="175.3" cy="-1456.2001" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_projepsgID -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>crn_projepsgID</title>
-<g id="a_node4"><a xlink:href="../../tables/crn_projepsgID.html" xlink:title="crn_projepsgID" target="_top">
+<g id="a_node3"><a xlink:href="../../tables/crn_projepsgID.html" xlink:title="crn_projepsgID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="8,-1231.7 8,-1314.7 135,-1314.7 135,-1231.7 8,-1231.7"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="8.5,-1291.2 8.5,-1314.2 135.5,-1314.2 135.5,-1291.2 8.5,-1291.2"/>
 <polygon fill="none" stroke="#000000" points="8.5,-1291.2 8.5,-1314.2 135.5,-1314.2 135.5,-1291.2 8.5,-1291.2"/>
@@ -439,44 +405,44 @@
 </g>
 </g>
 <!-- crn_int_basins&#45;&gt;crn_projepsgID -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>crn_int_basins:w&#45;&gt;crn_projepsgID:e</title>
 <path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M171.776,-1280.2C159.7815,-1280.2 152.3229,-1280.2 135.5,-1280.2"/>
 <polygon fill="#000000" stroke="#000000" points="178.5,-1280.2001 186.5,-1283.8 182.5,-1280.2 186.5,-1280.2 186.5,-1280.2 186.5,-1280.2 182.5,-1280.2 186.5,-1276.6 178.5,-1280.2001 178.5,-1280.2001"/>
 <ellipse fill="none" stroke="#000000" cx="175.3" cy="-1280.2001" rx="3.2" ry="3.2"/>
 </g>
 <!-- crn_studynote -->
-<g id="node5" class="node">
+<g id="node4" class="node">
 <title>crn_studynote</title>
-<g id="a_node5"><a xlink:href="../../tables/crn_studynote.html" xlink:title="crn_studynote" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="11,-1646.7 11,-1729.7 132,-1729.7 132,-1646.7 11,-1646.7"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="11.5,-1706.2 11.5,-1729.2 132.5,-1729.2 132.5,-1706.2 11.5,-1706.2"/>
-<polygon fill="none" stroke="#000000" points="11.5,-1706.2 11.5,-1729.2 132.5,-1729.2 132.5,-1706.2 11.5,-1706.2"/>
-<text text-anchor="start" x="16.5" y="-1714.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">crn_studynote</text>
-<text text-anchor="start" x="98.0219" y="-1714.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="11.5,-1684.2 11.5,-1706.2 132.5,-1706.2 132.5,-1684.2 11.5,-1684.2"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="16.5" y="-1701.2"/>
-<text text-anchor="start" x="40.5" y="-1691.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">STUDYID</text>
-<polygon fill="none" stroke="#000000" points="11.5,-1665.2 11.5,-1684.2 132.5,-1684.2 132.5,-1665.2 11.5,-1665.2"/>
-<text text-anchor="start" x="14.5" y="-1671.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="11.5,-1646.2 11.5,-1665.2 42.5,-1665.2 42.5,-1646.2 11.5,-1646.2"/>
-<polygon fill="none" stroke="#000000" points="11.5,-1646.2 11.5,-1665.2 42.5,-1665.2 42.5,-1646.2 11.5,-1646.2"/>
-<text text-anchor="start" x="14.5" y="-1652.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="42.5,-1646.2 42.5,-1665.2 101.5,-1665.2 101.5,-1646.2 42.5,-1646.2"/>
-<polygon fill="none" stroke="#000000" points="42.5,-1646.2 42.5,-1665.2 101.5,-1665.2 101.5,-1646.2 42.5,-1646.2"/>
-<text text-anchor="start" x="53.8807" y="-1652.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">301 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="101.5,-1646.2 101.5,-1665.2 132.5,-1665.2 132.5,-1646.2 101.5,-1646.2"/>
-<polygon fill="none" stroke="#000000" points="101.5,-1646.2 101.5,-1665.2 132.5,-1665.2 132.5,-1646.2 101.5,-1646.2"/>
-<text text-anchor="start" x="113.9053" y="-1652.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">9 &gt;</text>
+<g id="a_node4"><a xlink:href="../../tables/crn_studynote.html" xlink:title="crn_studynote" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="11,-1627.7 11,-1710.7 132,-1710.7 132,-1627.7 11,-1627.7"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="11.5,-1687.2 11.5,-1710.2 132.5,-1710.2 132.5,-1687.2 11.5,-1687.2"/>
+<polygon fill="none" stroke="#000000" points="11.5,-1687.2 11.5,-1710.2 132.5,-1710.2 132.5,-1687.2 11.5,-1687.2"/>
+<text text-anchor="start" x="16.5" y="-1695.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">crn_studynote</text>
+<text text-anchor="start" x="98.0219" y="-1695.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="11.5,-1665.2 11.5,-1687.2 132.5,-1687.2 132.5,-1665.2 11.5,-1665.2"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="16.5" y="-1682.2"/>
+<text text-anchor="start" x="40.5" y="-1672.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">STUDYID</text>
+<polygon fill="none" stroke="#000000" points="11.5,-1646.2 11.5,-1665.2 132.5,-1665.2 132.5,-1646.2 11.5,-1646.2"/>
+<text text-anchor="start" x="14.5" y="-1652.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="11.5,-1627.2 11.5,-1646.2 42.5,-1646.2 42.5,-1627.2 11.5,-1627.2"/>
+<polygon fill="none" stroke="#000000" points="11.5,-1627.2 11.5,-1646.2 42.5,-1646.2 42.5,-1627.2 11.5,-1627.2"/>
+<text text-anchor="start" x="14.5" y="-1633.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
+<polygon fill="#ffffff" stroke="transparent" points="42.5,-1627.2 42.5,-1646.2 101.5,-1646.2 101.5,-1627.2 42.5,-1627.2"/>
+<polygon fill="none" stroke="#000000" points="42.5,-1627.2 42.5,-1646.2 101.5,-1646.2 101.5,-1627.2 42.5,-1627.2"/>
+<text text-anchor="start" x="53.8807" y="-1633.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">301 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="101.5,-1627.2 101.5,-1646.2 132.5,-1646.2 132.5,-1627.2 101.5,-1627.2"/>
+<polygon fill="none" stroke="#000000" points="101.5,-1627.2 101.5,-1646.2 132.5,-1646.2 132.5,-1627.2 101.5,-1627.2"/>
+<text text-anchor="start" x="113.9053" y="-1633.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">9 &gt;</text>
 </a>
 </g>
 </g>
 <!-- crn_int_basins&#45;&gt;crn_studynote -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>crn_int_basins:w&#45;&gt;crn_studynote:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M172.1261,-1678.6839C158.5,-1683.8341 152.178,-1695.2 132.5,-1695.2"/>
-<polygon fill="#000000" stroke="#000000" points="178.6168,-1677.5623 187.113,-1679.7474 182.5584,-1676.8812 186.5,-1676.2 186.5,-1676.2 186.5,-1676.2 182.5584,-1676.8812 185.887,-1672.6526 178.6168,-1677.5623 178.6168,-1677.5623"/>
-<ellipse fill="none" stroke="#000000" cx="175.4636" cy="-1678.1072" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M171.7185,-1676.2C158.538,-1676.2 150.6875,-1676.2 132.5,-1676.2"/>
+<polygon fill="#000000" stroke="#000000" points="178.5,-1676.2001 186.5,-1679.8 182.5,-1676.2 186.5,-1676.2 186.5,-1676.2 186.5,-1676.2 182.5,-1676.2 186.5,-1672.6 178.5,-1676.2001 178.5,-1676.2001"/>
+<ellipse fill="none" stroke="#000000" cx="175.3" cy="-1676.2001" rx="3.2" ry="3.2"/>
 </g>
 </g>
 </svg>

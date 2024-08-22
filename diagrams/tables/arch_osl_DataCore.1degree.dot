@@ -4,7 +4,6 @@ digraph "oneDegreeRelationshipsDiagram" {
   "arch_osl_DataCore":"ALPH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"BETA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"COL_MTDID":w -> "cabah_col_mtdID":"COL_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "arch_osl_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"ED_PROCID":w -> "osl-tl_ed_procID":"ED_PROCID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"GMMA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"K_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -20,6 +19,7 @@ digraph "oneDegreeRelationshipsDiagram" {
   "arch_osl_DataCore":"SMPID":w -> "arch_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"TH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"U_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "arch_osl_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_polygons_EPSG3857":"OBSID1":w -> "arch_osl_DataCore":"OBSID1.type":e [arrowhead=none dir=back arrowtail=teeodot];
   "arch_osl_DataCore" [
    label=<
@@ -32,7 +32,7 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="IGSNID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">IGSNID</TD></TR></TABLE></TD><TD PORT="IGSNID.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="LAB_ORIGID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">LAB_ORIGID</TD></TR></TABLE></TD><TD PORT="LAB_ORIGID.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="METHODID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">METHODID</TD></TR></TABLE></TD><TD PORT="METHODID.type" ALIGN="LEFT">int2[5]</TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">DBDOI</TD></TR></TABLE></TD><TD PORT="DBDOI.type" ALIGN="LEFT">text[2147483647]</TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">VERID</TD></TR></TABLE></TD><TD PORT="VERID.type" ALIGN="LEFT">int2[5]</TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD><TD PORT="REFDBID1.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD><TD PORT="REFDBID2.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD><TD PORT="REFDBID3.type" ALIGN="LEFT">text[2147483647]</TD></TR>
@@ -193,9 +193,11 @@ digraph "oneDegreeRelationshipsDiagram" {
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="78" HEIGHT="16"><B>global_dbDOI</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="83" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="OBSOLETES" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16">OBSOLETES</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="OBSOLTD_BY" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16">OBSOLTD_BY</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">26 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">10 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">30 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">11 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_dbDOI.html"
     target="_top"

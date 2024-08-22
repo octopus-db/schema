@@ -33,7 +33,7 @@
 <text text-anchor="start" x="284.5" y="-711.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METHODID</text>
 <polygon fill="none" stroke="#000000" points="255.5,-682.7 255.5,-704.7 406.5,-704.7 406.5,-682.7 255.5,-682.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="260.5" y="-699.7"/>
-<text text-anchor="start" x="284.5" y="-689.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="284.5" y="-689.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="255.5,-660.7 255.5,-682.7 406.5,-682.7 406.5,-660.7 255.5,-660.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="260.5" y="-677.7"/>
 <text text-anchor="start" x="284.5" y="-667.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
@@ -153,35 +153,35 @@
 <ellipse fill="none" stroke="#000000" cx="244.3682" cy="-362.466" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c_mtdID -->
-<g id="edge14" class="edge">
+<g id="edge13" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M241.2056,-295.1155C213.4207,-282.5117 241.7651,-226.6855 214,-191.7 192.542,-164.6618 184.5182,-147.7 150,-147.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.6276,-296.2766 254.8595,-301.2426 251.5638,-296.9883 255.5,-297.7 255.5,-297.7 255.5,-297.7 251.5638,-296.9883 256.1405,-294.1574 247.6276,-296.2766 247.6276,-296.2766"/>
 <ellipse fill="none" stroke="#000000" cx="244.4787" cy="-295.7072" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c_mtdID -->
-<g id="edge15" class="edge">
+<g id="edge14" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M241.0474,-317.5137C205.3992,-304.3683 246.271,-234.9515 214,-191.7 193.3577,-164.0341 184.5182,-147.7 150,-147.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.59,-318.5034 254.9615,-323.2595 251.545,-319.1017 255.5,-319.7 255.5,-319.7 255.5,-319.7 251.545,-319.1017 256.0385,-316.1405 247.59,-318.5034 247.59,-318.5034"/>
 <ellipse fill="none" stroke="#000000" cx="244.426" cy="-318.0248" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c_mtdID -->
-<g id="edge16" class="edge">
+<g id="edge15" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M242.2527,-401.8208C213.3597,-371.0036 237.826,-228.1328 214,-191.7 195.1074,-162.811 184.5182,-147.7 150,-147.7"/>
 <polygon fill="#000000" stroke="#000000" points="248.1878,-404.4548 254.0397,-410.9905 251.8439,-406.0774 255.5,-407.7 255.5,-407.7 255.5,-407.7 251.8439,-406.0774 256.9603,-404.4095 248.1878,-404.4548 248.1878,-404.4548"/>
 <ellipse fill="none" stroke="#000000" cx="245.2629" cy="-403.1567" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c_mtdID -->
-<g id="edge17" class="edge">
+<g id="edge16" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M241.0421,-384.3264C178.7244,-370.7959 259.9642,-260.4046 214,-191.7 194.8062,-163.0102 184.5182,-147.7 150,-147.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.5359,-384.9433 255.1595,-389.2839 251.5179,-385.3217 255.5,-385.7 255.5,-385.7 255.5,-385.7 251.5179,-385.3217 255.8405,-382.1161 247.5359,-384.9433 247.5359,-384.9433"/>
 <ellipse fill="none" stroke="#000000" cx="244.3502" cy="-384.6406" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c_mtdID -->
-<g id="edge22" class="edge">
+<g id="edge21" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c_mtdID:e</title>
 <path fill="none" stroke="#000000" d="M241.3979,-272.6307C220.6376,-260.9576 237.3196,-218.6289 214,-191.7 191.4034,-165.606 184.5182,-147.7 150,-147.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.683,-273.9986 254.7344,-279.2176 251.5915,-274.8493 255.5,-275.7 255.5,-275.7 255.5,-275.7 251.5915,-274.8493 256.2656,-272.1824 247.683,-273.9986 247.683,-273.9986"/>
@@ -323,40 +323,10 @@
 <polygon fill="#000000" stroke="#000000" points="247.7788,-493.6064 254.5579,-499.1745 251.6394,-494.6532 255.5,-495.7 255.5,-495.7 255.5,-495.7 251.6394,-494.6532 256.4421,-492.2255 247.7788,-493.6064 247.7788,-493.6064"/>
 <ellipse fill="none" stroke="#000000" cx="244.6903" cy="-492.769" rx="3.2" ry="3.2"/>
 </g>
-<!-- global_dbDOI -->
-<g id="node7" class="node">
-<title>global_dbDOI</title>
-<g id="a_node7"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="48.5,-932.2 48.5,-993.2 165.5,-993.2 165.5,-932.2 48.5,-932.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="49,-969.7 49,-992.7 166,-992.7 166,-969.7 49,-969.7"/>
-<polygon fill="none" stroke="#000000" points="49,-969.7 49,-992.7 166,-992.7 166,-969.7 49,-969.7"/>
-<text text-anchor="start" x="54" y="-978.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
-<text text-anchor="start" x="131.5219" y="-977.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="49,-950.7 49,-969.7 166,-969.7 166,-950.7 49,-950.7"/>
-<text text-anchor="start" x="52" y="-956.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="49,-931.7 49,-950.7 78,-950.7 78,-931.7 49,-931.7"/>
-<polygon fill="none" stroke="#000000" points="49,-931.7 49,-950.7 78,-950.7 78,-931.7 49,-931.7"/>
-<text text-anchor="start" x="52" y="-937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="78,-931.7 78,-950.7 130,-950.7 130,-931.7 78,-931.7"/>
-<polygon fill="none" stroke="#000000" points="78,-931.7 78,-950.7 130,-950.7 130,-931.7 78,-931.7"/>
-<text text-anchor="start" x="88.4956" y="-937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">26 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="130,-931.7 130,-950.7 166,-950.7 166,-931.7 130,-931.7"/>
-<polygon fill="none" stroke="#000000" points="130,-931.7 130,-950.7 166,-950.7 166,-931.7 130,-931.7"/>
-<text text-anchor="start" x="141.2904" y="-937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">10 &gt;</text>
-</a>
-</g>
-</g>
-<!-- arch_c14_DataCore&#45;&gt;global_dbDOI -->
-<g id="edge8" class="edge">
-<title>arch_c14_DataCore:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" d="M241.9649,-699.4555C210.9999,-730.9259 237.7088,-882.2017 214,-921.7 199.9967,-945.0292 193.2093,-959.7 166,-959.7"/>
-<polygon fill="#000000" stroke="#000000" points="248.138,-696.8306 256.9088,-697.0129 251.819,-695.2653 255.5,-693.7 255.5,-693.7 255.5,-693.7 251.819,-695.2653 254.0912,-690.3871 248.138,-696.8306 248.138,-696.8306"/>
-<ellipse fill="none" stroke="#000000" cx="245.1931" cy="-698.0828" rx="3.2" ry="3.2"/>
-</g>
 <!-- c14_hum_modID -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>c14_hum_modID</title>
-<g id="a_node8"><a xlink:href="../../tables/c14_hum_modID.html" xlink:title="c14_hum_modID" target="_top">
+<g id="a_node7"><a xlink:href="../../tables/c14_hum_modID.html" xlink:title="c14_hum_modID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="39.5,-522.2 39.5,-583.2 174.5,-583.2 174.5,-522.2 39.5,-522.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="40,-559.7 40,-582.7 175,-582.7 175,-559.7 40,-559.7"/>
 <polygon fill="none" stroke="#000000" points="40,-559.7 40,-582.7 175,-582.7 175,-559.7 40,-559.7"/>
@@ -377,16 +347,16 @@
 </g>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c14_hum_modID -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c14_hum_modID:e</title>
 <path fill="none" stroke="#000000" d="M241.1393,-519.4205C215.323,-526.0672 208.0867,-549.7 175,-549.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.5568,-518.6517 255.9283,-521.2744 251.5284,-518.1758 255.5,-517.7 255.5,-517.7 255.5,-517.7 251.5284,-518.1758 255.0717,-514.1256 247.5568,-518.6517 247.5568,-518.6517"/>
 <ellipse fill="none" stroke="#000000" cx="244.3795" cy="-519.0323" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_LabCodes -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>cabah_LabCodes</title>
-<g id="a_node9"><a xlink:href="../../tables/cabah_LabCodes.html" xlink:title="cabah_LabCodes" target="_top">
+<g id="a_node8"><a xlink:href="../../tables/cabah_LabCodes.html" xlink:title="cabah_LabCodes" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="38,-1096.2 38,-1157.2 176,-1157.2 176,-1096.2 38,-1096.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="38,-1133.7 38,-1156.7 176,-1156.7 176,-1133.7 38,-1133.7"/>
 <polygon fill="none" stroke="#000000" points="38,-1133.7 38,-1156.7 176,-1156.7 176,-1133.7 38,-1133.7"/>
@@ -407,16 +377,16 @@
 </g>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;cabah_LabCodes -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;cabah_LabCodes:e</title>
 <path fill="none" stroke="#000000" d="M241.5263,-741.4413C186.7558,-774.7284 245.6935,-1020.4306 214,-1085.7 203.5671,-1107.1854 199.8845,-1123.7 176,-1123.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.7722,-739.7691 256.4311,-741.1775 251.6361,-738.7345 255.5,-737.7 255.5,-737.7 255.5,-737.7 251.6361,-738.7345 254.5689,-734.2225 247.7722,-739.7691 247.7722,-739.7691"/>
 <ellipse fill="none" stroke="#000000" cx="244.6811" cy="-740.5967" rx="3.2" ry="3.2"/>
 </g>
 <!-- c14_materia1ID -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>c14_materia1ID</title>
-<g id="a_node10"><a xlink:href="../../tables/c14_materia1ID.html" xlink:title="c14_materia1ID" target="_top">
+<g id="a_node9"><a xlink:href="../../tables/c14_materia1ID.html" xlink:title="c14_materia1ID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="43.5,-686.2 43.5,-747.2 170.5,-747.2 170.5,-686.2 43.5,-686.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="44,-723.7 44,-746.7 171,-746.7 171,-723.7 44,-723.7"/>
 <polygon fill="none" stroke="#000000" points="44,-723.7 44,-746.7 171,-746.7 171,-723.7 44,-723.7"/>
@@ -437,16 +407,16 @@
 </g>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c14_materia1ID -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c14_materia1ID:e</title>
 <path fill="none" stroke="#000000" d="M241.0558,-564.0687C210.0636,-576.5924 241.0394,-636.0139 214,-675.7 199.6395,-696.7771 196.5043,-713.7 171,-713.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.6054,-562.9947 256.0826,-565.2525 251.5527,-562.3473 255.5,-561.7 255.5,-561.7 255.5,-561.7 251.5527,-562.3473 254.9174,-558.1475 247.6054,-562.9947 247.6054,-562.9947"/>
 <ellipse fill="none" stroke="#000000" cx="244.4476" cy="-563.5125" rx="3.2" ry="3.2"/>
 </g>
 <!-- c14_materia2ID -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>c14_materia2ID</title>
-<g id="a_node11"><a xlink:href="../../tables/c14_materia2ID.html" xlink:title="c14_materia2ID" target="_top">
+<g id="a_node10"><a xlink:href="../../tables/c14_materia2ID.html" xlink:title="c14_materia2ID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="43.5,-604.2 43.5,-665.2 170.5,-665.2 170.5,-604.2 43.5,-604.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="44,-641.7 44,-664.7 171,-664.7 171,-641.7 44,-641.7"/>
 <polygon fill="none" stroke="#000000" points="44,-641.7 44,-664.7 171,-664.7 171,-641.7 44,-641.7"/>
@@ -467,16 +437,16 @@
 </g>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c14_materia2ID -->
-<g id="edge12" class="edge">
+<g id="edge11" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c14_materia2ID:e</title>
 <path fill="none" stroke="#000000" d="M241.3836,-543.2967C227.8195,-552.2474 230.4617,-576.0703 214,-593.7 196.5939,-612.3412 196.5043,-631.7 171,-631.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.7477,-541.6753 256.3889,-543.1885 251.6238,-540.6876 255.5,-539.7 255.5,-539.7 255.5,-539.7 251.6238,-540.6876 254.6111,-536.2115 247.7477,-541.6753 247.7477,-541.6753"/>
 <ellipse fill="none" stroke="#000000" cx="244.6468" cy="-542.4654" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_methodID -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>cabah_methodID</title>
-<g id="a_node12"><a xlink:href="../../tables/cabah_methodID.html" xlink:title="cabah_methodID" target="_top">
+<g id="a_node11"><a xlink:href="../../tables/cabah_methodID.html" xlink:title="cabah_methodID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="39.5,-1014.2 39.5,-1075.2 174.5,-1075.2 174.5,-1014.2 39.5,-1014.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="40,-1051.7 40,-1074.7 175,-1074.7 175,-1051.7 40,-1051.7"/>
 <polygon fill="none" stroke="#000000" points="40,-1051.7 40,-1074.7 175,-1074.7 175,-1051.7 40,-1051.7"/>
@@ -497,16 +467,16 @@
 </g>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;cabah_methodID -->
-<g id="edge13" class="edge">
+<g id="edge12" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;cabah_methodID:e</title>
 <path fill="none" stroke="#000000" d="M241.5695,-720.3359C199.0783,-753.1769 240.8642,-950.912 214,-1003.7 203.0236,-1025.2685 199.2008,-1041.7 175,-1041.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.9093,-718.2261 256.6368,-719.1158 251.7046,-716.9631 255.5,-715.7 255.5,-715.7 255.5,-715.7 251.7046,-716.9631 254.3632,-712.2842 247.9093,-718.2261 247.9093,-718.2261"/>
 <ellipse fill="none" stroke="#000000" cx="244.873" cy="-719.2366" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_RefCore -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>global_RefCore</title>
-<g id="a_node13"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
+<g id="a_node12"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="43.5,-850.2 43.5,-911.2 170.5,-911.2 170.5,-850.2 43.5,-850.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="44,-887.7 44,-910.7 171,-910.7 171,-887.7 44,-887.7"/>
 <polygon fill="none" stroke="#000000" points="44,-887.7 44,-910.7 171,-910.7 171,-887.7 44,-887.7"/>
@@ -527,37 +497,37 @@
 </g>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;global_RefCore -->
-<g id="edge18" class="edge">
+<g id="edge17" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M241.1091,-673.2491C188.8649,-686.2831 250.967,-778.6697 214,-839.7 200.7866,-861.5145 196.5043,-877.7 171,-877.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.5459,-672.5562 255.8853,-675.2793 251.523,-672.1281 255.5,-671.7 255.5,-671.7 255.5,-671.7 251.523,-672.1281 255.1147,-668.1207 247.5459,-672.5562 247.5459,-672.5562"/>
 <ellipse fill="none" stroke="#000000" cx="244.3643" cy="-672.8987" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;global_RefCore -->
-<g id="edge19" class="edge">
+<g id="edge18" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M240.8873,-651.0972C179.9495,-664.4146 254.9525,-769.9725 214,-839.7 201.0837,-861.6918 196.5043,-877.7 171,-877.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.5363,-650.4615 255.8427,-653.2837 251.5182,-650.0807 255.5,-649.7 255.5,-649.7 255.5,-649.7 251.5182,-650.0807 255.1573,-646.1163 247.5363,-650.4615 247.5363,-650.4615"/>
 <ellipse fill="none" stroke="#000000" cx="244.3508" cy="-650.7661" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;global_RefCore -->
-<g id="edge20" class="edge">
+<g id="edge19" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M242.0101,-633.8232C213.6786,-664.6422 235.1574,-802.7632 214,-839.7 201.3235,-861.8308 196.5043,-877.7 171,-877.7"/>
 <polygon fill="#000000" stroke="#000000" points="248.2153,-631.0066 256.988,-630.9781 251.8577,-629.3533 255.5,-627.7 255.5,-627.7 255.5,-627.7 251.8577,-629.3533 254.012,-624.4219 248.2153,-631.0066 248.2153,-631.0066"/>
 <ellipse fill="none" stroke="#000000" cx="245.3014" cy="-632.3293" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;global_RefCore -->
-<g id="edge21" class="edge">
+<g id="edge20" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M242.0327,-611.1703C209.5853,-642.4123 237.2162,-798.32 214,-839.7 201.5207,-861.9427 196.5043,-877.7 171,-877.7"/>
 <polygon fill="#000000" stroke="#000000" points="248.0881,-608.7107 256.8548,-609.0353 251.7941,-607.2053 255.5,-605.7 255.5,-605.7 255.5,-605.7 251.7941,-607.2053 254.1452,-602.3647 248.0881,-608.7107 248.0881,-608.7107"/>
 <ellipse fill="none" stroke="#000000" cx="245.1234" cy="-609.9149" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_Sample -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>arch_Sample</title>
-<g id="a_node14"><a xlink:href="../../tables/arch_Sample.html" xlink:title="arch_Sample" target="_top">
+<g id="a_node13"><a xlink:href="../../tables/arch_Sample.html" xlink:title="arch_Sample" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="50.5,-1178.2 50.5,-1239.2 163.5,-1239.2 163.5,-1178.2 50.5,-1178.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="51,-1215.7 51,-1238.7 164,-1238.7 164,-1215.7 51,-1215.7"/>
 <polygon fill="none" stroke="#000000" points="51,-1215.7 51,-1238.7 164,-1238.7 164,-1215.7 51,-1215.7"/>
@@ -578,16 +548,16 @@
 </g>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;arch_Sample -->
-<g id="edge23" class="edge">
+<g id="edge22" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;arch_Sample:e</title>
 <path fill="none" stroke="#000000" d="M241.3241,-762.9674C174.9299,-797.3428 255.9688,-1092.8713 214,-1167.7 200.3462,-1192.0441 191.9117,-1205.7 164,-1205.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.7044,-761.4969 256.3086,-763.208 251.6022,-760.5984 255.5,-759.7 255.5,-759.7 255.5,-759.7 251.6022,-760.5984 254.6914,-756.192 247.7044,-761.4969 247.7044,-761.4969"/>
 <ellipse fill="none" stroke="#000000" cx="244.5862" cy="-762.2156" rx="3.2" ry="3.2"/>
 </g>
 <!-- c14_solvent2ID -->
-<g id="node15" class="node">
+<g id="node14" class="node">
 <title>c14_solvent2ID</title>
-<g id="a_node15"><a xlink:href="../../tables/c14_solvent2ID.html" xlink:title="c14_solvent2ID" target="_top">
+<g id="a_node14"><a xlink:href="../../tables/c14_solvent2ID.html" xlink:title="c14_solvent2ID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="44,-202.2 44,-263.2 170,-263.2 170,-202.2 44,-202.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="44,-239.7 44,-262.7 170,-262.7 170,-239.7 44,-239.7"/>
 <polygon fill="none" stroke="#000000" points="44,-239.7 44,-262.7 170,-262.7 170,-239.7 44,-239.7"/>
@@ -608,11 +578,41 @@
 </g>
 </g>
 <!-- arch_c14_DataCore&#45;&gt;c14_solvent2ID -->
-<g id="edge24" class="edge">
+<g id="edge23" class="edge">
 <title>arch_c14_DataCore:w&#45;&gt;c14_solvent2ID:e</title>
 <path fill="none" stroke="#000000" d="M241.0008,-450.2457C184.5398,-437.24 250.7618,-339.8513 214,-273.7 200.5661,-249.5263 197.6557,-229.7 170,-229.7"/>
 <polygon fill="#000000" stroke="#000000" points="247.5399,-450.9015 255.1407,-455.282 251.52,-451.3008 255.5,-451.7 255.5,-451.7 255.5,-451.7 251.52,-451.3008 255.8593,-448.118 247.5399,-450.9015 247.5399,-450.9015"/>
 <ellipse fill="none" stroke="#000000" cx="244.3559" cy="-450.5822" rx="3.2" ry="3.2"/>
+</g>
+<!-- global_dbDOI -->
+<g id="node15" class="node">
+<title>global_dbDOI</title>
+<g id="a_node15"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="48.5,-932.2 48.5,-993.2 165.5,-993.2 165.5,-932.2 48.5,-932.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="49,-969.7 49,-992.7 166,-992.7 166,-969.7 49,-969.7"/>
+<polygon fill="none" stroke="#000000" points="49,-969.7 49,-992.7 166,-992.7 166,-969.7 49,-969.7"/>
+<text text-anchor="start" x="54" y="-978.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
+<text text-anchor="start" x="131.5219" y="-977.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="49,-950.7 49,-969.7 166,-969.7 166,-950.7 49,-950.7"/>
+<text text-anchor="start" x="52" y="-956.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="49,-931.7 49,-950.7 82,-950.7 82,-931.7 49,-931.7"/>
+<polygon fill="none" stroke="#000000" points="49,-931.7 49,-950.7 82,-950.7 82,-931.7 49,-931.7"/>
+<text text-anchor="start" x="52" y="-937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
+<polygon fill="#ffffff" stroke="transparent" points="82,-931.7 82,-950.7 132,-950.7 132,-931.7 82,-931.7"/>
+<polygon fill="none" stroke="#000000" points="82,-931.7 82,-950.7 132,-950.7 132,-931.7 82,-931.7"/>
+<text text-anchor="start" x="90.4956" y="-937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">30 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="132,-931.7 132,-950.7 166,-950.7 166,-931.7 132,-931.7"/>
+<polygon fill="none" stroke="#000000" points="132,-931.7 132,-950.7 166,-950.7 166,-931.7 132,-931.7"/>
+<text text-anchor="start" x="141.2904" y="-937.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">11 &gt;</text>
+</a>
+</g>
+</g>
+<!-- arch_c14_DataCore&#45;&gt;global_dbDOI -->
+<g id="edge24" class="edge">
+<title>arch_c14_DataCore:w&#45;&gt;global_dbDOI:e</title>
+<path fill="none" stroke="#000000" d="M241.9649,-699.4555C210.9999,-730.9259 237.7088,-882.2017 214,-921.7 199.9967,-945.0292 193.2093,-959.7 166,-959.7"/>
+<polygon fill="#000000" stroke="#000000" points="248.138,-696.8306 256.9088,-697.0129 251.819,-695.2653 255.5,-693.7 255.5,-693.7 255.5,-693.7 251.819,-695.2653 254.0912,-690.3871 248.138,-696.8306 248.138,-696.8306"/>
+<ellipse fill="none" stroke="#000000" cx="245.1931" cy="-698.0828" rx="3.2" ry="3.2"/>
 </g>
 <!-- arch_c14_polygons_EPSG3857 -->
 <g id="node16" class="node">

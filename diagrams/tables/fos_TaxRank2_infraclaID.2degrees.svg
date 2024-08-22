@@ -36,7 +36,7 @@
 <text text-anchor="start" x="339.5" y="-999.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">FOS_MTDSID</text>
 <polygon fill="none" stroke="#000000" points="316.5,-970.7 316.5,-992.7 433.5,-992.7 433.5,-970.7 316.5,-970.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="321.5" y="-987.7"/>
-<text text-anchor="start" x="339.5" y="-977.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="339.5" y="-977.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="316.5,-948.7 316.5,-970.7 433.5,-970.7 433.5,-948.7 316.5,-948.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="321.5" y="-965.7"/>
 <text text-anchor="start" x="339.5" y="-955.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
@@ -183,40 +183,10 @@
 <polygon fill="#000000" stroke="#000000" points="310.2373,-712.7222 314.26,-720.5182 313.3686,-715.2111 316.5,-717.7 316.5,-717.7 316.5,-717.7 313.3686,-715.2111 318.74,-714.8818 310.2373,-712.7222 310.2373,-712.7222"/>
 <ellipse fill="none" stroke="#000000" cx="307.7322" cy="-710.7311" rx="3.2" ry="3.2"/>
 </g>
-<!-- global_dbDOI -->
-<g id="node5" class="node">
-<title>global_dbDOI</title>
-<g id="a_node5"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="79,-1014.2 79,-1075.2 196,-1075.2 196,-1014.2 79,-1014.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="79.5,-1051.7 79.5,-1074.7 196.5,-1074.7 196.5,-1051.7 79.5,-1051.7"/>
-<polygon fill="none" stroke="#000000" points="79.5,-1051.7 79.5,-1074.7 196.5,-1074.7 196.5,-1051.7 79.5,-1051.7"/>
-<text text-anchor="start" x="84.5" y="-1060.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
-<text text-anchor="start" x="162.0219" y="-1059.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="79.5,-1032.7 79.5,-1051.7 196.5,-1051.7 196.5,-1032.7 79.5,-1032.7"/>
-<text text-anchor="start" x="82.5" y="-1038.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="79.5,-1013.7 79.5,-1032.7 108.5,-1032.7 108.5,-1013.7 79.5,-1013.7"/>
-<polygon fill="none" stroke="#000000" points="79.5,-1013.7 79.5,-1032.7 108.5,-1032.7 108.5,-1013.7 79.5,-1013.7"/>
-<text text-anchor="start" x="82.5" y="-1019.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="108.5,-1013.7 108.5,-1032.7 160.5,-1032.7 160.5,-1013.7 108.5,-1013.7"/>
-<polygon fill="none" stroke="#000000" points="108.5,-1013.7 108.5,-1032.7 160.5,-1032.7 160.5,-1013.7 108.5,-1013.7"/>
-<text text-anchor="start" x="118.9956" y="-1019.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">26 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="160.5,-1013.7 160.5,-1032.7 196.5,-1032.7 196.5,-1013.7 160.5,-1013.7"/>
-<polygon fill="none" stroke="#000000" points="160.5,-1013.7 160.5,-1032.7 196.5,-1032.7 196.5,-1013.7 160.5,-1013.7"/>
-<text text-anchor="start" x="171.7904" y="-1019.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">10 &gt;</text>
-</a>
-</g>
-</g>
-<!-- fos_DataCore&#45;&gt;global_dbDOI -->
-<g id="edge4" class="edge">
-<title>fos_DataCore:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" d="M302.2702,-984.47C293.0773,-988.7012 288.2379,-996.9899 275,-1003.7 240.4262,-1021.2249 235.2617,-1041.7 196.5,-1041.7"/>
-<polygon fill="#000000" stroke="#000000" points="308.6474,-983.2286 317.1879,-985.2337 312.5737,-982.4643 316.5,-981.7 316.5,-981.7 316.5,-981.7 312.5737,-982.4643 315.8121,-978.1663 308.6474,-983.2286 308.6474,-983.2286"/>
-<ellipse fill="none" stroke="#000000" cx="305.5064" cy="-983.8401" rx="3.2" ry="3.2"/>
-</g>
 <!-- fos_TaxRank4_familyID -->
-<g id="node6" class="node">
+<g id="node5" class="node">
 <title>fos_TaxRank4_familyID</title>
-<g id="a_node6"><a xlink:href="../../tables/fos_TaxRank4_familyID.html" xlink:title="fos_TaxRank4_familyID" target="_top">
+<g id="a_node5"><a xlink:href="../../tables/fos_TaxRank4_familyID.html" xlink:title="fos_TaxRank4_familyID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="51,-522.2 51,-583.2 224,-583.2 224,-522.2 51,-522.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="51.5,-559.7 51.5,-582.7 224.5,-582.7 224.5,-559.7 51.5,-559.7"/>
 <polygon fill="none" stroke="#000000" points="51.5,-559.7 51.5,-582.7 224.5,-582.7 224.5,-559.7 51.5,-559.7"/>
@@ -237,16 +207,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_TaxRank4_familyID -->
-<g id="edge5" class="edge">
+<g id="edge4" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_TaxRank4_familyID:e</title>
 <path fill="none" stroke="#000000" d="M301.8904,-782.301C240.981,-768.9668 316.1972,-663.2832 275,-593.7 259.834,-568.0843 254.2687,-549.7 224.5,-549.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5364,-782.9374 316.1568,-787.2836 312.5182,-783.3187 316.5,-783.7 316.5,-783.7 316.5,-783.7 312.5182,-783.3187 316.8432,-780.1164 308.5364,-782.9374 308.5364,-782.9374"/>
 <ellipse fill="none" stroke="#000000" cx="305.351" cy="-782.6323" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_methodID -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>cabah_methodID</title>
-<g id="a_node7"><a xlink:href="../../tables/cabah_methodID.html" xlink:title="cabah_methodID" target="_top">
+<g id="a_node6"><a xlink:href="../../tables/cabah_methodID.html" xlink:title="cabah_methodID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="70,-1178.2 70,-1239.2 205,-1239.2 205,-1178.2 70,-1178.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="70.5,-1215.7 70.5,-1238.7 205.5,-1238.7 205.5,-1215.7 70.5,-1215.7"/>
 <polygon fill="none" stroke="#000000" points="70.5,-1215.7 70.5,-1238.7 205.5,-1238.7 205.5,-1215.7 70.5,-1215.7"/>
@@ -267,16 +237,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;cabah_methodID -->
-<g id="edge6" class="edge">
+<g id="edge5" class="edge">
 <title>fos_DataCore:w&#45;&gt;cabah_methodID:e</title>
 <path fill="none" stroke="#000000" d="M302.0425,-1027.715C261.4317,-1041.3496 312.5882,-1120.9689 275,-1167.7 252.9352,-1195.1318 240.7045,-1205.7 205.5,-1205.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5766,-1026.8044 316.997,-1029.2655 312.5383,-1026.2522 316.5,-1025.7 316.5,-1025.7 316.5,-1025.7 312.5383,-1026.2522 316.003,-1022.1345 308.5766,-1026.8044 308.5766,-1026.8044"/>
 <ellipse fill="none" stroke="#000000" cx="305.4072" cy="-1027.2461" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_mtdsID -->
-<g id="node8" class="node">
+<g id="node7" class="node">
 <title>fos_mtdsID</title>
-<g id="a_node8"><a xlink:href="../../tables/fos_mtdsID.html" xlink:title="fos_mtdsID" target="_top">
+<g id="a_node7"><a xlink:href="../../tables/fos_mtdsID.html" xlink:title="fos_mtdsID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="85.5,-1096.2 85.5,-1157.2 189.5,-1157.2 189.5,-1096.2 85.5,-1096.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="85.5,-1133.7 85.5,-1156.7 189.5,-1156.7 189.5,-1133.7 85.5,-1133.7"/>
 <polygon fill="none" stroke="#000000" points="85.5,-1133.7 85.5,-1156.7 189.5,-1156.7 189.5,-1133.7 85.5,-1133.7"/>
@@ -297,16 +267,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_mtdsID -->
-<g id="edge7" class="edge">
+<g id="edge6" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_mtdsID:e</title>
 <path fill="none" stroke="#000000" d="M302.2376,-1007.1683C283.1146,-1019.5117 300.0902,-1061.8409 275,-1085.7 244.8656,-1114.3558 231.0841,-1123.7 189.5,-1123.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.7265,-1005.5904 317.3507,-1007.1981 312.6133,-1004.6452 316.5,-1003.7 316.5,-1003.7 316.5,-1003.7 312.6133,-1004.6452 315.6493,-1000.2019 308.7265,-1005.5904 308.7265,-1005.5904"/>
 <ellipse fill="none" stroke="#000000" cx="305.6172" cy="-1006.3465" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_fosmat1ID -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>fos_fosmat1ID</title>
-<g id="a_node9"><a xlink:href="../../tables/fos_fosmat1ID.html" xlink:title="fos_fosmat1ID" target="_top">
+<g id="a_node8"><a xlink:href="../../tables/fos_fosmat1ID.html" xlink:title="fos_fosmat1ID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="77,-850.2 77,-911.2 198,-911.2 198,-850.2 77,-850.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="77.5,-887.7 77.5,-910.7 198.5,-910.7 198.5,-887.7 77.5,-887.7"/>
 <polygon fill="none" stroke="#000000" points="77.5,-887.7 77.5,-910.7 198.5,-910.7 198.5,-887.7 77.5,-887.7"/>
@@ -327,16 +297,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_fosmat1ID -->
-<g id="edge8" class="edge">
+<g id="edge7" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_fosmat1ID:e</title>
 <path fill="none" stroke="#000000" d="M301.9066,-871.8667C261.0105,-872.8358 245.7815,-877.7 198.5,-877.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5005,-871.7915 316.5412,-875.2998 312.5003,-871.7457 316.5,-871.7 316.5,-871.7 316.5,-871.7 312.5003,-871.7457 316.4588,-868.1002 308.5005,-871.7915 308.5005,-871.7915"/>
 <ellipse fill="none" stroke="#000000" cx="305.3007" cy="-871.828" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_fosmat2ID -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>fos_fosmat2ID</title>
-<g id="a_node10"><a xlink:href="../../tables/fos_fosmat2ID.html" xlink:title="fos_fosmat2ID" target="_top">
+<g id="a_node9"><a xlink:href="../../tables/fos_fosmat2ID.html" xlink:title="fos_fosmat2ID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="77,-768.2 77,-829.2 198,-829.2 198,-768.2 77,-768.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="77.5,-805.7 77.5,-828.7 198.5,-828.7 198.5,-805.7 77.5,-805.7"/>
 <polygon fill="none" stroke="#000000" points="77.5,-805.7 77.5,-828.7 198.5,-828.7 198.5,-805.7 77.5,-805.7"/>
@@ -357,16 +327,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_fosmat2ID -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_fosmat2ID:e</title>
 <path fill="none" stroke="#000000" d="M301.9227,-848.4184C257.8747,-840.241 250.8807,-795.7 198.5,-795.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5307,-848.9993 316.1847,-853.2862 312.5154,-849.3497 316.5,-849.7 316.5,-849.7 316.5,-849.7 312.5154,-849.3497 316.8153,-846.1138 308.5307,-848.9993 308.5307,-848.9993"/>
 <ellipse fill="none" stroke="#000000" cx="305.343" cy="-848.7191" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_TaxRank5_genusID -->
-<g id="node11" class="node">
+<g id="node10" class="node">
 <title>fos_TaxRank5_genusID</title>
-<g id="a_node11"><a xlink:href="../../tables/fos_TaxRank5_genusID.html" xlink:title="fos_TaxRank5_genusID" target="_top">
+<g id="a_node10"><a xlink:href="../../tables/fos_TaxRank5_genusID.html" xlink:title="fos_TaxRank5_genusID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="50.5,-604.2 50.5,-665.2 224.5,-665.2 224.5,-604.2 50.5,-604.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="50.5,-641.7 50.5,-664.7 224.5,-664.7 224.5,-641.7 50.5,-641.7"/>
 <polygon fill="none" stroke="#000000" points="50.5,-641.7 50.5,-664.7 224.5,-664.7 224.5,-641.7 50.5,-641.7"/>
@@ -387,16 +357,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_TaxRank5_genusID -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_TaxRank5_genusID:e</title>
 <path fill="none" stroke="#000000" d="M301.7824,-803.5312C265.2789,-790.481 305.0624,-721.4313 275,-675.7 258.6478,-650.8248 254.2687,-631.7 224.5,-631.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5855,-804.5337 315.9751,-809.2615 312.5427,-805.1168 316.5,-805.7 316.5,-805.7 316.5,-805.7 312.5427,-805.1168 317.0249,-802.1385 308.5855,-804.5337 308.5855,-804.5337"/>
 <ellipse fill="none" stroke="#000000" cx="305.4197" cy="-804.0671" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_TaxRank2_infraclaID -->
-<g id="node12" class="node">
+<g id="node11" class="node">
 <title>fos_TaxRank2_infraclaID</title>
-<g id="a_node12"><a xlink:href="../../tables/fos_TaxRank2_infraclaID.html" xlink:title="fos_TaxRank2_infraclaID" target="_top">
+<g id="a_node11"><a xlink:href="../../tables/fos_TaxRank2_infraclaID.html" xlink:title="fos_TaxRank2_infraclaID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="8,-284.7 8,-418.7 267,-418.7 267,-284.7 8,-284.7"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="10.5,-393.7 10.5,-416.7 265.5,-416.7 265.5,-393.7 10.5,-393.7"/>
 <polygon fill="none" stroke="#000000" points="10.5,-393.7 10.5,-416.7 265.5,-416.7 265.5,-393.7 10.5,-393.7"/>
@@ -434,16 +404,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_TaxRank2_infraclaID -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_TaxRank2_infraclaID:e</title>
 <path fill="none" stroke="#000000" d="M302.5997,-734.9233C250.4164,-692.5597 340.1605,-382.7 265.5,-382.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.9342,-737.1001 315.33,-743.1046 312.7171,-738.4 316.5,-739.7 316.5,-739.7 316.5,-739.7 312.7171,-738.4 317.67,-736.2954 308.9342,-737.1001 308.9342,-737.1001"/>
 <ellipse fill="none" stroke="#000000" cx="305.9079" cy="-736.0601" rx="3.2" ry="3.2"/>
 </g>
 <!-- cabah_LabCodes -->
-<g id="node13" class="node">
+<g id="node12" class="node">
 <title>cabah_LabCodes</title>
-<g id="a_node13"><a xlink:href="../../tables/cabah_LabCodes.html" xlink:title="cabah_LabCodes" target="_top">
+<g id="a_node12"><a xlink:href="../../tables/cabah_LabCodes.html" xlink:title="cabah_LabCodes" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="68.5,-1260.2 68.5,-1321.2 206.5,-1321.2 206.5,-1260.2 68.5,-1260.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="68.5,-1297.7 68.5,-1320.7 206.5,-1320.7 206.5,-1297.7 68.5,-1297.7"/>
 <polygon fill="none" stroke="#000000" points="68.5,-1297.7 68.5,-1320.7 206.5,-1320.7 206.5,-1297.7 68.5,-1297.7"/>
@@ -464,16 +434,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;cabah_LabCodes -->
-<g id="edge12" class="edge">
+<g id="edge11" class="edge">
 <title>fos_DataCore:w&#45;&gt;cabah_LabCodes:e</title>
 <path fill="none" stroke="#000000" d="M301.9296,-1049.0687C236.9085,-1063.0168 325.9687,-1180.3025 275,-1249.7 254.3913,-1277.7603 241.3152,-1287.7 206.5,-1287.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5351,-1048.4482 316.8367,-1051.2842 312.5175,-1048.0741 316.5,-1047.7 316.5,-1047.7 316.5,-1047.7 312.5175,-1048.0741 316.1633,-1044.1158 308.5351,-1048.4482 308.5351,-1048.4482"/>
 <ellipse fill="none" stroke="#000000" cx="305.3491" cy="-1048.7475" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_TaxRank3_ordrID -->
-<g id="node14" class="node">
+<g id="node13" class="node">
 <title>fos_TaxRank3_ordrID</title>
-<g id="a_node14"><a xlink:href="../../tables/fos_TaxRank3_ordrID.html" xlink:title="fos_TaxRank3_ordrID" target="_top">
+<g id="a_node13"><a xlink:href="../../tables/fos_TaxRank3_ordrID.html" xlink:title="fos_TaxRank3_ordrID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="56,-440.2 56,-501.2 219,-501.2 219,-440.2 56,-440.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="56.5,-477.7 56.5,-500.7 219.5,-500.7 219.5,-477.7 56.5,-477.7"/>
 <polygon fill="none" stroke="#000000" points="56.5,-477.7 56.5,-500.7 219.5,-500.7 219.5,-477.7 56.5,-477.7"/>
@@ -494,16 +464,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_TaxRank3_ordrID -->
-<g id="edge13" class="edge">
+<g id="edge12" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_TaxRank3_ordrID:e</title>
 <path fill="none" stroke="#000000" d="M302.6944,-756.2657C267.9753,-723.807 300.7981,-555.4807 275,-511.7 259.0194,-484.5802 250.978,-467.7 219.5,-467.7"/>
 <polygon fill="#000000" stroke="#000000" points="309.0559,-758.7698 315.1814,-765.0498 312.778,-760.2349 316.5,-761.7 316.5,-761.7 316.5,-761.7 312.778,-760.2349 317.8186,-758.3502 309.0559,-758.7698 309.0559,-758.7698"/>
 <ellipse fill="none" stroke="#000000" cx="306.0783" cy="-757.5977" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_RefCore -->
-<g id="node15" class="node">
+<g id="node14" class="node">
 <title>global_RefCore</title>
-<g id="a_node15"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
+<g id="a_node14"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="74,-932.2 74,-993.2 201,-993.2 201,-932.2 74,-932.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="74.5,-969.7 74.5,-992.7 201.5,-992.7 201.5,-969.7 74.5,-969.7"/>
 <polygon fill="none" stroke="#000000" points="74.5,-969.7 74.5,-992.7 201.5,-992.7 201.5,-969.7 74.5,-969.7"/>
@@ -524,37 +494,37 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;global_RefCore -->
-<g id="edge14" class="edge">
+<g id="edge13" class="edge">
 <title>fos_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M302.033,-959.7C262.398,-959.7 247.4201,-959.7 201.5,-959.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5,-959.7001 316.5,-963.3 312.5,-959.7 316.5,-959.7 316.5,-959.7 316.5,-959.7 312.5,-959.7 316.5,-956.1 308.5,-959.7001 308.5,-959.7001"/>
 <ellipse fill="none" stroke="#000000" cx="305.3" cy="-959.7001" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_DataCore&#45;&gt;global_RefCore -->
-<g id="edge15" class="edge">
+<g id="edge14" class="edge">
 <title>fos_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M302.0921,-938.3114C261.8778,-941.8645 248.3545,-959.7 201.5,-959.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5072,-938.0392 316.6526,-941.2968 312.5036,-937.8696 316.5,-937.7 316.5,-937.7 316.5,-937.7 312.5036,-937.8696 316.3474,-934.1032 308.5072,-938.0392 308.5072,-938.0392"/>
 <ellipse fill="none" stroke="#000000" cx="305.3101" cy="-938.1749" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_DataCore&#45;&gt;global_RefCore -->
-<g id="edge16" class="edge">
+<g id="edge15" class="edge">
 <title>fos_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M302.053,-916.8319C260.2627,-923.7189 250.9871,-959.7 201.5,-959.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.5244,-916.3249 316.7812,-919.289 312.5122,-916.0125 316.5,-915.7 316.5,-915.7 316.5,-915.7 312.5122,-916.0125 316.2188,-912.111 308.5244,-916.3249 308.5244,-916.3249"/>
 <ellipse fill="none" stroke="#000000" cx="305.3342" cy="-916.5749" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_DataCore&#45;&gt;global_RefCore -->
-<g id="edge17" class="edge">
+<g id="edge16" class="edge">
 <title>fos_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M302.372,-896.9858C292.7658,-902.4089 288.9042,-913.453 275,-921.7 243.3709,-940.4601 238.2743,-959.7 201.5,-959.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.708,-895.5123 317.3155,-897.2064 312.604,-894.6061 316.5,-893.7 316.5,-893.7 316.5,-893.7 312.604,-894.6061 315.6845,-890.1936 308.708,-895.5123 308.708,-895.5123"/>
 <ellipse fill="none" stroke="#000000" cx="305.5911" cy="-896.2372" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_Sample -->
-<g id="node16" class="node">
+<g id="node15" class="node">
 <title>fos_Sample</title>
-<g id="a_node16"><a xlink:href="../../tables/fos_Sample.html" xlink:title="fos_Sample" target="_top">
+<g id="a_node15"><a xlink:href="../../tables/fos_Sample.html" xlink:title="fos_Sample" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="84.5,-1342.2 84.5,-1403.2 190.5,-1403.2 190.5,-1342.2 84.5,-1342.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="84.5,-1379.7 84.5,-1402.7 190.5,-1402.7 190.5,-1379.7 84.5,-1379.7"/>
 <polygon fill="none" stroke="#000000" points="84.5,-1379.7 84.5,-1402.7 190.5,-1402.7 190.5,-1379.7 84.5,-1379.7"/>
@@ -575,16 +545,16 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_Sample -->
-<g id="edge18" class="edge">
+<g id="edge17" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_Sample:e</title>
 <path fill="none" stroke="#000000" d="M302.7133,-1075.0573C266.753,-1108.5643 307.4423,-1289.2574 275,-1331.7 249.993,-1364.4155 231.6783,-1369.7 190.5,-1369.7"/>
 <polygon fill="#000000" stroke="#000000" points="309.0432,-1072.5977 317.8039,-1073.0556 312.7716,-1071.1488 316.5,-1069.7 316.5,-1069.7 316.5,-1069.7 312.7716,-1071.1488 315.1961,-1066.3444 309.0432,-1072.5977 309.0432,-1072.5977"/>
 <ellipse fill="none" stroke="#000000" cx="306.0605" cy="-1073.7567" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_TaxRank6_speciesID -->
-<g id="node17" class="node">
+<g id="node16" class="node">
 <title>fos_TaxRank6_speciesID</title>
-<g id="a_node17"><a xlink:href="../../tables/fos_TaxRank6_speciesID.html" xlink:title="fos_TaxRank6_speciesID" target="_top">
+<g id="a_node16"><a xlink:href="../../tables/fos_TaxRank6_speciesID.html" xlink:title="fos_TaxRank6_speciesID" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="46,-686.2 46,-747.2 229,-747.2 229,-686.2 46,-686.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="46.5,-723.7 46.5,-746.7 229.5,-746.7 229.5,-723.7 46.5,-723.7"/>
 <polygon fill="none" stroke="#000000" points="46.5,-723.7 46.5,-746.7 229.5,-746.7 229.5,-723.7 46.5,-723.7"/>
@@ -605,11 +575,41 @@
 </g>
 </g>
 <!-- fos_DataCore&#45;&gt;fos_TaxRank6_speciesID -->
-<g id="edge19" class="edge">
+<g id="edge18" class="edge">
 <title>fos_DataCore:w&#45;&gt;fos_TaxRank6_speciesID:e</title>
 <path fill="none" stroke="#000000" d="M302.0998,-824.29C285.0395,-813.784 293.5677,-781.2015 275,-757.7 257.5607,-735.6267 257.6311,-713.7 229.5,-713.7"/>
 <polygon fill="#000000" stroke="#000000" points="308.7153,-825.8565 315.6704,-831.2031 312.6076,-826.7783 316.5,-827.7 316.5,-827.7 316.5,-827.7 312.6076,-826.7783 317.3296,-824.1969 308.7153,-825.8565 308.7153,-825.8565"/>
 <ellipse fill="none" stroke="#000000" cx="305.6014" cy="-825.1191" rx="3.2" ry="3.2"/>
+</g>
+<!-- global_dbDOI -->
+<g id="node17" class="node">
+<title>global_dbDOI</title>
+<g id="a_node17"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="79,-1014.2 79,-1075.2 196,-1075.2 196,-1014.2 79,-1014.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="79.5,-1051.7 79.5,-1074.7 196.5,-1074.7 196.5,-1051.7 79.5,-1051.7"/>
+<polygon fill="none" stroke="#000000" points="79.5,-1051.7 79.5,-1074.7 196.5,-1074.7 196.5,-1051.7 79.5,-1051.7"/>
+<text text-anchor="start" x="84.5" y="-1060.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
+<text text-anchor="start" x="162.0219" y="-1059.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="79.5,-1032.7 79.5,-1051.7 196.5,-1051.7 196.5,-1032.7 79.5,-1032.7"/>
+<text text-anchor="start" x="82.5" y="-1038.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="79.5,-1013.7 79.5,-1032.7 112.5,-1032.7 112.5,-1013.7 79.5,-1013.7"/>
+<polygon fill="none" stroke="#000000" points="79.5,-1013.7 79.5,-1032.7 112.5,-1032.7 112.5,-1013.7 79.5,-1013.7"/>
+<text text-anchor="start" x="82.5" y="-1019.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
+<polygon fill="#ffffff" stroke="transparent" points="112.5,-1013.7 112.5,-1032.7 162.5,-1032.7 162.5,-1013.7 112.5,-1013.7"/>
+<polygon fill="none" stroke="#000000" points="112.5,-1013.7 112.5,-1032.7 162.5,-1032.7 162.5,-1013.7 112.5,-1013.7"/>
+<text text-anchor="start" x="120.9956" y="-1019.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">30 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="162.5,-1013.7 162.5,-1032.7 196.5,-1032.7 196.5,-1013.7 162.5,-1013.7"/>
+<polygon fill="none" stroke="#000000" points="162.5,-1013.7 162.5,-1032.7 196.5,-1032.7 196.5,-1013.7 162.5,-1013.7"/>
+<text text-anchor="start" x="171.7904" y="-1019.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">11 &gt;</text>
+</a>
+</g>
+</g>
+<!-- fos_DataCore&#45;&gt;global_dbDOI -->
+<g id="edge19" class="edge">
+<title>fos_DataCore:w&#45;&gt;global_dbDOI:e</title>
+<path fill="none" stroke="#000000" d="M302.2702,-984.47C293.0773,-988.7012 288.2379,-996.9899 275,-1003.7 240.4262,-1021.2249 235.2617,-1041.7 196.5,-1041.7"/>
+<polygon fill="#000000" stroke="#000000" points="308.6474,-983.2286 317.1879,-985.2337 312.5737,-982.4643 316.5,-981.7 316.5,-981.7 316.5,-981.7 312.5737,-982.4643 315.8121,-978.1663 308.6474,-983.2286 308.6474,-983.2286"/>
+<ellipse fill="none" stroke="#000000" cx="305.5064" cy="-983.8401" rx="3.2" ry="3.2"/>
 </g>
 <!-- fos_polygons_EPSG3857 -->
 <g id="node18" class="node">

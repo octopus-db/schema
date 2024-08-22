@@ -416,7 +416,7 @@
 <text text-anchor="start" x="890.5" y="-302.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SMPID</text>
 <polygon fill="none" stroke="#000000" points="861.5,-273.7 861.5,-295.7 1001.5,-295.7 1001.5,-273.7 861.5,-273.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="866.5" y="-290.7"/>
-<text text-anchor="start" x="890.5" y="-280.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="890.5" y="-280.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="861.5,-251.7 861.5,-273.7 1001.5,-273.7 1001.5,-251.7 861.5,-251.7"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="866.5" y="-268.7"/>
 <text text-anchor="start" x="890.5" y="-258.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
@@ -509,40 +509,10 @@
 <polygon fill="#000000" stroke="#000000" points="853.5223,-174.1036 861.2316,-178.29 857.5111,-174.4018 861.5,-174.7 861.5,-174.7 861.5,-174.7 857.5111,-174.4018 861.7684,-171.11 853.5223,-174.1036 853.5223,-174.1036"/>
 <ellipse fill="none" stroke="#000000" cx="850.3312" cy="-173.865" rx="3.2" ry="3.2"/>
 </g>
-<!-- global_dbDOI -->
-<g id="node8" class="node">
-<title>global_dbDOI</title>
-<g id="a_node8"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="649,-284.2 649,-345.2 766,-345.2 766,-284.2 649,-284.2"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="649.5,-321.7 649.5,-344.7 766.5,-344.7 766.5,-321.7 649.5,-321.7"/>
-<polygon fill="none" stroke="#000000" points="649.5,-321.7 649.5,-344.7 766.5,-344.7 766.5,-321.7 649.5,-321.7"/>
-<text text-anchor="start" x="654.5" y="-330.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
-<text text-anchor="start" x="732.0219" y="-329.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="649.5,-302.7 649.5,-321.7 766.5,-321.7 766.5,-302.7 649.5,-302.7"/>
-<text text-anchor="start" x="652.5" y="-308.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="649.5,-283.7 649.5,-302.7 678.5,-302.7 678.5,-283.7 649.5,-283.7"/>
-<polygon fill="none" stroke="#000000" points="649.5,-283.7 649.5,-302.7 678.5,-302.7 678.5,-283.7 649.5,-283.7"/>
-<text text-anchor="start" x="652.5" y="-289.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="678.5,-283.7 678.5,-302.7 730.5,-302.7 730.5,-283.7 678.5,-283.7"/>
-<polygon fill="none" stroke="#000000" points="678.5,-283.7 678.5,-302.7 730.5,-302.7 730.5,-283.7 678.5,-283.7"/>
-<text text-anchor="start" x="688.9956" y="-289.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">26 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="730.5,-283.7 730.5,-302.7 766.5,-302.7 766.5,-283.7 730.5,-283.7"/>
-<polygon fill="none" stroke="#000000" points="730.5,-283.7 730.5,-302.7 766.5,-302.7 766.5,-283.7 730.5,-283.7"/>
-<text text-anchor="start" x="741.7904" y="-289.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">10 &gt;</text>
-</a>
-</g>
-</g>
-<!-- expage_DataCore&#45;&gt;global_dbDOI -->
-<g id="edge6" class="edge">
-<title>expage_DataCore:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" d="M847.0375,-285.7919C815.3212,-290.8431 805.079,-311.7 766.5,-311.7"/>
-<polygon fill="#000000" stroke="#000000" points="853.5227,-285.3023 861.771,-288.2898 857.5114,-285.0012 861.5,-284.7 861.5,-284.7 861.5,-284.7 857.5114,-285.0012 861.229,-281.1102 853.5227,-285.3023 853.5227,-285.3023"/>
-<ellipse fill="none" stroke="#000000" cx="850.3318" cy="-285.5432" rx="3.2" ry="3.2"/>
-</g>
 <!-- global_RefCore -->
-<g id="node9" class="node">
+<g id="node8" class="node">
 <title>global_RefCore</title>
-<g id="a_node9"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
+<g id="a_node8"><a xlink:href="../../tables/global_RefCore.html" xlink:title="global_RefCore" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="644,-202.2 644,-263.2 771,-263.2 771,-202.2 644,-202.2"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="644.5,-239.7 644.5,-262.7 771.5,-262.7 771.5,-239.7 644.5,-239.7"/>
 <polygon fill="none" stroke="#000000" points="644.5,-239.7 644.5,-262.7 771.5,-262.7 771.5,-239.7 644.5,-239.7"/>
@@ -563,37 +533,37 @@
 </g>
 </g>
 <!-- expage_DataCore&#45;&gt;global_RefCore -->
-<g id="edge7" class="edge">
+<g id="edge6" class="edge">
 <title>expage_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M847.1482,-261.282C817.1071,-254.9656 808.7786,-229.7 771.5,-229.7"/>
 <polygon fill="#000000" stroke="#000000" points="853.5388,-261.9134 861.146,-266.2826 857.5194,-262.3067 861.5,-262.7 861.5,-262.7 861.5,-262.7 857.5194,-262.3067 861.854,-259.1174 853.5388,-261.9134 853.5388,-261.9134"/>
 <ellipse fill="none" stroke="#000000" cx="850.3543" cy="-261.5987" rx="3.2" ry="3.2"/>
 </g>
 <!-- expage_DataCore&#45;&gt;global_RefCore -->
-<g id="edge8" class="edge">
+<g id="edge7" class="edge">
 <title>expage_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M846.9339,-240.1694C818.1593,-237.9722 806.4456,-229.7 771.5,-229.7"/>
 <polygon fill="#000000" stroke="#000000" points="853.5053,-240.4087 861.3689,-244.2976 857.5027,-240.5544 861.5,-240.7 861.5,-240.7 861.5,-240.7 857.5027,-240.5544 861.6311,-237.1024 853.5053,-240.4087 853.5053,-240.4087"/>
 <ellipse fill="none" stroke="#000000" cx="850.3074" cy="-240.2922" rx="3.2" ry="3.2"/>
 </g>
 <!-- expage_DataCore&#45;&gt;global_RefCore -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>expage_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M846.9339,-219.2306C818.1593,-221.4278 806.4456,-229.7 771.5,-229.7"/>
 <polygon fill="#000000" stroke="#000000" points="853.5053,-218.9913 861.6311,-222.2976 857.5027,-218.8456 861.5,-218.7 861.5,-218.7 861.5,-218.7 857.5027,-218.8456 861.3689,-215.1024 853.5053,-218.9913 853.5053,-218.9913"/>
 <ellipse fill="none" stroke="#000000" cx="850.3074" cy="-219.1078" rx="3.2" ry="3.2"/>
 </g>
 <!-- expage_DataCore&#45;&gt;global_RefCore -->
-<g id="edge10" class="edge">
+<g id="edge9" class="edge">
 <title>expage_DataCore:w&#45;&gt;global_RefCore:e</title>
 <path fill="none" stroke="#000000" d="M847.1482,-198.118C817.1071,-204.4344 808.7786,-229.7 771.5,-229.7"/>
 <polygon fill="#000000" stroke="#000000" points="853.5388,-197.4866 861.854,-200.2826 857.5194,-197.0933 861.5,-196.7 861.5,-196.7 861.5,-196.7 857.5194,-197.0933 861.146,-193.1174 853.5388,-197.4866 853.5388,-197.4866"/>
 <ellipse fill="none" stroke="#000000" cx="850.3543" cy="-197.8013" rx="3.2" ry="3.2"/>
 </g>
 <!-- expage_Sample -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>expage_Sample</title>
-<g id="a_node10"><a xlink:href="../../tables/expage_Sample.html" xlink:title="expage_Sample" target="_top">
+<g id="a_node9"><a xlink:href="../../tables/expage_Sample.html" xlink:title="expage_Sample" target="_top">
 <polygon fill="#ffffff" stroke="transparent" points="604,-448.7 604,-714.7 811,-714.7 811,-448.7 604,-448.7"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="606.5,-689.7 606.5,-712.7 809.5,-712.7 809.5,-689.7 606.5,-689.7"/>
 <polygon fill="none" stroke="#000000" points="606.5,-689.7 606.5,-712.7 809.5,-712.7 809.5,-689.7 606.5,-689.7"/>
@@ -656,11 +626,41 @@
 </g>
 </g>
 <!-- expage_DataCore&#45;&gt;expage_Sample -->
-<g id="edge11" class="edge">
+<g id="edge10" class="edge">
 <title>expage_DataCore:w&#45;&gt;expage_Sample:e</title>
 <path fill="none" stroke="#000000" d="M847.7267,-311.1369C792.0219,-353.1078 887.5905,-678.7 809.5,-678.7"/>
 <polygon fill="#000000" stroke="#000000" points="853.8853,-309.153 862.6038,-310.1266 857.6927,-307.9265 861.5,-306.7 861.5,-306.7 861.5,-306.7 857.6927,-307.9265 860.3962,-303.2734 853.8853,-309.153 853.8853,-309.153"/>
 <ellipse fill="none" stroke="#000000" cx="850.8395" cy="-310.1342" rx="3.2" ry="3.2"/>
+</g>
+<!-- global_dbDOI -->
+<g id="node10" class="node">
+<title>global_dbDOI</title>
+<g id="a_node10"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="649,-284.2 649,-345.2 766,-345.2 766,-284.2 649,-284.2"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="649.5,-321.7 649.5,-344.7 766.5,-344.7 766.5,-321.7 649.5,-321.7"/>
+<polygon fill="none" stroke="#000000" points="649.5,-321.7 649.5,-344.7 766.5,-344.7 766.5,-321.7 649.5,-321.7"/>
+<text text-anchor="start" x="654.5" y="-330.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
+<text text-anchor="start" x="732.0219" y="-329.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="649.5,-302.7 649.5,-321.7 766.5,-321.7 766.5,-302.7 649.5,-302.7"/>
+<text text-anchor="start" x="652.5" y="-308.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="649.5,-283.7 649.5,-302.7 682.5,-302.7 682.5,-283.7 649.5,-283.7"/>
+<polygon fill="none" stroke="#000000" points="649.5,-283.7 649.5,-302.7 682.5,-302.7 682.5,-283.7 649.5,-283.7"/>
+<text text-anchor="start" x="652.5" y="-289.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
+<polygon fill="#ffffff" stroke="transparent" points="682.5,-283.7 682.5,-302.7 732.5,-302.7 732.5,-283.7 682.5,-283.7"/>
+<polygon fill="none" stroke="#000000" points="682.5,-283.7 682.5,-302.7 732.5,-302.7 732.5,-283.7 682.5,-283.7"/>
+<text text-anchor="start" x="690.9956" y="-289.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">30 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="732.5,-283.7 732.5,-302.7 766.5,-302.7 766.5,-283.7 732.5,-283.7"/>
+<polygon fill="none" stroke="#000000" points="732.5,-283.7 732.5,-302.7 766.5,-302.7 766.5,-283.7 732.5,-283.7"/>
+<text text-anchor="start" x="741.7904" y="-289.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">11 &gt;</text>
+</a>
+</g>
+</g>
+<!-- expage_DataCore&#45;&gt;global_dbDOI -->
+<g id="edge11" class="edge">
+<title>expage_DataCore:w&#45;&gt;global_dbDOI:e</title>
+<path fill="none" stroke="#000000" d="M847.0375,-285.7919C815.3212,-290.8431 805.079,-311.7 766.5,-311.7"/>
+<polygon fill="#000000" stroke="#000000" points="853.5227,-285.3023 861.771,-288.2898 857.5114,-285.0012 861.5,-284.7 861.5,-284.7 861.5,-284.7 857.5114,-285.0012 861.229,-281.1102 853.5227,-285.3023 853.5227,-285.3023"/>
+<ellipse fill="none" stroke="#000000" cx="850.3318" cy="-285.5432" rx="3.2" ry="3.2"/>
 </g>
 <!-- expage_Sample&#45;&gt;global_SiteMaster -->
 <g id="edge14" class="edge">

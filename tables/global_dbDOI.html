@@ -73,20 +73,7 @@
             <div class="content-wrapper">
                 <!-- Content Header (Page header) -->
                 <section class="content-header">
-                    <h1>global_dbDOI</h1><p><span id="recordNumber">26</span> rows</p><br />
-                    <div class="box box-primary">
-                        <div class="box-header with-border">
-                            <i class="fa fa-file-text-o"></i>
-                            <h3 id="Description" class="box-title">Description</h3>
-                            <div class="box-tools pull-right">
-                                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i></button>
-                                <button type="button" class="btn btn-box-tool" data-widget="remove"><i class="fa fa-times"></i></button>
-                            </div>
-                        </div><!-- /.box-header -->
-                        <div class="box-body clearfix">
-                            <p>Is global lookup table that stores information about <em>OCTOPUS (sub-)compilation versions</em> in the form of digital object identifiers (= DBDOI)</p>
-                        </div><!-- /.box-body -->
-                    </div>
+                    <h1>global_dbDOI</h1><p><span id="recordNumber">30</span> rows</p><br />
                 </section>
                 <!-- Main content -->
                 <section class="content">
@@ -122,7 +109,96 @@
                                 </thead>
                                 <tbody>
                                 <tr>
-                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="DBDOI">DBDOI</span></td>
+                                    <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="VERID">VERID</span></td>
+                                    <td>serial</td>
+                                    <td>10</td>
+                                    <td title=''></td>
+                                    <td title='Automatically updated by the database'>√</td>
+                                    <td>nextval(&#39;&quot;global_dbDOI_VERID_seq&quot;&#39;::regclass)</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="arch_c14_DataCore.VERID references global_dbDOI.VERID via &lt;--VERID_from_global_dbDOI_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">&lt;--VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="arch_osl_DataCore.VERID references global_dbDOI.VERID via &lt;--VERID_from_global_dbDOI_fkey"><a href='arch_osl_DataCore.html'>arch_osl_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">&lt;--VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="arch_tl_DataCore.VERID references global_dbDOI.VERID via &lt;--VERID_from_global_dbDOI_fkey"><a href='arch_tl_DataCore.html'>arch_tl_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">&lt;--VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="crn_al_DataCore.VERID references global_dbDOI.VERID via &lt;--VERID_from_global_dbDOI_fkey"><a href='crn_al_DataCore.html'>crn_al_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">&lt;--VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="crn_be_DataCore.VERID references global_dbDOI.VERID via &lt;--VERID_from_global_dbDOI_fkey"><a href='crn_be_DataCore.html'>crn_be_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">&lt;--VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="expage_DataCore.VERID references global_dbDOI.VERID via &lt;--VERID_from_global_dbDOI_fkey"><a href='expage_DataCore.html'>expage_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">&lt;--VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="fos_DataCore.VERID references global_dbDOI.VERID via VERID_from_global_dbDOI_fkey"><a href='fos_DataCore.html'>fos_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="global_dbDOI.OBSOLETES references global_dbDOI.VERID via OBSOLETES_selfref_fkey"><a href='global_dbDOI.html'>global_dbDOI</a><span class='relatedKey'>.OBSOLETES</span></td>
+                                                <td class="constraint detail">OBSOLETES_selfref_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="global_dbDOI.OBSOLTD_BY references global_dbDOI.VERID via OBSOLTD_BY_selfref_fkey"><a href='global_dbDOI.html'>global_dbDOI</a><span class='relatedKey'>.OBSOLTD_BY</span></td>
+                                                <td class="constraint detail">OBSOLTD_BY_selfref_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="sed-osl_DataCore.VERID references global_dbDOI.VERID via &lt;--VERID_from_global_dbDOI_fkey"><a href='sed-osl_DataCore.html'>sed-osl_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">&lt;--VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td title="sed-tl_DataCore.VERID references global_dbDOI.VERID via &lt;--VERID_from_global_dbDOI_fkey"><a href='sed-tl_DataCore.html'>sed-tl_DataCore</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">&lt;--VERID_from_global_dbDOI_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>A unique identifier (auto-incrementing serial integer)</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="COLLDOI">COLLDOI</span></td>
+                                    <td>varchar</td>
+                                    <td>256</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>NULL::character varying</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Unique identifier (Digital Object Identifier)</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="COLLDESCR">COLLDESCR</span></td>
                                     <td>text</td>
                                     <td>2147483647</td>
                                     <td title=''></td>
@@ -130,136 +206,16 @@
                                     <td>null</td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
-                                            <tr>
-                                                <td title="arch_c14_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='arch_c14_DataCore.html'>arch_c14_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="arch_osl_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='arch_osl_DataCore.html'>arch_osl_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="arch_tl_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='arch_tl_DataCore.html'>arch_tl_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="char_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='char_DataCore.html'>char_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="crn_al_DataCore.DBDOI references global_dbDOI.DBDOI via  &lt;--DBDOI_from_global_dbDOI_fkey"><a href='crn_al_DataCore.html'>crn_al_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail"> &lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="crn_aus_basins.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='crn_aus_basins.html'>crn_aus_basins</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="crn_be_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='crn_be_DataCore.html'>crn_be_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="crn_int_basins.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='crn_int_basins.html'>crn_int_basins</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="expage.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='expage.html'>expage</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="expage_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='expage_DataCore.html'>expage_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="fos_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='fos_DataCore.html'>fos_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="fossahul_webmercator_nrand_25000.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='fossahul_webmercator_nrand_25000.html'>fossahul_webmercator_nrand_25000</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahularch_c14.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahularch_c14.html'>sahularch_c14</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahularch_osl.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahularch_osl.html'>sahularch_osl</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahularch_tl.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahularch_tl.html'>sahularch_tl</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahulchar.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahulchar.html'>sahulchar</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahulsed_aeolian_osl.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahulsed_aeolian_osl.html'>sahulsed_aeolian_osl</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahulsed_aeolian_tl.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahulsed_aeolian_tl.html'>sahulsed_aeolian_tl</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahulsed_fluvial_osl.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahulsed_fluvial_osl.html'>sahulsed_fluvial_osl</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahulsed_fluvial_tl.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahulsed_fluvial_tl.html'>sahulsed_fluvial_tl</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahulsed_lacustrine_osl.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahulsed_lacustrine_osl.html'>sahulsed_lacustrine_osl</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sahulsed_lacustrine_tl.DBDOI&#39;s name implies that it&#39;s a child of global_dbDOI.DBDOI, but it doesn&#39;t reference that column."><a href='sahulsed_lacustrine_tl.html'>sahulsed_lacustrine_tl</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">Implied Constraint</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sed-osl_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='sed-osl_DataCore.html'>sed-osl_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
-                                            <tr>
-                                                <td title="sed-tl_DataCore.DBDOI references global_dbDOI.DBDOI via &lt;--DBDOI_from_global_dbDOI_fkey"><a href='sed-tl_DataCore.html'>sed-tl_DataCore</a><span class='relatedKey'>.DBDOI</span></td>
-                                                <td class="constraint detail">&lt;--DBDOI_from_global_dbDOI_fkey</td>
-                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
-                                            </tr>
                                         </table>
                                     </td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Concise (sub)Collection description</p></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="DBDOICOMMT">DBDOICOMMT</span></td>
+                                    <td><span id="COLLCOMMT">COLLCOMMT</span></td>
                                     <td>text</td>
                                     <td>2147483647</td>
                                     <td title='nullable'>√</td>
@@ -273,10 +229,78 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>(sub)Collection comment</p></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="DBVER">DBVER</span></td>
+                                    <td><span id="DBYEAR">DBYEAR</span></td>
+                                    <td>int2</td>
+                                    <td>5</td>
+                                    <td title=''></td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Publication year of database version</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="INIT_DBVER">INIT_DBVER</span></td>
+                                    <td>varchar</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Database version of first sub(Collection) deployment</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="RUN_DBVER">RUN_DBVER</span></td>
+                                    <td>varchar</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>Current database version sub(Collection) deployment</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="COLLVER">COLLVER</span></td>
+                                    <td>varchar</td>
+                                    <td>10</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>(sub)Collection version</p></td>
+                                </tr>
+                                <tr>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="OBSOLETES">OBSOLETES</span></td>
                                     <td>int2</td>
                                     <td>5</td>
                                     <td title='nullable'>√</td>
@@ -288,14 +312,41 @@
                                     </td>
                                     <td>
                                         <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="global_dbDOI.OBSOLETES references global_dbDOI.VERID via OBSOLETES_selfref_fkey"><a href='global_dbDOI.html'>global_dbDOI</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">OBSOLETES_selfref_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>(sub)Collection version obsoleted by &ldquo;COLLVER&rdquo;</p></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="DBVERNO">DBVERNO</span></td>
-                                    <td>numeric</td>
-                                    <td>7,3</td>
+                                    <td class='foreignKey' title='Foreign Key'><i class='icon ion-key iconkey' style='padding-left: 5px;'></i><span id="OBSOLTD_BY">OBSOLTD_BY</span></td>
+                                    <td>int2</td>
+                                    <td>5</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                            <tr>
+                                                <td title="global_dbDOI.OBSOLTD_BY references global_dbDOI.VERID via OBSOLTD_BY_selfref_fkey"><a href='global_dbDOI.html'>global_dbDOI</a><span class='relatedKey'>.VERID</span></td>
+                                                <td class="constraint detail">OBSOLTD_BY_selfref_fkey</td>
+                                                <td class="constraint detail"><span title='Restrict delete:&#10;Parent cannot be deleted if children exist'>R</span></td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                    <td><p>(sub)Collection version obsoleting &ldquo;COLLVER&rdquo;</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="DEPLOYDATE">DEPLOYDATE</span></td>
+                                    <td>varchar</td>
+                                    <td>10</td>
                                     <td title='nullable'>√</td>
                                     <td title=''></td>
                                     <td>null</td>
@@ -307,10 +358,44 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Date of deployment</p></td>
                                 </tr>
                                 <tr>
-                                    <td><span id="DBVERNAME">DBVERNAME</span></td>
+                                    <td><span id="COLLNAME">COLLNAME</span></td>
+                                    <td>varchar</td>
+                                    <td>64</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>(sub)Collection name (if applicable)</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="COLL_LEAD">COLL_LEAD</span></td>
+                                    <td>varchar</td>
+                                    <td>128</td>
+                                    <td title='nullable'>√</td>
+                                    <td title=''></td>
+                                    <td>null</td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td>
+                                        <table border='0' cellspacing='0' cellpadding='0'>
+                                        </table>
+                                    </td>
+                                    <td><p>(sub)Collection lead</p></td>
+                                </tr>
+                                <tr>
+                                    <td><span id="REFDOI">REFDOI</span></td>
                                     <td>text</td>
                                     <td>2147483647</td>
                                     <td title='nullable'>√</td>
@@ -324,7 +409,7 @@
                                         <table border='0' cellspacing='0' cellpadding='0'>
                                         </table>
                                     </td>
-                                    <td></td>
+                                    <td><p>Digital Object Identifier of accompanying publication (if applicable)</p></td>
                                 </tr>
                                 <tr>
                                     <td><span id="CREATED_AT">CREATED_AT</span></td>
@@ -394,7 +479,7 @@
                                     <td class='primaryKey' title='Primary Key'><i class='icon ion-key iconkey'></i> global_dbDOI_pkey</td>
                                     <td>Primary key</td>
                                     <td><span title='Ascending'>Asc</span></td>
-                                    <td>DBDOI</td>
+                                    <td>VERID</td>
                                 </tr>
                                 </tbody>
                             </table>
@@ -415,8 +500,6 @@
                                 <ul class="nav nav-tabs pull-left ui-sortable-handle">
                                     <li class="active"><a href="#oneDegreeImg-chart" data-toggle="tab" aria-expanded="true">One</a></li>
                                     <li class=""><a href="#twodegreesDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two degrees</a></li>
-                                    <li class=""><a href="#oneimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">One implied</a></li>
-                                    <li class=""><a href="#twoimpliedDegreeImg-chart" data-toggle="tab" aria-expanded="true">Two implied</a></li>
                                 </ul>
                                 <div class="tab-content no-padding">
                                     <div class="chart tab-pane active" id="oneDegreeImg-chart" style="position: relative; overflow-x:auto;">
@@ -426,14 +509,6 @@
                                     <div class="chart tab-pane " id="twodegreesDegreeImg-chart" style="position: relative; overflow-x:auto;">
                                         
                                         <a name='diagram'><object type="image/svg+xml" id="twodegreesDegreeImg" data="../diagrams/tables/global_dbDOI.2degrees.svg" class="diagram" border="0" align="left"></object></a>
-                                    </div>
-                                    <div class="chart tab-pane " id="oneimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
-                                        
-                                        <a name='diagram'><object type="image/svg+xml" id="oneimpliedDegreeImg" data="../diagrams/tables/global_dbDOI.implied1degrees.svg" class="diagram" border="0" align="left"></object></a>
-                                    </div>
-                                    <div class="chart tab-pane " id="twoimpliedDegreeImg-chart" style="position: relative; overflow-x:auto;">
-                                        
-                                        <a name='diagram'><object type="image/svg+xml" id="twoimpliedDegreeImg" data="../diagrams/tables/global_dbDOI.implied2degrees.svg" class="diagram" border="0" align="left"></object></a>
                                     </div>
                                 </div>
                             </div>

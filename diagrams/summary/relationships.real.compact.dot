@@ -137,7 +137,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="112" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="LAB_ORIGID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="112" HEIGHT="16">LAB_ORIGID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="METHODID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="112" HEIGHT="16">METHODID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="112" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="112" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="112" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="112" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="112" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
@@ -532,7 +532,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="LAB_ORIGID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16">LAB_ORIGID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="METHODID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16">METHODID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="92" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
@@ -576,7 +576,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="LAB_ORIGID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">LAB_ORIGID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="METHODID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">METHODID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
@@ -633,7 +633,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="101" HEIGHT="16"><B>expage_DataCore</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="OBSID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="101" HEIGHT="16">OBSID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="101" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="101" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="101" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="101" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="101" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="101" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
@@ -704,7 +704,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16"><B>crn_be_DataCore</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="OBSID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">OBSID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="BESTNDID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">BESTNDID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="BEAMSID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="99" HEIGHT="16">BEAMSID</TD></TR></TABLE></TD></TR>
@@ -907,7 +907,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="LAB_ORIGID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16">LAB_ORIGID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="FOS_MTDID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16">FOS_MTDID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="FOS_MTDSID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16">FOS_MTDSID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="90" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
@@ -1067,9 +1067,8 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 16</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 15</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
     </TABLE>>
     URL="../../tables/char_DataCore.html"
     target="_top"
@@ -1111,7 +1110,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="LAB_ORIGID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">LAB_ORIGID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="METHODID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">METHODID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="102" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
@@ -1287,9 +1286,11 @@ digraph "compactRelationshipsDiagram" {
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="78" HEIGHT="16"><B>global_dbDOI</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="83" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="OBSOLETES" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16">OBSOLETES</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="OBSOLTD_BY" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="82" HEIGHT="16">OBSOLTD_BY</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">26 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">10 &gt;</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 2</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">30 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">11 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/global_dbDOI.html"
     target="_top"
@@ -1301,7 +1302,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="95" HEIGHT="16"><B>crn_al_DataCore</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="OBSID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="95" HEIGHT="16">OBSID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="95" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="95" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="95" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="95" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="ALSTNDID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="95" HEIGHT="16">ALSTNDID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="ALAMSID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="95" HEIGHT="16">ALAMSID</TD></TR></TABLE></TD></TR>
@@ -1389,7 +1390,7 @@ digraph "compactRelationshipsDiagram" {
       <TR><TD PORT="SMPID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">SMPID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="LAB_ORIGID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">LAB_ORIGID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="METHODID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">METHODID</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">VERID</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">REFDBID1</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID2" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">REFDBID2</TD></TR></TABLE></TD></TR>
       <TR><TD PORT="REFDBID3" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="109" HEIGHT="16">REFDBID3</TD></TR></TABLE></TD></TR>
@@ -1671,6 +1672,20 @@ digraph "compactRelationshipsDiagram" {
     target="_top"
     tooltip="global_contactstatusID"
   ];
+  "fos_polygons_EPSG3857" [
+   label=<
+    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
+      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="144" HEIGHT="16"><B>fos_polygons_EPSG3857</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="144" HEIGHT="16">id</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="geom" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="144" HEIGHT="16">geom</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="OBSID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="144" HEIGHT="16">OBSID1</TD></TR></TABLE></TD></TR>
+      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">11.858 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
+    </TABLE>>
+    URL="../../tables/fos_polygons_EPSG3857.html"
+    target="_top"
+    tooltip="fos_polygons_EPSG3857"
+  ];
   "global_DataSetMaster" [
    label=<
     <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
@@ -1686,20 +1701,6 @@ digraph "compactRelationshipsDiagram" {
     URL="../../tables/global_DataSetMaster.html"
     target="_top"
     tooltip="global_DataSetMaster"
-  ];
-  "fos_polygons_EPSG3857" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="144" HEIGHT="16"><B>fos_polygons_EPSG3857</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="id" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="144" HEIGHT="16">id</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="geom" COLSPAN="3" BGCOLOR="#ffffff" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="144" HEIGHT="16">geom</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="OBSID1" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="144" HEIGHT="16">OBSID1</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 1</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">11.858 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">  </TD></TR>
-    </TABLE>>
-    URL="../../tables/fos_polygons_EPSG3857.html"
-    target="_top"
-    tooltip="fos_polygons_EPSG3857"
   ];
   "fos_TaxRank5_genusID" [
    label=<
@@ -1721,7 +1722,6 @@ digraph "compactRelationshipsDiagram" {
   "arch_c14_DataCore":"CN_MTDID":w -> "c_mtdID":"C_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"COL_MTDID":w -> "cabah_col_mtdID":"COL_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"CONTAMID":w -> "c14_contamID":"CONTAMID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "arch_c14_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"HUM_MODID":w -> "c14_hum_modID":"HUM_MODID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"LAB_ORIGID":w -> "cabah_LabCodes":"LAB_ORIGID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"MATERIA1ID":w -> "c14_materia1ID":"MATERIA1ID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1738,12 +1738,12 @@ digraph "compactRelationshipsDiagram" {
   "arch_c14_DataCore":"S34_MTDID":w -> "c_mtdID":"C_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"SMPID":w -> "arch_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_DataCore":"SOLVENT2ID":w -> "c14_solvent2ID":"SOLVENT2ID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "arch_c14_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_c14_polygons_EPSG3857":"OBSID1":w -> "arch_c14_DataCore":"OBSID1":e [arrowhead=none dir=back arrowtail=teeodot];
   "arch_osl_DataCore":"AGEMODELID":w -> "osl-tl_agemodelID":"AGEMODELID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"ALPH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"BETA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"COL_MTDID":w -> "cabah_col_mtdID":"COL_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "arch_osl_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"ED_PROCID":w -> "osl-tl_ed_procID":"ED_PROCID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"GMMA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"K_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1759,6 +1759,7 @@ digraph "compactRelationshipsDiagram" {
   "arch_osl_DataCore":"SMPID":w -> "arch_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"TH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_DataCore":"U_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "arch_osl_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_osl_polygons_EPSG3857":"OBSID1":w -> "arch_osl_DataCore":"OBSID1":e [arrowhead=none dir=back arrowtail=teeodot];
   "arch_Sample":"FEATDATEID":w -> "arch_featdatedID":"FEATDATEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_Sample":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1766,7 +1767,6 @@ digraph "compactRelationshipsDiagram" {
   "arch_tl_DataCore":"ALPH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"BETA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"COL_MTDID":w -> "cabah_col_mtdID":"COL_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "arch_tl_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"ED_PROCID":w -> "osl-tl_ed_procID":"ED_PROCID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"GMMA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"K_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1782,6 +1782,7 @@ digraph "compactRelationshipsDiagram" {
   "arch_tl_DataCore":"TH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"U_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_DataCore":"U_TH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "arch_tl_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "arch_tl_polygons_EPSG3857":"OBSID1":w -> "arch_tl_DataCore":"OBSID1":e [arrowhead=none dir=back arrowtail=teeodot];
   "c14_calcurve":"CALCURVREF":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "c14_calprogram":"CALPROGREF":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1806,7 +1807,6 @@ digraph "compactRelationshipsDiagram" {
   "char_DataCore":"CHARMTDID":w -> "cabah_charmethodID":"CHARMTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"CHARSIZEID":w -> "global_varunitID":"V_UNITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"DATASRCID":w -> "cabah_datasourceID":"DATASRCID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "char_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"LAB_ORIGID":w -> "cabah_LabCodes":"LAB_ORIGID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"MATERIA2ID":w -> "c14_materia2ID":"MATERIA2ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"METHODID":w -> "cabah_methodID":"METHODID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1818,14 +1818,14 @@ digraph "compactRelationshipsDiagram" {
   "char_Sample":"UNITID":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_al_DataCore":"ALAMSID":w -> "crn_amsID":"AMSID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_al_DataCore":"ALSTNDID":w -> "crn_alstndID":"ALSTNDID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "crn_al_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_al_DataCore":"REFDBID1":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_al_DataCore":"SMPID":w -> "crn_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "crn_al_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_be_DataCore":"BEAMSID":w -> "crn_amsID":"AMSID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_be_DataCore":"BESTNDID":w -> "crn_bestndID":"BESTNDID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "crn_be_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_be_DataCore":"REFDBID1":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_be_DataCore":"SMPID":w -> "crn_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "crn_be_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_Sample":"MATERIAL":w -> "global_GrainSize":"GRNSIZEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_Sample":"PROJEPSGID":w -> "crn_projepsgID":"PROJEPSGID":e [arrowhead=none dir=back arrowtail=crowodot];
   "crn_Sample":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1837,19 +1837,18 @@ digraph "compactRelationshipsDiagram" {
   "crn_v3_outlets_EPSG3857":"STUDYID":w -> "crn_studies_boundingbox":"STUDYID":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"ALSTNDID":w -> "crn_alstndID":"ALSTNDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"BESTNDID":w -> "crn_bestndID":"BESTNDID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "expage_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"REFDBID1":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"REFDBID2":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"REFDBID3":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"REFDBID4":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_DataCore":"SMPID":w -> "expage_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "expage_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_points_EPSG3857":"OBSID1":w -> "expage_DataCore":"OBSID1":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_Sample":"MATERIALID":w -> "global_GrainSize":"GRNSIZEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "expage_Sample":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"CHEMPREPID":w -> "cabah_chemprepID":"CHEMPREPID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"CHEMTYPEID":w -> "fos_chemtypeID":"CHEMTYPEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"CLASSID":w -> "fos_TaxRank1_classID":"CLASSID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "fos_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"FAMILYID":w -> "fos_TaxRank4_familyID":"FAMILYID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"FOS_MTDID":w -> "cabah_methodID":"METHODID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"FOS_MTDSID":w -> "fos_mtdsID":"FOS_MTDSID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1865,6 +1864,7 @@ digraph "compactRelationshipsDiagram" {
   "fos_DataCore":"REFDBID4":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"SMPID":w -> "fos_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_DataCore":"SPECIESID":w -> "fos_TaxRank6_speciesID":"SPECIESID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "fos_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_polygons_EPSG3857":"OBSID1":w -> "fos_DataCore":"OBSID1":e [arrowhead=none dir=back arrowtail=crowodot];
   "fos_Sample":"SITEID":w -> "global_SiteMaster":"SITEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_biomeID":"PARENTID":w -> "global_biomeID":"BIOMEID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1873,6 +1873,8 @@ digraph "compactRelationshipsDiagram" {
   "global_DataSetMaster":"UNITID":w -> "global_UnitMaster":"UNITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_datasetpublicationID":"DATASETID":w -> "global_DataSetMaster":"DATASETID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_datasetpublicationID":"REFDBID":w -> "global_RefCore":"REFDBID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "global_dbDOI":"OBSOLETES":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "global_dbDOI":"OBSOLTD_BY":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_MetaSite":"FEATURESRC":w -> "cabah_datasourceID":"DATASRCID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_MetaSite":"FEATURETYP":w -> "global_SiteCode":"SITECODEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "global_RefCore":"JOURNALID":w -> "global_Journal":"JOURNALID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1924,7 +1926,6 @@ digraph "compactRelationshipsDiagram" {
   "sed-osl_DataCore":"ALPH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"BETA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"COL_MTDID":w -> "cabah_col_mtdID":"COL_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "sed-osl_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"ED_PROCID":w -> "osl-tl_ed_procID":"ED_PROCID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"GMMA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"K_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1940,12 +1941,12 @@ digraph "compactRelationshipsDiagram" {
   "sed-osl_DataCore":"SMPID":w -> "sed_Sample":"SMPID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"TH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_DataCore":"U_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "sed-osl_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-osl_points_EPSG3857":"OBSID1":w -> "sed-osl_DataCore":"OBSID1":e [arrowhead=none dir=back arrowtail=teeodot];
   "sed-tl_DataCore":"AGEMODELID":w -> "osl-tl_agemodelID":"AGEMODELID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"ALPH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"BETA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"COL_MTDID":w -> "cabah_col_mtdID":"COL_MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "sed-tl_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"ED_PROCID":w -> "osl-tl_ed_procID":"ED_PROCID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"GMMA_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"K_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -1961,6 +1962,7 @@ digraph "compactRelationshipsDiagram" {
   "sed-tl_DataCore":"TH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"U_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_DataCore":"U_TH_MTDID":w -> "osl-tl_mtdID":"MTDID":e [arrowhead=none dir=back arrowtail=crowodot];
+  "sed-tl_DataCore":"VERID":w -> "global_dbDOI":"VERID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed-tl_points_EPSG3857":"OBSID1":w -> "sed-tl_DataCore":"OBSID1":e [arrowhead=none dir=back arrowtail=teeodot];
   "sed_laketypeID":"PARENTID":w -> "sed_laketypeID":"LAKETYPEID":e [arrowhead=none dir=back arrowtail=crowodot];
   "sed_Sample":"DEPCONID":w -> "sed_depconID":"DEPCONID":e [arrowhead=none dir=back arrowtail=crowodot];

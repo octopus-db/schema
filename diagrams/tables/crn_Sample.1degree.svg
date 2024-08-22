@@ -27,7 +27,7 @@
 <text text-anchor="start" x="475" y="-547.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SMPID</text>
 <polygon fill="none" stroke="#000000" points="446,-518.2 446,-540.2 580,-540.2 580,-518.2 446,-518.2"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="451" y="-535.2"/>
-<text text-anchor="start" x="475" y="-525.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="475" y="-525.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="446,-496.2 446,-518.2 580,-518.2 580,-496.2 446,-496.2"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="451" y="-513.2"/>
 <text text-anchor="start" x="475" y="-503.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>
@@ -302,7 +302,7 @@
 <text text-anchor="start" x="473" y="-333.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SMPID</text>
 <polygon fill="none" stroke="#000000" points="444,-304.2 444,-326.2 582,-326.2 582,-304.2 444,-304.2"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="449" y="-321.2"/>
-<text text-anchor="start" x="473" y="-311.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
+<text text-anchor="start" x="473" y="-311.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">VERID</text>
 <polygon fill="none" stroke="#000000" points="444,-282.2 444,-304.2 582,-304.2 582,-282.2 444,-282.2"/>
 <image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="449" y="-299.2"/>
 <text text-anchor="start" x="473" y="-289.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">REFDBID1</text>

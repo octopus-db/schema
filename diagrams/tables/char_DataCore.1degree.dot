@@ -9,7 +9,6 @@ digraph "oneDegreeRelationshipsDiagram" {
   "char_DataCore":"CHARMTDID":w -> "cabah_charmethodID":"CHARMTDID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"CHARSIZEID":w -> "global_varunitID":"V_UNITID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"DATASRCID":w -> "cabah_datasourceID":"DATASRCID":e [arrowhead=none dir=back arrowtail=crowodot];
-  "char_DataCore":"DBDOI":w -> "global_dbDOI":"DBDOI":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"LAB_ORIGID":w -> "cabah_LabCodes":"LAB_ORIGID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"MATERIA2ID":w -> "c14_materia2ID":"MATERIA2ID":e [arrowhead=none dir=back arrowtail=crowodot];
   "char_DataCore":"METHODID":w -> "cabah_methodID":"METHODID":e [arrowhead=none dir=back arrowtail=crowodot];
@@ -161,8 +160,8 @@ digraph "oneDegreeRelationshipsDiagram" {
       <TR><TD PORT="CHARCOMMT" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CHARCOMMT</TD></TR></TABLE></TD><TD PORT="CHARCOMMT.type" ALIGN="LEFT">text[2147483647]</TD></TR>
       <TR><TD PORT="CREATED_AT" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">CREATED_AT</TD></TR></TABLE></TD><TD PORT="CREATED_AT.type" ALIGN="LEFT">timestamptz[35,6]</TD></TR>
       <TR><TD PORT="UPDATED_AT" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">UPDATED_AT</TD></TR></TABLE></TD><TD PORT="UPDATED_AT.type" ALIGN="LEFT">timestamptz[35,6]</TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/foreignKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">DBDOI</TD></TR></TABLE></TD><TD PORT="DBDOI.type" ALIGN="LEFT">text[2147483647]</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 16</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 &gt;</TD></TR>
+      <TR><TD PORT="VERID" COLSPAN="2" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="85" HEIGHT="16">VERID</TD></TR></TABLE></TD><TD PORT="VERID.type" ALIGN="LEFT">int2[5]</TD></TR>
+      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">&lt; 15</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">48.234 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">0 &gt;</TD></TR>
     </TABLE>>
     URL="../../tables/char_DataCore.html"
     target="_top"
@@ -180,18 +179,6 @@ digraph "oneDegreeRelationshipsDiagram" {
     URL="../../tables/char_Sample.html"
     target="_top"
     tooltip="char_Sample"
-  ];
-  "global_dbDOI" [
-   label=<
-    <TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0" BGCOLOR="#ffffff">
-      <TR><TD COLSPAN="3"  BGCOLOR="#f5f5f5"><TABLE BORDER="0" CELLSPACING="0"><TR><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="78" HEIGHT="16"><B>global_dbDOI</B></TD><TD ALIGN="RIGHT">[table]</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="DBDOI" COLSPAN="3" ALIGN="LEFT"><TABLE BORDER="0" CELLSPACING="0" ALIGN="LEFT"><TR ALIGN="LEFT"><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="15" HEIGHT="16"><IMG SRC="../../images/primaryKeys.png"/></TD><TD ALIGN="LEFT" FIXEDSIZE="TRUE" WIDTH="83" HEIGHT="16">DBDOI</TD></TR></TABLE></TD></TR>
-      <TR><TD PORT="elipses" COLSPAN="3" ALIGN="LEFT">...</TD></TR>
-      <TR><TD ALIGN="LEFT" BGCOLOR="#ffffff">  </TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">26 rows</TD><TD ALIGN="RIGHT" BGCOLOR="#ffffff">10 &gt;</TD></TR>
-    </TABLE>>
-    URL="../../tables/global_dbDOI.html"
-    target="_top"
-    tooltip="global_dbDOI"
   ];
   "global_RefCore" [
    label=<

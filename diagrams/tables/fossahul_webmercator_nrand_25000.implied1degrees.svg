@@ -45,14 +45,13 @@
 <polygon fill="none" stroke="#000000" points="610,-2259.2 610,-2281.2 729,-2281.2 729,-2259.2 610,-2259.2"/>
 <text text-anchor="start" x="613" y="-2266.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
 <polygon fill="none" stroke="#000000" points="379,-2237.2 379,-2259.2 610,-2259.2 610,-2237.2 379,-2237.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="384" y="-2254.2"/>
 <text text-anchor="start" x="399" y="-2244.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
 <polygon fill="none" stroke="#000000" points="610,-2237.2 610,-2259.2 729,-2259.2 729,-2237.2 610,-2237.2"/>
-<text text-anchor="start" x="613" y="-2244.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
+<text text-anchor="start" x="613" y="-2244.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">varchar[256]</text>
 <polygon fill="none" stroke="#000000" points="379,-2215.2 379,-2237.2 610,-2237.2 610,-2215.2 379,-2215.2"/>
 <text text-anchor="start" x="399" y="-2222.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBVERNO</text>
 <polygon fill="none" stroke="#000000" points="610,-2215.2 610,-2237.2 729,-2237.2 729,-2215.2 610,-2215.2"/>
-<text text-anchor="start" x="613" y="-2222.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[7,3]</text>
+<text text-anchor="start" x="613" y="-2222.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
 <polygon fill="none" stroke="#000000" points="379,-2193.2 379,-2215.2 610,-2215.2 610,-2193.2 379,-2193.2"/>
 <text text-anchor="start" x="399" y="-2200.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SMPID</text>
 <polygon fill="none" stroke="#000000" points="610,-2193.2 610,-2215.2 729,-2215.2 729,-2193.2 610,-2193.2"/>
@@ -450,7 +449,7 @@
 <text text-anchor="start" x="613" y="-66.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">serial[10]</text>
 <polygon fill="#ffffff" stroke="transparent" points="379,-40.2 379,-59.2 472,-59.2 472,-40.2 379,-40.2"/>
 <polygon fill="none" stroke="#000000" points="379,-40.2 379,-59.2 472,-59.2 472,-40.2 379,-40.2"/>
-<text text-anchor="start" x="382" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 3</text>
+<text text-anchor="start" x="382" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
 <polygon fill="#ffffff" stroke="transparent" points="472,-40.2 472,-59.2 610,-59.2 610,-40.2 472,-40.2"/>
 <polygon fill="none" stroke="#000000" points="472,-40.2 472,-59.2 610,-59.2 610,-40.2 472,-40.2"/>
 <text text-anchor="start" x="547.094" y="-46.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">11.858 rows</text>
@@ -461,141 +460,108 @@
 </a>
 </g>
 </g>
-<!-- global_dbDOI -->
-<g id="node2" class="node">
-<title>global_dbDOI</title>
-<g id="a_node2"><a xlink:href="../../tables/global_dbDOI.html" xlink:title="global_dbDOI" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="199,-2237.7 199,-2320.7 316,-2320.7 316,-2237.7 199,-2237.7"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="199.5,-2297.2 199.5,-2320.2 316.5,-2320.2 316.5,-2297.2 199.5,-2297.2"/>
-<polygon fill="none" stroke="#000000" points="199.5,-2297.2 199.5,-2320.2 316.5,-2320.2 316.5,-2297.2 199.5,-2297.2"/>
-<text text-anchor="start" x="204.5" y="-2305.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_dbDOI</text>
-<text text-anchor="start" x="282.0219" y="-2305.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="199.5,-2275.2 199.5,-2297.2 316.5,-2297.2 316.5,-2275.2 199.5,-2275.2"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="204.5" y="-2292.2"/>
-<text text-anchor="start" x="226.5" y="-2282.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">DBDOI</text>
-<polygon fill="none" stroke="#000000" points="199.5,-2256.2 199.5,-2275.2 316.5,-2275.2 316.5,-2256.2 199.5,-2256.2"/>
-<text text-anchor="start" x="202.5" y="-2262.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="199.5,-2237.2 199.5,-2256.2 228.5,-2256.2 228.5,-2237.2 199.5,-2237.2"/>
-<polygon fill="none" stroke="#000000" points="199.5,-2237.2 199.5,-2256.2 228.5,-2256.2 228.5,-2237.2 199.5,-2237.2"/>
-<text text-anchor="start" x="202.5" y="-2243.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000"> &#160;</text>
-<polygon fill="#ffffff" stroke="transparent" points="228.5,-2237.2 228.5,-2256.2 280.5,-2256.2 280.5,-2237.2 228.5,-2237.2"/>
-<polygon fill="none" stroke="#000000" points="228.5,-2237.2 228.5,-2256.2 280.5,-2256.2 280.5,-2237.2 228.5,-2237.2"/>
-<text text-anchor="start" x="238.9956" y="-2243.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">26 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="280.5,-2237.2 280.5,-2256.2 316.5,-2256.2 316.5,-2237.2 280.5,-2237.2"/>
-<polygon fill="none" stroke="#000000" points="280.5,-2237.2 280.5,-2256.2 316.5,-2256.2 316.5,-2237.2 280.5,-2237.2"/>
-<text text-anchor="start" x="291.7904" y="-2243.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">24 &gt;</text>
-</a>
-</g>
-</g>
-<!-- fossahul_webmercator_nrand_25000&#45;&gt;global_dbDOI -->
-<g id="edge1" class="edge">
-<title>fossahul_webmercator_nrand_25000:w&#45;&gt;global_dbDOI:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M364.723,-2251.3097C346.2939,-2260.3852 343.2946,-2286.2 316.5,-2286.2"/>
-<polygon fill="#000000" stroke="#000000" points="371.1833,-2249.9026 379.7662,-2251.7175 375.0916,-2249.0513 379,-2248.2 379,-2248.2 379,-2248.2 375.0916,-2249.0513 378.2338,-2244.6825 371.1833,-2249.9026 371.1833,-2249.9026"/>
-<ellipse fill="none" stroke="#000000" cx="368.0566" cy="-2250.5837" rx="3.2" ry="3.2"/>
-</g>
 <!-- global_MetaSite -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>global_MetaSite</title>
-<g id="a_node3"><a xlink:href="../../tables/global_MetaSite.html" xlink:title="global_MetaSite" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="8,-1953.7 8,-2080.7 138,-2080.7 138,-1953.7 8,-1953.7"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="8,-2057.2 8,-2080.2 138,-2080.2 138,-2057.2 8,-2057.2"/>
-<polygon fill="none" stroke="#000000" points="8,-2057.2 8,-2080.2 138,-2080.2 138,-2057.2 8,-2057.2"/>
-<text text-anchor="start" x="13" y="-2065.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_MetaSite</text>
-<text text-anchor="start" x="103.5219" y="-2065.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="8,-2035.2 8,-2057.2 138,-2057.2 138,-2035.2 8,-2035.2"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13" y="-2052.2"/>
-<text text-anchor="start" x="37" y="-2042.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METASITEID</text>
-<polygon fill="none" stroke="#000000" points="8,-2013.2 8,-2035.2 138,-2035.2 138,-2013.2 8,-2013.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13" y="-2030.2"/>
-<text text-anchor="start" x="37" y="-2020.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">FEATURESRC</text>
-<polygon fill="none" stroke="#000000" points="8,-1991.2 8,-2013.2 138,-2013.2 138,-1991.2 8,-1991.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13" y="-2008.2"/>
-<text text-anchor="start" x="37" y="-1998.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">FEATURETYP</text>
-<polygon fill="none" stroke="#000000" points="8,-1972.2 8,-1991.2 138,-1991.2 138,-1972.2 8,-1972.2"/>
-<text text-anchor="start" x="11" y="-1978.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="8,-1953.2 8,-1972.2 37,-1972.2 37,-1953.2 8,-1953.2"/>
-<polygon fill="none" stroke="#000000" points="8,-1953.2 8,-1972.2 37,-1972.2 37,-1953.2 8,-1953.2"/>
-<text text-anchor="start" x="11" y="-1959.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
-<polygon fill="#ffffff" stroke="transparent" points="37,-1953.2 37,-1972.2 106,-1972.2 106,-1953.2 37,-1953.2"/>
-<polygon fill="none" stroke="#000000" points="37,-1953.2 37,-1972.2 106,-1972.2 106,-1953.2 37,-1953.2"/>
-<text text-anchor="start" x="43.094" y="-1959.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">12.144 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="106,-1953.2 106,-1972.2 138,-1972.2 138,-1953.2 106,-1953.2"/>
-<polygon fill="none" stroke="#000000" points="106,-1953.2 106,-1972.2 138,-1972.2 138,-1953.2 106,-1953.2"/>
-<text text-anchor="start" x="113.2904" y="-1959.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">15 &gt;</text>
+<g id="a_node2"><a xlink:href="../../tables/global_MetaSite.html" xlink:title="global_MetaSite" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="8,-2067.7 8,-2194.7 138,-2194.7 138,-2067.7 8,-2067.7"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="8,-2171.2 8,-2194.2 138,-2194.2 138,-2171.2 8,-2171.2"/>
+<polygon fill="none" stroke="#000000" points="8,-2171.2 8,-2194.2 138,-2194.2 138,-2171.2 8,-2171.2"/>
+<text text-anchor="start" x="13" y="-2179.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_MetaSite</text>
+<text text-anchor="start" x="103.5219" y="-2179.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="8,-2149.2 8,-2171.2 138,-2171.2 138,-2149.2 8,-2149.2"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13" y="-2166.2"/>
+<text text-anchor="start" x="37" y="-2156.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METASITEID</text>
+<polygon fill="none" stroke="#000000" points="8,-2127.2 8,-2149.2 138,-2149.2 138,-2127.2 8,-2127.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13" y="-2144.2"/>
+<text text-anchor="start" x="37" y="-2134.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">FEATURESRC</text>
+<polygon fill="none" stroke="#000000" points="8,-2105.2 8,-2127.2 138,-2127.2 138,-2105.2 8,-2105.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="13" y="-2122.2"/>
+<text text-anchor="start" x="37" y="-2112.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">FEATURETYP</text>
+<polygon fill="none" stroke="#000000" points="8,-2086.2 8,-2105.2 138,-2105.2 138,-2086.2 8,-2086.2"/>
+<text text-anchor="start" x="11" y="-2092.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="8,-2067.2 8,-2086.2 37,-2086.2 37,-2067.2 8,-2067.2"/>
+<polygon fill="none" stroke="#000000" points="8,-2067.2 8,-2086.2 37,-2086.2 37,-2067.2 8,-2067.2"/>
+<text text-anchor="start" x="11" y="-2073.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 2</text>
+<polygon fill="#ffffff" stroke="transparent" points="37,-2067.2 37,-2086.2 106,-2086.2 106,-2067.2 37,-2067.2"/>
+<polygon fill="none" stroke="#000000" points="37,-2067.2 37,-2086.2 106,-2086.2 106,-2067.2 37,-2067.2"/>
+<text text-anchor="start" x="43.094" y="-2073.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">12.144 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="106,-2067.2 106,-2086.2 138,-2086.2 138,-2067.2 106,-2067.2"/>
+<polygon fill="none" stroke="#000000" points="106,-2067.2 106,-2086.2 138,-2086.2 138,-2067.2 106,-2067.2"/>
+<text text-anchor="start" x="113.2904" y="-2073.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">15 &gt;</text>
 </a>
 </g>
 </g>
 <!-- fossahul_webmercator_nrand_25000&#45;&gt;global_MetaSite -->
-<g id="edge2" class="edge">
+<g id="edge1" class="edge">
 <title>fossahul_webmercator_nrand_25000:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M364.2539,-2158.6849C296.7637,-2142.7177 406.3625,-2004.7773 336,-1947.2 281.998,-1903.0104 237.0169,-1908.4318 179,-1947.2 139.4029,-1973.6597 185.624,-2046.2 138,-2046.2"/>
-<polygon fill="#000000" stroke="#000000" points="371.0419,-2159.3823 378.632,-2163.7811 375.0209,-2159.7911 379,-2160.2 379,-2160.2 379,-2160.2 375.0209,-2159.7911 379.368,-2156.6189 371.0419,-2159.3823 371.0419,-2159.3823"/>
-<ellipse fill="none" stroke="#000000" cx="367.8587" cy="-2159.0552" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M364.7057,-2156.8314C341.2363,-2142.2303 370.9417,-2084.1186 336,-2061.2 277.6534,-2022.9298 237.0169,-2022.4318 179,-2061.2 139.4029,-2087.6597 185.624,-2160.2 138,-2160.2"/>
+<polygon fill="#000000" stroke="#000000" points="371.2133,-2158.365 378.1742,-2163.704 375.1066,-2159.2825 379,-2160.2 379,-2160.2 379,-2160.2 375.1066,-2159.2825 379.8258,-2156.696 371.2133,-2158.365 371.2133,-2158.365"/>
+<ellipse fill="none" stroke="#000000" cx="368.0986" cy="-2157.6309" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_SiteMaster -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>global_SiteMaster</title>
-<g id="a_node4"><a xlink:href="../../tables/global_SiteMaster.html" xlink:title="global_SiteMaster" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="187,-1957.7 187,-2216.7 328,-2216.7 328,-1957.7 187,-1957.7"/>
-<polygon fill="#f5f5f5" stroke="transparent" points="187.5,-2193.2 187.5,-2216.2 328.5,-2216.2 328.5,-2193.2 187.5,-2193.2"/>
-<polygon fill="none" stroke="#000000" points="187.5,-2193.2 187.5,-2216.2 328.5,-2216.2 328.5,-2193.2 187.5,-2193.2"/>
-<text text-anchor="start" x="192.5" y="-2201.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_SiteMaster</text>
-<text text-anchor="start" x="294.0219" y="-2201.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
-<polygon fill="none" stroke="#000000" points="187.5,-2171.2 187.5,-2193.2 328.5,-2193.2 328.5,-2171.2 187.5,-2171.2"/>
-<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2188.2"/>
-<text text-anchor="start" x="216.5" y="-2178.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITEID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-2149.2 187.5,-2171.2 328.5,-2171.2 328.5,-2149.2 187.5,-2149.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2166.2"/>
-<text text-anchor="start" x="216.5" y="-2156.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METASITEID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-2127.2 187.5,-2149.2 328.5,-2149.2 328.5,-2127.2 187.5,-2127.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2144.2"/>
-<text text-anchor="start" x="216.5" y="-2134.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">RIVID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-2105.2 187.5,-2127.2 328.5,-2127.2 328.5,-2105.2 187.5,-2105.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2122.2"/>
-<text text-anchor="start" x="216.5" y="-2112.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRAID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-2083.2 187.5,-2105.2 328.5,-2105.2 328.5,-2083.2 187.5,-2083.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2100.2"/>
-<text text-anchor="start" x="216.5" y="-2090.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITECODEID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-2061.2 187.5,-2083.2 328.5,-2083.2 328.5,-2061.2 187.5,-2061.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2078.2"/>
-<text text-anchor="start" x="216.5" y="-2068.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BIOMEID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-2039.2 187.5,-2061.2 328.5,-2061.2 328.5,-2039.2 187.5,-2039.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2056.2"/>
-<text text-anchor="start" x="216.5" y="-2046.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CATCHSZEID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-2017.2 187.5,-2039.2 328.5,-2039.2 328.5,-2017.2 187.5,-2017.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2034.2"/>
-<text text-anchor="start" x="216.5" y="-2024.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BASINSZEID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-1995.2 187.5,-2017.2 328.5,-2017.2 328.5,-1995.2 187.5,-1995.2"/>
-<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2012.2"/>
-<text text-anchor="start" x="216.5" y="-2002.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">FLOWTYPEID</text>
-<polygon fill="none" stroke="#000000" points="187.5,-1976.2 187.5,-1995.2 328.5,-1995.2 328.5,-1976.2 187.5,-1976.2"/>
-<text text-anchor="start" x="190.5" y="-1982.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
-<polygon fill="#ffffff" stroke="transparent" points="187.5,-1957.2 187.5,-1976.2 222.5,-1976.2 222.5,-1957.2 187.5,-1957.2"/>
-<polygon fill="none" stroke="#000000" points="187.5,-1957.2 187.5,-1976.2 222.5,-1976.2 222.5,-1957.2 187.5,-1957.2"/>
-<text text-anchor="start" x="190.5" y="-1963.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 8</text>
-<polygon fill="#ffffff" stroke="transparent" points="222.5,-1957.2 222.5,-1976.2 294.5,-1976.2 294.5,-1957.2 222.5,-1957.2"/>
-<polygon fill="none" stroke="#000000" points="222.5,-1957.2 222.5,-1976.2 294.5,-1976.2 294.5,-1957.2 222.5,-1957.2"/>
-<text text-anchor="start" x="231.594" y="-1963.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">25.221 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="294.5,-1957.2 294.5,-1976.2 328.5,-1976.2 328.5,-1957.2 294.5,-1957.2"/>
-<polygon fill="none" stroke="#000000" points="294.5,-1957.2 294.5,-1976.2 328.5,-1976.2 328.5,-1957.2 294.5,-1957.2"/>
-<text text-anchor="start" x="303.7904" y="-1963.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">21 &gt;</text>
+<g id="a_node3"><a xlink:href="../../tables/global_SiteMaster.html" xlink:title="global_SiteMaster" target="_top">
+<polygon fill="#ffffff" stroke="transparent" points="187,-2071.7 187,-2330.7 328,-2330.7 328,-2071.7 187,-2071.7"/>
+<polygon fill="#f5f5f5" stroke="transparent" points="187.5,-2307.2 187.5,-2330.2 328.5,-2330.2 328.5,-2307.2 187.5,-2307.2"/>
+<polygon fill="none" stroke="#000000" points="187.5,-2307.2 187.5,-2330.2 328.5,-2330.2 328.5,-2307.2 187.5,-2307.2"/>
+<text text-anchor="start" x="192.5" y="-2315.8" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">global_SiteMaster</text>
+<text text-anchor="start" x="294.0219" y="-2315.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">[table]</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2285.2 187.5,-2307.2 328.5,-2307.2 328.5,-2285.2 187.5,-2285.2"/>
+<image xlink:href="../../images/primaryKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2302.2"/>
+<text text-anchor="start" x="216.5" y="-2292.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITEID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2263.2 187.5,-2285.2 328.5,-2285.2 328.5,-2263.2 187.5,-2263.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2280.2"/>
+<text text-anchor="start" x="216.5" y="-2270.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">METASITEID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2241.2 187.5,-2263.2 328.5,-2263.2 328.5,-2241.2 187.5,-2241.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2258.2"/>
+<text text-anchor="start" x="216.5" y="-2248.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">RIVID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2219.2 187.5,-2241.2 328.5,-2241.2 328.5,-2219.2 187.5,-2219.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2236.2"/>
+<text text-anchor="start" x="216.5" y="-2226.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">IBRAID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2197.2 187.5,-2219.2 328.5,-2219.2 328.5,-2197.2 187.5,-2197.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2214.2"/>
+<text text-anchor="start" x="216.5" y="-2204.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">SITECODEID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2175.2 187.5,-2197.2 328.5,-2197.2 328.5,-2175.2 187.5,-2175.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2192.2"/>
+<text text-anchor="start" x="216.5" y="-2182.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BIOMEID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2153.2 187.5,-2175.2 328.5,-2175.2 328.5,-2153.2 187.5,-2153.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2170.2"/>
+<text text-anchor="start" x="216.5" y="-2160.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CATCHSZEID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2131.2 187.5,-2153.2 328.5,-2153.2 328.5,-2131.2 187.5,-2131.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2148.2"/>
+<text text-anchor="start" x="216.5" y="-2138.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">BASINSZEID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2109.2 187.5,-2131.2 328.5,-2131.2 328.5,-2109.2 187.5,-2109.2"/>
+<image xlink:href="../../images/foreignKeys.png" width="11px" height="12px" preserveAspectRatio="xMinYMin meet" x="192.5" y="-2126.2"/>
+<text text-anchor="start" x="216.5" y="-2116.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">FLOWTYPEID</text>
+<polygon fill="none" stroke="#000000" points="187.5,-2090.2 187.5,-2109.2 328.5,-2109.2 328.5,-2090.2 187.5,-2090.2"/>
+<text text-anchor="start" x="190.5" y="-2096.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">...</text>
+<polygon fill="#ffffff" stroke="transparent" points="187.5,-2071.2 187.5,-2090.2 222.5,-2090.2 222.5,-2071.2 187.5,-2071.2"/>
+<polygon fill="none" stroke="#000000" points="187.5,-2071.2 187.5,-2090.2 222.5,-2090.2 222.5,-2071.2 187.5,-2071.2"/>
+<text text-anchor="start" x="190.5" y="-2077.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 8</text>
+<polygon fill="#ffffff" stroke="transparent" points="222.5,-2071.2 222.5,-2090.2 294.5,-2090.2 294.5,-2071.2 222.5,-2071.2"/>
+<polygon fill="none" stroke="#000000" points="222.5,-2071.2 222.5,-2090.2 294.5,-2090.2 294.5,-2071.2 222.5,-2071.2"/>
+<text text-anchor="start" x="231.594" y="-2077.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">25.221 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="294.5,-2071.2 294.5,-2090.2 328.5,-2090.2 328.5,-2071.2 294.5,-2071.2"/>
+<polygon fill="none" stroke="#000000" points="294.5,-2071.2 294.5,-2090.2 328.5,-2090.2 328.5,-2071.2 294.5,-2071.2"/>
+<text text-anchor="start" x="303.7904" y="-2077.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">21 &gt;</text>
 </a>
 </g>
 </g>
 <!-- fossahul_webmercator_nrand_25000&#45;&gt;global_SiteMaster -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>fossahul_webmercator_nrand_25000:w&#45;&gt;global_SiteMaster:e</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M364.4203,-2182.2C352.5435,-2182.2 345.158,-2182.2 328.5,-2182.2"/>
-<polygon fill="#000000" stroke="#000000" points="371,-2182.2001 379,-2185.8 375,-2182.2 379,-2182.2 379,-2182.2 379,-2182.2 375,-2182.2 379,-2178.6 371,-2182.2001 371,-2182.2001"/>
-<ellipse fill="none" stroke="#000000" cx="367.8" cy="-2182.2001" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M364.6679,-2185.993C335.3973,-2205.7737 377.8543,-2296.2 328.5,-2296.2"/>
+<polygon fill="#000000" stroke="#000000" points="371.2662,-2184.2468 379.921,-2185.6802 375.1331,-2183.2234 379,-2182.2 379,-2182.2 379,-2182.2 375.1331,-2183.2234 378.079,-2178.7198 371.2662,-2184.2468 371.2662,-2184.2468"/>
+<ellipse fill="none" stroke="#000000" cx="368.1727" cy="-2185.0655" rx="3.2" ry="3.2"/>
 </g>
 <!-- global_SiteMaster&#45;&gt;global_MetaSite -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>global_SiteMaster:w&#45;&gt;global_MetaSite:e</title>
-<path fill="none" stroke="#000000" d="M173.2419,-2156.407C144.2109,-2136.6263 187.1953,-2046.2 138,-2046.2"/>
-<polygon fill="#000000" stroke="#000000" points="179.7689,-2158.1433 186.5745,-2163.679 183.6344,-2159.1716 187.5,-2160.2 187.5,-2160.2 187.5,-2160.2 183.6344,-2159.1716 188.4255,-2156.721 179.7689,-2158.1433 179.7689,-2158.1433"/>
-<ellipse fill="none" stroke="#000000" cx="176.6764" cy="-2157.3206" rx="3.2" ry="3.2"/>
+<path fill="none" stroke="#000000" d="M173.2419,-2270.407C144.2109,-2250.6263 187.1953,-2160.2 138,-2160.2"/>
+<polygon fill="#000000" stroke="#000000" points="179.7689,-2272.1433 186.5745,-2277.679 183.6344,-2273.1716 187.5,-2274.2 187.5,-2274.2 187.5,-2274.2 183.6344,-2273.1716 188.4255,-2270.721 179.7689,-2272.1433 179.7689,-2272.1433"/>
+<ellipse fill="none" stroke="#000000" cx="176.6764" cy="-2271.3206" rx="3.2" ry="3.2"/>
 </g>
 </g>
 </svg>

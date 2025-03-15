@@ -217,10 +217,10 @@
 <text text-anchor="start" x="190.5" y="-1589.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 8</text>
 <polygon fill="#ffffff" stroke="transparent" points="222.5,-1583.2 222.5,-1602.2 294.5,-1602.2 294.5,-1583.2 222.5,-1583.2"/>
 <polygon fill="none" stroke="#000000" points="222.5,-1583.2 222.5,-1602.2 294.5,-1602.2 294.5,-1583.2 222.5,-1583.2"/>
-<text text-anchor="start" x="231.594" y="-1589.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">25.221 rows</text>
+<text text-anchor="start" x="231.594" y="-1589.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">26.209 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="294.5,-1583.2 294.5,-1602.2 328.5,-1602.2 328.5,-1583.2 294.5,-1583.2"/>
 <polygon fill="none" stroke="#000000" points="294.5,-1583.2 294.5,-1602.2 328.5,-1602.2 328.5,-1583.2 294.5,-1583.2"/>
-<text text-anchor="start" x="303.7904" y="-1589.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">21 &gt;</text>
+<text text-anchor="start" x="303.7904" y="-1589.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">23 &gt;</text>
 </a>
 </g>
 </g>
@@ -610,7 +610,7 @@
 <polygon fill="none" stroke="#000000" points="1013,-257.2 1013,-279.2 1132,-279.2 1132,-257.2 1013,-257.2"/>
 <text text-anchor="start" x="1016" y="-264.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">text[2147483647]</text>
 <polygon fill="none" stroke="#000000" points="906,-235.2 906,-257.2 1013,-257.2 1013,-235.2 906,-235.2"/>
-<text text-anchor="start" x="926" y="-242.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CHARCOUNTS</text>
+<text text-anchor="start" x="926" y="-242.3" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">CHARVALUES</text>
 <polygon fill="none" stroke="#000000" points="1013,-235.2 1013,-257.2 1132,-257.2 1132,-235.2 1013,-235.2"/>
 <text text-anchor="start" x="1016" y="-242.9" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">numeric[0]</text>
 <polygon fill="none" stroke="#000000" points="906,-213.2 906,-235.2 1013,-235.2 1013,-213.2 906,-213.2"/>

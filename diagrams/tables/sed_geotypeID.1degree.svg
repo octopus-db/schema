@@ -56,7 +56,7 @@
 <text text-anchor="start" x="262.5" y="-43.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 9</text>
 <polygon fill="#ffffff" stroke="transparent" points="284.5,-37.7 284.5,-56.7 345.5,-56.7 345.5,-37.7 284.5,-37.7"/>
 <polygon fill="none" stroke="#000000" points="284.5,-37.7 284.5,-56.7 345.5,-56.7 345.5,-37.7 284.5,-37.7"/>
-<text text-anchor="start" x="288.7089" y="-43.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">3.181 rows</text>
+<text text-anchor="start" x="288.7089" y="-43.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">4.551 rows</text>
 <polygon fill="#ffffff" stroke="transparent" points="345.5,-37.7 345.5,-56.7 368.5,-56.7 368.5,-37.7 345.5,-37.7"/>
 <polygon fill="none" stroke="#000000" points="345.5,-37.7 345.5,-56.7 368.5,-56.7 368.5,-37.7 345.5,-37.7"/>
 <text text-anchor="start" x="349.9053" y="-43.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">2 &gt;</text>
@@ -67,7 +67,7 @@
 <g id="node2" class="node">
 <title>sed_geotypeID</title>
 <g id="a_node2"><a xlink:href="../../tables/sed_geotypeID.html" xlink:title="sed_geotypeID" target="_top">
-<polygon fill="#ffffff" stroke="transparent" points="8,-142.7 8,-276.7 210,-276.7 210,-142.7 8,-142.7"/>
+<polygon fill="#ffffff" stroke="transparent" points="8,-120.7 8,-276.7 210,-276.7 210,-120.7 8,-120.7"/>
 <polygon fill="#f5f5f5" stroke="transparent" points="10,-251.7 10,-274.7 208,-274.7 208,-251.7 10,-251.7"/>
 <polygon fill="none" stroke="#000000" points="10,-251.7 10,-274.7 208,-274.7 208,-251.7 10,-251.7"/>
 <text text-anchor="start" x="15" y="-260.3" font-family="Helvetica,sans-Serif" font-weight="bold" font-size="11.00" fill="#000000">sed_geotypeID</text>
@@ -90,16 +90,20 @@
 <text text-anchor="start" x="30" y="-170.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">UPDATED_AT</text>
 <polygon fill="none" stroke="#000000" points="116,-163.7 116,-185.7 208,-185.7 208,-163.7 116,-163.7"/>
 <text text-anchor="start" x="118.6023" y="-171.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">timestamptz[35,6]</text>
-<polygon fill="#ffffff" stroke="transparent" points="10,-144.7 10,-163.7 51,-163.7 51,-144.7 10,-144.7"/>
-<polygon fill="none" stroke="#000000" points="10,-144.7 10,-163.7 51,-163.7 51,-144.7 10,-144.7"/>
-<text text-anchor="start" x="13" y="-150.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 0</text>
-<polygon fill="#ffffff" stroke="transparent" points="51,-144.7 51,-163.7 116,-163.7 116,-144.7 51,-144.7"/>
-<polygon fill="none" stroke="#000000" points="51,-144.7 51,-163.7 116,-163.7 116,-144.7 51,-144.7"/>
-<text text-anchor="start" x="74.4956" y="-150.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">16 rows</text>
-<polygon fill="#ffffff" stroke="transparent" points="116,-144.7 116,-163.7 208,-163.7 208,-144.7 116,-144.7"/>
-<polygon fill="none" stroke="#000000" points="116,-144.7 116,-163.7 208,-163.7 208,-144.7 116,-144.7"/>
-<text text-anchor="start" x="189.4053" y="-150.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
-<polygon fill="none" stroke="#000000" stroke-width="2" points="9,-143.7 9,-275.7 209,-275.7 209,-143.7 9,-143.7"/>
+<polygon fill="none" stroke="#000000" points="10,-141.7 10,-163.7 116,-163.7 116,-141.7 10,-141.7"/>
+<text text-anchor="start" x="30" y="-148.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">PARENTID</text>
+<polygon fill="none" stroke="#000000" points="116,-141.7 116,-163.7 208,-163.7 208,-141.7 116,-141.7"/>
+<text text-anchor="start" x="119" y="-149.4" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">int2[5]</text>
+<polygon fill="#ffffff" stroke="transparent" points="10,-122.7 10,-141.7 51,-141.7 51,-122.7 10,-122.7"/>
+<polygon fill="none" stroke="#000000" points="10,-122.7 10,-141.7 51,-141.7 51,-122.7 10,-122.7"/>
+<text text-anchor="start" x="13" y="-128.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">&lt; 0</text>
+<polygon fill="#ffffff" stroke="transparent" points="51,-122.7 51,-141.7 116,-141.7 116,-122.7 51,-122.7"/>
+<polygon fill="none" stroke="#000000" points="51,-122.7 51,-141.7 116,-141.7 116,-122.7 51,-122.7"/>
+<text text-anchor="start" x="74.4956" y="-128.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">32 rows</text>
+<polygon fill="#ffffff" stroke="transparent" points="116,-122.7 116,-141.7 208,-141.7 208,-122.7 116,-122.7"/>
+<polygon fill="none" stroke="#000000" points="116,-122.7 116,-141.7 208,-141.7 208,-122.7 116,-122.7"/>
+<text text-anchor="start" x="189.4053" y="-128.8" font-family="Helvetica,sans-Serif" font-size="11.00" fill="#000000">1 &gt;</text>
+<polygon fill="none" stroke="#000000" stroke-width="2" points="9,-121.7 9,-275.7 209,-275.7 209,-121.7 9,-121.7"/>
 </a>
 </g>
 </g>

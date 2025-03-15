@@ -66,6 +66,8 @@
       <sequence increment="1" name="sahulchar_units_points_EPSG3857_id_seq" startValue="1"/>
       <sequence increment="1" name="sahulsed_aeolian_osl_id_seq" startValue="1"/>
       <sequence increment="1" name="sahulsed_aeolian_tl_id_seq" startValue="1"/>
+      <sequence increment="1" name="sahulsed_coastal_osl_id_seq" startValue="1"/>
+      <sequence increment="1" name="sahulsed_coastal_tl_id_seq" startValue="1"/>
       <sequence increment="1" name="sahulsed_fluvial_osl_id_seq" startValue="1"/>
       <sequence increment="1" name="sahulsed_fluvial_tl_id_seq" startValue="1"/>
       <sequence increment="1" name="sahulsed_lacustrine_osl_id_seq" startValue="1"/>
@@ -907,7 +909,7 @@
             <column ascending="true" name="COL_MTDID"/>
          </index>
       </table>
-      <table name="cabah_datasourceID" numRows="11" remarks="Is lookup table for Sahul-related compilations. The cabah_datasourceID table stores the way that *data / information have been gathered* for database integration." schema="public" type="TABLE">
+      <table name="cabah_datasourceID" numRows="12" remarks="Is lookup table for Sahul-related compilations. The cabah_datasourceID table stores the way that *data / information have been gathered* for database integration." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;cabah_datasourceID_DATASRCID_seq&quot;'::regclass)" digits="0" id="0" name="DATASRCID" nullable="false" remarks="" size="10" type="serial" typeCode="4">
             <child column="ECOGRPSRC" foreignKey="&lt;--DATASRCID_from_cabah_datasourceID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_ecolgroupID"/>
             <child column="TXAGRPSRC" foreignKey="&lt;--DATASRCID_from_cabah_datasourceID_fkey" implied="false" onDeleteCascade="false" schema="public" table="cabah_taxagroupID"/>
@@ -983,7 +985,7 @@
             <column ascending="true" name="FLOWTYPE"/>
          </index>
       </table>
-      <table name="cabah_LabCodes" numRows="352" remarks="Is lookup table for Sahul-related compilations, i.e., **SahulArch, FosSahul, SahulSed**. This table stores information about the *lab of origin* for a certain observation. Labs have been identified automatically by their distinct labcode prefixes." schema="public" type="TABLE">
+      <table name="cabah_LabCodes" numRows="353" remarks="Is lookup table for Sahul-related compilations, i.e., **SahulArch, FosSahul, SahulSed**. This table stores information about the *lab of origin* for a certain observation. Labs have been identified automatically by their distinct labcode prefixes." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('cabah_lab_origid_seq'::regclass)" digits="0" id="0" name="LAB_ORIGID" nullable="false" remarks="" size="5" type="smallserial" typeCode="5">
             <child column="LAB_ORIGID" foreignKey="&lt;--LAB_ORIGID_from_cabah_LabCodes_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
             <child column="LAB_ORIGID" foreignKey="&lt;--LAB_ORIGID_from_cabah_LabCodes_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_osl_DataCore"/>
@@ -1231,6 +1233,12 @@
          <column autoUpdated="false" defaultValue="null" digits="2" id="25" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="26" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="27" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="28" name="EALL" nullable="true" remarks="26Al rate with LSD and topo shielding" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="29" name="EALL_INT" nullable="true" remarks="internal error on &quot;EALL&quot;" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="30" name="EALL_EXT" nullable="true" remarks="external error on &quot;EALL&quot;" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="31" name="EALLNS" nullable="true" remarks="26Al rate with LSD and no topo shielding" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="32" name="EALLNS_INT" nullable="true" remarks="internal error on &quot;EALLNS&quot;" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="33" name="EALLNS_EXT" nullable="true" remarks="external error on &quot;EALLNS&quot;" size="12" type="numeric" typeCode="2"/>
          <primaryKey column="OBSID1" sequenceNumberInPK="1"/>
          <index name="crn_al_DataCore_pkey" unique="true">
             <column ascending="true" name="OBSID1"/>
@@ -1268,7 +1276,7 @@
             <column ascending="true" name="AMSID"/>
          </index>
       </table>
-      <table name="crn_aus_basins" numRows="297" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/5WBX-N779. Table creation date: 2024-08-22 11:01:11 UTC" schema="public" type="TABLE">
+      <table name="crn_aus_basins" numRows="297" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/5WBX-N779. Table creation date: 2025-03-14 15:36:39 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1311,53 +1319,66 @@
          <column autoUpdated="false" defaultValue="null" digits="2" id="33" name="SLP_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="4" id="34" name="CENTR_LAT" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="2" id="35" name="ATM_PRESS" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="SMP_DAY" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="SMP_MONTH" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="SMP_YEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="SMP_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="BE10NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="BE10NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="BE10EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="BE10EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="BESTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="4" id="45" name="BECORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="BEAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="BE10NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="BE10NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="49" name="BEPROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="50" name="BETOPO" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="51" name="BESELF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="52" name="BESNOW" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="53" name="BETOTS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="54" name="EBE_GCMYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="55" name="ERRBE_AMS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="56" name="ERRBE_MUON" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="57" name="ERRBE_PROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="58" name="ERRBE_TOT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="59" name="EBE_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="60" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="AL26NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="AL26NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="AL26EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="AL26EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="ALSTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="4" id="66" name="ALCORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="ALAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="AL26NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="AL26NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="70" name="ALPROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="71" name="ALTOPO" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="72" name="ALSELF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="73" name="ALSNOW" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="74" name="ALTOTS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="75" name="EAL_GCMYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="76" name="ERRAL_AMS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="77" name="ERRAL_MUON" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="78" name="ERRAL_PROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="79" name="ERRAL_TOT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="80" name="EAL_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="81" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="true" defaultValue="nextval('crn_aus_basins_id_seq'::regclass)" digits="0" id="82" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="QTZ_PCNT" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="SMP_DAY" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="SMP_MONTH" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="SMP_YEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="SMP_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="BE10NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="BE10NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="BE10EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="BE10EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="BESTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="4" id="46" name="BECORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="BEAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="BE10NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="BE10NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="50" name="BEPROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="51" name="BETOPO" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="52" name="BESELF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="53" name="BESNOW" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="54" name="BETOTS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="55" name="EBE_GCMYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="56" name="ERRBE_AMS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="57" name="ERRBE_MUON" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="58" name="ERRBE_PROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="59" name="ERRBE_TOT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="60" name="EBE_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="61" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="62" name="EBEL" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="63" name="EBEL_INT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="64" name="EBEL_EXT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="65" name="EBELNS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="66" name="EBELNS_INT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="67" name="EBELNS_EXT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="AL26NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="AL26NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="AL26EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="AL26EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="72" name="ALSTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="4" id="73" name="ALCORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="ALAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="AL26NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="AL26NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="77" name="ALPROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="78" name="ALTOPO" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="79" name="ALSELF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="80" name="ALSNOW" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="81" name="ALTOTS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="82" name="EAL_GCMYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="83" name="ERRAL_AMS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="84" name="ERRAL_MUON" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="85" name="ERRAL_PROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="86" name="ERRAL_TOT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="87" name="EAL_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="88" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="89" name="EALL" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="90" name="EALL_INT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="91" name="EALL_EXT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="92" name="EALLNS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="93" name="EALLNS_INT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="94" name="EALLNS_EXT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="true" defaultValue="nextval('crn_aus_basins_id_seq'::regclass)" digits="0" id="95" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="crn_aus_basins_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -1366,7 +1387,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="crn_aus_outlets" numRows="297" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/5WBX-N779. Tble creation date: 2024-08-22 11:01:14 UTC" schema="public" type="TABLE">
+      <table name="crn_aus_outlets" numRows="297" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/5WBX-N779. Tble creation date: 2025-03-14 15:36:42 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1424,6 +1445,15 @@
          <column autoUpdated="false" defaultValue="null" digits="2" id="25" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="26" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="27" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="28" name="EBEGLA" nullable="true" remarks="End-member basin-averaged denudation rate corrected for present-day glacier cover under the assumptions that (1) portions of the basin covered by glaciers contribute with sediment in proportion to their surface area and (2) the sediment are depleted in cosmogenic nuclides." size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="29" name="EBEGLA_ERR" nullable="true" remarks="Uncertainty of end-member basin-averaged denudation rate corrected for present-day glacier cover." size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="30" name="EBE_DIFF" nullable="true" remarks="Relative difference between uncorrected (EBE_MMKYR) and glacier-cover corrected (EBEGLA) basin-averaged denudation rate." size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="31" name="EBEL" nullable="true" remarks="10Be rate with LSD and topo shielding" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="32" name="EBEL_INT" nullable="true" remarks="internal error on &quot;EBEL&quot;" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="33" name="EBEL_EXT" nullable="true" remarks="external error on &quot;EBEL&quot;" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="34" name="EBELNS" nullable="true" remarks="10Be rate with LSD and no topo shielding" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="35" name="EBELNS_INT" nullable="true" remarks="internal error on &quot;EBELNS&quot;" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="36" name="EBELNS_EXT" nullable="true" remarks="external error on &quot;EBELNS&quot;" size="12" type="numeric" typeCode="2"/>
          <primaryKey column="OBSID1" sequenceNumberInPK="1"/>
          <index name="crn_be_DataCore_pkey" unique="true">
             <column ascending="true" name="OBSID1"/>
@@ -1446,7 +1476,7 @@
             <column ascending="true" name="BESTNDID"/>
          </index>
       </table>
-      <table name="crn_inprep_basins" numRows="157" remarks="Is flat **GeoServer input** table. Table creation date: 2024-08-22 11:01:22 UTC" schema="public" type="TABLE">
+      <table name="crn_inprep_basins" numRows="157" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.5281/zenodo.13369367. Table creation date: 2025-03-14 15:36:51 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1454,46 +1484,47 @@
             <parent column="STUDYID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="crn_studynote"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CRN_SUBCMP" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CNTRY" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="REGION_INT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="REGION_REG" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="DIV_ADMIN" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="BASIN" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="AHGFL1" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="AHGFL2" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="RIVNAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="RIVDIV" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="IBRACODE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="IBRAREGION" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="AUTHOR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="PUBYEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="REFDOI" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="MATERIAL" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="SIZEMIN" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="SIZEMAX" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="PROJEPSGID" nullable="true" remarks="" size="5" type="int2" typeCode="5">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DBDOI" nullable="true" remarks="" size="256" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CNTRY" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="REGION_INT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="REGION_REG" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="DIV_ADMIN" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="BASIN" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="AHGFL1" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="AHGFL2" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="RIVNAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="RIVDIV" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="IBRACODE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="IBRAREGION" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="AUTHOR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="PUBYEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="REFDOI" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="MATERIAL" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="22" name="SIZEMIN" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="SIZEMAX" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="PROJEPSGID" nullable="true" remarks="" size="5" type="int2" typeCode="5">
             <parent column="PROJEPSGID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="crn_projepsgID"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="PROJECTION" nullable="true" remarks="" size="13" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="25" name="AREA" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="26" name="ELEV_AVE" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="27" name="ELEV_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="28" name="SLP_AVE" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="29" name="SLP_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="SMP_DAY" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="SMP_MONTH" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="SMP_YEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="SMP_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="BESTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="BEAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="36" name="EBE_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="37" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="ALSTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="ALAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="40" name="EAL_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="41" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="true" defaultValue="nextval('crn_inprep_basins_id_seq'::regclass)" digits="0" id="42" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="PROJECTION" nullable="true" remarks="" size="13" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="26" name="AREA" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="27" name="ELEV_AVE" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="28" name="ELEV_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="29" name="SLP_AVE" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="30" name="SLP_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="SMP_DAY" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="SMP_MONTH" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="SMP_YEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="SMP_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="BESTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="BEAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="37" name="EBE_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="38" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="ALSTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="ALAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="41" name="EAL_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="42" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="true" defaultValue="nextval('crn_inprep_basins_id_seq'::regclass)" digits="0" id="43" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="crn_inprep_basins_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -1502,7 +1533,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="crn_inprep_outlets" numRows="157" remarks="Is flat **GeoServer input** table. Table creation date: 2024-08-22 11:01:25 UTC" schema="public" type="TABLE">
+      <table name="crn_inprep_outlets" numRows="157" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.5281/zenodo.13369367. Table creation date: 2025-03-14 15:36:54 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1518,7 +1549,7 @@
             <column ascending="true" name="the_geom"/>
          </index>
       </table>
-      <table name="crn_int_basins" numRows="5376" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/057R-TM53. Table creation date: 2024-08-22 11:01:32 UTC" schema="public" type="TABLE">
+      <table name="crn_int_basins" numRows="5376" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/057R-TM53. Table creation date: 2025-03-14 15:37:03 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1555,53 +1586,71 @@
          <column autoUpdated="false" defaultValue="null" digits="2" id="27" name="SLP_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="4" id="28" name="CENTR_LAT" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="2" id="29" name="ATM_PRESS" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="SMP_DAY" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="SMP_MONTH" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="SMP_YEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="SMP_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="BE10NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="BE10NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="BE10EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="BE10EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="BESTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="4" id="39" name="BECORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="BEAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="BE10NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="BE10NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="43" name="BEPROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="44" name="BETOPO" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="45" name="BESELF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="46" name="BESNOW" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="47" name="BETOTS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="48" name="EBE_GCMYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="49" name="ERRBE_AMS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="50" name="ERRBE_MUON" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="51" name="ERRBE_PROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="52" name="ERRBE_TOT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="53" name="EBE_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="54" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="AL26NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="AL26NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="AL26EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="AL26EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="ALSTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="4" id="60" name="ALCORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="ALAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="AL26NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="AL26NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="64" name="ALPROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="65" name="ALTOPO" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="66" name="ALSELF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="67" name="ALSNOW" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="3" id="68" name="ALTOTS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="69" name="EAL_GCMYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="70" name="ERRAL_AMS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="71" name="ERRAL_MUON" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="72" name="ERRAL_PROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="5" id="73" name="ERRAL_TOT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="74" name="EAL_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="75" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="true" defaultValue="nextval('crn_int_basins_id_seq'::regclass)" digits="0" id="76" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="QTZ_PCNT" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="GLA_KM2" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="GLA_PCNT" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="SMP_DAY" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="SMP_MONTH" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="SMP_YEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="SMP_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="BE10NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="BE10NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="BE10EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="BE10EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="BESTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="4" id="42" name="BECORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="BEAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="BE10NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="BE10NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="46" name="BEPROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="47" name="BETOPO" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="48" name="BESELF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="49" name="BESNOW" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="50" name="BETOTS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="51" name="EBE_GCMYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="52" name="ERRBE_AMS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="53" name="ERRBE_MUON" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="54" name="ERRBE_PROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="55" name="ERRBE_TOT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="56" name="EBE_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="57" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="58" name="EBEL" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="59" name="EBEL_INT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="60" name="EBEL_EXT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="61" name="EBELNS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="62" name="EBELNS_INT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="63" name="EBELNS_EXT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="64" name="EBEGLA" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="65" name="EBEGLA_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="66" name="EBE_DIFF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="AL26NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="AL26NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="AL26EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="AL26EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="ALSTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="4" id="72" name="ALCORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="73" name="ALAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="AL26NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="AL26NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="76" name="ALPROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="77" name="ALTOPO" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="78" name="ALSELF" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="79" name="ALSNOW" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="80" name="ALTOTS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="81" name="EAL_GCMYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="82" name="ERRAL_AMS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="83" name="ERRAL_MUON" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="84" name="ERRAL_PROD" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="5" id="85" name="ERRAL_TOT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="86" name="EAL_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="87" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="88" name="EALL" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="89" name="EALL_INT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="90" name="EALL_EXT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="91" name="EALLNS" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="92" name="EALLNS_INT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="93" name="EALLNS_EXT" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="true" defaultValue="nextval('crn_int_basins_id_seq'::regclass)" digits="0" id="94" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="crn_int_basins_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -1610,7 +1659,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="crn_int_outlets" numRows="5376" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/057R-TM53. Table creation date: 2024-08-22 11:01:35 UTC" schema="public" type="TABLE">
+      <table name="crn_int_outlets" numRows="5376" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/057R-TM53. Table creation date: 2025-03-14 15:37:06 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1729,10 +1778,13 @@
             <parent column="STUDYID" foreignKey="&lt;--STUDYID_from_crn_studies_boundingbox_fkey" implied="false" onDeleteCascade="false" schema="public" table="crn_studies_boundingbox"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="CRN_SUBCMP" nullable="false" remarks="" size="3" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="NULL::numeric" digits="4" id="6" name="CENTR_LAT" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="7" name="ATM_PRESS" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="4" id="6" name="CENTR_LAT" nullable="true" remarks="The latitude of the basin centroid — as calculated by CAIRN and in WGS84 coordinate system." size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="7" name="ATM_PRESS" nullable="true" remarks="The atmospheric pressure needed to obtain the basin averaged production scaling. The value translates the spatially distributed production data calculated by CAIRN into one single value." size="6" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="8" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="9" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="4" id="10" name="QTZ_PCNT" nullable="true" remarks="Relative basin area underlain by quartz bearing rocks (%). Source: GLiM - Global Lithological Map (Hartmann &amp; Moosdorf, 2012)" size="7" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="2" id="11" name="GLA_KM2" nullable="true" remarks="Absolute present-day glacier extent / cover of basin area (km^2). Source: GLIMS: Global Land Ice Measurements from Space (Raup et al., 2007)" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="NULL::numeric" digits="4" id="12" name="GLA_PCNT" nullable="true" remarks="Relative present-day glacier extent / cover of basin area (%). Source: GLIMS: Global Land Ice Measurements from Space (Raup et al., 2007)" size="7" type="numeric" typeCode="2"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="crn_v3_basins_EPSG3857_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -1771,7 +1823,7 @@
             <column ascending="true" name="OBSID1"/>
          </index>
       </table>
-      <table name="crn_xxl_basins" numRows="261" remarks="Is flat **GeoServer input** table. Table creation date: 2024-08-22 11:01:41 UTC" schema="public" type="TABLE">
+      <table name="crn_xxl_basins" numRows="261" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.5281/zenodo.13369360. Table creation date: 2025-03-14 15:37:13 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1779,58 +1831,59 @@
             <parent column="STUDYID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="crn_studynote"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="CRN_SUBCMP" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="CNTRY" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="REGION_INT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="BASIN" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="AHGFL1" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="REFDBID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="OAID" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DBDOI" nullable="true" remarks="" size="256" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="CNTRY" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="REGION_INT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="BASIN" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="AHGFL1" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="REFDBID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="OAID" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
             <parent column="OAID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="global_Author"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="AUTHOR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="PUBYEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="REFID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="REFDOI" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="MATERIAL" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="SIZEMIN" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="SIZEMAX" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="PROJEPSGID" nullable="true" remarks="" size="5" type="int2" typeCode="5">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="AUTHOR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="PUBYEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="REFID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="REFDOI" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="MATERIAL" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="SIZEMIN" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="19" name="SIZEMAX" nullable="true" remarks="" size="10" type="int4" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="PROJEPSGID" nullable="true" remarks="" size="5" type="int2" typeCode="5">
             <parent column="PROJEPSGID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="crn_projepsgID"/>
          </column>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="20" name="PROJECTION" nullable="true" remarks="" size="13" type="varchar" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="21" name="AREA" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="22" name="ELEV_AVE" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="23" name="ELEV_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="24" name="SLP_AVE" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="25" name="SLP_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="SMP_DAY" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="SMP_MONTH" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="SMP_YEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="SMP_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="BE10NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="BE10NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="BE10EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="BE10EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="BESTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="4" id="35" name="BECORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="BEAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="BE10NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="BE10NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="39" name="EBE_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="40" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="AL26NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="AL26NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="AL26EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="AL26EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="ALSTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="4" id="46" name="ALCORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="ALAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="AL26NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="AL26NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="50" name="EAL_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="false" defaultValue="null" digits="2" id="51" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
-         <column autoUpdated="true" defaultValue="nextval('crn_xxl_basins_id_seq'::regclass)" digits="0" id="52" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="PROJECTION" nullable="true" remarks="" size="13" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="22" name="AREA" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="23" name="ELEV_AVE" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="24" name="ELEV_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="25" name="SLP_AVE" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="26" name="SLP_STD" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="SMP_DAY" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="SMP_MONTH" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="SMP_YEAR" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="SMP_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="BE10NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="BE10NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="BE10EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="BE10EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="BESTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="4" id="36" name="BECORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="BEAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="BE10NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="BE10NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="40" name="EBE_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="41" name="EBE_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="AL26NP" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="AL26NP_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="AL26EP" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="AL26EP_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="ALSTND" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="4" id="47" name="ALCORR" nullable="true" remarks="" size="5" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="ALAMS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="AL26NC" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="AL26NC_ERR" nullable="true" remarks="" size="19" type="int8" typeCode="-5"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="51" name="EAL_MMKYR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="52" name="EAL_ERR" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
+         <column autoUpdated="true" defaultValue="nextval('crn_xxl_basins_id_seq'::regclass)" digits="0" id="53" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <primaryKey column="id" sequenceNumberInPK="1"/>
          <index name="crn_xxl_basins_pkey" unique="true">
             <column ascending="true" name="id"/>
@@ -1839,7 +1892,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="crn_xxl_outlets" numRows="261" remarks="Is flat **GeoServer input** table. Table creation date: 2024-08-22 11:01:44 UTC" schema="public" type="TABLE">
+      <table name="crn_xxl_outlets" numRows="261" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.5281/zenodo.13369360. Table creation date: 2025-03-14 15:37:16 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="the_geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -1864,7 +1917,7 @@
          <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="desc" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="zips" nullable="true" remarks="" size="255" type="varchar" typeCode="12"/>
       </table>
-      <table name="expage" numRows="16009" remarks="Is flat **GeoServer input** table. Table creation date: 2024-08-22 11:01:48 UTC" schema="public" type="TABLE">
+      <table name="expage" numRows="16009" remarks="Is flat **GeoServer input** table. Table creation date: 2025-03-14 15:37:19 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -2352,7 +2405,7 @@
             <column ascending="true" name="SPECIES"/>
          </index>
       </table>
-      <table name="fossahul_webmercator_nrand_25000" numRows="11858" remarks="Is flat **GeoServer input** table. Table creation date: 2024-08-22 11:01:51 UTC" schema="public" type="TABLE">
+      <table name="fossahul_webmercator_nrand_25000" numRows="11858" remarks="Is flat **GeoServer input** table. Table creation date: 2025-03-14 15:37:24 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="254" type="varchar" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="254" type="varchar" typeCode="12"/>
@@ -2493,7 +2546,7 @@
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="type" nullable="true" remarks="" size="30" type="varchar" typeCode="12"/>
       </table>
-      <table name="global_Author" numRows="1733" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_Author` stores information about *first authors* and is part of OCTOPUS reference system (= OAID)." schema="public" type="TABLE">
+      <table name="global_Author" numRows="1737" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_Author` stores information about *first authors* and is part of OCTOPUS reference system (= OAID)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="OAID" nullable="false" remarks="" size="11" type="varchar" typeCode="12">
             <child column="OAID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="crn_aus_basins"/>
             <child column="OAID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="crn_int_basins"/>
@@ -2619,7 +2672,7 @@
             <column ascending="true" name="DSETTYPEID"/>
          </index>
       </table>
-      <table name="global_dbDOI" numRows="30" remarks="" schema="public" type="TABLE">
+      <table name="global_dbDOI" numRows="34" remarks="" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;global_dbDOI_VERID_seq&quot;'::regclass)" digits="0" id="0" name="VERID" nullable="false" remarks="A unique identifier (auto-incrementing serial integer)" size="10" type="serial" typeCode="4">
             <child column="VERID" foreignKey="&lt;--VERID_from_global_dbDOI_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
             <child column="VERID" foreignKey="&lt;--VERID_from_global_dbDOI_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_osl_DataCore"/>
@@ -2699,7 +2752,7 @@
             <column ascending="true" name="IBRAREGION"/>
          </index>
       </table>
-      <table name="global_Journal" numRows="1420" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_Journal` store information about *journals* and is part of OCTOPUS reference system (= JOURNALID)." schema="public" type="TABLE">
+      <table name="global_Journal" numRows="1421" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_Journal` store information about *journals* and is part of OCTOPUS reference system (= JOURNALID)." schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('global_journal_seq'::regclass)" digits="0" id="0" name="JOURNALID" nullable="false" remarks="" size="5" type="smallserial" typeCode="5">
             <child column="JOURNALID" foreignKey="&lt;--JOURNALID_from_global_Journal_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefCore"/>
          </column>
@@ -2762,7 +2815,7 @@
             <column ascending="true" name="PUBTYPEID"/>
          </index>
       </table>
-      <table name="global_RefAbstract" numRows="3962" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_RefAbstract` stores *publication abstracts* and is part of OCTOPUS reference system (= REFDBID; one to one)." schema="public" type="TABLE">
+      <table name="global_RefAbstract" numRows="3973" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_RefAbstract` stores *publication abstracts* and is part of OCTOPUS reference system (= REFDBID; one to one)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="REFDBID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefAbstract_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefCore"/>
          </column>
@@ -2774,7 +2827,7 @@
             <column ascending="true" name="REFDBID"/>
          </index>
       </table>
-      <table name="global_RefCore" numRows="3947" remarks="Is OCTOPUS DB reference core table, i.e., global lookup table for references. `global_RefCore` stores all relevant reference information, which are linked via &quot;REFDBID&quot; field to compilation DataCore tables (= REFDBID)." schema="public" type="TABLE">
+      <table name="global_RefCore" numRows="3958" remarks="Is OCTOPUS DB reference core table, i.e., global lookup table for references. `global_RefCore` stores all relevant reference information, which are linked via &quot;REFDBID&quot; field to compilation DataCore tables (= REFDBID)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="REFDBID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="REFDBID1" foreignKey="&lt;--REFDBID(1)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
             <child column="REFDBID2" foreignKey="&lt;--REFDBID(2)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_c14_DataCore"/>
@@ -2813,8 +2866,8 @@
             <child column="REFDBID2" foreignKey="&lt;--REFDBID(2)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
             <child column="REFDBID3" foreignKey="&lt;--REFDBID(3)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
             <child column="REFDBID4" foreignKey="&lt;--REFDBID(4)_from_global_RefCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>
-            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefKeyword"/>
             <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefAbstract_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefAbstract"/>
+            <parent column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefKeyword"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OAID" nullable="true" remarks="" size="11" type="varchar" typeCode="12">
             <parent column="OAID" foreignKey="&lt;--OAID_from_global_Author_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_Author"/>
@@ -2849,7 +2902,7 @@
             <column ascending="true" name="REFDBID"/>
          </index>
       </table>
-      <table name="global_RefKeyword" numRows="3962" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_RefKeyword` is thoroughly boolean, stores *compilation membership keywords* for observations and is part of OCTOPUS reference system (= REFDBID; one to one)." schema="public" type="TABLE">
+      <table name="global_RefKeyword" numRows="3973" remarks="Is parent table for `global_RefCore` table. The latter stores reference information for **all compilations**. `global_RefKeyword` is thoroughly boolean, stores *compilation membership keywords* for observations and is part of OCTOPUS reference system (= REFDBID; one to one)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="REFDBID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="REFDBID" foreignKey="&lt;--REFDBID_from_global_RefKeyword_fkey" implied="false" onDeleteCascade="false" schema="public" table="global_RefCore"/>
          </column>
@@ -2937,7 +2990,7 @@
             <column ascending="true" name="SITECODEID"/>
          </index>
       </table>
-      <table name="global_SiteMaster" numRows="25221" remarks="Is the global master table that stores *site-related information for all compilations*. In OCTOPUS data model hierarchy `global_SiteMaster` is situated between the collection-specific sample tables (subordinate) and the `global_MetaSite` table (superordinate); (= SITEID)." schema="public" type="TABLE">
+      <table name="global_SiteMaster" numRows="26209" remarks="Is the global master table that stores *site-related information for all compilations*. In OCTOPUS data model hierarchy `global_SiteMaster` is situated between the collection-specific sample tables (subordinate) and the `global_MetaSite` table (superordinate); (= SITEID)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="SITEID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="SITEID" foreignKey="&lt;--SITEID_from_global_SiteMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_Sample"/>
             <child column="SITEID" foreignKey="&lt;--SITEID_from_global_SiteMaster_fkey" implied="false" onDeleteCascade="false" schema="public" table="crn_Sample"/>
@@ -2955,6 +3008,8 @@
             <child column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulchar_units"/>
             <child column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulsed_aeolian_osl"/>
             <child column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulsed_aeolian_tl"/>
+            <child column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulsed_coastal_osl"/>
+            <child column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulsed_coastal_tl"/>
             <child column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulsed_fluvial_osl"/>
             <child column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulsed_fluvial_tl"/>
             <child column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="sahulsed_lacustrine_osl"/>
@@ -3095,7 +3150,7 @@
             <column ascending="true" name="V_UNITNAME"/>
          </index>
       </table>
-      <table name="ippd_baseline_pollen" numRows="155952" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/57DR-YQ75. Table creation date: 2024-08-22 11:01:58 UTC" schema="public" type="TABLE">
+      <table name="ippd_baseline_pollen" numRows="155952" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/57DR-YQ75. Table creation date: 2025-03-14 15:37:31 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="DBDOI" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3179,7 +3234,7 @@
             <column ascending="true" name="DATAID"/>
          </index>
       </table>
-      <table name="ippd_datasets" numRows="311" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/J13C-KT93. Table creation date: 2024-08-22 11:02:01 UTC" schema="public" type="TABLE">
+      <table name="ippd_datasets" numRows="311" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/J13C-KT93. Table creation date: 2025-03-14 15:37:34 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="DBDOI" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3543,7 +3598,7 @@
             <column ascending="true" name="VARUNITID"/>
          </index>
       </table>
-      <table name="osl-tl_agemodelID" numRows="15" remarks="Is Luminescence (**SahulSed, SahulArch/ OSL collection, SahulArch/ TL collection**) lookup table for the *model used to combine individual equivalent dose estimates for age determination* (= AGEMODEL)" schema="public" type="TABLE">
+      <table name="osl-tl_agemodelID" numRows="16" remarks="Is Luminescence (**SahulSed, SahulArch/ OSL collection, SahulArch/ TL collection**) lookup table for the *model used to combine individual equivalent dose estimates for age determination* (= AGEMODEL)" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('osl_tl_agemodelid_seq'::regclass)" digits="0" id="0" name="AGEMODELID" nullable="false" remarks="" size="5" type="smallserial" typeCode="5">
             <child column="AGEMODELID" foreignKey="&lt;--AGEMODELID_from_osl-tl_agemodelID_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_osl_DataCore"/>
             <child column="AGEMODELID" foreignKey="&lt;--AGEMODELID_from_osl-tl_agemodelID_fkey" implied="false" onDeleteCascade="false" schema="public" table="arch_tl_DataCore"/>
@@ -3695,7 +3750,7 @@
             <column ascending="true" name="OSL_TYPEAB"/>
          </index>
       </table>
-      <table name="publications" numRows="6091" remarks="Is flat **GeoServer input** table (bbox). Table creation date: 2024-08-12 12:53:07 UTC" schema="public" type="TABLE">
+      <table name="publications" numRows="6091" remarks="Is flat **GeoServer input** table (bbox). Table creation date: 2025-03-14 15:37:37 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="bbox" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="name" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="CRN_SUBCMP" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
@@ -3707,7 +3762,7 @@
             <column ascending="true" name="id"/>
          </index>
       </table>
-      <table name="sahularch_c14" numRows="9501" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2mb4-rr36. Table creation date: 2024-08-22 11:02:05 UTC" schema="public" type="TABLE">
+      <table name="sahularch_c14" numRows="9501" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2mb4-rr36. Table creation date: 2025-03-14 15:37:41 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -3842,7 +3897,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahularch_osl" numRows="973" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/ypr0-j711. Table creation date: 2024-08-22 11:02:08 UTC" schema="public" type="TABLE">
+      <table name="sahularch_osl" numRows="973" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/ypr0-j711. Table creation date: 2025-03-14 15:37:44 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4000,7 +4055,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahularch_tl" numRows="240" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/xq40-t003. Table creation date: 2024-08-22 11:02:11 UTC" schema="public" type="TABLE">
+      <table name="sahularch_tl" numRows="240" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/xq40-t003. Table creation date: 2025-03-14 15:37:47 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4156,7 +4211,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahulchar" numRows="48234" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/KKDX-XH23. Table creation date: 2024-08-22 11:02:16 UTC" schema="public" type="TABLE">
+      <table name="sahulchar" numRows="48234" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/KKDX-XH23. Table creation date: 2025-03-14 15:37:52 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID" nullable="true" remarks="" size="10" type="int4" typeCode="4">
             <parent column="OBSID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="char_DataCore"/>
@@ -4248,7 +4303,7 @@
          <column autoUpdated="false" defaultValue="null" digits="2" id="78" name="EST_AGE" nullable="true" remarks="" size="12" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="79" name="CALCURVE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="80" name="CALPROGVER" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
-         <column autoUpdated="false" defaultValue="null" digits="0" id="81" name="CHARCOUNTS" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="81" name="CHARVALUES" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="82" name="CHARMETHOD" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="83" name="CHARMEAS" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="84" name="CHARMAX" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
@@ -4265,7 +4320,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahulchar_units" numRows="535" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/Y4E9-R595. Table creation date: 2024-08-22 11:02:19 UTC" schema="public" type="TABLE">
+      <table name="sahulchar_units" numRows="535" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/Y4E9-R595. Table creation date: 2025-03-14 15:37:56 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="DBDOI" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4355,7 +4410,7 @@
             <column ascending="true" name="UNITID"/>
          </index>
       </table>
-      <table name="sahulsed_aeolian_osl" numRows="772" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/5jcw-tn50. Table creation date: 2024-08-22 11:02:23 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_aeolian_osl" numRows="772" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/5jcw-tn50. Table creation date: 2025-03-14 15:37:59 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4522,7 +4577,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahulsed_aeolian_tl" numRows="361" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/a2k9-kj43. Table creation date: 2024-08-22 11:02:26 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_aeolian_tl" numRows="361" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/a2k9-kj43. Table creation date: 2025-03-14 15:38:03 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4687,7 +4742,281 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahulsed_fluvial_osl" numRows="1212" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/p5ye-rn35. Table creation date: 2024-08-22 11:02:29 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_coastal_osl" numRows="1008" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/5jcw-tn50. Table creation date: 2025-03-14 15:38:06 UTC" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="LABID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LAB_FACLTY" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DBDOI" nullable="true" remarks="" size="256" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="SMPID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="SITEID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="global_SiteMaster"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="METHODABBR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CNTRY" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="DIV_ADMIN" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ISL_NAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="AHGFL1" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="AHGFL2" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="RIVNAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="RIVDIV" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="IBRACODE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="IBRAREGION" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="19" name="X_WGS84" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="20" name="Y_WGS84" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="CORDS_ELEV" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="22" name="ELEVATION" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="SITENAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="SITE_SPEC" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ALTNAME1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="SITE_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="BIOME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="SITEDESCR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="REFDBID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="OAID1" nullable="true" remarks="" size="11" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="AUTHOR1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="PUBYEAR1" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="REFID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="REFDOI1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="REFDBID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="OAID2" nullable="true" remarks="" size="11" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="AUTHOR2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="PUBYEAR2" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="REFID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="REFDOI2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="SEDTYPE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="GEOTYPE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="SITETYPE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="DEPTHICK" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="45" name="SMPDEPTH" nullable="true" remarks="" size="9" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="SED_MAT" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="FACIES" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="COL_MTD" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="LUM_MAT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="MINERAL" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="SIZE_MIN" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="SIZE_MAX" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="H2O_MEAS" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="H2O_USED" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="H2O_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="OSL_TYPEAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="57" name="ALIQ_TYPE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="ALIQ_SIZE" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="ED_PROCABR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="RESCOR" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="DOSERECOV" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="AGEMODELAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="PH1_TEMP" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="PH2_TEMP" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="NUM_MEAS" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="NUM_ACC" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="EQUIVDOSE" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="ED_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="ED_INF" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="OD" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="OD_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="72" name="OD_TYPE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="73" name="U" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="U_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="U_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="TH" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="TH_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="TH_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="79" name="K" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="80" name="K_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="81" name="K_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="82" name="U238" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="83" name="U238_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="84" name="RA226" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="85" name="RA226_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="86" name="PB210" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="87" name="PB210_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="88" name="RA228" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="89" name="RA228_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="90" name="TH228" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="91" name="TH228_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="92" name="TH232" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="93" name="TH232_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="94" name="K40" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="95" name="K40_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="96" name="ALPH" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="97" name="ALPH_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="98" name="ALPH_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="99" name="BETA" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="100" name="BETA_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="101" name="BETA_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="102" name="GAMMA" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="103" name="GAMMA_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="104" name="GAMMA_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="105" name="COSMIC" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="106" name="COSMIC_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="107" name="ALPH_I" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="108" name="ALPH_I_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="109" name="ALPH_I_MTD" nullable="true" remarks="" size="8" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="110" name="BETA_I" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="111" name="BETA_I_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="112" name="BETA_I_MTD" nullable="true" remarks="" size="8" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="113" name="DIFF_DOSE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="114" name="DOSERATE" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="115" name="DOSE_ERR" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="116" name="OSL_AGE" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="117" name="OSL_ERR" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="118" name="AGE_CI" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="119" name="AGE_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="true" defaultValue="nextval('sahulsed_coastal_osl_id_seq'::regclass)" digits="0" id="120" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="sahulsed_coastal_osl_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="sahulsed_coastal_osl_geom_idx" unique="false">
+            <column ascending="true" name="geom"/>
+         </index>
+      </table>
+      <table name="sahulsed_coastal_tl" numRows="362" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/a2k9-kj43. Table creation date: 2025-03-14 15:38:09 UTC" schema="public" type="TABLE">
+         <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="3" name="LABID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="LAB_FACLTY" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="5" name="DBDOI" nullable="true" remarks="" size="256" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="6" name="DBVERNO" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="7" name="SMPID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="8" name="SITEID" nullable="true" remarks="" size="2147483647" type="text" typeCode="12">
+            <parent column="SITEID" foreignKey="Implied Constraint" implied="true" onDeleteCascade="false" schema="public" table="global_SiteMaster"/>
+         </column>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="9" name="METHODABBR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="10" name="CNTRY" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="11" name="DIV_ADMIN" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="12" name="ISL_NAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="13" name="AHGFL1" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="14" name="AHGFL2" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="15" name="RIVNAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="16" name="RIVDIV" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="17" name="IBRACODE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="18" name="IBRAREGION" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="19" name="X_WGS84" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="6" id="20" name="Y_WGS84" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="21" name="CORDS_ELEV" nullable="true" remarks="" size="2147483647" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="22" name="ELEVATION" nullable="true" remarks="" size="6" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="23" name="SITENAME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="24" name="SITE_SPEC" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="25" name="ALTNAME1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="26" name="SITE_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="27" name="BIOME" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="28" name="SITEDESCR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="29" name="REFDBID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="30" name="OAID1" nullable="true" remarks="" size="11" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="31" name="AUTHOR1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="32" name="PUBYEAR1" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="33" name="REFID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="34" name="REFDOI1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="35" name="REFDBID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="36" name="OAID2" nullable="true" remarks="" size="11" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="37" name="AUTHOR2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="38" name="PUBYEAR2" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="39" name="REFID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="40" name="REFDOI2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="41" name="REFDBID3" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="42" name="OAID3" nullable="true" remarks="" size="11" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="43" name="AUTHOR3" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="44" name="PUBYEAR3" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="45" name="REFID3" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="46" name="REFDOI3" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="47" name="REFDBID4" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="48" name="OAID4" nullable="true" remarks="" size="11" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="49" name="AUTHOR4" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="50" name="PUBYEAR4" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="51" name="REFID4" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="52" name="REFDOI4" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="53" name="SEDTYPE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="54" name="GEOTYPE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="55" name="SITETYPE" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="56" name="DEPTHICK" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="2" id="57" name="SMPDEPTH" nullable="true" remarks="" size="9" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="58" name="SED_MAT" nullable="true" remarks="" size="6" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="59" name="FACIES" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="60" name="COL_MTD" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="61" name="LUM_MAT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="62" name="MINERAL" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="63" name="SIZE_MIN" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="64" name="SIZE_MAX" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="65" name="H2O_MEAS" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="66" name="H2O_USED" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="67" name="H2O_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="68" name="ALIQ_SIZE" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="69" name="ED_PROCABR" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="70" name="RESCOR" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="71" name="AGEMODELAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="72" name="PLAT_REG" nullable="true" remarks="" size="9" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="73" name="AN_TEMP" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="74" name="NUM_MEAS" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="75" name="EQUIVDOSE" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="76" name="ED_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="77" name="ED_SAT" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="78" name="ED_SATERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="79" name="U" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="80" name="U_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="81" name="U_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="82" name="TH" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="83" name="TH_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="84" name="TH_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="85" name="U_TH" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="86" name="U_TH_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="87" name="U_TH_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="88" name="K" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="89" name="K_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="90" name="K_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="91" name="RB" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="92" name="U238" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="93" name="U238_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="94" name="RA226" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="95" name="RA226_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="96" name="PB210" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="97" name="PB210_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="98" name="RA228" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="99" name="RA228_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="100" name="TH228" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="101" name="TH228_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="102" name="TH232" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="103" name="TH232_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="104" name="K40" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="105" name="K40_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="106" name="ALPH" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="107" name="ALPH_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="108" name="ALPH_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="109" name="BETA" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="110" name="BETA_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="111" name="BETA_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="112" name="GAMMA" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="113" name="GAMMA_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="114" name="GAMMA_MTDAB" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="115" name="COSMIC" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="116" name="COSMIC_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="117" name="ALPH_I" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="118" name="ALPH_I_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="119" name="ALPH_I_MTD" nullable="true" remarks="" size="8" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="120" name="BETA_I" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="121" name="BETA_I_ERR" nullable="true" remarks="" size="0" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="122" name="BETA_I_MTD" nullable="true" remarks="" size="8" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="123" name="DIFF_DOSE" nullable="true" remarks="" size="3" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="124" name="DOSERATE" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="125" name="DOSE_ERR" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="126" name="TL_AGE" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="3" id="127" name="TL_ERR" nullable="true" remarks="" size="10" type="numeric" typeCode="2"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="128" name="AGE_CI" nullable="true" remarks="" size="2" type="varchar" typeCode="12"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="129" name="AGE_COMMT" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
+         <column autoUpdated="true" defaultValue="nextval('sahulsed_coastal_tl_id_seq'::regclass)" digits="0" id="130" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
+         <primaryKey column="id" sequenceNumberInPK="1"/>
+         <index name="sahulsed_coastal_tl_pkey" unique="true">
+            <column ascending="true" name="id"/>
+         </index>
+         <index name="sahulsed_coastal_tl_geom_idx" unique="false">
+            <column ascending="true" name="geom"/>
+         </index>
+      </table>
+      <table name="sahulsed_fluvial_osl" numRows="1212" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/p5ye-rn35. Table creation date: 2025-03-14 15:38:12 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -4854,7 +5183,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahulsed_fluvial_tl" numRows="564" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2a76-vw55. Table creation date: 2024-08-22 11:03:05 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_fluvial_tl" numRows="564" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/2a76-vw55. Table creation date: 2025-03-14 15:38:15 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -5019,7 +5348,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahulsed_lacustrine_osl" numRows="474" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/6hmv-zz61. Table creation date: 2024-08-22 11:03:09 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_lacustrine_osl" numRows="474" remarks="Is flat **GeoServer input** table. Refer to https://doi.org/10.25900/6hmv-zz61. Table creation date: 2025-03-14 15:38:19 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -5186,7 +5515,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sahulsed_lacustrine_tl" numRows="41" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/32de-mj32. Table creation date: 2024-08-22 11:03:12 UTC" schema="public" type="TABLE">
+      <table name="sahulsed_lacustrine_tl" numRows="41" remarks="Is flat **GeoServer input** table. Refer to http://dx.doi.org/10.25900/32de-mj32. Table creation date: 2025-03-14 15:38:22 UTC" schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="OBSID1" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID2" nullable="true" remarks="" size="2147483647" type="text" typeCode="12"/>
@@ -5351,7 +5680,7 @@
             <column ascending="true" name="geom"/>
          </index>
       </table>
-      <table name="sed-osl_DataCore" numRows="2458" remarks="Is Sahul Sedimentary Archives (SahulSed) data table. This table stores *observations* (= smallest data model entity) for the **SahulSed/ OSL collections** and is subordinate to the `arch_Sample` table. Note - This table is further split into Aeolian, Fluvial, and Lacustrine sub-collections." schema="public" type="TABLE">
+      <table name="sed-osl_DataCore" numRows="3466" remarks="Is Sahul Sedimentary Archives (SahulSed) data table. This table stores *observations* (= smallest data model entity) for the **SahulSed/ OSL collections** and is subordinate to the `arch_Sample` table. Note - This table is further split into Aeolian, Fluvial, and Lacustrine sub-collections." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="OBSID1" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="OBSID1" foreignKey="&lt;--OBSID1_from_sed-osl_DataCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-osl_points_EPSG3857"/>
          </column>
@@ -5489,7 +5818,7 @@
             <column ascending="true" name="OBSID1"/>
          </index>
       </table>
-      <table name="sed-osl_points_EPSG3857" numRows="2458" remarks="Is Sahul Sedimentary Archives (**SahulSed**) spatial features table (points of the **OSL collection** , EPSG:900913)" schema="public" type="TABLE">
+      <table name="sed-osl_points_EPSG3857" numRows="3466" remarks="Is Sahul Sedimentary Archives (**SahulSed**) spatial features table (points of the **OSL collection** , EPSG:900913)" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;sed-osl_points_EPSG3857_id_seq&quot;'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID1" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
@@ -5511,7 +5840,7 @@
             <column ascending="true" name="OBSID1"/>
          </index>
       </table>
-      <table name="sed-tl_DataCore" numRows="966" remarks="Is Sahul Sedimentary Archives (SahulSed) data table. This table stores *observations* (= smallest data model entity) for the **SahulSed/ TL collections** and is subordinate to the `arch_Sample` table. Note - This table is further split into Aeolian, Fluvial, and Lacustrine sub-collections." schema="public" type="TABLE">
+      <table name="sed-tl_DataCore" numRows="1328" remarks="Is Sahul Sedimentary Archives (SahulSed) data table. This table stores *observations* (= smallest data model entity) for the **SahulSed/ TL collections** and is subordinate to the `arch_Sample` table. Note - This table is further split into Aeolian, Fluvial, and Lacustrine sub-collections." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="OBSID1" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="OBSID1" foreignKey="&lt;--OBSID1_from_sed-tl_DataCore_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_points_EPSG3857"/>
          </column>
@@ -5647,7 +5976,7 @@
             <column ascending="true" name="OBSID1"/>
          </index>
       </table>
-      <table name="sed-tl_points_EPSG3857" numRows="966" remarks="Is Sahul Sedimentary Archives (**SahulSed**) spatial features table (points of the **TL collection** , EPSG:900913)" schema="public" type="TABLE">
+      <table name="sed-tl_points_EPSG3857" numRows="1328" remarks="Is Sahul Sedimentary Archives (**SahulSed**) spatial features table (points of the **TL collection** , EPSG:900913)" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('&quot;sed-tl_points_EPSG3857_id_seq&quot;'::regclass)" digits="0" id="0" name="id" nullable="false" remarks="" size="10" type="serial" typeCode="4"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="geom" nullable="true" remarks="" size="2147483647" type="geometry" typeCode="1111"/>
          <column autoUpdated="false" defaultValue="null" digits="0" id="2" name="OBSID1" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
@@ -5684,13 +6013,17 @@
             <column ascending="true" name="DEPCON"/>
          </index>
       </table>
-      <table name="sed_faciesID" numRows="10" remarks="Is Sahul Sedimentary Archives (**SahulSed/ Lacustrine**) lookup table for *sedimentological facies type* (= FACIES)" schema="public" type="TABLE">
+      <table name="sed_faciesID" numRows="30" remarks="Is Sahul Sedimentary Archives (**SahulSed/ Lacustrine**) lookup table for *sedimentological facies type* (= FACIES)" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('sed_faciesid_seq'::regclass)" digits="0" id="0" name="FACIESID" nullable="false" remarks="" size="5" type="smallserial" typeCode="5">
+            <child column="PARENTID" foreignKey="&lt;--FACIESID_from_cabah_faciesID_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed_faciesID"/>
             <child column="FACIESID" foreignKey="&lt;--FACIESID_from_sed_faciesID_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed_Sample"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="FACIES" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="2" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="3" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PARENTID" nullable="false" remarks="" size="5" type="int2" typeCode="5">
+            <parent column="FACIESID" foreignKey="&lt;--FACIESID_from_cabah_faciesID_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed_faciesID"/>
+         </column>
          <primaryKey column="FACIESID" sequenceNumberInPK="1"/>
          <index name="sed_faciesID_pkey" unique="true">
             <column ascending="true" name="FACIESID"/>
@@ -5714,13 +6047,14 @@
             <column ascending="true" name="GEOMMOD"/>
          </index>
       </table>
-      <table name="sed_geotypeID" numRows="16" remarks="Is across-Sahul Sedimentary Archives (**SahulSed**) lookup table for *geomorphological type of feature sampled* (= GEOTYPE)" schema="public" type="TABLE">
+      <table name="sed_geotypeID" numRows="32" remarks="Is across-Sahul Sedimentary Archives (**SahulSed**) lookup table for *geomorphological type of feature sampled* (= GEOTYPE)" schema="public" type="TABLE">
          <column autoUpdated="true" defaultValue="nextval('sed_geotypeid_seq'::regclass)" digits="0" id="0" name="GEOTYPEID" nullable="false" remarks="" size="5" type="smallserial" typeCode="5">
             <child column="GEOTYPEID" foreignKey="&lt;--GEOTYPEID_from_sed_geotypeID_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed_Sample"/>
          </column>
          <column autoUpdated="false" defaultValue="null" digits="0" id="1" name="GEOTYPE" nullable="false" remarks="" size="2147483647" type="text" typeCode="12"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="2" name="CREATED_AT" nullable="false" remarks="Is record timestamp with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
          <column autoUpdated="false" defaultValue="timezone('UTC'::text, now())" digits="6" id="3" name="UPDATED_AT" nullable="true" remarks="Is timestamp of record update with timezone based on UTC" size="35" type="timestamptz" typeCode="93"/>
+         <column autoUpdated="false" defaultValue="null" digits="0" id="4" name="PARENTID" nullable="true" remarks="" size="5" type="int2" typeCode="5"/>
          <primaryKey column="GEOTYPEID" sequenceNumberInPK="1"/>
          <index name="sed_geotypeID_pkey" unique="true">
             <column ascending="true" name="GEOTYPEID"/>
@@ -5763,7 +6097,7 @@
             <column ascending="true" name="MORPH"/>
          </index>
       </table>
-      <table name="sed_Sample" numRows="3181" remarks="Is Sahul Sedimentary Archives (SahulSed) sample table. This table stores **SahulSed** samples and is, therefore, situated between the collection-specific DataCore tables (subordinate) and the `global_SiteMaster` table (superordinate)." schema="public" type="TABLE">
+      <table name="sed_Sample" numRows="4551" remarks="Is Sahul Sedimentary Archives (SahulSed) sample table. This table stores **SahulSed** samples and is, therefore, situated between the collection-specific DataCore tables (subordinate) and the `global_SiteMaster` table (superordinate)." schema="public" type="TABLE">
          <column autoUpdated="false" defaultValue="null" digits="0" id="0" name="SMPID" nullable="false" remarks="" size="2147483647" type="text" typeCode="12">
             <child column="SMPID" foreignKey="&lt;--SMPID_from_sed_Sample_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-osl_DataCore"/>
             <child column="SMPID" foreignKey="&lt;--SMPID_from_sed_Sample_fkey" implied="false" onDeleteCascade="false" schema="public" table="sed-tl_DataCore"/>

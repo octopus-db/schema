@@ -28,6 +28,8 @@ expage
 crn_inprep_basins
 sed-tl_points_EPSG3857
 sed-osl_points_EPSG3857
+sahulsed_coastal_tl
+sahulsed_coastal_osl
 sahulchar_units_points_EPSG3857
 fos_polygons_EPSG3857
 expage_points_EPSG3857
@@ -68,6 +70,7 @@ global_SiteMaster
 global_MetaSite
 cabah_taxaID
 cabah_depositID
+sed_faciesID
 cabah_col_mtdID
 sed_laketypeID
 cabah_chroncontroltypeID
@@ -87,7 +90,6 @@ sed_sitetypeID
 sed_morphID
 sed_geotypeID
 sed_geommodID
-sed_faciesID
 sed_depconID
 neo_variableunits
 neo_variablecontexts

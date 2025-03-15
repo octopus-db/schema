@@ -53,7 +53,6 @@ neo_keywords
 neo_variablecontexts
 neo_variableunits
 sed_depconID
-sed_faciesID
 sed_geommodID
 sed_geotypeID
 sed_morphID
@@ -73,6 +72,7 @@ neo_contacts
 cabah_chroncontroltypeID
 sed_laketypeID
 cabah_col_mtdID
+sed_faciesID
 cabah_depositID
 cabah_taxaID
 global_MetaSite
@@ -113,6 +113,8 @@ crn_xxl_outlets
 expage_points_EPSG3857
 fos_polygons_EPSG3857
 sahulchar_units_points_EPSG3857
+sahulsed_coastal_osl
+sahulsed_coastal_tl
 sed-osl_points_EPSG3857
 sed-tl_points_EPSG3857
 crn_inprep_basins
